@@ -1,0 +1,296 @@
+stage	name	model	raw_candidates	derivations	hours_at_230k	dry_run	cpu_exact_valid	note
+3	nl3_g2_minus1_b	bip3912	720	45	0.0000	ok	51	G2 all slots minus one (moon is word 12, subject floats), zero unknown; BIP39-12, moon a word, no passphrase
+3	nl3_g2_minus1_e	electrum12	720	3	0.0000	ok	2	G2 all slots minus one (moon is word 12, subject floats), zero unknown; Electrum-12, moon a word, no extension
+3	nl3_g2_minus1_e13	electrum13	10321920	40320	0.0000	ok		G2 all slots minus one as an Electrum-13 text (slot 13 free), 1 open
+3	nl3_c1_moon1_e13	electrum13	10321920	40320	0.0000	ok		C1 12 read as 0 (moon@1, subject floats) as an Electrum-13 text (slot 13 free), 1 open; the 12-word forms are m1v / m1 / m1e
+3	nl3_g1_zero_based_e12	electrum12	10321920	80640	0.0001	ok		G1 0-based slots (slot = n+1; the phrase ends in pyramid), vote floats, 1 open; Electrum-12, extension moon
+3	nl3_g1_zero_based_p	bip3912	10321920	2580480	0.0031	ok		G1 0-based slots (slot = n+1; the phrase ends in pyramid), vote floats, 1 open; BIP39-12, passphrase MOON/moon/Moon
+3	nl3_g1_zero_based_e14	electrum14	10569646080	41287680	0.0499	ok		G1 0-based slots as a 14-word Electrum text (vote@13 moon@14), 2 open
+3	nl3_g1_zero_based_e13ext	electrum13	10569646080	82575360	0.0997	ok		G1 0-based slots as a 13-word Electrum text (vote@13) with the extension moon, 2 open
+3	nl3_c3_halved_b	bip3912	120	8	0.0000	ok	14	C3 halved sums (s+1)/2: tower@2 eye@5 pyramid@6 moon@7, zero unknown; BIP39-12, moon a word, no passphrase
+3	nl3_c3_halved_e	electrum12	120	0	0.0000	ok	1	C3 halved sums (s+1)/2: tower@2 eye@5 pyramid@6 moon@7, zero unknown; Electrum-12, moon a word, no extension
+3	nl3_c2_lower_e	electrum12	5040	20	0.0000	ok	22	C2 hands by the lower numeral, subject and vote float, zero unknown; Electrum-12 (BIP39: inside h1)
+3	nl3_c2_upper_e	electrum12	720	3	0.0000	ok	5	C2 hands by the upper numeral, subject floats, zero unknown; Electrum-12 (BIP39: inside u1)
+3	nl3_c2b_seal45_b	bip3912	720	45	0.0000	ok	57	C2b nearest numeral, the seal read 4|5 (eye@4 pyramid@5), subject floats, zero unknown; BIP39-12, moon a word, no passphrase
+3	nl3_c2b_seal45_e	electrum12	720	3	0.0000	ok	2	C2b nearest numeral, the seal read 4|5 (eye@4 pyramid@5), subject floats, zero unknown; Electrum-12, moon a word, no extension
+3	nl3_ped_lines_b	bip3912	120	8	0.0000	ok	4	L4-05 pedestal line numbers (LUN on text line 2, the underlined subject on line 8), zero unknown; BIP39-12, moon a word, no passphrase
+3	nl3_ped_lines_e	electrum12	120	0	0.0000	ok	0	L4-05 pedestal line numbers (LUN on text line 2, the underlined subject on line 8), zero unknown; Electrum-12, moon a word, no extension
+3	nl3_ped_lines_e13	electrum13	1474560	5760	0.0000	ok		L4-05 pedestal line numbers as an Electrum-13 text (slot 13 free), 1 open
+3	nl3_g3b_rev0_e12	electrum12	10321920	80640	0.0001	ok		G3b 0-based reversal (p -> 12-p), vote floats, 1 open; Electrum-12, extension moon
+3	nl3_g3b_rev0_p	bip3912	10321920	2580480	0.0031	ok		G3b 0-based reversal (p -> 12-p), vote floats, 1 open; BIP39-12, passphrase MOON/moon/Moon
+3	nl3_g3b_rev0_e13ext	electrum13	10569646080	82575360	0.0997	ok		G3b 0-based reversal as a 13-word Electrum text (p -> 13-p) with the extension moon, 2 open
+3	nl3_g3_reversed_e14	electrum14	10569646080	41287680	0.0499	ok		G3 pins reversed in a 14-word Electrum text (p -> 15-p), 2 open (the 12- and 13-word forms are ld38_reversed_*)
+3	nl3_g4_indices_e13	electrum13	23592960	92160	0.0001	ok		G4 the sums 9-12 as word-list indices (0- and 1-based: 16 combinations), 1 open; Electrum-13
+3	nl3_g4_indices_e12	electrum12	23592960	184320	0.0002	ok		G4 the sums 9-12 as word-list indices (0- and 1-based: 16 combinations), 1 open; Electrum-12, extension moon
+3	nl3_g4_indices_p	bip3912	23592960	5898240	0.0071	ok		G4 the sums 9-12 as word-list indices (0- and 1-based: 16 combinations), 1 open; BIP39-12, passphrase MOON/moon/Moon
+3	nl3_dup_hands_e12	electrum12	1474560	11520	0.0000	ok		L4-04 4g the seal repeats the hand words (tower@9, moon@11), 1 open; Electrum-12, extension moon
+3	nl3_dup_hands_p	bip3912	1474560	368640	0.0004	ok		L4-04 4g the seal repeats the hand words (tower@9, moon@11), 1 open; BIP39-12, passphrase MOON/moon/Moon
+2	nl2_z_d12_e12	electrum12	479001600	3742200	0.0045	ok		Z the twelve device words (moon a word), every order, no pin; Electrum-12, extension empty / moon
+2	nl2_z_u12t_e12	electrum12	479001600	3742200	0.0045	ok		Z the inventory without moon (ten in), every order, no pin; Electrum-12, extension moon
+2	nl2_z_u13_e13	electrum13	6227020800	24324300	0.0294	ok		Z the 13-word inventory (the twelve device words + ten), every order, no pin; Electrum-13
+2	nl2_z_d12_p	bip3912	479001600	119750400	0.1446	ok		Z the twelve device words (moon a word), every order, no pin; BIP39-12, passphrase empty / MOON / moon / Moon
+2	nl2_z_u12t_p	bip3912	479001600	119750400	0.1446	ok		Z the inventory without moon (ten in), every order, no pin; BIP39-12, passphrase MOON / moon / Moon
+2	nl2_z_d12_top50_e12	electrum12	479001600	67359600	0.0814	ok		Z the twelve device words, every order, no pin, with the first 50 strings of LEAD 6 as the extension; Electrum-12
+2	nl2_z_d12_top50_p	bip3912	479001600	1526817600	1.8440	ok		Z the twelve device words, every order, no pin, with the first 50 strings of LEAD 6 as the passphrase; BIP39-12
+2	nl2_zm_subject_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'subject' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_tower_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'tower' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_eye_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'eye' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_pyramid_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'pyramid' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_black_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'black' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_vote_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'vote' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_food_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'food' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_this_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'this' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_real_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'real' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_one_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'one' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_order_e	electrum12	479001600	1871100	0.0023	ok		Z_M the inventory minus 'order' (moon a word, ten in), every order, no pin, no extension; Electrum-12
+2	nl2_zm_subject_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'subject' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / SUBJECT / subject / Subject
+2	nl2_zm_tower_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'tower' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / TOWER / tower / Tower
+2	nl2_zm_eye_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'eye' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / EYE / eye / Eye
+2	nl2_zm_pyramid_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'pyramid' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / PYRAMID / pyramid / Pyramid
+2	nl2_zm_black_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'black' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / BLACK / black / Black
+2	nl2_zm_vote_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'vote' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / VOTE / vote / Vote
+2	nl2_zm_food_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'food' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / FOOD / food / Food
+2	nl2_zm_this_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'this' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / THIS / this / This
+2	nl2_zm_real_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'real' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / REAL / real / Real
+2	nl2_zm_one_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'one' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / ONE / one / One
+2	nl2_zm_order_b	bip3912	479001600	119750400	0.1446	ok		Z_M the inventory minus 'order' (moon a word, ten in), every order, no pin; BIP39-12, passphrase empty / ORDER / order / Order
+6	nl6_zmw_subject_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'subject', every order, no pin, with 'subject' as the extension; Electrum-12
+6	nl6_zmw_tower_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'tower', every order, no pin, with 'tower' as the extension; Electrum-12
+6	nl6_zmw_eye_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'eye', every order, no pin, with 'eye' as the extension; Electrum-12
+6	nl6_zmw_pyramid_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'pyramid', every order, no pin, with 'pyramid' as the extension; Electrum-12
+6	nl6_zmw_black_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'black', every order, no pin, with 'black' as the extension; Electrum-12
+6	nl6_zmw_vote_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'vote', every order, no pin, with 'vote' as the extension; Electrum-12
+6	nl6_zmw_food_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'food', every order, no pin, with 'food' as the extension; Electrum-12
+6	nl6_zmw_this_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'this', every order, no pin, with 'this' as the extension; Electrum-12
+6	nl6_zmw_real_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'real', every order, no pin, with 'real' as the extension; Electrum-12
+6	nl6_zmw_one_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'one', every order, no pin, with 'one' as the extension; Electrum-12
+6	nl6_zmw_order_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'order', every order, no pin, with 'order' as the extension; Electrum-12
+6	nl6_zmw_ten_e12	electrum12	479001600	3742200	0.0045	ok		LEAD 6 item 10: the inventory minus 'ten', every order, no pin, with 'ten' as the extension; Electrum-12
+6	nl6_zmw_ten_b	bip3912	479001600	119750400	0.1446	ok		LEAD 6 item 10: the twelve device words, every order, no pin, with TEN / ten / Ten as the passphrase; BIP39-12
+2	nl2_sw_moon_month_e	electrum12	479001600	3742200	0.0045	ok		Russian-pun swap moon -> month in the twelve device words, every order, no pin, moon the passphrase; Electrum-12
+2	nl2_sw_moon_lunar_e	electrum12	479001600	3742200	0.0045	ok		Russian-pun swap moon -> lunar in the twelve device words, every order, no pin, moon the passphrase; Electrum-12
+2	nl2_sw_black_day_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap black -> day in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_black_rain_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap black -> rain in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_black_number_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap black -> number in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_order_stable_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap order -> stable in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_vote_voice_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap vote -> voice in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_vote_choice_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap vote -> choice in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_vote_twelve_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap vote -> twelve in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_real_present_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap real -> present in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_one_unit_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap one -> unit in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_one_alone_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap one -> alone in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_this_that_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap this -> that in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_this_thing_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap this -> thing in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_subject_object_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap subject -> object in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_subject_item_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap subject -> item in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_subject_topic_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap subject -> topic in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_subject_section_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap subject -> section in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_food_need_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap food -> need in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_food_space_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap food -> space in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_food_lunch_e	electrum12	479001600	1871100	0.0023	ok		Russian-pun swap food -> lunch in the twelve device words, every order, no pin; Electrum-12
+2	nl2_sw_moon_month_b	bip3912	479001600	119750400	0.1446	ok		Russian-pun swap moon -> month in the twelve device words, every order, no pin, moon the passphrase; BIP39-12
+2	nl2_sw_moon_lunar_b	bip3912	479001600	119750400	0.1446	ok		Russian-pun swap moon -> lunar in the twelve device words, every order, no pin, moon the passphrase; BIP39-12
+2	nl2_sw_black_day_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap black -> day in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_black_rain_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap black -> rain in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_black_number_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap black -> number in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_order_stable_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap order -> stable in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_vote_voice_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap vote -> voice in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_vote_choice_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap vote -> choice in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_vote_twelve_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap vote -> twelve in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_real_present_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap real -> present in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_one_unit_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap one -> unit in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_one_alone_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap one -> alone in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_this_that_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap this -> that in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_this_thing_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap this -> thing in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_subject_object_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap subject -> object in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_subject_item_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap subject -> item in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_subject_topic_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap subject -> topic in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_subject_section_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap subject -> section in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_food_need_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap food -> need in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_food_space_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap food -> space in the twelve device words, every order, no pin; BIP39-12
+2	nl2_sw_food_lunch_b	bip3912	479001600	29937600	0.0362	ok		Russian-pun swap food -> lunch in the twelve device words, every order, no pin; BIP39-12
+4	nl4_ec0_a15_zero	electrum13	10800	42	0.0000	ok	38	E-c0 the twelve device words pinned + one of the fifteen generator words at 13, zero unknown
+4	nl4_ea_slot13open	electrum13	10321920	40320	0.0000	ok		E-a slot 13 open with moon demoted to a required word (the open word may sit in any of the 7 free slots), 1 open
+4	nl4_eb_slot13_open2	electrum13	10569646080	41287680	0.0499	ok		E-b = D1[moon]: slot 13 any word + one more open, moon absent, 2 open
+4	nl4_ec_a15_voteopen	electrum13	158544691200	1238630400	1.4959	ok		E-c generator-faithful Electrum 2.0-2.6 text: the 13th word one of fifteen, vote released, 2 open; extension empty / moon
+5	nl5_s05_12perm_e	electrum12	479001600	1871100	0.0023	ok		bitcointalk digest S05 (non-BIP39 tokens), every order; Electrum-12 native, FREEWORDS (the exact strings are derived on the CPU by exact_strings.py)
+5	nl5_s06_12perm_e	electrum12	479001600	1871100	0.0023	ok		bitcointalk digest S06 (non-BIP39 tokens), every order; Electrum-12 native, FREEWORDS (the exact strings are derived on the CPU by exact_strings.py)
+5	nl5_s07_12perm_e	electrum12	479001600	1871100	0.0023	ok		bitcointalk digest S07 (non-BIP39 tokens), every order; Electrum-12 native, FREEWORDS (the exact strings are derived on the CPU by exact_strings.py)
+7	nl7_r2_st_e13	electrum13	82575360	322560	0.0004	ok		R2: subject, tower keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_se_e13	electrum13	82575360	322560	0.0004	ok		R2: subject, eye keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_sb_e13	electrum13	82575360	322560	0.0004	ok		R2: subject, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_sp_e13	electrum13	82575360	322560	0.0004	ok		R2: subject, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_sv_e13	electrum13	82575360	322560	0.0004	ok		R2: subject, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_sm_e13	electrum13	82575360	322560	0.0004	ok		R2: subject, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_te_e13	electrum13	82575360	322560	0.0004	ok		R2: tower, eye keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_tb_e13	electrum13	82575360	322560	0.0004	ok		R2: tower, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_tp_e13	electrum13	82575360	322560	0.0004	ok		R2: tower, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_tv_e13	electrum13	82575360	322560	0.0004	ok		R2: tower, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_tm_e13	electrum13	82575360	322560	0.0004	ok		R2: tower, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_eb_e13	electrum13	82575360	322560	0.0004	ok		R2: eye, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_ep_e13	electrum13	82575360	322560	0.0004	ok		R2: eye, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_ev_e13	electrum13	82575360	322560	0.0004	ok		R2: eye, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_em_e13	electrum13	82575360	322560	0.0004	ok		R2: eye, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_bp_e13	electrum13	82575360	322560	0.0004	ok		R2: black, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_bm_e13	electrum13	82575360	322560	0.0004	ok		R2: black, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_pv_e13	electrum13	82575360	322560	0.0004	ok		R2: pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_pm_e13	electrum13	82575360	322560	0.0004	ok		R2: pyramid, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_vm_e13	electrum13	82575360	322560	0.0004	ok		R2: vote, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_st_e12	electrum12	82575360	645120	0.0008	ok		R2: subject, tower keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_se_e12	electrum12	82575360	645120	0.0008	ok		R2: subject, eye keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_sb_e12	electrum12	82575360	645120	0.0008	ok		R2: subject, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_sp_e12	electrum12	82575360	645120	0.0008	ok		R2: subject, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_sv_e12	electrum12	82575360	645120	0.0008	ok		R2: subject, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_te_e12	electrum12	82575360	645120	0.0008	ok		R2: tower, eye keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_tb_e12	electrum12	82575360	645120	0.0008	ok		R2: tower, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_tp_e12	electrum12	82575360	645120	0.0008	ok		R2: tower, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_tv_e12	electrum12	82575360	645120	0.0008	ok		R2: tower, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_eb_e12	electrum12	82575360	645120	0.0008	ok		R2: eye, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_ep_e12	electrum12	82575360	645120	0.0008	ok		R2: eye, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_ev_e12	electrum12	82575360	645120	0.0008	ok		R2: eye, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_bp_e12	electrum12	82575360	645120	0.0008	ok		R2: black, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r2_pv_e12	electrum12	82575360	645120	0.0008	ok		R2: pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_slot10_list_p	bip3912	13271040	3317760	0.0040	ok		L4-07 slot-10 replacement list with black absent (model P only: Electrum has rv_drop_black), 1 open
+7	nl7_bxv_cross_e13	electrum13	238878720	933120	0.0011	ok		L4-07 black x vote pool cross (9 x 18 words at slots 10 and 12), 1 open; Electrum-13
+7	nl7_bxv_cross_e12	electrum12	238878720	1866240	0.0023	ok		L4-07 black x vote pool cross (9 x 18 words at slots 10 and 12), 1 open; Electrum-12, extension moon
+7	nl7_bxv_cross_p	bip3912	238878720	59719680	0.0721	ok		L4-07 black x vote pool cross (9 x 18 words at slots 10 and 12), 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r3_tep_e12	electrum12	743178240	5806080	0.0070	ok		R3: tower, eye, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r4_tmep_e13	electrum13	7431782400	29030400	0.0351	ok		R4: tower, moon, eye, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r2_st_p	bip3912	82575360	20643840	0.0249	ok		R2: subject, tower keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_se_p	bip3912	82575360	20643840	0.0249	ok		R2: subject, eye keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_sb_p	bip3912	82575360	20643840	0.0249	ok		R2: subject, black keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_sp_p	bip3912	82575360	20643840	0.0249	ok		R2: subject, pyramid keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_sv_p	bip3912	82575360	20643840	0.0249	ok		R2: subject, vote keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_te_p	bip3912	82575360	20643840	0.0249	ok		R2: tower, eye keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_tb_p	bip3912	82575360	20643840	0.0249	ok		R2: tower, black keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_tp_p	bip3912	82575360	20643840	0.0249	ok		R2: tower, pyramid keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_tv_p	bip3912	82575360	20643840	0.0249	ok		R2: tower, vote keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_eb_p	bip3912	82575360	20643840	0.0249	ok		R2: eye, black keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_ev_p	bip3912	82575360	20643840	0.0249	ok		R2: eye, vote keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_bp_p	bip3912	82575360	20643840	0.0249	ok		R2: black, pyramid keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r2_pv_p	bip3912	82575360	20643840	0.0249	ok		R2: pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r3_tep_p	bip3912	743178240	185794560	0.2244	ok		R3: tower, eye, pyramid keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r3_sbv_p	bip3912	743178240	185794560	0.2244	ok		R3: subject, black, vote keep their word and lose their slot, the other pins stay, 1 open; BIP39-12, passphrase MOON/moon/Moon
+7	nl7_r3_ste_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, tower, eye keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_stb_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, tower, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_stp_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, tower, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_stv_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, tower, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_stm_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, tower, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_seb_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, eye, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_sep_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, eye, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_sev_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, eye, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_sem_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, eye, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_sbp_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, black, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_sbv_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, black, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_sbm_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, black, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_spv_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_spm_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, pyramid, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_svm_e13	electrum13	743178240	2903040	0.0035	ok		R3: subject, vote, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_teb_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, eye, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tep_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, eye, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tev_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, eye, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tem_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, eye, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tbp_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, black, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tbv_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, black, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tbm_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, black, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tpv_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tpm_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, pyramid, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_tvm_e13	electrum13	743178240	2903040	0.0035	ok		R3: tower, vote, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_ebp_e13	electrum13	743178240	2903040	0.0035	ok		R3: eye, black, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_ebv_e13	electrum13	743178240	2903040	0.0035	ok		R3: eye, black, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_ebm_e13	electrum13	743178240	2903040	0.0035	ok		R3: eye, black, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_epv_e13	electrum13	743178240	2903040	0.0035	ok		R3: eye, pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_epm_e13	electrum13	743178240	2903040	0.0035	ok		R3: eye, pyramid, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_evm_e13	electrum13	743178240	2903040	0.0035	ok		R3: eye, vote, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_bpv_e13	electrum13	743178240	2903040	0.0035	ok		R3: black, pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_bpm_e13	electrum13	743178240	2903040	0.0035	ok		R3: black, pyramid, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_bvm_e13	electrum13	743178240	2903040	0.0035	ok		R3: black, vote, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_pvm_e13	electrum13	743178240	2903040	0.0035	ok		R3: pyramid, vote, moon keep their word and lose their slot, the other pins stay, 1 open; Electrum-13
+7	nl7_r3_ste_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, tower, eye keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_stb_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, tower, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_stp_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, tower, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_stv_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, tower, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_seb_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, eye, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_sep_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, eye, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_sev_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, eye, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_sbp_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, black, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_sbv_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, black, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_spv_e12	electrum12	743178240	5806080	0.0070	ok		R3: subject, pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_teb_e12	electrum12	743178240	5806080	0.0070	ok		R3: tower, eye, black keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_tev_e12	electrum12	743178240	5806080	0.0070	ok		R3: tower, eye, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_tbp_e12	electrum12	743178240	5806080	0.0070	ok		R3: tower, black, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_tbv_e12	electrum12	743178240	5806080	0.0070	ok		R3: tower, black, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_tpv_e12	electrum12	743178240	5806080	0.0070	ok		R3: tower, pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_ebp_e12	electrum12	743178240	5806080	0.0070	ok		R3: eye, black, pyramid keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_ebv_e12	electrum12	743178240	5806080	0.0070	ok		R3: eye, black, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_epv_e12	electrum12	743178240	5806080	0.0070	ok		R3: eye, pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_r3_bpv_e12	electrum12	743178240	5806080	0.0070	ok		R3: black, pyramid, vote keep their word and lose their slot, the other pins stay, 1 open; Electrum-12, extension moon
+7	nl7_seal_cross_e13	electrum13	1897758720	7413120	0.0090	ok		L4-04 4d seal union cross: every 9/11 pool word of the record (33 x 39 BIP39 words), 1 open; Electrum-13
+7	nl7_seal_cross_e12	electrum12	1897758720	14826240	0.0179	ok		L4-04 4d seal union cross: every 9/11 pool word of the record (33 x 39 BIP39 words), 1 open; Electrum-12, extension moon
+7	nl7_seal_cross_p	bip3912	1897758720	474439680	0.5730	ok		L4-04 4d seal union cross: every 9/11 pool word of the record (33 x 39 BIP39 words), 1 open; BIP39-12, passphrase MOON/moon/Moon
+8	nl8_b1_p1	bip3912	1474560	368640	0.0004	ok		path batch B1 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b1_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B1 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b2_p1	bip3912	1474560	368640	0.0004	ok		path batch B2 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b2_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B2 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b3_p1	bip3912	1474560	368640	0.0004	ok		path batch B3 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b3_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B3 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b4_p1	bip3912	1474560	368640	0.0004	ok		path batch B4 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b4_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B4 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b5_p1	bip3912	1474560	368640	0.0004	ok		path batch B5 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b5_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B5 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b5b_p1	bip3912	1474560	368640	0.0004	ok		path batch B5b on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b5b_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B5b on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b6_p1	bip3912	1474560	368640	0.0004	ok		path batch B6 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b6_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B6 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b7_p1	bip3912	1474560	368640	0.0004	ok		path batch B7 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b7_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B7 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b8_p1	bip3912	1474560	368640	0.0004	ok		path batch B8 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b8_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B8 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b9_p1	bip3912	1474560	368640	0.0004	ok		path batch B9 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b9_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B9 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_b10_p1	bip3912	1474560	368640	0.0004	ok		path batch B10 on the p1 shape (pins + MOON passphrase), 1 open
+8	nl8_b10_moonword_p	bip3912	10321920	645120	0.0008	ok		path batch B10 on the c01a shape (moon a word, no passphrase), 1 open
+8	nl8_e1_tight_e13	electrum13	1474560	5760	0.0000	ok		path batch E1 on the tight shape, 1 open; Electrum-13
+8	nl8_e1_tight_e12	electrum12	1474560	11520	0.0000	ok		path batch E1 on the tight shape, 1 open; Electrum-12, extension moon
+8	nl8_e1_ea_e13	electrum13	10321920	40320	0.0000	ok		path batch E1 on E-a (slot 13 open, moon a required word), 1 open
+8	nl8_e2_tight_e13	electrum13	1474560	5760	0.0000	ok		path batch E2 on the tight shape, 1 open; Electrum-13
+8	nl8_e2_tight_e12	electrum12	1474560	11520	0.0000	ok		path batch E2 on the tight shape, 1 open; Electrum-12, extension moon
+8	nl8_e2_ea_e13	electrum13	10321920	40320	0.0000	ok		path batch E2 on E-a (slot 13 open, moon a required word), 1 open
+8	nl8_x01_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x01 (m/44'/0'/0'/0/14 .. m/44'/0'/0'/0/23) on the p1 shape, 1 open
+8	nl8_x01_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x01 (m/44'/0'/0'/0/14 .. m/44'/0'/0'/0/23) on the c01a shape, 1 open
+8	nl8_x02_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x02 (m/44'/0'/0'/0/24 .. m/44'/0'/0'/0/32) on the p1 shape, 1 open
+8	nl8_x02_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x02 (m/44'/0'/0'/0/24 .. m/44'/0'/0'/0/32) on the c01a shape, 1 open
+8	nl8_x03_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x03 (m/44'/0'/0'/0/33 .. m/44'/0'/0'/0/40) on the p1 shape, 1 open
+8	nl8_x03_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x03 (m/44'/0'/0'/0/33 .. m/44'/0'/0'/0/40) on the c01a shape, 1 open
+8	nl8_x04_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x04 (m/44'/0'/0'/0/41 .. m/44'/0'/0'/0/49) on the p1 shape, 1 open
+8	nl8_x04_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x04 (m/44'/0'/0'/0/41 .. m/44'/0'/0'/0/49) on the c01a shape, 1 open
+8	nl8_x05_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x05 (m/44'/0'/0'/0/51 .. m/44'/0'/0'/0/58) on the p1 shape, 1 open
+8	nl8_x05_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x05 (m/44'/0'/0'/0/51 .. m/44'/0'/0'/0/58) on the c01a shape, 1 open
+8	nl8_x06_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x06 (m/44'/0'/0'/0/59 .. m/44'/0'/0'/0/66) on the p1 shape, 1 open
+8	nl8_x06_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x06 (m/44'/0'/0'/0/59 .. m/44'/0'/0'/0/66) on the c01a shape, 1 open
+8	nl8_x07_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x07 (m/44'/0'/0'/0/67 .. m/44'/0'/0'/0/74) on the p1 shape, 1 open
+8	nl8_x07_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x07 (m/44'/0'/0'/0/67 .. m/44'/0'/0'/0/74) on the c01a shape, 1 open
+8	nl8_x08_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x08 (m/44'/0'/0'/0/75 .. m/44'/0'/0'/0/82) on the p1 shape, 1 open
+8	nl8_x08_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x08 (m/44'/0'/0'/0/75 .. m/44'/0'/0'/0/82) on the c01a shape, 1 open
+8	nl8_x09_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x09 (m/44'/0'/0'/0/83 .. m/44'/0'/0'/0/90) on the p1 shape, 1 open
+8	nl8_x09_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x09 (m/44'/0'/0'/0/83 .. m/44'/0'/0'/0/90) on the c01a shape, 1 open
+8	nl8_x10_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x10 (m/44'/0'/0'/0/91 .. m/44'/0'/0'/0/98) on the p1 shape, 1 open
+8	nl8_x10_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x10 (m/44'/0'/0'/0/91 .. m/44'/0'/0'/0/98) on the c01a shape, 1 open
+8	nl8_x11_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x11 (m/44'/0'/0'/1/5 .. m/44'/0'/0'/1/16) on the p1 shape, 1 open
+8	nl8_x11_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x11 (m/44'/0'/0'/1/5 .. m/44'/0'/0'/1/16) on the c01a shape, 1 open
+8	nl8_x12_p1	bip3912	1474560	368640	0.0004	ok		extra path batch x12 (m/44'/0'/0'/1/17 .. m/44'/0'/18'/0/0) on the p1 shape, 1 open
+8	nl8_x12_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch x12 (m/44'/0'/0'/1/17 .. m/44'/0'/18'/0/0) on the c01a shape, 1 open
+8	nl8_y01_p1	bip3912	1474560	368640	0.0004	ok		extra path batch y01 (m/3 .. m/0'/1/2) on the p1 shape, 1 open
+8	nl8_y01_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch y01 (m/3 .. m/0'/1/2) on the c01a shape, 1 open
+8	nl8_y02_p1	bip3912	1474560	368640	0.0004	ok		extra path batch y02 (m/0'/1/3 .. m/0'/1/21) on the p1 shape, 1 open
+8	nl8_y02_moonword_p	bip3912	10321920	645120	0.0008	ok		extra path batch y02 (m/0'/1/3 .. m/0'/1/21) on the c01a shape, 1 open
+10	nl10_fl11_order_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[pyramid]: the floater 'order' sits at slot 11, 2 open
+10	nl10_fl11_one_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[pyramid]: the floater 'one' sits at slot 11, 2 open
+10	nl10_fl11_food_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[pyramid]: the floater 'food' sits at slot 11, 2 open
+10	nl10_fl11_this_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[pyramid]: the floater 'this' sits at slot 11, 2 open
+10	nl10_fl11_real_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[pyramid]: the floater 'real' sits at slot 11, 2 open
+10	nl10_fl9_order_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[eye]: the floater 'order' sits at slot 9, 2 open
+10	nl10_fl9_one_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[eye]: the floater 'one' sits at slot 9, 2 open
+10	nl10_fl9_food_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[eye]: the floater 'food' sits at slot 9, 2 open
+10	nl10_fl9_this_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[eye]: the floater 'this' sits at slot 9, 2 open
+10	nl10_fl9_real_p	bip3912	1509949440	377487360	0.4559	ok		model-P residue of D1[eye]: the floater 'real' sits at slot 9, 2 open

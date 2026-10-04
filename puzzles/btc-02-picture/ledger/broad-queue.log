@@ -1,0 +1,46 @@
+QUEUE START 2026-09-30T09:51:49-04:00 signoff: the operator 2026-09-30, in chat: "youre good to run them" = the 16 configs listed in HANDOFF-broad-2026-09-30.md (harness/templates/broad-2026-09-30; h02 and h03 excluded)
+RUN c01a_moonword_breathe START 2026-09-30T09:51:49-04:00
+RUN c01a_moonword_breathe NO_MATCH 2026-09-30T09:53:22-04:00 rc=0
+RUN c04b_dateidx_pool_modelP START 2026-09-30T09:53:22-04:00
+RUN c04b_dateidx_pool_modelP NO_MATCH 2026-09-30T09:54:41-04:00 rc=0
+RUN c09_rbwsb_breathe13 START 2026-09-30T09:54:41-04:00
+RUN c09_rbwsb_breathe13 NO_MATCH 2026-09-30T09:55:11-04:00 rc=0
+RUN c08_hzeattar_welcome_matrix START 2026-09-30T09:55:11-04:00
+RUN c08_hzeattar_welcome_matrix NO_MATCH 2026-09-30T09:55:15-04:00 rc=0
+RUN h01_nitinkansal_skeleton START 2026-09-30T09:55:15-04:00
+RUN h01_nitinkansal_skeleton NO_MATCH 2026-09-30T09:55:30-04:00 rc=0
+RUN c03_void_cuda_set12 START 2026-09-30T09:55:30-04:00
+RUN c03_void_cuda_set12 NO_MATCH 2026-09-30T09:59:38-04:00 rc=0
+RUN c06a_moonword_datepass START 2026-09-30T09:59:38-04:00
+RUN c06a_moonword_datepass NO_MATCH 2026-09-30T10:04:48-04:00 rc=0
+RUN c01b_moonword_breathe_blackfree START 2026-09-30T10:04:48-04:00
+RUN c01b_moonword_breathe_blackfree NO_MATCH 2026-09-30T10:16:11-04:00 rc=0
+RUN c04a_hzeattar_dateidx_12perm START 2026-09-30T10:16:11-04:00
+RUN c04a_hzeattar_dateidx_12perm NO_MATCH 2026-09-30T10:40:27-04:00 rc=0
+RUN c01e_e12_ext_tokens START 2026-09-30T10:40:27-04:00
+RESUME START 2026-09-30T11:53:25-04:00 at c01e_e12_ext_tokens signoff: the operator 2026-09-30, in chat: "youre good to run them" = the 16 configs listed in HANDOFF-broad-2026-09-30.md (harness/templates/broad-2026-09-30; h02 and h03 excluded)
+RUN c01e_e12_ext_tokens START 2026-09-30T11:53:25-04:00
+RUN c01e_e12_ext_tokens NOT_CLEAN 2026-09-30T11:53:25-04:00 rc=2 (2 FOUND, 3 refused, 4 VOID, 5 STOPPED, 64 usage) - see scratch/btc02-gpu/broad/c01e_e12_ext_tokens-run.log
+QUEUE STOPPED 2026-09-30T11:53:25-04:00 at c01e_e12_ext_tokens
+RESUME START 2026-09-30T11:54:31-04:00 at c01e_e12_ext_tokens signoff: the operator 2026-09-30, in chat: "youre good to run them" = the 16 configs listed in HANDOFF-broad-2026-09-30.md (harness/templates/broad-2026-09-30; h02 and h03 excluded)
+RUN c01e_e12_ext_tokens START 2026-09-30T11:54:31-04:00
+RUN c01e_e12_ext_tokens NO_MATCH 2026-09-30T12:01:35-04:00 rc=0
+RUN c02a_e3_ext_tokens START 2026-09-30T12:01:35-04:00
+RUN c02a_e3_ext_tokens NO_MATCH 2026-09-30T12:16:23-04:00 rc=0
+RUN c05_elliptic_curwa_sum60 START 2026-09-30T12:16:23-04:00
+RUN c05_elliptic_curwa_sum60 NO_MATCH 2026-09-30T12:39:28-04:00 rc=0
+RUN c01c_moonword_breathe_objnames START 2026-09-30T12:39:28-04:00
+RUN c01c_moonword_breathe_objnames NO_MATCH 2026-09-30T13:24:35-04:00 rc=0
+RUN h04_e12_two_token_ext START 2026-09-30T13:24:35-04:00
+RUN h04_e12_two_token_ext NO_MATCH 2026-09-30T15:00:45-04:00 rc=0
+TIER1 DONE 2026-09-30T15:00:45-04:00 all 14 cheap runs NO_MATCH (verified)
+RUN c02b_e4_ext_tokens START 2026-09-30T15:00:45-04:00
+RUN c02b_e4_ext_tokens NOT_CLEAN 2026-09-30T15:00:50-04:00 rc=3 (2 FOUND, 3 refused, 4 VOID, 5 STOPPED, 64 usage) - see scratch/btc02-gpu/broad/c02b_e4_ext_tokens-run.log
+QUEUE STOPPED 2026-09-30T15:00:50-04:00 at c02b_e4_ext_tokens
+TIER2 RESTART 2026-09-30T15:02:55-04:00 (c02b refused by the cost guard at 15:00:50; waits for <=1 other search; --max-hours 10) signoff: the operator 2026-09-30, in chat: "youre good to run them" = the 16 configs listed in HANDOFF-broad-2026-09-30.md (harness/templates/broad-2026-09-30; h02 and h03 excluded)
+TIER2 RESTART 2026-09-30T15:03:59-04:00 (c02b refused by the cost guard at 15:00:50; waits for <=1 other search; --max-hours 10) signoff: the operator 2026-09-30, in chat: "youre good to run them" = the 16 configs listed in HANDOFF-broad-2026-09-30.md (harness/templates/broad-2026-09-30; h02 and h03 excluded)
+TIER2 UNIT STOPPED 2026-09-30T15:58:20-04:00 (was only waiting; replaced by btc02-combos-tier2, which runs the 7 combos first, then c02b and c06b)
+RUN c02b_e4_ext_tokens START 2026-10-01T10:26:49-04:00 (resume from 0 saved blocks, max-hours 10; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN c02b_e4_ext_tokens NO_MATCH 2026-10-01T12:19:14-04:00 rc=0
+RUN c06b_e12_date_ext START 2026-10-01T12:19:14-04:00 (resume from 0 saved blocks, max-hours 10; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+STOPPED 2026-10-01T13:41:29-04:00 by operator request ("stop whatever you were running and do a handoff"): unit stopped, checkpoint kept; resume = scratch/btc02-gpu/resume-stopped.sh

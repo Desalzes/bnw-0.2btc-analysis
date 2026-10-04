@@ -1,0 +1,121 @@
+# L5-06 path batches: <= 8 paths per config (engine limit, briefing 8.1). Both key forms are checked by the engine.
+# Status key: RAN = in the record (briefing 2.6 / Q21 ld74 / stage 2d, tight shapes only unless noted); NEW = never run.
+# Cost model (inference from the record's own pricing of E4 at 40 paths): each extra path costs about 0.2 x one PBKDF2 pass.
+
+# --- BIP39-style structures (N12, N13, NP; also P and any valid-BIP39 shape) ---
+# B0 (RAN on tight/two-open, listed for completeness)
+#   m/44'/0'/0'/0/0  m/44'/0'/0'/0/1  m/44'/0'/0'/0/10  m/0'/0/0  m/0/0
+# B1  receive index = numbers in the picture (account 0)                         NEW
+m/44'/0'/0'/0/11
+m/44'/0'/0'/0/12
+m/44'/0'/0'/0/13
+m/44'/0'/0'/0/20
+m/44'/0'/0'/0/21
+m/44'/0'/0'/0/44
+m/44'/0'/0'/0/525
+m/44'/0'/0'/0/1103
+# B2                                                                             NEW
+m/44'/0'/0'/0/1776
+m/44'/0'/0'/0/1865
+m/44'/0'/0'/0/2000
+m/44'/0'/0'/0/2020
+m/44'/0'/0'/0/30
+m/44'/0'/0'/0/50
+m/44'/0'/0'/0/99
+m/44'/0'/0'/0/100
+# B3  change chain (RAN: 0-3 and 19 on tight shapes)                             NEW
+m/44'/0'/0'/1/4
+m/44'/0'/0'/1/10
+m/44'/0'/0'/1/11
+m/44'/0'/0'/1/12
+m/44'/0'/0'/1/13
+m/44'/0'/0'/1/20
+m/44'/0'/0'/1/21
+m/44'/0'/0'/1/44
+# B4  account number n, receive 0 (RAN: n=0,1 on tight shapes; h03 'accounts 1..8' priced, not run; the Trezor classic web wallet offers legacy accounts up to 9, record 2.3)   NEW
+m/44'/0'/2'/0/0
+m/44'/0'/3'/0/0
+m/44'/0'/4'/0/0
+m/44'/0'/5'/0/0
+m/44'/0'/6'/0/0
+m/44'/0'/7'/0/0
+m/44'/0'/8'/0/0
+m/44'/0'/9'/0/0
+# B5  account numbers taken from the picture                                    NEW
+m/44'/0'/10'/0/0
+m/44'/0'/11'/0/0
+m/44'/0'/12'/0/0
+m/44'/0'/13'/0/0
+m/44'/0'/19'/0/0
+m/44'/0'/20'/0/0
+m/44'/0'/21'/0/0
+m/44'/0'/44'/0/0
+# B5b                                                                           NEW
+m/44'/0'/1776'/0/0
+m/44'/0'/1865'/0/0
+m/44'/0'/2000'/0/0
+m/44'/0'/2020'/0/0
+# B6  purpose / address-type mismatches (Ledger Live scans 'legacy_on_segwit' = P2PKH at purpose 49: derivation.js:141) NEW
+m/49'/0'/0'/0/0
+m/84'/0'/0'/0/0
+m/86'/0'/0'/0/0
+m/45'/0/0/0
+m/48'/0'/0'/1'/0/0
+m/0'/0'/0'
+m/0'/0'/1'
+m/0'/1'/0'
+# B7  coin type / hardened-leaf variants that still print '1...'                  NEW
+m/44'/145'/0'/0/0
+m/44'/236'/0'/0/0
+m/44'/1'/0'/0/0
+m/44'/0'/0'/0'/0'
+m/44'/0'/0'/0/0'
+m/44'/0'/0'/1'/0'
+# B8  non-BIP44 BIP32 (RAN: m/0/0, m/0'/0/0 only)                                NEW
+m/0/1
+m/0/2
+m/0/3
+m/0/10
+m/0/13
+m/0/21
+m/1/1
+m/1/10
+# B9                                                                             NEW
+m/0'/0/1
+m/0'/0/2
+m/0'/0/3
+m/0'/0/10
+m/0'/0/13
+m/0'/0/21
+m/0'/1/0
+m/0'/1/1
+# B10 single-level and the master key itself (L5-15)                              NEW
+m
+m/0
+m/1
+m/2
+m/10
+m/13
+m/21
+m/44
+
+# --- Electrum native structures (E13, E12, E13a) ---  (m/0/{0,1,2}, m/1/0 RAN; ld74: m/0/3..9 and m/1/1 RAN on tight shapes)
+# Electrum shows gap limit 20 receiving / 6 change after restore (electrum/wallet.py:1677, :206)
+# E1                                                                             NEW (also on the two-open tiers)
+m/0/10
+m/0/11
+m/0/12
+m/0/13
+m/0/14
+m/0/15
+m/0/16
+m/0/17
+# E2                                                                             NEW
+m/0/18
+m/0/19
+m/0/20
+m/0/21
+m/1/2
+m/1/3
+m/1/4
+m/1/5

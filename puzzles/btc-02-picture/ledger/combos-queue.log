@@ -1,0 +1,18 @@
+CHAIN START 2026-09-30T15:58:20-04:00: waiting for btc02-readings to finish; signoff: the operator 2026-09-30, in chat: "yes" (to queueing the first seven combination configs right after the readings, ahead of c02b and c06b) = 7 configs in harness/templates/combos-2026-09-30 (cb_p_open2 excluded)
+READINGS ENDED 2026-09-30T18:02:21-04:00: QUEUE STOPPED 2026-09-30T18:02:04-04:00 at rd_this_section1_p
+RUN cb_p_s9 START 2026-09-30T18:02:21-04:00 (other searches running: 4)
+RUN cb_p_s9 NO_MATCH 2026-09-30T18:02:34-04:00 rc=0
+RUN cb_p_open1 START 2026-09-30T18:02:34-04:00 (other searches running: 4)
+RUN cb_p_open1 NO_MATCH 2026-09-30T18:07:18-04:00 rc=0
+RUN cb_e13_s9_secondfree START 2026-09-30T18:07:18-04:00 (other searches running: 4)
+RUN cb_e13_s9_secondfree NO_MATCH 2026-09-30T18:12:14-04:00 rc=0
+RUN cb_e12_s9_slot2open START 2026-09-30T18:12:14-04:00 (other searches running: 4)
+RUN cb_e12_s9_slot2open NO_MATCH 2026-09-30T18:17:09-04:00 rc=0
+RUN cb_p_s9_slot2open START 2026-09-30T18:17:09-04:00 (other searches running: 4)
+STOPPED 2026-09-30T18:57:58-04:00 by operator request via another session ("can you stop them all?"): unit stopped, checkpoint kept
+RUN cb_p_s9_slot2open START 2026-10-01T06:07:51-04:00 (resume from 22 saved blocks, max-hours 4; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN cb_p_s9_slot2open NO_MATCH 2026-10-01T06:25:12-04:00 rc=0
+RUN cb_e13_open2 START 2026-10-01T06:48:15-04:00 (resume from 0 saved blocks, max-hours 4; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN cb_e13_open2 NO_MATCH 2026-10-01T07:10:39-04:00 rc=0
+RUN cb_e12_open2 START 2026-10-01T07:10:39-04:00 (resume from 0 saved blocks, max-hours 4; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN cb_e12_open2 NO_MATCH 2026-10-01T07:33:03-04:00 rc=0

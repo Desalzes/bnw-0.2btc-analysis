@@ -1,0 +1,612 @@
+nr1_n0_zero_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_raw12.conf	0.0011
+nr1_n1_moon13_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_raw13.conf	0.0018
+nr1_n2_slot13open_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_raw13.conf	0.0125
+nr1_n3_p_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_raw12.conf	0.0071
+nr6_t0_weak_raw12	templates/newleads-raw-2026-10-01/nr6_t0_weak_raw12.conf	0.0642
+nr6_t0_strong_e12	templates/newleads-raw-2026-10-01/nr6_t0_strong_e12.conf	0.0000
+nr6_t0_weak_e12	templates/newleads-raw-2026-10-01/nr6_t0_weak_e12.conf	0.0001
+nr9_t3d_tokslot_raw13	templates/newleads-raw-2026-10-01/nr9_t3d_tokslot_raw13.conf	0.0000
+nr9_t3d_tokslot_raw12	templates/newleads-raw-2026-10-01/nr9_t3d_tokslot_raw12.conf	0.0002
+nr9_t3d_tok13_raw13	templates/newleads-raw-2026-10-01/nr9_t3d_tok13_raw13.conf	0.0000
+nr9_t3d_tokslot_e13	templates/newleads-raw-2026-10-01/nr9_t3d_tokslot_e13.conf	0.0000
+nr9_t3d_tokslot_e12	templates/newleads-raw-2026-10-01/nr9_t3d_tokslot_e12.conf	0.0000
+nl3_g2_minus1_b	templates/newleads-2026-10-01/nl3_g2_minus1_b.conf	0.0000
+nl3_g2_minus1_e	templates/newleads-2026-10-01/nl3_g2_minus1_e.conf	0.0000
+nl3_g2_minus1_e13	templates/newleads-2026-10-01/nl3_g2_minus1_e13.conf	0.0000
+nl3_c1_moon1_e13	templates/newleads-2026-10-01/nl3_c1_moon1_e13.conf	0.0000
+nl3_g1_zero_based_e12	templates/newleads-2026-10-01/nl3_g1_zero_based_e12.conf	0.0001
+nl3_g1_zero_based_p	templates/newleads-2026-10-01/nl3_g1_zero_based_p.conf	0.0031
+nl3_c3_halved_b	templates/newleads-2026-10-01/nl3_c3_halved_b.conf	0.0000
+nl3_c3_halved_e	templates/newleads-2026-10-01/nl3_c3_halved_e.conf	0.0000
+nl3_c2_lower_e	templates/newleads-2026-10-01/nl3_c2_lower_e.conf	0.0000
+nl3_c2_upper_e	templates/newleads-2026-10-01/nl3_c2_upper_e.conf	0.0000
+nl3_c2b_seal45_b	templates/newleads-2026-10-01/nl3_c2b_seal45_b.conf	0.0000
+nl3_c2b_seal45_e	templates/newleads-2026-10-01/nl3_c2b_seal45_e.conf	0.0000
+nl3_ped_lines_b	templates/newleads-2026-10-01/nl3_ped_lines_b.conf	0.0000
+nl3_ped_lines_e13	templates/newleads-2026-10-01/nl3_ped_lines_e13.conf	0.0000
+nl3_g3b_rev0_e12	templates/newleads-2026-10-01/nl3_g3b_rev0_e12.conf	0.0001
+nl3_g3b_rev0_p	templates/newleads-2026-10-01/nl3_g3b_rev0_p.conf	0.0031
+nl3_g4_indices_e13	templates/newleads-2026-10-01/nl3_g4_indices_e13.conf	0.0001
+nl3_g4_indices_e12	templates/newleads-2026-10-01/nl3_g4_indices_e12.conf	0.0002
+nl3_g4_indices_p	templates/newleads-2026-10-01/nl3_g4_indices_p.conf	0.0071
+nl3_dup_hands_e12	templates/newleads-2026-10-01/nl3_dup_hands_e12.conf	0.0000
+nl3_dup_hands_p	templates/newleads-2026-10-01/nl3_dup_hands_p.conf	0.0004
+nl2_z_d12_e12	templates/newleads-2026-10-01/nl2_z_d12_e12.conf	0.0045
+nl2_z_u12t_e12	templates/newleads-2026-10-01/nl2_z_u12t_e12.conf	0.0045
+nl2_z_u13_e13	templates/newleads-2026-10-01/nl2_z_u13_e13.conf	0.0294
+nl2_zm_subject_e	templates/newleads-2026-10-01/nl2_zm_subject_e.conf	0.0023
+nl2_zm_tower_e	templates/newleads-2026-10-01/nl2_zm_tower_e.conf	0.0023
+nl2_zm_eye_e	templates/newleads-2026-10-01/nl2_zm_eye_e.conf	0.0023
+nl2_zm_pyramid_e	templates/newleads-2026-10-01/nl2_zm_pyramid_e.conf	0.0023
+nl2_zm_black_e	templates/newleads-2026-10-01/nl2_zm_black_e.conf	0.0023
+nl2_zm_vote_e	templates/newleads-2026-10-01/nl2_zm_vote_e.conf	0.0023
+nl2_zm_food_e	templates/newleads-2026-10-01/nl2_zm_food_e.conf	0.0023
+nl2_zm_this_e	templates/newleads-2026-10-01/nl2_zm_this_e.conf	0.0023
+nl2_zm_real_e	templates/newleads-2026-10-01/nl2_zm_real_e.conf	0.0023
+nl2_zm_one_e	templates/newleads-2026-10-01/nl2_zm_one_e.conf	0.0023
+nl2_zm_order_e	templates/newleads-2026-10-01/nl2_zm_order_e.conf	0.0023
+nl2_sw_moon_month_e	templates/newleads-2026-10-01/nl2_sw_moon_month_e.conf	0.0045
+nl2_sw_moon_lunar_e	templates/newleads-2026-10-01/nl2_sw_moon_lunar_e.conf	0.0045
+nl2_sw_black_day_e	templates/newleads-2026-10-01/nl2_sw_black_day_e.conf	0.0023
+nl2_sw_black_rain_e	templates/newleads-2026-10-01/nl2_sw_black_rain_e.conf	0.0023
+nl2_sw_black_number_e	templates/newleads-2026-10-01/nl2_sw_black_number_e.conf	0.0023
+nl2_sw_order_stable_e	templates/newleads-2026-10-01/nl2_sw_order_stable_e.conf	0.0023
+nl2_sw_vote_voice_e	templates/newleads-2026-10-01/nl2_sw_vote_voice_e.conf	0.0023
+nl2_sw_vote_choice_e	templates/newleads-2026-10-01/nl2_sw_vote_choice_e.conf	0.0023
+nl2_sw_vote_twelve_e	templates/newleads-2026-10-01/nl2_sw_vote_twelve_e.conf	0.0023
+nl2_sw_real_present_e	templates/newleads-2026-10-01/nl2_sw_real_present_e.conf	0.0023
+nl2_sw_one_unit_e	templates/newleads-2026-10-01/nl2_sw_one_unit_e.conf	0.0023
+nl2_sw_one_alone_e	templates/newleads-2026-10-01/nl2_sw_one_alone_e.conf	0.0023
+nl2_sw_this_that_e	templates/newleads-2026-10-01/nl2_sw_this_that_e.conf	0.0023
+nl2_sw_this_thing_e	templates/newleads-2026-10-01/nl2_sw_this_thing_e.conf	0.0023
+nl2_sw_subject_object_e	templates/newleads-2026-10-01/nl2_sw_subject_object_e.conf	0.0023
+nl2_sw_subject_item_e	templates/newleads-2026-10-01/nl2_sw_subject_item_e.conf	0.0023
+nl2_sw_subject_topic_e	templates/newleads-2026-10-01/nl2_sw_subject_topic_e.conf	0.0023
+nl2_sw_subject_section_e	templates/newleads-2026-10-01/nl2_sw_subject_section_e.conf	0.0023
+nl2_sw_food_need_e	templates/newleads-2026-10-01/nl2_sw_food_need_e.conf	0.0023
+nl2_sw_food_space_e	templates/newleads-2026-10-01/nl2_sw_food_space_e.conf	0.0023
+nl2_sw_food_lunch_e	templates/newleads-2026-10-01/nl2_sw_food_lunch_e.conf	0.0023
+nl4_ec0_a15_zero	templates/newleads-2026-10-01/nl4_ec0_a15_zero.conf	0.0000
+nl4_ea_slot13open	templates/newleads-2026-10-01/nl4_ea_slot13open.conf	0.0000
+nl4_eb_slot13_open2	templates/newleads-2026-10-01/nl4_eb_slot13_open2.conf	0.0499
+nl5_s05_12perm_e	templates/newleads-2026-10-01/nl5_s05_12perm_e.conf	0.0023
+nl5_s06_12perm_e	templates/newleads-2026-10-01/nl5_s06_12perm_e.conf	0.0023
+nl5_s07_12perm_e	templates/newleads-2026-10-01/nl5_s07_12perm_e.conf	0.0023
+nl7_r2_st_e13	templates/newleads-2026-10-01/nl7_r2_st_e13.conf	0.0004
+nl7_r2_se_e13	templates/newleads-2026-10-01/nl7_r2_se_e13.conf	0.0004
+nl7_r2_sb_e13	templates/newleads-2026-10-01/nl7_r2_sb_e13.conf	0.0004
+nl7_r2_sp_e13	templates/newleads-2026-10-01/nl7_r2_sp_e13.conf	0.0004
+nl7_r2_sv_e13	templates/newleads-2026-10-01/nl7_r2_sv_e13.conf	0.0004
+nl7_r2_sm_e13	templates/newleads-2026-10-01/nl7_r2_sm_e13.conf	0.0004
+nl7_r2_te_e13	templates/newleads-2026-10-01/nl7_r2_te_e13.conf	0.0004
+nl7_r2_tb_e13	templates/newleads-2026-10-01/nl7_r2_tb_e13.conf	0.0004
+nl7_r2_tp_e13	templates/newleads-2026-10-01/nl7_r2_tp_e13.conf	0.0004
+nl7_r2_tv_e13	templates/newleads-2026-10-01/nl7_r2_tv_e13.conf	0.0004
+nl7_r2_tm_e13	templates/newleads-2026-10-01/nl7_r2_tm_e13.conf	0.0004
+nl7_r2_eb_e13	templates/newleads-2026-10-01/nl7_r2_eb_e13.conf	0.0004
+nl7_r2_ep_e13	templates/newleads-2026-10-01/nl7_r2_ep_e13.conf	0.0004
+nl7_r2_ev_e13	templates/newleads-2026-10-01/nl7_r2_ev_e13.conf	0.0004
+nl7_r2_em_e13	templates/newleads-2026-10-01/nl7_r2_em_e13.conf	0.0004
+nl7_r2_bp_e13	templates/newleads-2026-10-01/nl7_r2_bp_e13.conf	0.0004
+nl7_r2_bm_e13	templates/newleads-2026-10-01/nl7_r2_bm_e13.conf	0.0004
+nl7_r2_pv_e13	templates/newleads-2026-10-01/nl7_r2_pv_e13.conf	0.0004
+nl7_r2_pm_e13	templates/newleads-2026-10-01/nl7_r2_pm_e13.conf	0.0004
+nl7_r2_vm_e13	templates/newleads-2026-10-01/nl7_r2_vm_e13.conf	0.0004
+nl7_r2_st_e12	templates/newleads-2026-10-01/nl7_r2_st_e12.conf	0.0008
+nl7_r2_se_e12	templates/newleads-2026-10-01/nl7_r2_se_e12.conf	0.0008
+nl7_r2_sb_e12	templates/newleads-2026-10-01/nl7_r2_sb_e12.conf	0.0008
+nl7_r2_sp_e12	templates/newleads-2026-10-01/nl7_r2_sp_e12.conf	0.0008
+nl7_r2_sv_e12	templates/newleads-2026-10-01/nl7_r2_sv_e12.conf	0.0008
+nl7_r2_te_e12	templates/newleads-2026-10-01/nl7_r2_te_e12.conf	0.0008
+nl7_r2_tb_e12	templates/newleads-2026-10-01/nl7_r2_tb_e12.conf	0.0008
+nl7_r2_tp_e12	templates/newleads-2026-10-01/nl7_r2_tp_e12.conf	0.0008
+nl7_r2_tv_e12	templates/newleads-2026-10-01/nl7_r2_tv_e12.conf	0.0008
+nl7_r2_eb_e12	templates/newleads-2026-10-01/nl7_r2_eb_e12.conf	0.0008
+nl7_r2_ep_e12	templates/newleads-2026-10-01/nl7_r2_ep_e12.conf	0.0008
+nl7_r2_ev_e12	templates/newleads-2026-10-01/nl7_r2_ev_e12.conf	0.0008
+nl7_r2_bp_e12	templates/newleads-2026-10-01/nl7_r2_bp_e12.conf	0.0008
+nl7_r2_pv_e12	templates/newleads-2026-10-01/nl7_r2_pv_e12.conf	0.0008
+nl7_slot10_list_p	templates/newleads-2026-10-01/nl7_slot10_list_p.conf	0.0040
+nl7_bxv_cross_e13	templates/newleads-2026-10-01/nl7_bxv_cross_e13.conf	0.0011
+nl7_bxv_cross_e12	templates/newleads-2026-10-01/nl7_bxv_cross_e12.conf	0.0023
+nl7_r3_tep_e12	templates/newleads-2026-10-01/nl7_r3_tep_e12.conf	0.0070
+nl7_r4_tmep_e13	templates/newleads-2026-10-01/nl7_r4_tmep_e13.conf	0.0351
+nl8_b1_p1	templates/newleads-2026-10-01/nl8_b1_p1.conf	0.0004
+nl8_b1_moonword_p	templates/newleads-2026-10-01/nl8_b1_moonword_p.conf	0.0008
+nl8_b2_p1	templates/newleads-2026-10-01/nl8_b2_p1.conf	0.0004
+nl8_b2_moonword_p	templates/newleads-2026-10-01/nl8_b2_moonword_p.conf	0.0008
+nl8_b3_p1	templates/newleads-2026-10-01/nl8_b3_p1.conf	0.0004
+nl8_b3_moonword_p	templates/newleads-2026-10-01/nl8_b3_moonword_p.conf	0.0008
+nl8_b4_p1	templates/newleads-2026-10-01/nl8_b4_p1.conf	0.0004
+nl8_b4_moonword_p	templates/newleads-2026-10-01/nl8_b4_moonword_p.conf	0.0008
+nl8_b5_p1	templates/newleads-2026-10-01/nl8_b5_p1.conf	0.0004
+nl8_b5_moonword_p	templates/newleads-2026-10-01/nl8_b5_moonword_p.conf	0.0008
+nl8_b5b_p1	templates/newleads-2026-10-01/nl8_b5b_p1.conf	0.0004
+nl8_b5b_moonword_p	templates/newleads-2026-10-01/nl8_b5b_moonword_p.conf	0.0008
+nl8_b6_p1	templates/newleads-2026-10-01/nl8_b6_p1.conf	0.0004
+nl8_b6_moonword_p	templates/newleads-2026-10-01/nl8_b6_moonword_p.conf	0.0008
+nl8_b7_p1	templates/newleads-2026-10-01/nl8_b7_p1.conf	0.0004
+nl8_b7_moonword_p	templates/newleads-2026-10-01/nl8_b7_moonword_p.conf	0.0008
+nl8_b8_p1	templates/newleads-2026-10-01/nl8_b8_p1.conf	0.0004
+nl8_b8_moonword_p	templates/newleads-2026-10-01/nl8_b8_moonword_p.conf	0.0008
+nl8_b9_p1	templates/newleads-2026-10-01/nl8_b9_p1.conf	0.0004
+nl8_b9_moonword_p	templates/newleads-2026-10-01/nl8_b9_moonword_p.conf	0.0008
+nl8_b10_p1	templates/newleads-2026-10-01/nl8_b10_p1.conf	0.0004
+nl8_b10_moonword_p	templates/newleads-2026-10-01/nl8_b10_moonword_p.conf	0.0008
+nl8_e1_tight_e13	templates/newleads-2026-10-01/nl8_e1_tight_e13.conf	0.0000
+nl8_e1_tight_e12	templates/newleads-2026-10-01/nl8_e1_tight_e12.conf	0.0000
+nl8_e1_ea_e13	templates/newleads-2026-10-01/nl8_e1_ea_e13.conf	0.0000
+nl8_e2_tight_e13	templates/newleads-2026-10-01/nl8_e2_tight_e13.conf	0.0000
+nl8_e2_tight_e12	templates/newleads-2026-10-01/nl8_e2_tight_e12.conf	0.0000
+nl8_e2_ea_e13	templates/newleads-2026-10-01/nl8_e2_ea_e13.conf	0.0000
+nl6_zmw_subject_e12	templates/newleads-2026-10-01/nl6_zmw_subject_e12.conf	0.0045
+nl6_zmw_tower_e12	templates/newleads-2026-10-01/nl6_zmw_tower_e12.conf	0.0045
+nl6_zmw_eye_e12	templates/newleads-2026-10-01/nl6_zmw_eye_e12.conf	0.0045
+nl6_zmw_pyramid_e12	templates/newleads-2026-10-01/nl6_zmw_pyramid_e12.conf	0.0045
+nl6_zmw_black_e12	templates/newleads-2026-10-01/nl6_zmw_black_e12.conf	0.0045
+nl6_zmw_vote_e12	templates/newleads-2026-10-01/nl6_zmw_vote_e12.conf	0.0045
+nl6_zmw_food_e12	templates/newleads-2026-10-01/nl6_zmw_food_e12.conf	0.0045
+nl6_zmw_this_e12	templates/newleads-2026-10-01/nl6_zmw_this_e12.conf	0.0045
+nl6_zmw_real_e12	templates/newleads-2026-10-01/nl6_zmw_real_e12.conf	0.0045
+nl6_zmw_one_e12	templates/newleads-2026-10-01/nl6_zmw_one_e12.conf	0.0045
+nl6_zmw_order_e12	templates/newleads-2026-10-01/nl6_zmw_order_e12.conf	0.0045
+nl6_zmw_ten_e12	templates/newleads-2026-10-01/nl6_zmw_ten_e12.conf	0.0045
+nl8_x01_p1	templates/newleads-2026-10-01/nl8_x01_p1.conf	0.0004
+nl8_x01_moonword_p	templates/newleads-2026-10-01/nl8_x01_moonword_p.conf	0.0008
+nl8_x02_p1	templates/newleads-2026-10-01/nl8_x02_p1.conf	0.0004
+nl8_x02_moonword_p	templates/newleads-2026-10-01/nl8_x02_moonword_p.conf	0.0008
+nl8_x03_p1	templates/newleads-2026-10-01/nl8_x03_p1.conf	0.0004
+nl8_x03_moonword_p	templates/newleads-2026-10-01/nl8_x03_moonword_p.conf	0.0008
+nl8_x04_p1	templates/newleads-2026-10-01/nl8_x04_p1.conf	0.0004
+nl8_x04_moonword_p	templates/newleads-2026-10-01/nl8_x04_moonword_p.conf	0.0008
+nl8_x05_p1	templates/newleads-2026-10-01/nl8_x05_p1.conf	0.0004
+nl8_x05_moonword_p	templates/newleads-2026-10-01/nl8_x05_moonword_p.conf	0.0008
+nl8_x06_p1	templates/newleads-2026-10-01/nl8_x06_p1.conf	0.0004
+nl8_x06_moonword_p	templates/newleads-2026-10-01/nl8_x06_moonword_p.conf	0.0008
+nl8_x07_p1	templates/newleads-2026-10-01/nl8_x07_p1.conf	0.0004
+nl8_x07_moonword_p	templates/newleads-2026-10-01/nl8_x07_moonword_p.conf	0.0008
+nl8_x08_p1	templates/newleads-2026-10-01/nl8_x08_p1.conf	0.0004
+nl8_x08_moonword_p	templates/newleads-2026-10-01/nl8_x08_moonword_p.conf	0.0008
+nl8_x09_p1	templates/newleads-2026-10-01/nl8_x09_p1.conf	0.0004
+nl8_x09_moonword_p	templates/newleads-2026-10-01/nl8_x09_moonword_p.conf	0.0008
+nl8_x10_p1	templates/newleads-2026-10-01/nl8_x10_p1.conf	0.0004
+nl8_x10_moonword_p	templates/newleads-2026-10-01/nl8_x10_moonword_p.conf	0.0008
+nl8_x11_p1	templates/newleads-2026-10-01/nl8_x11_p1.conf	0.0004
+nl8_x11_moonword_p	templates/newleads-2026-10-01/nl8_x11_moonword_p.conf	0.0008
+nl8_x12_p1	templates/newleads-2026-10-01/nl8_x12_p1.conf	0.0004
+nl8_x12_moonword_p	templates/newleads-2026-10-01/nl8_x12_moonword_p.conf	0.0008
+nl8_y01_p1	templates/newleads-2026-10-01/nl8_y01_p1.conf	0.0004
+nl8_y01_moonword_p	templates/newleads-2026-10-01/nl8_y01_moonword_p.conf	0.0008
+nl8_y02_p1	templates/newleads-2026-10-01/nl8_y02_p1.conf	0.0004
+nl8_y02_moonword_p	templates/newleads-2026-10-01/nl8_y02_moonword_p.conf	0.0008
+nl2_z_d12_p	templates/newleads-2026-10-01/nl2_z_d12_p.conf	0.1446
+nl2_z_u12t_p	templates/newleads-2026-10-01/nl2_z_u12t_p.conf	0.1446
+nl2_z_d12_top50_e12	templates/newleads-2026-10-01/nl2_z_d12_top50_e12.conf	0.0814
+nl2_zm_subject_b	templates/newleads-2026-10-01/nl2_zm_subject_b.conf	0.1446
+nl2_zm_tower_b	templates/newleads-2026-10-01/nl2_zm_tower_b.conf	0.1446
+nl2_zm_eye_b	templates/newleads-2026-10-01/nl2_zm_eye_b.conf	0.1446
+nl2_zm_pyramid_b	templates/newleads-2026-10-01/nl2_zm_pyramid_b.conf	0.1446
+nl2_zm_black_b	templates/newleads-2026-10-01/nl2_zm_black_b.conf	0.1446
+nl2_zm_vote_b	templates/newleads-2026-10-01/nl2_zm_vote_b.conf	0.1446
+nl2_zm_food_b	templates/newleads-2026-10-01/nl2_zm_food_b.conf	0.1446
+nl2_zm_this_b	templates/newleads-2026-10-01/nl2_zm_this_b.conf	0.1446
+nl2_zm_real_b	templates/newleads-2026-10-01/nl2_zm_real_b.conf	0.1446
+nl2_zm_one_b	templates/newleads-2026-10-01/nl2_zm_one_b.conf	0.1446
+nl2_zm_order_b	templates/newleads-2026-10-01/nl2_zm_order_b.conf	0.1446
+nl6_zmw_ten_b	templates/newleads-2026-10-01/nl6_zmw_ten_b.conf	0.1446
+nr1_n1_moon13_tok_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_tok_raw13.conf	0.2084
+nr1_n3_p_tok_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_tok_raw12.conf	0.2084
+nr1_n0_zero_b1_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b1_raw12.conf	0.0011
+nr1_n1_moon13_b1_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b1_raw13.conf	0.0018
+nr1_n2_slot13open_b1_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b1_raw13.conf	0.0125
+nr1_n3_p_b1_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b1_raw12.conf	0.0071
+nr1_n0_zero_b2_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b2_raw12.conf	0.0011
+nr1_n1_moon13_b2_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b2_raw13.conf	0.0018
+nr1_n2_slot13open_b2_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b2_raw13.conf	0.0125
+nr1_n3_p_b2_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b2_raw12.conf	0.0071
+nr1_n0_zero_b3_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b3_raw12.conf	0.0011
+nr1_n1_moon13_b3_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b3_raw13.conf	0.0018
+nr1_n2_slot13open_b3_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b3_raw13.conf	0.0125
+nr1_n3_p_b3_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b3_raw12.conf	0.0071
+nr1_n0_zero_b4_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b4_raw12.conf	0.0011
+nr1_n1_moon13_b4_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b4_raw13.conf	0.0018
+nr1_n2_slot13open_b4_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b4_raw13.conf	0.0125
+nr1_n3_p_b4_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b4_raw12.conf	0.0071
+nr1_n0_zero_b5_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b5_raw12.conf	0.0011
+nr1_n1_moon13_b5_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b5_raw13.conf	0.0018
+nr1_n2_slot13open_b5_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b5_raw13.conf	0.0125
+nr1_n3_p_b5_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b5_raw12.conf	0.0071
+nr1_n0_zero_b5b_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b5b_raw12.conf	0.0011
+nr1_n1_moon13_b5b_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b5b_raw13.conf	0.0018
+nr1_n2_slot13open_b5b_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b5b_raw13.conf	0.0125
+nr1_n3_p_b5b_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b5b_raw12.conf	0.0071
+nr1_n0_zero_b6_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b6_raw12.conf	0.0011
+nr1_n1_moon13_b6_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b6_raw13.conf	0.0018
+nr1_n2_slot13open_b6_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b6_raw13.conf	0.0125
+nr1_n3_p_b6_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b6_raw12.conf	0.0071
+nr1_n0_zero_b7_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b7_raw12.conf	0.0011
+nr1_n1_moon13_b7_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b7_raw13.conf	0.0018
+nr1_n2_slot13open_b7_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b7_raw13.conf	0.0125
+nr1_n3_p_b7_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b7_raw12.conf	0.0071
+nr1_n0_zero_b8_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b8_raw12.conf	0.0011
+nr1_n1_moon13_b8_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b8_raw13.conf	0.0018
+nr1_n2_slot13open_b8_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b8_raw13.conf	0.0125
+nr1_n3_p_b8_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b8_raw12.conf	0.0071
+nr1_n0_zero_b9_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b9_raw12.conf	0.0011
+nr1_n1_moon13_b9_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b9_raw13.conf	0.0018
+nr1_n2_slot13open_b9_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b9_raw13.conf	0.0125
+nr1_n3_p_b9_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b9_raw12.conf	0.0071
+nr1_n0_zero_b10_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_b10_raw12.conf	0.0011
+nr1_n1_moon13_b10_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_b10_raw13.conf	0.0018
+nr1_n2_slot13open_b10_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b10_raw13.conf	0.0125
+nr1_n3_p_b10_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_b10_raw12.conf	0.0071
+nr1_n0_zero_upper_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_upper_raw12.conf	0.0011
+nr1_n1_moon13_upper_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_upper_raw13.conf	0.0018
+nr1_n2_slot13open_upper_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_upper_raw13.conf	0.0125
+nr1_n3_p_upper_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_upper_raw12.conf	0.0071
+nr1_n0_zero_title_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_title_raw12.conf	0.0011
+nr1_n1_moon13_title_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_title_raw13.conf	0.0018
+nr1_n2_slot13open_title_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_title_raw13.conf	0.0125
+nr1_n3_p_title_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_title_raw12.conf	0.0071
+nr1_n0_zero_pic_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_pic_raw12.conf	0.0011
+nr1_n1_moon13_pic_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_pic_raw13.conf	0.0018
+nr1_n2_slot13open_pic_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_pic_raw13.conf	0.0125
+nr1_n3_p_pic_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_pic_raw12.conf	0.0071
+nr1_n0_zero_first_raw12	templates/newleads-raw-2026-10-01/nr1_n0_zero_first_raw12.conf	0.0011
+nr1_n1_moon13_first_raw13	templates/newleads-raw-2026-10-01/nr1_n1_moon13_first_raw13.conf	0.0018
+nr1_n2_slot13open_first_raw13	templates/newleads-raw-2026-10-01/nr1_n2_slot13open_first_raw13.conf	0.0125
+nr1_n3_p_first_raw12	templates/newleads-raw-2026-10-01/nr1_n3_p_first_raw12.conf	0.0071
+nr6_t1_moonabsent_p	templates/newleads-raw-2026-10-01/nr6_t1_moonabsent_p.conf	0.0912
+nr6_t1_ext_e13	templates/newleads-raw-2026-10-01/nr6_t1_ext_e13.conf	0.0027
+nr6_t1_ext_e12_moonabsent	templates/newleads-raw-2026-10-01/nr6_t1_ext_e12_moonabsent.conf	0.0027
+nr6_t1_ext_e12_moonword	templates/newleads-raw-2026-10-01/nr6_t1_ext_e12_moonword.conf	0.0190
+nr6_t1_moonword_p	templates/newleads-raw-2026-10-01/nr6_t1_moonword_p.conf	0.6381
+nr6_t1_loo_food_e12	templates/newleads-raw-2026-10-01/nr6_t1_loo_food_e12.conf	0.0027
+nr6_t1_loo_this_e12	templates/newleads-raw-2026-10-01/nr6_t1_loo_this_e12.conf	0.0027
+nr6_t1_loo_real_e12	templates/newleads-raw-2026-10-01/nr6_t1_loo_real_e12.conf	0.0027
+nr6_t1_loo_one_e12	templates/newleads-raw-2026-10-01/nr6_t1_loo_one_e12.conf	0.0027
+nr6_t1_loo_order_e12	templates/newleads-raw-2026-10-01/nr6_t1_loo_order_e12.conf	0.0027
+nr6_charley_f1_p	templates/newleads-raw-2026-10-01/nr6_charley_f1_p.conf	0.0031
+nr6_charley_f1_e13	templates/newleads-raw-2026-10-01/nr6_charley_f1_e13.conf	0.0001
+nr6_charley_f1_e12	templates/newleads-raw-2026-10-01/nr6_charley_f1_e12.conf	0.0001
+nr3_g2_minus1_raw12	templates/newleads-raw-2026-10-01/nr3_g2_minus1_raw12.conf	0.0011
+nr3_c1_moon1_raw12	templates/newleads-raw-2026-10-01/nr3_c1_moon1_raw12.conf	0.0011
+nr3_c2_lower_raw12	templates/newleads-raw-2026-10-01/nr3_c2_lower_raw12.conf	0.0080
+nr3_c2_upper_raw12	templates/newleads-raw-2026-10-01/nr3_c2_upper_raw12.conf	0.0011
+nr3_c2b_seal45_raw12	templates/newleads-raw-2026-10-01/nr3_c2b_seal45_raw12.conf	0.0011
+nr3_c3_halved_raw12	templates/newleads-raw-2026-10-01/nr3_c3_halved_raw12.conf	0.0002
+nr3_ped_lines_raw12	templates/newleads-raw-2026-10-01/nr3_ped_lines_raw12.conf	0.0002
+nr3_g2_minus1_raw13	templates/newleads-raw-2026-10-01/nr3_g2_minus1_raw13.conf	0.0125
+nr3_c1_moon1_raw13	templates/newleads-raw-2026-10-01/nr3_c1_moon1_raw13.conf	0.0125
+nr3_ped_lines_raw13	templates/newleads-raw-2026-10-01/nr3_ped_lines_raw13.conf	0.0018
+nr3_g1_zero_based_raw12	templates/newleads-raw-2026-10-01/nr3_g1_zero_based_raw12.conf	0.0499
+nr3_g3b_rev0_raw12	templates/newleads-raw-2026-10-01/nr3_g3b_rev0_raw12.conf	0.0499
+nr3_c4_mirror_raw12	templates/newleads-raw-2026-10-01/nr3_c4_mirror_raw12.conf	0.0071
+nr3_c4_mirror_raw13	templates/newleads-raw-2026-10-01/nr3_c4_mirror_raw13.conf	0.0018
+nr3_g3_reversed_raw12	templates/newleads-raw-2026-10-01/nr3_g3_reversed_raw12.conf	0.0071
+nr3_g3_reversed_raw13	templates/newleads-raw-2026-10-01/nr3_g3_reversed_raw13.conf	0.0018
+nr3_dup_hands_raw12	templates/newleads-raw-2026-10-01/nr3_dup_hands_raw12.conf	0.0071
+nr3_dup_hands_raw13	templates/newleads-raw-2026-10-01/nr3_dup_hands_raw13.conf	0.0018
+nr3_g4_indices_raw12	templates/newleads-raw-2026-10-01/nr3_g4_indices_raw12.conf	0.1140
+nr3_g4_indices_raw13	templates/newleads-raw-2026-10-01/nr3_g4_indices_raw13.conf	0.0285
+nr3_slot1open_raw13	templates/newleads-raw-2026-10-01/nr3_slot1open_raw13.conf	0.0125
+nr3_slot1open_raw12	templates/newleads-raw-2026-10-01/nr3_slot1open_raw12.conf	0.0499
+nr4_ec0_a15_raw13	templates/newleads-raw-2026-10-01/nr4_ec0_a15_raw13.conf	0.0000
+nr4_a15_open_raw13	templates/newleads-raw-2026-10-01/nr4_a15_open_raw13.conf	0.0267
+nr9_t3d_ea_tok13_e13	templates/newleads-raw-2026-10-01/nr9_t3d_ea_tok13_e13.conf	0.0000
+nr9_t3b_pin1_e13	templates/newleads-raw-2026-10-01/nr9_t3b_pin1_e13.conf	0.0001
+nr9_t3b_pin3_e13	templates/newleads-raw-2026-10-01/nr9_t3b_pin3_e13.conf	0.0001
+nr9_t3b_pin9_e13	templates/newleads-raw-2026-10-01/nr9_t3b_pin9_e13.conf	0.0001
+nr9_t3b_pin10_e13	templates/newleads-raw-2026-10-01/nr9_t3b_pin10_e13.conf	0.0001
+nr9_t3b_pin11_e13	templates/newleads-raw-2026-10-01/nr9_t3b_pin11_e13.conf	0.0001
+nr9_t3b_pin12_e13	templates/newleads-raw-2026-10-01/nr9_t3b_pin12_e13.conf	0.0001
+nr9_t3b_pin13_e13	templates/newleads-raw-2026-10-01/nr9_t3b_pin13_e13.conf	0.0001
+nr9_t3c_food_tok2_e13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok2_e13.conf	0.0000
+nr9_t3c_food_tok4_e13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok4_e13.conf	0.0000
+nr9_t3c_food_tok5_e13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok5_e13.conf	0.0000
+nr9_t3c_food_tok6_e13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok6_e13.conf	0.0000
+nr9_t3c_food_tok7_e13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok7_e13.conf	0.0000
+nr9_t3c_food_tok8_e13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok8_e13.conf	0.0000
+nr9_t3c_this_tok2_e13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok2_e13.conf	0.0000
+nr9_t3c_this_tok4_e13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok4_e13.conf	0.0000
+nr9_t3c_this_tok5_e13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok5_e13.conf	0.0000
+nr9_t3c_this_tok6_e13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok6_e13.conf	0.0000
+nr9_t3c_this_tok7_e13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok7_e13.conf	0.0000
+nr9_t3c_this_tok8_e13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok8_e13.conf	0.0000
+nr9_t3c_real_tok2_e13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok2_e13.conf	0.0000
+nr9_t3c_real_tok4_e13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok4_e13.conf	0.0000
+nr9_t3c_real_tok5_e13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok5_e13.conf	0.0000
+nr9_t3c_real_tok6_e13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok6_e13.conf	0.0000
+nr9_t3c_real_tok7_e13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok7_e13.conf	0.0000
+nr9_t3c_real_tok8_e13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok8_e13.conf	0.0000
+nr9_t3c_one_tok2_e13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok2_e13.conf	0.0000
+nr9_t3c_one_tok4_e13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok4_e13.conf	0.0000
+nr9_t3c_one_tok5_e13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok5_e13.conf	0.0000
+nr9_t3c_one_tok6_e13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok6_e13.conf	0.0000
+nr9_t3c_one_tok7_e13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok7_e13.conf	0.0000
+nr9_t3c_one_tok8_e13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok8_e13.conf	0.0000
+nr9_t3c_order_tok2_e13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok2_e13.conf	0.0000
+nr9_t3c_order_tok4_e13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok4_e13.conf	0.0000
+nr9_t3c_order_tok5_e13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok5_e13.conf	0.0000
+nr9_t3c_order_tok6_e13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok6_e13.conf	0.0000
+nr9_t3c_order_tok7_e13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok7_e13.conf	0.0000
+nr9_t3c_order_tok8_e13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok8_e13.conf	0.0000
+nr9_t3a_completer_e13	templates/newleads-raw-2026-10-01/nr9_t3a_completer_e13.conf	0.0941
+nr9_t3a_completer_e12	templates/newleads-raw-2026-10-01/nr9_t3a_completer_e12.conf	0.1881
+nr5_tbl_18word_raw18	templates/newleads-raw-2026-10-01/nr5_tbl_18word_raw18.conf	0.0000
+nr5_tbl_18word_novote_raw18	templates/newleads-raw-2026-10-01/nr5_tbl_18word_novote_raw18.conf	0.0071
+nr5_tbl_18word_noliberty_raw18	templates/newleads-raw-2026-10-01/nr5_tbl_18word_noliberty_raw18.conf	0.0071
+nr5_tbl_18word_nopolice_raw18	templates/newleads-raw-2026-10-01/nr5_tbl_18word_nopolice_raw18.conf	0.0071
+nr5_tbl_21word_raw21	templates/newleads-raw-2026-10-01/nr5_tbl_21word_raw21.conf	0.0142
+nl7_bxv_cross_p	templates/newleads-2026-10-01/nl7_bxv_cross_p.conf	0.0721
+nl7_r2_st_p	templates/newleads-2026-10-01/nl7_r2_st_p.conf	0.0249
+nl7_r2_se_p	templates/newleads-2026-10-01/nl7_r2_se_p.conf	0.0249
+nl7_r2_sb_p	templates/newleads-2026-10-01/nl7_r2_sb_p.conf	0.0249
+nl7_r2_sp_p	templates/newleads-2026-10-01/nl7_r2_sp_p.conf	0.0249
+nl7_r2_sv_p	templates/newleads-2026-10-01/nl7_r2_sv_p.conf	0.0249
+nl7_r2_te_p	templates/newleads-2026-10-01/nl7_r2_te_p.conf	0.0249
+nl7_r2_tb_p	templates/newleads-2026-10-01/nl7_r2_tb_p.conf	0.0249
+nl7_r2_tp_p	templates/newleads-2026-10-01/nl7_r2_tp_p.conf	0.0249
+nl7_r2_tv_p	templates/newleads-2026-10-01/nl7_r2_tv_p.conf	0.0249
+nl7_r2_eb_p	templates/newleads-2026-10-01/nl7_r2_eb_p.conf	0.0249
+nl7_r2_ev_p	templates/newleads-2026-10-01/nl7_r2_ev_p.conf	0.0249
+nl7_r2_bp_p	templates/newleads-2026-10-01/nl7_r2_bp_p.conf	0.0249
+nl7_r2_pv_p	templates/newleads-2026-10-01/nl7_r2_pv_p.conf	0.0249
+nl7_r3_tep_p	templates/newleads-2026-10-01/nl7_r3_tep_p.conf	0.2244
+nl7_r3_sbv_p	templates/newleads-2026-10-01/nl7_r3_sbv_p.conf	0.2244
+nl3_g1_zero_based_e14	templates/newleads-2026-10-01/nl3_g1_zero_based_e14.conf	0.0499
+nl3_g1_zero_based_e13ext	templates/newleads-2026-10-01/nl3_g1_zero_based_e13ext.conf	0.0997
+nl3_g3b_rev0_e13ext	templates/newleads-2026-10-01/nl3_g3b_rev0_e13ext.conf	0.0997
+nl3_g3_reversed_e14	templates/newleads-2026-10-01/nl3_g3_reversed_e14.conf	0.0499
+nl7_r3_ste_e13	templates/newleads-2026-10-01/nl7_r3_ste_e13.conf	0.0035
+nl7_r3_stb_e13	templates/newleads-2026-10-01/nl7_r3_stb_e13.conf	0.0035
+nl7_r3_stp_e13	templates/newleads-2026-10-01/nl7_r3_stp_e13.conf	0.0035
+nl7_r3_stv_e13	templates/newleads-2026-10-01/nl7_r3_stv_e13.conf	0.0035
+nl7_r3_stm_e13	templates/newleads-2026-10-01/nl7_r3_stm_e13.conf	0.0035
+nl7_r3_seb_e13	templates/newleads-2026-10-01/nl7_r3_seb_e13.conf	0.0035
+nl7_r3_sep_e13	templates/newleads-2026-10-01/nl7_r3_sep_e13.conf	0.0035
+nl7_r3_sev_e13	templates/newleads-2026-10-01/nl7_r3_sev_e13.conf	0.0035
+nl7_r3_sem_e13	templates/newleads-2026-10-01/nl7_r3_sem_e13.conf	0.0035
+nl7_r3_sbp_e13	templates/newleads-2026-10-01/nl7_r3_sbp_e13.conf	0.0035
+nl7_r3_sbv_e13	templates/newleads-2026-10-01/nl7_r3_sbv_e13.conf	0.0035
+nl7_r3_sbm_e13	templates/newleads-2026-10-01/nl7_r3_sbm_e13.conf	0.0035
+nl7_r3_spv_e13	templates/newleads-2026-10-01/nl7_r3_spv_e13.conf	0.0035
+nl7_r3_spm_e13	templates/newleads-2026-10-01/nl7_r3_spm_e13.conf	0.0035
+nl7_r3_svm_e13	templates/newleads-2026-10-01/nl7_r3_svm_e13.conf	0.0035
+nl7_r3_teb_e13	templates/newleads-2026-10-01/nl7_r3_teb_e13.conf	0.0035
+nl7_r3_tep_e13	templates/newleads-2026-10-01/nl7_r3_tep_e13.conf	0.0035
+nl7_r3_tev_e13	templates/newleads-2026-10-01/nl7_r3_tev_e13.conf	0.0035
+nl7_r3_tem_e13	templates/newleads-2026-10-01/nl7_r3_tem_e13.conf	0.0035
+nl7_r3_tbp_e13	templates/newleads-2026-10-01/nl7_r3_tbp_e13.conf	0.0035
+nl7_r3_tbv_e13	templates/newleads-2026-10-01/nl7_r3_tbv_e13.conf	0.0035
+nl7_r3_tbm_e13	templates/newleads-2026-10-01/nl7_r3_tbm_e13.conf	0.0035
+nl7_r3_tpv_e13	templates/newleads-2026-10-01/nl7_r3_tpv_e13.conf	0.0035
+nl7_r3_tpm_e13	templates/newleads-2026-10-01/nl7_r3_tpm_e13.conf	0.0035
+nl7_r3_tvm_e13	templates/newleads-2026-10-01/nl7_r3_tvm_e13.conf	0.0035
+nl7_r3_ebp_e13	templates/newleads-2026-10-01/nl7_r3_ebp_e13.conf	0.0035
+nl7_r3_ebv_e13	templates/newleads-2026-10-01/nl7_r3_ebv_e13.conf	0.0035
+nl7_r3_ebm_e13	templates/newleads-2026-10-01/nl7_r3_ebm_e13.conf	0.0035
+nl7_r3_epv_e13	templates/newleads-2026-10-01/nl7_r3_epv_e13.conf	0.0035
+nl7_r3_epm_e13	templates/newleads-2026-10-01/nl7_r3_epm_e13.conf	0.0035
+nl7_r3_evm_e13	templates/newleads-2026-10-01/nl7_r3_evm_e13.conf	0.0035
+nl7_r3_bpv_e13	templates/newleads-2026-10-01/nl7_r3_bpv_e13.conf	0.0035
+nl7_r3_bpm_e13	templates/newleads-2026-10-01/nl7_r3_bpm_e13.conf	0.0035
+nl7_r3_bvm_e13	templates/newleads-2026-10-01/nl7_r3_bvm_e13.conf	0.0035
+nl7_r3_pvm_e13	templates/newleads-2026-10-01/nl7_r3_pvm_e13.conf	0.0035
+nl7_r3_ste_e12	templates/newleads-2026-10-01/nl7_r3_ste_e12.conf	0.0070
+nl7_r3_stb_e12	templates/newleads-2026-10-01/nl7_r3_stb_e12.conf	0.0070
+nl7_r3_stp_e12	templates/newleads-2026-10-01/nl7_r3_stp_e12.conf	0.0070
+nl7_r3_stv_e12	templates/newleads-2026-10-01/nl7_r3_stv_e12.conf	0.0070
+nl7_r3_seb_e12	templates/newleads-2026-10-01/nl7_r3_seb_e12.conf	0.0070
+nl7_r3_sep_e12	templates/newleads-2026-10-01/nl7_r3_sep_e12.conf	0.0070
+nl7_r3_sev_e12	templates/newleads-2026-10-01/nl7_r3_sev_e12.conf	0.0070
+nl7_r3_sbp_e12	templates/newleads-2026-10-01/nl7_r3_sbp_e12.conf	0.0070
+nl7_r3_sbv_e12	templates/newleads-2026-10-01/nl7_r3_sbv_e12.conf	0.0070
+nl7_r3_spv_e12	templates/newleads-2026-10-01/nl7_r3_spv_e12.conf	0.0070
+nl7_r3_teb_e12	templates/newleads-2026-10-01/nl7_r3_teb_e12.conf	0.0070
+nl7_r3_tev_e12	templates/newleads-2026-10-01/nl7_r3_tev_e12.conf	0.0070
+nl7_r3_tbp_e12	templates/newleads-2026-10-01/nl7_r3_tbp_e12.conf	0.0070
+nl7_r3_tbv_e12	templates/newleads-2026-10-01/nl7_r3_tbv_e12.conf	0.0070
+nl7_r3_tpv_e12	templates/newleads-2026-10-01/nl7_r3_tpv_e12.conf	0.0070
+nl7_r3_ebp_e12	templates/newleads-2026-10-01/nl7_r3_ebp_e12.conf	0.0070
+nl7_r3_ebv_e12	templates/newleads-2026-10-01/nl7_r3_ebv_e12.conf	0.0070
+nl7_r3_epv_e12	templates/newleads-2026-10-01/nl7_r3_epv_e12.conf	0.0070
+nl7_r3_bpv_e12	templates/newleads-2026-10-01/nl7_r3_bpv_e12.conf	0.0070
+nl2_sw_moon_month_b	templates/newleads-2026-10-01/nl2_sw_moon_month_b.conf	0.1446
+nl2_sw_moon_lunar_b	templates/newleads-2026-10-01/nl2_sw_moon_lunar_b.conf	0.1446
+nl2_sw_black_day_b	templates/newleads-2026-10-01/nl2_sw_black_day_b.conf	0.0362
+nl2_sw_black_rain_b	templates/newleads-2026-10-01/nl2_sw_black_rain_b.conf	0.0362
+nl2_sw_black_number_b	templates/newleads-2026-10-01/nl2_sw_black_number_b.conf	0.0362
+nl2_sw_order_stable_b	templates/newleads-2026-10-01/nl2_sw_order_stable_b.conf	0.0362
+nl2_sw_vote_voice_b	templates/newleads-2026-10-01/nl2_sw_vote_voice_b.conf	0.0362
+nl2_sw_vote_choice_b	templates/newleads-2026-10-01/nl2_sw_vote_choice_b.conf	0.0362
+nl2_sw_vote_twelve_b	templates/newleads-2026-10-01/nl2_sw_vote_twelve_b.conf	0.0362
+nl2_sw_real_present_b	templates/newleads-2026-10-01/nl2_sw_real_present_b.conf	0.0362
+nl2_sw_one_unit_b	templates/newleads-2026-10-01/nl2_sw_one_unit_b.conf	0.0362
+nl2_sw_one_alone_b	templates/newleads-2026-10-01/nl2_sw_one_alone_b.conf	0.0362
+nl2_sw_this_that_b	templates/newleads-2026-10-01/nl2_sw_this_that_b.conf	0.0362
+nl2_sw_this_thing_b	templates/newleads-2026-10-01/nl2_sw_this_thing_b.conf	0.0362
+nl2_sw_subject_object_b	templates/newleads-2026-10-01/nl2_sw_subject_object_b.conf	0.0362
+nl2_sw_subject_item_b	templates/newleads-2026-10-01/nl2_sw_subject_item_b.conf	0.0362
+nl2_sw_subject_topic_b	templates/newleads-2026-10-01/nl2_sw_subject_topic_b.conf	0.0362
+nl2_sw_subject_section_b	templates/newleads-2026-10-01/nl2_sw_subject_section_b.conf	0.0362
+nl2_sw_food_need_b	templates/newleads-2026-10-01/nl2_sw_food_need_b.conf	0.0362
+nl2_sw_food_space_b	templates/newleads-2026-10-01/nl2_sw_food_space_b.conf	0.0362
+nl2_sw_food_lunch_b	templates/newleads-2026-10-01/nl2_sw_food_lunch_b.conf	0.0362
+nl7_seal_cross_e13	templates/newleads-2026-10-01/nl7_seal_cross_e13.conf	0.0090
+nl7_seal_cross_e12	templates/newleads-2026-10-01/nl7_seal_cross_e12.conf	0.0179
+nl7_seal_cross_p	templates/newleads-2026-10-01/nl7_seal_cross_p.conf	0.5730
+nr6_j3_ste_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_ste_tok_p.conf	0.0032
+nr6_j3_stb_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_stb_tok_p.conf	0.0032
+nr6_j3_stp_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_stp_tok_p.conf	0.0032
+nr6_j3_stv_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_stv_tok_p.conf	0.0032
+nr6_j3_seb_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_seb_tok_p.conf	0.0032
+nr6_j3_sep_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_sep_tok_p.conf	0.0032
+nr6_j3_sev_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_sev_tok_p.conf	0.0032
+nr6_j3_sbp_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_sbp_tok_p.conf	0.0032
+nr6_j3_sbv_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_sbv_tok_p.conf	0.0032
+nr6_j3_spv_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_spv_tok_p.conf	0.0032
+nr6_j3_teb_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_teb_tok_p.conf	0.0032
+nr6_j3_tep_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_tep_tok_p.conf	0.0032
+nr6_j3_tev_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_tev_tok_p.conf	0.0032
+nr6_j3_tbp_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_tbp_tok_p.conf	0.0032
+nr6_j3_tbv_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_tbv_tok_p.conf	0.0032
+nr6_j3_tpv_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_tpv_tok_p.conf	0.0032
+nr6_j3_ebp_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_ebp_tok_p.conf	0.0032
+nr6_j3_ebv_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_ebv_tok_p.conf	0.0032
+nr6_j3_epv_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_epv_tok_p.conf	0.0032
+nr6_j3_bpv_tok_p	templates/newleads-raw-2026-10-01/nr6_j3_bpv_tok_p.conf	0.0032
+nr6_t1_loo_food_p	templates/newleads-raw-2026-10-01/nr6_t1_loo_food_p.conf	0.0912
+nr6_t1_loo_this_p	templates/newleads-raw-2026-10-01/nr6_t1_loo_this_p.conf	0.0912
+nr6_t1_loo_real_p	templates/newleads-raw-2026-10-01/nr6_t1_loo_real_p.conf	0.0912
+nr6_t1_loo_one_p	templates/newleads-raw-2026-10-01/nr6_t1_loo_one_p.conf	0.0912
+nr6_t1_loo_order_p	templates/newleads-raw-2026-10-01/nr6_t1_loo_order_p.conf	0.0912
+nr6_t1_n3_raw12	templates/newleads-raw-2026-10-01/nr6_t1_n3_raw12.conf	1.4585
+nr6_t1_n1_raw13	templates/newleads-raw-2026-10-01/nr6_t1_n1_raw13.conf	1.4585
+nr6_t2_top6_e13	templates/newleads-raw-2026-10-01/nr6_t2_top6_e13.conf	0.3989
+nr6_t2_top6_e12	templates/newleads-raw-2026-10-01/nr6_t2_top6_e12.conf	0.3989
+nr6_d0_bip39a_raw12	templates/newleads-raw-2026-10-01/nr6_d0_bip39a_raw12.conf	0.0026
+nr6_d0_bip39b_raw12	templates/newleads-raw-2026-10-01/nr6_d0_bip39b_raw12.conf	0.0026
+nr6_d0_digitsa_raw12	templates/newleads-raw-2026-10-01/nr6_d0_digitsa_raw12.conf	0.0032
+nr6_d0_digitsb_raw12	templates/newleads-raw-2026-10-01/nr6_d0_digitsb_raw12.conf	0.0032
+nr6_d0_digitsc_raw12	templates/newleads-raw-2026-10-01/nr6_d0_digitsc_raw12.conf	0.0032
+nr6_d0_rubip39a_raw12	templates/newleads-raw-2026-10-01/nr6_d0_rubip39a_raw12.conf	0.0027
+nr6_d0_rubip39b_raw12	templates/newleads-raw-2026-10-01/nr6_d0_rubip39b_raw12.conf	0.0027
+nr6_d0_bip39_e12	templates/newleads-raw-2026-10-01/nr6_d0_bip39_e12.conf	0.0000
+nr6_d0_digitsa_e12	templates/newleads-raw-2026-10-01/nr6_d0_digitsa_e12.conf	0.0000
+nr6_d0_digitsb_e12	templates/newleads-raw-2026-10-01/nr6_d0_digitsb_e12.conf	0.0000
+nr6_d0_digitsc_e12	templates/newleads-raw-2026-10-01/nr6_d0_digitsc_e12.conf	0.0000
+nr6_d0_rubip39_e12	templates/newleads-raw-2026-10-01/nr6_d0_rubip39_e12.conf	0.0000
+nr6_d0_rubip39b_e12	templates/newleads-raw-2026-10-01/nr6_d0_rubip39b_e12.conf	0.0000
+nr9_t3b_pin1_raw13	templates/newleads-raw-2026-10-01/nr9_t3b_pin1_raw13.conf	0.0962
+nr9_t3b_pin3_raw13	templates/newleads-raw-2026-10-01/nr9_t3b_pin3_raw13.conf	0.0962
+nr9_t3b_pin9_raw13	templates/newleads-raw-2026-10-01/nr9_t3b_pin9_raw13.conf	0.0962
+nr9_t3b_pin10_raw13	templates/newleads-raw-2026-10-01/nr9_t3b_pin10_raw13.conf	0.0962
+nr9_t3b_pin11_raw13	templates/newleads-raw-2026-10-01/nr9_t3b_pin11_raw13.conf	0.0962
+nr9_t3b_pin12_raw13	templates/newleads-raw-2026-10-01/nr9_t3b_pin12_raw13.conf	0.0962
+nr9_t3b_pin13_raw13	templates/newleads-raw-2026-10-01/nr9_t3b_pin13_raw13.conf	0.0962
+nr9_t3c_food_tok2_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok2_raw13.conf	0.0160
+nr9_t3c_food_tok4_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok4_raw13.conf	0.0160
+nr9_t3c_food_tok5_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok5_raw13.conf	0.0160
+nr9_t3c_food_tok6_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok6_raw13.conf	0.0160
+nr9_t3c_food_tok7_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok7_raw13.conf	0.0160
+nr9_t3c_food_tok8_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_food_tok8_raw13.conf	0.0160
+nr9_t3c_this_tok2_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok2_raw13.conf	0.0160
+nr9_t3c_this_tok4_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok4_raw13.conf	0.0160
+nr9_t3c_this_tok5_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok5_raw13.conf	0.0160
+nr9_t3c_this_tok6_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok6_raw13.conf	0.0160
+nr9_t3c_this_tok7_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok7_raw13.conf	0.0160
+nr9_t3c_this_tok8_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_this_tok8_raw13.conf	0.0160
+nr9_t3c_real_tok2_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok2_raw13.conf	0.0160
+nr9_t3c_real_tok4_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok4_raw13.conf	0.0160
+nr9_t3c_real_tok5_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok5_raw13.conf	0.0160
+nr9_t3c_real_tok6_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok6_raw13.conf	0.0160
+nr9_t3c_real_tok7_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok7_raw13.conf	0.0160
+nr9_t3c_real_tok8_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_real_tok8_raw13.conf	0.0160
+nr9_t3c_one_tok2_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok2_raw13.conf	0.0160
+nr9_t3c_one_tok4_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok4_raw13.conf	0.0160
+nr9_t3c_one_tok5_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok5_raw13.conf	0.0160
+nr9_t3c_one_tok6_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok6_raw13.conf	0.0160
+nr9_t3c_one_tok7_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok7_raw13.conf	0.0160
+nr9_t3c_one_tok8_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_one_tok8_raw13.conf	0.0160
+nr9_t3c_order_tok2_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok2_raw13.conf	0.0160
+nr9_t3c_order_tok4_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok4_raw13.conf	0.0160
+nr9_t3c_order_tok5_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok5_raw13.conf	0.0160
+nr9_t3c_order_tok6_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok6_raw13.conf	0.0160
+nr9_t3c_order_tok7_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok7_raw13.conf	0.0160
+nr9_t3c_order_tok8_raw13	templates/newleads-raw-2026-10-01/nr9_t3c_order_tok8_raw13.conf	0.0160
+nr2_z_d12_raw12	templates/newleads-raw-2026-10-01/nr2_z_d12_raw12.conf	0.5785
+nr11_t1a_n13_raw13	templates/newleads-raw-2026-10-01/nr11_t1a_n13_raw13.conf	0.5575
+nr11_t1a_np_raw12	templates/newleads-raw-2026-10-01/nr11_t1a_np_raw12.conf	1.1150
+nr11_t1a_n13b_raw13	templates/newleads-raw-2026-10-01/nr11_t1a_n13b_raw13.conf	0.5575
+nr11_t1a_n2_raw13	templates/newleads-raw-2026-10-01/nr11_t1a_n2_raw13.conf	0.5575
+nl2_z_d12_top50_p	templates/newleads-2026-10-01/nl2_z_d12_top50_p.conf	1.8440
+nl4_ec_a15_voteopen	templates/newleads-2026-10-01/nl4_ec_a15_voteopen.conf	1.4959
+nr6_t2_top6_p	templates/newleads-raw-2026-10-01/nr6_t2_top6_p.conf	7.9783
+nr2_z_u12t_raw12	templates/newleads-raw-2026-10-01/nr2_z_u12t_raw12.conf	2.3140
+nr5_s05_12perm_raw12	templates/newleads-raw-2026-10-01/nr5_s05_12perm_raw12.conf	0.5785
+nr5_s06_12perm_raw12	templates/newleads-raw-2026-10-01/nr5_s06_12perm_raw12.conf	0.5785
+nr5_s07_12perm_raw12	templates/newleads-raw-2026-10-01/nr5_s07_12perm_raw12.conf	0.5785
+rv_drop_black_p	templates/review-2026-09-30/rv_drop_black_p.conf	3.1914
+nl10_fl11_order_p	templates/newleads-2026-10-01/nl10_fl11_order_p.conf	0.4559
+nl10_fl11_one_p	templates/newleads-2026-10-01/nl10_fl11_one_p.conf	0.4559
+nl10_fl11_food_p	templates/newleads-2026-10-01/nl10_fl11_food_p.conf	0.4559
+nl10_fl11_this_p	templates/newleads-2026-10-01/nl10_fl11_this_p.conf	0.4559
+nl10_fl11_real_p	templates/newleads-2026-10-01/nl10_fl11_real_p.conf	0.4559
+nl10_fl9_order_p	templates/newleads-2026-10-01/nl10_fl9_order_p.conf	0.4559
+nl10_fl9_one_p	templates/newleads-2026-10-01/nl10_fl9_one_p.conf	0.4559
+nl10_fl9_food_p	templates/newleads-2026-10-01/nl10_fl9_food_p.conf	0.4559
+nl10_fl9_this_p	templates/newleads-2026-10-01/nl10_fl9_this_p.conf	0.4559
+nl10_fl9_real_p	templates/newleads-2026-10-01/nl10_fl9_real_p.conf	0.4559
+rv_drop_subject_p	templates/review-2026-09-30/rv_drop_subject_p.conf	3.1914
+rv_drop_tower_p	templates/review-2026-09-30/rv_drop_tower_p.conf	3.1914
+nr11_t2_n13_raw13	templates/newleads-raw-2026-10-01/nr11_t2_n13_raw13.conf	12.7653
+nr11_t2_np_raw12	templates/newleads-raw-2026-10-01/nr11_t2_np_raw12.conf	25.5305
+nr11_t2_n13b_raw13	templates/newleads-raw-2026-10-01/nr11_t2_n13b_raw13.conf	12.7653
+nr11_t2_n2_raw13	templates/newleads-raw-2026-10-01/nr11_t2_n2_raw13.conf	12.7653
+s8_l33_mirror_e13	templates/stage8-2026-10-01/s8_l33_mirror_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye4_pyr5_e13	templates/stage8-2026-10-01/s8_l36_eye4_pyr5_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye4_pyr6_e13	templates/stage8-2026-10-01/s8_l36_eye4_pyr6_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye4_pyr7_e13	templates/stage8-2026-10-01/s8_l36_eye4_pyr7_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye5_pyr4_e13	templates/stage8-2026-10-01/s8_l36_eye5_pyr4_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye5_pyr6_e13	templates/stage8-2026-10-01/s8_l36_eye5_pyr6_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye5_pyr7_e13	templates/stage8-2026-10-01/s8_l36_eye5_pyr7_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye6_pyr4_e13	templates/stage8-2026-10-01/s8_l36_eye6_pyr4_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye6_pyr5_e13	templates/stage8-2026-10-01/s8_l36_eye6_pyr5_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye6_pyr7_e13	templates/stage8-2026-10-01/s8_l36_eye6_pyr7_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye7_pyr4_e13	templates/stage8-2026-10-01/s8_l36_eye7_pyr4_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye7_pyr5_e13	templates/stage8-2026-10-01/s8_l36_eye7_pyr5_e13.conf	0.0500	signoff-stage8.txt
+s8_l36_eye7_pyr6_e13	templates/stage8-2026-10-01/s8_l36_eye7_pyr6_e13.conf	0.0500	signoff-stage8.txt
+s8_l38_reversed_e13	templates/stage8-2026-10-01/s8_l38_reversed_e13.conf	0.0500	signoff-stage8.txt
+s8_pair_happy_strong_e13	templates/stage8-2026-10-01/s8_pair_happy_strong_e13.conf	0.0500	signoff-stage8.txt
+s8_pair_reason_era_e13	templates/stage8-2026-10-01/s8_pair_reason_era_e13.conf	0.0500	signoff-stage8.txt
+s8_pair_reason_strong_e13	templates/stage8-2026-10-01/s8_pair_reason_strong_e13.conf	0.0500	signoff-stage8.txt
+s8_pair_reason_time_e13	templates/stage8-2026-10-01/s8_pair_reason_time_e13.conf	0.0500	signoff-stage8.txt
+s8_pair_wisdom_strong_e13	templates/stage8-2026-10-01/s8_pair_wisdom_strong_e13.conf	0.0500	signoff-stage8.txt
+s8_slot1_loo_food_e13	templates/stage8-2026-10-01/s8_slot1_loo_food_e13.conf	0.0500	signoff-stage8.txt
+s8_slot1_loo_one_e13	templates/stage8-2026-10-01/s8_slot1_loo_one_e13.conf	0.0500	signoff-stage8.txt
+s8_slot1_loo_order_e13	templates/stage8-2026-10-01/s8_slot1_loo_order_e13.conf	0.0500	signoff-stage8.txt
+s8_slot1_loo_real_e13	templates/stage8-2026-10-01/s8_slot1_loo_real_e13.conf	0.0500	signoff-stage8.txt
+s8_slot1_loo_this_e13	templates/stage8-2026-10-01/s8_slot1_loo_this_e13.conf	0.0500	signoff-stage8.txt
+s8_l33_mirror_e12	templates/stage8-2026-10-01/s8_l33_mirror_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye4_pyr5_e12	templates/stage8-2026-10-01/s8_l36_eye4_pyr5_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye4_pyr6_e12	templates/stage8-2026-10-01/s8_l36_eye4_pyr6_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye4_pyr7_e12	templates/stage8-2026-10-01/s8_l36_eye4_pyr7_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye5_pyr4_e12	templates/stage8-2026-10-01/s8_l36_eye5_pyr4_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye5_pyr6_e12	templates/stage8-2026-10-01/s8_l36_eye5_pyr6_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye5_pyr7_e12	templates/stage8-2026-10-01/s8_l36_eye5_pyr7_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye6_pyr4_e12	templates/stage8-2026-10-01/s8_l36_eye6_pyr4_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye6_pyr5_e12	templates/stage8-2026-10-01/s8_l36_eye6_pyr5_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye6_pyr7_e12	templates/stage8-2026-10-01/s8_l36_eye6_pyr7_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye7_pyr4_e12	templates/stage8-2026-10-01/s8_l36_eye7_pyr4_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye7_pyr5_e12	templates/stage8-2026-10-01/s8_l36_eye7_pyr5_e12.conf	0.1000	signoff-stage8.txt
+s8_l36_eye7_pyr6_e12	templates/stage8-2026-10-01/s8_l36_eye7_pyr6_e12.conf	0.1000	signoff-stage8.txt
+s8_l38_reversed_e12	templates/stage8-2026-10-01/s8_l38_reversed_e12.conf	0.1000	signoff-stage8.txt
+s8_pair_happy_strong_e12	templates/stage8-2026-10-01/s8_pair_happy_strong_e12.conf	0.1000	signoff-stage8.txt
+s8_pair_reason_era_e12	templates/stage8-2026-10-01/s8_pair_reason_era_e12.conf	0.1000	signoff-stage8.txt
+s8_pair_reason_strong_e12	templates/stage8-2026-10-01/s8_pair_reason_strong_e12.conf	0.1000	signoff-stage8.txt
+s8_pair_reason_time_e12	templates/stage8-2026-10-01/s8_pair_reason_time_e12.conf	0.1000	signoff-stage8.txt
+s8_pair_wisdom_strong_e12	templates/stage8-2026-10-01/s8_pair_wisdom_strong_e12.conf	0.1000	signoff-stage8.txt
+s8_slot1_loo_food_e12	templates/stage8-2026-10-01/s8_slot1_loo_food_e12.conf	0.1000	signoff-stage8.txt
+s8_slot1_loo_one_e12	templates/stage8-2026-10-01/s8_slot1_loo_one_e12.conf	0.1000	signoff-stage8.txt
+s8_slot1_loo_order_e12	templates/stage8-2026-10-01/s8_slot1_loo_order_e12.conf	0.1000	signoff-stage8.txt
+s8_slot1_loo_real_e12	templates/stage8-2026-10-01/s8_slot1_loo_real_e12.conf	0.1000	signoff-stage8.txt
+s8_slot1_loo_this_e12	templates/stage8-2026-10-01/s8_slot1_loo_this_e12.conf	0.1000	signoff-stage8.txt
+s8_slot1_voteopen_e13	templates/stage8-2026-10-01/s8_slot1_voteopen_e13.conf	0.4000	signoff-stage8.txt
+s8_tok_e3_rest_e13	templates/stage8-2026-10-01/s8_tok_e3_rest_e13.conf	0.6500	signoff-stage8.txt
+s8_slot1_voteopen_e12	templates/stage8-2026-10-01/s8_slot1_voteopen_e12.conf	0.8000	signoff-stage8.txt
+s8_tok_s2_g24_e12	templates/stage8-2026-10-01/s8_tok_s2_g24_e12.conf	1.2000	signoff-stage8.txt
+s8_tok_e4_g1_e13	templates/stage8-2026-10-01/s8_tok_e4_g1_e13.conf	1.6000	signoff-stage8.txt
+s8_tok_s2_g1_e12	templates/stage8-2026-10-01/s8_tok_s2_g1_e12.conf	1.9900	signoff-stage8.txt
+s8_tok_s2_g5_e12	templates/stage8-2026-10-01/s8_tok_s2_g5_e12.conf	1.9900	signoff-stage8.txt
+s8_tok_e4_g45_e13	templates/stage8-2026-10-01/s8_tok_e4_g45_e13.conf	2.3900	signoff-stage8.txt
+s8_l33_mirror_p	templates/stage8-2026-10-01/s8_l33_mirror_p.conf	3.1900	signoff-stage8.txt
+s8_l36_eye4_pyr6_p	templates/stage8-2026-10-01/s8_l36_eye4_pyr6_p.conf	3.1900	signoff-stage8.txt
+s8_l38_reversed_p	templates/stage8-2026-10-01/s8_l38_reversed_p.conf	3.1900	signoff-stage8.txt
+s8_pair_happy_strong_p	templates/stage8-2026-10-01/s8_pair_happy_strong_p.conf	3.1900	signoff-stage8.txt
+s8_pair_reason_era_p	templates/stage8-2026-10-01/s8_pair_reason_era_p.conf	3.1900	signoff-stage8.txt
+s8_pair_reason_strong_p	templates/stage8-2026-10-01/s8_pair_reason_strong_p.conf	3.1900	signoff-stage8.txt
+s8_pair_reason_time_p	templates/stage8-2026-10-01/s8_pair_reason_time_p.conf	3.1900	signoff-stage8.txt
+s8_pair_wisdom_strong_p	templates/stage8-2026-10-01/s8_pair_wisdom_strong_p.conf	3.1900	signoff-stage8.txt
+s8_tok_e4_g3_e13	templates/stage8-2026-10-01/s8_tok_e4_g3_e13.conf	3.5900	signoff-stage8.txt
+s8_tok_s2_g3_e12	templates/stage8-2026-10-01/s8_tok_s2_g3_e12.conf	3.5900	signoff-stage8.txt

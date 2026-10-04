@@ -1,0 +1,19 @@
+# SHA-256 of the third-party OpenCL kernels, fetched by tools/fetch_kernels.py
+# source:  https://github.com/johncantrell97/bip39-solver-gpu  (cl/, commit c820aff3e16e80839ce24c53734a8b02daadd138, no licence file)
+# "NAME.cl"           = the upstream file as downloaded
+# "assembled/address.cl" = upstream address.cl with kernels/address_p2pkh.part inserted before normal_private_child_from_private(
+a135a112f6859ded5ccd59f49b2af4e8b4af9eb8eb73ae8b67f2711f62fb68e9  address.cl
+3e1383dad85f90887f9f2330dd37478058f8677f567e8f93e7952f3c5375c88c  common.cl
+f91e5399f55032f82706fea2e56e85b4996110a8f90b7997ffb11cb8a2278d26  int_to_address.cl
+d29f9762f72cfb0c6923b77aa36bd85b0d30eea91b4f9e498f81b4e205336b83  just_address.cl
+c445d7705f358ec2457558c636d716b493cf79ee1fd5cf5e47f412584b84d45b  just_seed.cl
+99e9757e6b5f1bbcc6c0181ea9262695848016676d2f01e93de86e5937533776  mnemonic_constants.cl
+9421b0872a2aaaa24e349b8bc04eca8d26dd79d131039e0f419b6b5b5d092ae1  ripemd.cl
+c380c57df8ab93370dd9d6cbc6198862a05a99795a211e3def1c602a9ea61462  secp256k1.cl
+fc3bae6ca6cadbc428102956f81ec10e1ec89928be820390012a395ff4362cb6  secp256k1_common.cl
+ba5c7bbf5d0b89be07f43a284e8c485e1928ed6f32e309fa8fedc83c4674ed51  secp256k1_field.cl
+004809f5d91f9e08335a9c24fe1110f9172451fe3399fb9f3902ff6f91a90221  secp256k1_group.cl
+c1ebf6d05fe2c768a645c8e6df6afff41e066635b313e5030a72fbdb25f413a9  secp256k1_prec.cl
+820f516b5874424340d5ee932277c253c4caa8478875830af8ad3114fc3a7849  secp256k1_scalar.cl
+b8d3139b63f7a1f8126b84be10e4074a5cead28ad9cb1366d1b46ac679186ad9  sha2.cl
+056aeda80d38a1c0a41f6a98a079d6983bc463489b24086ab069b865664cf089  assembled/address.cl

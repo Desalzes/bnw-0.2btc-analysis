@@ -1,0 +1,10 @@
+lead	what	already in the record as
+LEAD 3 C1, 12 words	moon@1, subject floats, vote@12, zero unknown	m1v_moon1_vote12 / m1_moon1_black10 (BIP39), m1e_moon1_black10 (Electrum-12): subject is REQUIRED there, not fixed at 1
+LEAD 3 C2 lower, BIP39	tower@1 eye@4 pyramid@5 black@10 moon@12, subject and vote float	h1_lower_numeral (1 open word: vote is one value of it)
+LEAD 3 C2 upper, BIP39	moon@1 tower@2 eye@5 pyramid@6 black@10 vote@12, subject floats	u1_upper_numeral (1 open word: vote@12 is one value of it)
+LEAD 3 C4	mirrored dial with pyramid as the passphrase / extension, 1 open	ld33_mirror_p, ld33_mirror_e12 (and ld33_mirror_e13)
+LEAD 7 duplicates, Electrum-13	tower@3+9, moon@11+13	ld33_dup_e13
+LEAD 2 Z_M minus ten	the twelve device words, every order, no passphrase	= nl2_z_d12_p / nl2_z_d12_e12 below (the empty passphrase is always tried)
+LEAD 7 R2[eye, pyramid]	eye and pyramid keep their words and lose their slots, 1 open, all three models	ld36_sealwords_anywhere_{e13,e12,p} (Q21): the same configs. nl7_r2_ep_e13 / _e12 ran again here before this was seen; the model-P form is not generated
+LEAD 3 pedestal lines, 12 words	moon@2 tower@3 subject@8 eye@9 black@10 pyramid@11 vote@12, zero unknown	inside ld05_slot1open_p / _e12 (slot 1 open, subject required: the open word is moon); nl3_ped_lines_b ran again here; the Electrum-13 form is new
+LEAD 8 receive 11-19, change 4-19	tight model-P shapes	ro_s2d_paths{D,E,F,G}_{p1,moonword_p} (run-order stage 2d) ran them: the lead document's table of paths run is incomplete; nl8_b1 / b3 / x* ran them again

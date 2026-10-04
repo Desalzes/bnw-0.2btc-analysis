@@ -1,0 +1,56 @@
+name	stage	model	note
+ro_s2a_18word_moonpass_p	2a	p	18-word BIP39 community table, loose words in the free slots, MOON/moon/Moon as the passphrase (ld41 ran the empty passphrase only)
+ro_s2a_18word_novote_moonpass_p	2a	p	18-word BIP39 community table minus vote, loose words in the free slots, 1 open, MOON/moon/Moon as the passphrase (ld41 ran the empty passphrase only)
+ro_s2a_18word_noliberty_moonpass_p	2a	p	18-word BIP39 community table minus liberty, loose words in the free slots, 1 open, MOON/moon/Moon as the passphrase (ld41 ran the empty passphrase only)
+ro_s2a_18word_nopolice_moonpass_p	2a	p	18-word BIP39 community table minus police, loose words in the free slots, 1 open, MOON/moon/Moon as the passphrase (ld41 ran the empty passphrase only)
+ro_s2d_pathsD_p1	2d	p	p1 shape (tight, 1 open, MOON passphrase) at paths m/44'/0'/0'/0/10 .. m/44'/0'/0'/0/17
+ro_s2d_pathsD_moonword_p	2d	p	moon-as-word shape (c01a: vote released, 1 open, empty passphrase) at paths m/44'/0'/0'/0/10 .. m/44'/0'/0'/0/17
+ro_s2d_pathsE_p1	2d	p	p1 shape (tight, 1 open, MOON passphrase) at paths m/44'/0'/0'/0/18 .. m/44'/0'/0'/1/9
+ro_s2d_pathsE_moonword_p	2d	p	moon-as-word shape (c01a: vote released, 1 open, empty passphrase) at paths m/44'/0'/0'/0/18 .. m/44'/0'/0'/1/9
+ro_s2d_pathsF_p1	2d	p	p1 shape (tight, 1 open, MOON passphrase) at paths m/44'/0'/0'/1/10 .. m/44'/0'/0'/1/17
+ro_s2d_pathsF_moonword_p	2d	p	moon-as-word shape (c01a: vote released, 1 open, empty passphrase) at paths m/44'/0'/0'/1/10 .. m/44'/0'/0'/1/17
+ro_s2d_pathsG_p1	2d	p	p1 shape (tight, 1 open, MOON passphrase) at paths m/44'/0'/0'/1/18 .. m/44'/0'/1'/0/9
+ro_s2d_pathsG_moonword_p	2d	p	moon-as-word shape (c01a: vote released, 1 open, empty passphrase) at paths m/44'/0'/0'/1/18 .. m/44'/0'/1'/0/9
+ro_s3_slot9open_p_t1	3a	p	slot 9 = tile 1/5 of the full list (abandon..creek, 410 words), pyramid@11 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot9open_p_t2	3a	p	slot 9 = tile 2/5 of the full list (crew..grid, 410 words), pyramid@11 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot9open_p_t3	3a	p	slot 9 = tile 3/5 of the full list (grief..often, 410 words), pyramid@11 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot9open_p_t4	3a	p	slot 9 = tile 4/5 of the full list (oil..smooth, 410 words), pyramid@11 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot9open_p_t5	3a	p	slot 9 = tile 5/5 of the full list (snack..zoo, 408 words), pyramid@11 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot11open_p_t1	3b	p	slot 11 = tile 1/5 of the full list (abandon..creek, 410 words), eye@9 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot11open_p_t2	3b	p	slot 11 = tile 2/5 of the full list (crew..grid, 410 words), eye@9 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot11open_p_t3	3b	p	slot 11 = tile 3/5 of the full list (grief..often, 410 words), eye@9 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot11open_p_t4	3b	p	slot 11 = tile 4/5 of the full list (oil..smooth, 410 words), eye@9 kept, tight pins, 1 open, MOON passphrase
+ro_s3_slot11open_p_t5	3b	p	slot 11 = tile 5/5 of the full list (snack..zoo, 408 words), eye@9 kept, tight pins, 1 open, MOON passphrase
+ro_s5_rem_moonword_p	5	p	moon a word, vote released, 1 open; the 21 runbook passphrases never run in model P
+ro_s5_rem_moonabsent_p	5	p	moon absent (p1 shape), 1 open; the 21 runbook passphrases never run in model P
+ro_s5_rem_ext_e13	5	e13	E1 shape (moon@13), 1 open; the 12 runbook extensions never run in Electrum
+ro_s5_rem_ext_e12_moonword	5	e12	Electrum-12, moon a word, vote released, 1 open; the 12 runbook extensions never run in Electrum
+ro_s5_rem_ext_e12_moonabsent	5	e12	Electrum-12, moon absent, 1 open; the 12 runbook extensions never run in Electrum
+ro_s5_t1_loo_food_e12	5	e12	S-ii tier 1: moon a word, 'food' dropped, 1 open, the 76 runbook tokens as the extension
+ro_s5_t1_loo_food_p	5	p	S-iii tier 1: moon a word, 'food' dropped, 1 open, the 116 runbook tokens as the passphrase
+ro_s5_t1_loo_this_e12	5	e12	S-ii tier 1: moon a word, 'this' dropped, 1 open, the 76 runbook tokens as the extension
+ro_s5_t1_loo_this_p	5	p	S-iii tier 1: moon a word, 'this' dropped, 1 open, the 116 runbook tokens as the passphrase
+ro_s5_t1_loo_real_e12	5	e12	S-ii tier 1: moon a word, 'real' dropped, 1 open, the 76 runbook tokens as the extension
+ro_s5_t1_loo_real_p	5	p	S-iii tier 1: moon a word, 'real' dropped, 1 open, the 116 runbook tokens as the passphrase
+ro_s5_t1_loo_one_e12	5	e12	S-ii tier 1: moon a word, 'one' dropped, 1 open, the 76 runbook tokens as the extension
+ro_s5_t1_loo_one_p	5	p	S-iii tier 1: moon a word, 'one' dropped, 1 open, the 116 runbook tokens as the passphrase
+ro_s5_t1_loo_order_e12	5	e12	S-ii tier 1: moon a word, 'order' dropped, 1 open, the 76 runbook tokens as the extension
+ro_s5_t1_loo_order_p	5	p	S-iii tier 1: moon a word, 'order' dropped, 1 open, the 116 runbook tokens as the passphrase
+ro_alt_food3_open2_e13	6	e13	alt_food3 2-open: food@3 (the Needle's label), tower required anywhere, vote released, 2 open
+ro_alt_food3_open2_e12	6	e12	alt_food3 2-open: food@3 (the Needle's label), tower required anywhere, vote released, 2 open
+ro_alt_food3_open2_p	6	p	alt_food3 2-open: food@3 (the Needle's label), tower required anywhere, vote released, 2 open
+ro_alt_clock3_p	6	p	alt_clock3 tight: clock@3, tower dropped, 1 open, MOON passphrase (Electrum forms are inside rv_drop_tower_*)
+ro_alt_moon2_open2_e13	6	e13	alt_moon2 2-open: moon@2, vote released, slots 12 and 13 open
+ro_alt_moon2_vote_e12	6	e12	alt_moon2: moon@2 in Electrum-12, vote released, 1 open, no extension
+ro_alt_moon2_vote_p	6	p	alt_moon2: moon@2 in BIP39, vote released, 1 open, the empty passphrase and the 116 runbook tokens
+ro_alt_month13_open2_e12	6	e12	alt_month13 2-open: month as the Electrum-12 extension, vote released, 2 open (E13 form = ld15_month13_open2_e13)
+ro_alt_month13_open2_p	6	p	alt_month13 2-open: month as the BIP39 passphrase, vote released, 2 open
+ro_alt_subject13_open2_e13	6	e13	alt_subject13 2-open: subject@13, moon required anywhere, slots 1 and 12 free, 2 open (E4-sized)
+ro_alt_second13_minute3_e13	6	e13	alt_second13_minute3: the hands named (minute@3, second@13), tower and moon dropped, 1 open
+ro_alt_second13_e13	6	e13	second@13 alone (moon dropped), tight, 1 open
+ro_alt_minute3_e13	6	e13	minute@3 alone (tower dropped), moon@13, tight, 1 open
+ro_alt_minute3_e12	6	e12	minute@3 alone (tower dropped), Electrum-12 + moon, tight, 1 open
+ro_alt_minute3_p	6	p	minute@3 alone (tower dropped), BIP39 + MOON, tight, 1 open
+ro_s5_t0_moonword_p	5	p	S-iii tier 0: all pins, moon and the five loose words in the six free slots (720 orders), the 116 runbook tokens as the passphrase
+ro_alt_clock3_e12	6	e12	alt_clock3 tight in Electrum-12 + moon: clock@3, tower dropped, 1 open (rv_drop_tower_e12 never ran)
+ro_alt_month13_open2_e13	6	e13	alt_month13 2-open in Electrum-13: month@13, moon absent, vote released, 2 open (same candidates as ld15_month13_open2_e13, stopped at 8 of 11 blocks)

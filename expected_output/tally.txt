@@ -1,0 +1,8 @@
+ledger            puzzles/btc-02-picture/ledger/runs.jsonl
+records           1,447  (START 729, NO_MATCH 718)
+first / last      2026-09-29T04:58:13 / 2026-10-02T07:10:45
+runs (NO_MATCH)   718
+tested            1,479,268,494,119
+valid             17,799,496,608
+distinct sigs     716  (tested, summed once per signature: 1,468,697,373,479)
+planted seeds     1,013,496 found

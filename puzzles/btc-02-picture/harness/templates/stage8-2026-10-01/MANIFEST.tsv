@@ -1,0 +1,67 @@
+name	item	model	note
+s8_pair_reason_strong_e13	8.1	e13	reason@9 strong@11 (report rank, both seal words changed), vote released, 2 open; Electrum-13, moon@13
+s8_pair_reason_strong_e12	8.1	e12	reason@9 strong@11 (report rank, both seal words changed), vote released, 2 open; Electrum-12, extension moon
+s8_pair_reason_strong_p	8.1	p	reason@9 strong@11 (report rank, both seal words changed), vote released, 2 open; BIP39-12, passphrase MOON/moon/Moon
+s8_pair_wisdom_strong_e13	8.1	e13	wisdom@9 strong@11 (report rank, both seal words changed), vote released, 2 open; Electrum-13, moon@13
+s8_pair_wisdom_strong_e12	8.1	e12	wisdom@9 strong@11 (report rank, both seal words changed), vote released, 2 open; Electrum-12, extension moon
+s8_pair_wisdom_strong_p	8.1	p	wisdom@9 strong@11 (report rank, both seal words changed), vote released, 2 open; BIP39-12, passphrase MOON/moon/Moon
+s8_pair_happy_strong_e13	8.1	e13	happy@9 strong@11 (report rank, both seal words changed), vote released, 2 open; Electrum-13, moon@13
+s8_pair_happy_strong_e12	8.1	e12	happy@9 strong@11 (report rank, both seal words changed), vote released, 2 open; Electrum-12, extension moon
+s8_pair_happy_strong_p	8.1	p	happy@9 strong@11 (report rank, both seal words changed), vote released, 2 open; BIP39-12, passphrase MOON/moon/Moon
+s8_pair_reason_time_e13	8.1	e13	reason@9 time@11 (report rank, both seal words changed), vote released, 2 open; Electrum-13, moon@13
+s8_pair_reason_time_e12	8.1	e12	reason@9 time@11 (report rank, both seal words changed), vote released, 2 open; Electrum-12, extension moon
+s8_pair_reason_time_p	8.1	p	reason@9 time@11 (report rank, both seal words changed), vote released, 2 open; BIP39-12, passphrase MOON/moon/Moon
+s8_pair_reason_era_e13	8.1	e13	reason@9 era@11 (report rank, both seal words changed), vote released, 2 open; Electrum-13, moon@13
+s8_pair_reason_era_e12	8.1	e12	reason@9 era@11 (report rank, both seal words changed), vote released, 2 open; Electrum-12, extension moon
+s8_pair_reason_era_p	8.1	p	reason@9 era@11 (report rank, both seal words changed), vote released, 2 open; BIP39-12, passphrase MOON/moon/Moon
+s8_tok_e3_rest_e13	8.2	e13	S-i at the E3 shape (black@10, vote released, 2 open): the token strings of groups 1-5 that c02a and rd_xx_ext_e13 did not carry, as the extension
+s8_tok_e4_g1_e13	8.2	e13	S-i at the E4 shape (black anywhere, 2 open): token group 1 as the extension (blm and breathe are in c02b)
+s8_tok_e4_g3_e13	8.2	e13	S-i at the E4 shape (black anywhere, 2 open): token group 3 as the extension (blm and breathe are in c02b)
+s8_tok_e4_g45_e13	8.2	e13	S-i at the E4 shape (black anywhere, 2 open): token group 45 as the extension (blm and breathe are in c02b)
+s8_tok_s2_g1_e12	8.2	e12	S-ii: Electrum-12, moon a word, the E4 pins, 2 open (black may take an open slot): token group 1 as the extension
+s8_tok_s2_g24_e12	8.2	e12	S-ii: Electrum-12, moon a word, the E4 pins, 2 open (black may take an open slot): token group 24 as the extension
+s8_tok_s2_g3_e12	8.2	e12	S-ii: Electrum-12, moon a word, the E4 pins, 2 open (black may take an open slot): token group 3 as the extension
+s8_tok_s2_g5_e12	8.2	e12	S-ii: Electrum-12, moon a word, the E4 pins, 2 open (black may take an open slot): token group 5 as the extension
+s8_l33_mirror_e13	8.4	e13	L33 mirrored dial (eye@3 tower@9 moon@11, pyramid at 13), vote released, 2 open; Electrum-13, pyramid@13
+s8_l33_mirror_e12	8.4	e12	L33 mirrored dial (eye@3 tower@9 moon@11, pyramid at 13), vote released, 2 open; Electrum-12, extension pyramid
+s8_l33_mirror_p	8.4	p	L33 mirrored dial (eye@3 tower@9 moon@11, pyramid at 13), vote released, 2 open; BIP39-12, passphrase PYRAMID/pyramid/Pyramid
+s8_l38_reversed_e13	8.4	e13	L38 pins reversed (p -> 14-p), vote@2 released, 2 open; Electrum-13
+s8_l38_reversed_e12	8.4	e12	L38 pins reversed (p -> 13-p), vote@1 released, 2 open; Electrum-12, extension moon
+s8_l38_reversed_p	8.4	p	L38 pins reversed (p -> 13-p), vote@1 released, 2 open; BIP39-12, passphrase MOON/moon/Moon
+s8_l36_eye4_pyr5_e13	8.4	e13	L36 eye@4 pyramid@5 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye4_pyr5_e12	8.4	e12	L36 eye@4 pyramid@5 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye4_pyr6_e13	8.4	e13	L36 eye@4 pyramid@6 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye4_pyr6_e12	8.4	e12	L36 eye@4 pyramid@6 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye4_pyr6_p	8.4	p	L36 eye@4 pyramid@6 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; BIP39-12, passphrase MOON/moon/Moon
+s8_l36_eye4_pyr7_e13	8.4	e13	L36 eye@4 pyramid@7 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye4_pyr7_e12	8.4	e12	L36 eye@4 pyramid@7 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye5_pyr4_e13	8.4	e13	L36 eye@5 pyramid@4 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye5_pyr4_e12	8.4	e12	L36 eye@5 pyramid@4 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye5_pyr6_e13	8.4	e13	L36 eye@5 pyramid@6 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye5_pyr6_e12	8.4	e12	L36 eye@5 pyramid@6 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye5_pyr7_e13	8.4	e13	L36 eye@5 pyramid@7 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye5_pyr7_e12	8.4	e12	L36 eye@5 pyramid@7 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye6_pyr4_e13	8.4	e13	L36 eye@6 pyramid@4 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye6_pyr4_e12	8.4	e12	L36 eye@6 pyramid@4 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye6_pyr5_e13	8.4	e13	L36 eye@6 pyramid@5 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye6_pyr5_e12	8.4	e12	L36 eye@6 pyramid@5 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye6_pyr7_e13	8.4	e13	L36 eye@6 pyramid@7 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye6_pyr7_e12	8.4	e12	L36 eye@6 pyramid@7 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye7_pyr4_e13	8.4	e13	L36 eye@7 pyramid@4 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye7_pyr4_e12	8.4	e12	L36 eye@7 pyramid@4 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye7_pyr5_e13	8.4	e13	L36 eye@7 pyramid@5 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye7_pyr5_e12	8.4	e12	L36 eye@7 pyramid@5 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_l36_eye7_pyr6_e13	8.4	e13	L36 eye@7 pyramid@6 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-13, moon@13
+s8_l36_eye7_pyr6_e12	8.4	e12	L36 eye@7 pyramid@6 (seal words moved into slots 4-7; 9 and 11 free), vote released, 2 open; Electrum-12, extension moon
+s8_slot1_voteopen_e13	8.5	e13	slot 1 open, subject required anywhere, vote released, 2 open (84.6B); Electrum-13, moon@13
+s8_slot1_voteopen_e12	8.5	e12	slot 1 open, subject required anywhere, vote released, 2 open (84.6B); Electrum-12, extension moon
+s8_slot1_loo_food_e13	8.5	e13	slot 1 open, subject required anywhere, 'food' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-13, moon@13
+s8_slot1_loo_food_e12	8.5	e12	slot 1 open, subject required anywhere, 'food' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-12, extension moon
+s8_slot1_loo_this_e13	8.5	e13	slot 1 open, subject required anywhere, 'this' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-13, moon@13
+s8_slot1_loo_this_e12	8.5	e12	slot 1 open, subject required anywhere, 'this' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-12, extension moon
+s8_slot1_loo_real_e13	8.5	e13	slot 1 open, subject required anywhere, 'real' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-13, moon@13
+s8_slot1_loo_real_e12	8.5	e12	slot 1 open, subject required anywhere, 'real' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-12, extension moon
+s8_slot1_loo_one_e13	8.5	e13	slot 1 open, subject required anywhere, 'one' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-13, moon@13
+s8_slot1_loo_one_e12	8.5	e12	slot 1 open, subject required anywhere, 'one' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-12, extension moon
+s8_slot1_loo_order_e13	8.5	e13	slot 1 open, subject required anywhere, 'order' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-13, moon@13
+s8_slot1_loo_order_e12	8.5	e12	slot 1 open, subject required anywhere, 'order' left out, vote kept, 2 open (one sixth of the run order's 63B); Electrum-12, extension moon

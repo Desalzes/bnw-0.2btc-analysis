@@ -1,0 +1,22 @@
+QUEUE START 2026-09-29T15:14:50-04:00 signoff: the operator 2026-09-29, in chat: "step 2 is good to go when ready" = T2 stage 2, the seven p7 slices (black at 2 4 5 6 7 8 12), after the quick runs
+RUN p7b2 START 2026-09-29T15:14:50-04:00 config=p7_black_at_2.conf max_hours=5
+PAUSED 2026-09-29T15:38:20-04:00 at p7b2 (119 of 840 blocks in its checkpoint): operator chose "Bush Electrum first (~1.7 h)"; resume = re-run t2s2-queue.sh with the same sign-off
+QUEUE START 2026-09-29T17:12:37-04:00 signoff: the operator 2026-09-29, in chat: "step 2 is good to go when ready" = T2 stage 2, the seven p7 slices (black at 2 4 5 6 7 8 12), after the quick runs
+RUN p7b2 START 2026-09-29T17:12:37-04:00 config=p7_black_at_2.conf max_hours=5
+RUN p7b2 NO_MATCH 2026-09-29T19:32:13-04:00 rc=0
+RUN p7b4 START 2026-09-29T19:32:13-04:00 config=p7_black_at_4.conf max_hours=5
+RUN p7b4 NO_MATCH 2026-09-29T22:41:21-04:00 rc=0
+RUN p7b5 START 2026-09-29T22:41:21-04:00 config=p7_black_at_5.conf max_hours=5
+RUN p7b5 NO_MATCH 2026-09-30T01:23:00-04:00 rc=0
+RUN p7b6 START 2026-09-30T01:23:00-04:00 config=p7_black_at_6.conf max_hours=5
+RUN p7b6 NO_MATCH 2026-09-30T04:03:28-04:00 rc=0
+RUN p7b7 START 2026-09-30T04:03:28-04:00 config=p7_black_at_7.conf max_hours=5
+RUN p7b7 NO_MATCH 2026-09-30T06:43:54-04:00 rc=0
+RUN p7b8 START 2026-09-30T06:43:54-04:00 config=p7_black_at_8.conf max_hours=5
+RUN p7b8 NO_MATCH 2026-09-30T09:26:20-04:00 rc=0
+RUN p7b12 START 2026-09-30T09:26:20-04:00 config=p7_black_at_12.conf max_hours=5
+RESUME p7b12 START 2026-09-30T13:45:56-04:00 from 279 saved blocks, max_hours=8
+STOPPED 2026-09-30T18:57:45-04:00 by operator request ("can you stop them all?"): unit stopped, checkpoint kept; resume = re-run the same script
+RESUME p7b12 START 2026-10-01T07:33:03-04:00 from 696 saved blocks, max_hours=8
+RUN p7b12 NO_MATCH 2026-10-01T08:01:14-04:00 rc=0
+QUEUE DONE 2026-10-01T08:01:14-04:00 all seven slices NO MATCH (verified)

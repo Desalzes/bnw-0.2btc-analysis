@@ -1,0 +1,9 @@
+# 0.2 BTC candidate word POOL for `--pool` (searches every choose-12 combo).
+# All entries MUST be valid BIP39. Combinatorics grow fast:
+#   12 words -> 1 set, 13 -> 13, 14 -> 91, 15 -> 455, 16 -> 1820 sets.
+# Each set = a full 479M-ordering sweep, so keep the pool <= ~14 for sane runtime.
+#
+# Default below = Tier1+Tier2 (the best-12) = 1 set (same as --words words.txt).
+# To widen, append words from the Tier-3 swap-in line and re-run with --pool.
+moon tower food this real subject black weapon pyramid world brave face
+# Tier-3 swap-ins (append above to widen the pool): virus mask coin eye flag camera twenty only proof win

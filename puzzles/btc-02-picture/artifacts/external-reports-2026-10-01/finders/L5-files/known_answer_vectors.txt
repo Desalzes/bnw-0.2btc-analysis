@@ -1,0 +1,25 @@
+# L5 known-answer vectors for a raw-text (no checksum) scheme. Synthetic phrases only.
+# V0 control (public vector, valid BIP39): expect C:1LqBGSKuX5yYUonjxT5qGfpUsXKYYWeabA at m/44'/0'/0'/0/0
+V0 abandon x11 about               m/44'/0'/0'/0/0        C:1LqBGSKuX5yYUonjxT5qGfpUsXKYYWeabA  U:18LhnLKXjcTw5xJFiTxntnKit2Gd63eWFm
+# V1 13 words (BIP39 forbids), raw text: zoo wrong zoo wrong zoo wrong zoo wrong zoo wrong zoo wrong zoo
+V1 pass=''                         m/44'/0'/0'/0/0        C:155JeWn6UiXMftaD2nHzPsYHA1rnZJMhjx  U:1aLPxUUYfJfQPw6UfZXnPzGyKveFuMsvW
+V1 pass=''                         m/44'/0'/0'/0/10       C:18TjqBVpjqgyAx9dP1TyXvVXPtUSa13aCz  U:1PLmszXc2WJjGopdr5S6SE9SdQ3vXMxVyP
+V1 pass=''                         m/0'/0/0               C:1B5YHBpJCmNiei1JWbDAK7NfVBy2Ao8vzU  U:1om45ChsrAmm7PWRk3Kn63J27iHkxfPmq
+V1 pass=''                         m/0/0                  C:13ePFtqF7HKvcCGfrZFJpsp2fxMCDdcrnP  U:15jVniiw1cTcrTY9mmXQJTa1GGT1Myw37c
+V1 pass='moon'                     m/44'/0'/0'/0/0        C:1Gz25UhhoN3gGxCMPZjQksQS4Gekxmi5R7  U:15tafztYVqqT1KwZSLom9QwfFQxCbzJryU
+V1 pass='MOON'                     m/44'/0'/0'/0/0        C:1CddC4oefuiErwFM1FYPobsgwEXzds9nb  U:1PU4VLtfVuZusPjxwKb3rv6UuhSAevBFSs
+# V2 same text in UPPER case (BIP39 raw keeps case; native Electrum would not)
+V2 UPPER pass=''                   m/44'/0'/0'/0/0        C:1AXkr6uEyJSTu8DTQJGvFaowrs8ismdZ87  U:1B1BEAXW3jGZdmrwGsTLyowuphi7wAV4zG
+# V3 12 words, checksum-invalid, with a non-BIP39 token: zoo wrong zoo wrong zoo wrong zoo wrong zoo wrong zoo breathe
+V3 pass=''                         m/44'/0'/0'/0/0        C:16NbGKRBg85nfq5WmziBD5Nr7ZLrTrmFaU  U:19NmzDdAQ4nBys48CW96GCWD1vxwW3s6Uo
+# V4 Electrum-native synthetic seed ('01' prefix): zoo wrong zoo wrong zoo wrong zoo wrong zoo wrong zoo action
+V4 ext=''                          m/0/0                  C:1HZWPkxs72HrFVu3h9ePKvgAiX9PEYMbra  U:17uinhLXiqj1omdgit2pt8hmXzLivNrf3B
+V4 ext=''                          m/0/10                 C:1GvXwNQmxk1CnAhBWTJoGwNfjrUpBppCwd  U:174UHa6adjfSzcmFDVsax4PpSwG6AzMHyE
+V4 ext=''                          m/1/0                  C:1GuzH2zpiVNcpmeVXQihEuVuoV7HRXM2Gz  U:13mhwTCdh6fxUg4NojwCJXqBkA9eaZymxK
+V4 ext='moon' (lowercased)         m/0/0                  C:1BaMtToafc7yT7yQfj5ELfyRFV2BdazHZi  U:1H2JeMSNcpHFEjGjprVwXQv21wKD16KJzR
+V4 ext='MOON' (== moon)            m/0/0                  C:1BaMtToafc7yT7yQfj5ELfyRFV2BdazHZi  U:1H2JeMSNcpHFEjGjprVwXQv21wKD16KJzR
+# V5 Unicode: public 'abandon x11 about' mnemonic with the passphrase 'чёрный день'
+#    NFKD form has 13 code points, NFC form 11 (e-diaeresis and i-breve decompose under NFKD)
+V5 BIP39 passphrase as NFKD                   m/44'/0'/0'/0/0   C:1BGKQaECAZnFHfKUXmD4cdDVswyfS7G1p5
+V5 BIP39 passphrase as NFC                    m/44'/0'/0'/0/0   C:1KRP27R9gtsTSEnA6Pbev5zKbC1Cym6uhE
+#    Electrum normalize_text('Чёрный День') = 'черныи день'  (lowercases and DROPS combining marks: e-diaeresis -> e, i-breve -> i)

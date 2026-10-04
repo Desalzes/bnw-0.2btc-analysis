@@ -1,0 +1,8 @@
+EXTRA START 2026-09-30T19:29:49-04:00; signoff: the operator 2026-09-30, in chat: "i stopped everything else so you could start it. you have the go ahead" = the run order (BTC02-RUN-ORDER-2026-09-30.md); these 3 configs (stage 5 tier 0 in P; stage 6 alt_clock3 E12, alt_month13 2-open E13) were left out of the 52 by a reconciliation error
+RUN ro_s5_t0_moonword_p START 2026-09-30T19:29:49-04:00
+RUN ro_s5_t0_moonword_p NO_MATCH 2026-09-30T19:30:17-04:00 rc=0
+RUN ro_alt_clock3_e12 START 2026-09-30T19:30:17-04:00
+RUN ro_alt_clock3_e12 NO_MATCH 2026-09-30T19:30:21-04:00 rc=0
+RUN ro_alt_month13_open2_e13 START 2026-09-30T19:30:21-04:00
+RUN ro_alt_month13_open2_e13 NO_MATCH 2026-09-30T19:36:13-04:00 rc=0
+EXTRA DONE 2026-09-30T19:36:13-04:00 all three NO_MATCH (verified)

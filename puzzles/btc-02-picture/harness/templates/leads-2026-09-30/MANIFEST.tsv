@@ -1,0 +1,95 @@
+config	lead	model	note
+ld05_slot1open_e13	L01/L03/L04/L05/L70	e13	slot 1 open to the full list, subject required anywhere, tight pins otherwise, 1 open
+ld05_slot1open_e12	L01/L03/L04/L05/L70	e12	slot 1 open to the full list, subject required anywhere, tight pins otherwise, 1 open
+ld05_slot1open_p	L01/L03/L04/L05/L70	p	slot 1 open to the full list, subject required anywhere, tight pins otherwise, 1 open
+ld02_subject13_e13	L02	e13	subject as Electrum word 13, moon a word anywhere, slot 1 free, 1 open
+ld02_subjectpass_p	L02	p	subject / LUN as the BIP39 passphrase, moon a word, slot 1 free, 1 open
+ld02_subjectext_e12	L02	e12	subject / lun as the Electrum-12 extension, moon a word, slot 1 free, 1 open
+ld11_food3_towerloose_e13	L11	e13	food@3 (the Needle's label), tower loose, 1 open
+ld11_food3_towerloose_e12	L11	e12	food@3 (the Needle's label), tower loose, 1 open
+ld11_food3_towerloose_p	L11	p	food@3 (the Needle's label), tower loose, 1 open
+ld54_stripwords_9_11_e13	L54	e13	the dial strip's own words at 9 and 11 (25 pairs), 1 open
+ld54_stripwords_9_11_e12	L54	e12	the dial strip's own words at 9 and 11 (25 pairs), 1 open
+ld54_stripwords_9_11_p	L54	p	the dial strip's own words at 9 and 11 (25 pairs), 1 open
+ld44_one11_e13	L44	e13	one@11 (the one-dollar seal), pyramid loose, 1 open
+ld44_one11_e12	L44	e12	one@11 (the one-dollar seal), pyramid loose, 1 open
+ld44_one11_p	L44	p	one@11 (the one-dollar seal), pyramid loose, 1 open
+ld47_order11_e13	L47	e13	order@11 (the deleted NOVUS ORDO), pyramid loose, 1 open
+ld47_order11_e12	L47	e12	order@11 (the deleted NOVUS ORDO), pyramid loose, 1 open
+ld47_order11_p	L47	p	order@11 (the deleted NOVUS ORDO), pyramid loose, 1 open
+ld13_food11_e13	L13	e13	food@11 (hour hand through the saucer), pyramid loose, 1 open
+ld13_food11_e12	L13	e12	food@11 (hour hand through the saucer), pyramid loose, 1 open
+ld13_food11_p	L13	p	food@11 (hour hand through the saucer), pyramid loose, 1 open
+ld48_vote11_e13	L48	e13	vote@11 (11.03.20 under .VS.), slot 12 free, pyramid loose, 1 open
+ld48_vote11_e12	L48	e12	vote@11 (11.03.20 under .VS.), slot 12 free, pyramid loose, 1 open
+ld48_vote11_p	L48	p	vote@11 (11.03.20 under .VS.), slot 12 free, pyramid loose, 1 open
+ld43_camera9_eyeloose_e13	L43	e13	camera|security@9 (the CCTV eye), eye loose, vote released, 1 open
+ld43_camera9_eyeloose_e12	L43	e12	camera|security@9 (the CCTV eye), eye loose, vote released, 1 open
+ld43_camera9_eyeloose_p	L43	p	camera|security@9 (the CCTV eye), eye loose, vote released, 1 open
+ld36_sealwords_anywhere_e13	L36/L34	e13	eye and pyramid anywhere (incl. 4-7), slots 9 and 11 free, 1 open
+ld36_sealwords_anywhere_e12	L36/L34	e12	eye and pyramid anywhere (incl. 4-7), slots 9 and 11 free, 1 open
+ld36_sealwords_anywhere_p	L36/L34	p	eye and pyramid anywhere (incl. 4-7), slots 9 and 11 free, 1 open
+ld08_twenty_one_10_11_e13	L08	e13	twenty and one at 10/11 (XX + one = 21), black and pyramid loose, 0 open
+ld08_twenty_one_10_11_e12	L08	e12	twenty and one at 10/11 (XX + one = 21), black and pyramid loose, 0 open
+ld08_twenty_one_10_11_p	L08	p	twenty and one at 10/11 (XX + one = 21), black and pyramid loose, 0 open
+ld08_twenty_one_dropped_e13	L08	e13	twenty and one at 10/11, black and pyramid dropped, 2 open
+ld08_twenty_one_dropped_e12	L08	e12	twenty and one at 10/11, black and pyramid dropped, 2 open
+ld08_twenty_one_dropped_p	L08	p	twenty and one at 10/11, black and pyramid dropped, 2 open
+ld49_slot12_alts_e13	L49/L50/L20	e13	a swap/number word at 12 instead of vote, 1 open
+ld49_slot12_alts_e12	L49/L50/L20	e12	a swap/number word at 12 instead of vote, 1 open
+ld49_slot12_alts_p	L49/L50/L20	p	a swap/number word at 12 instead of vote, 1 open
+ld20_vote2_e13	L20	e13	vote@2 (Tuesday = vtornik = second), slot 12 free, 1 open
+ld20_vote2_e12	L20	e12	vote@2 (Tuesday = vtornik = second), slot 12 free, 1 open
+ld20_vote2_p	L20	p	vote@2 (Tuesday = vtornik = second), slot 12 free, 1 open
+ld49_moon12_vote13_e13	L49	e13	the literal swap: moon@12, vote@13, 1 open
+ld19_moon2_e13	L19	e13	moon@2 (the SECOND hand), slot 13 open, 1 open
+ld19_moon2_e12	L19	e12	moon@2, vote released, 1 open, empty extension
+ld19_moon2_p	L19	p	moon@2, vote released, 1 open, empty passphrase
+ld15_month13_e13	L15	e13	month (mesyats) as word 13 instead of moon, 1 open
+ld15_month13_open2_e13	L15	e13	month@13, vote released, 2 open (the E3 shape)
+ld15_monthpass_p	L15	p	month as the BIP39 passphrase instead of MOON, 1 open
+ld15_monthext_e12	L15	e12	month as the Electrum-12 extension, 1 open
+ld21_blood13_e13	L21	e13	blood|pink as word 13 (the red hand), moon a word, vote released, 1 open
+ld21_black13_e13	L21	e13	black as word 13 (flag stripe 13), slot 10 free, moon a word, 1 open
+ld46_world13_e13	L46	e13	world (MUNDUS on the tail's axis) as word 13, moon a word, vote released, 1 open
+ld33_mirror_e13	L33	e13	dial mirrored (h -> 6-h): eye@3 tower@9 moon@11 pyramid@13, 1 open
+ld33_mirror_p	L33	p	dial mirrored, pyramid as the passphrase, 1 open
+ld33_mirror_e12	L33	e12	dial mirrored, pyramid as the extension, 1 open
+ld33_dup_e13	L33	e13	hand words duplicated by the mirror: tower@3+9, moon@11+13, 1 open
+ld38_reversed_p	L38	p	pins reversed (p -> 13-p), MOON passphrase, 1 open
+ld38_reversed_e12	L38	e12	pins reversed, moon extension, 1 open
+ld38_reversed_e13	L38	e13	pins reversed (p -> 14-p), moon@1, 1 open
+ld22_colours4_e13	L22	e13	the four text colours instead of the five loose words, 2 open
+ld22_colours4_e12	L22	e12	the four text colours instead of the five loose words, 2 open
+ld22_colours4_p	L22	p	the four text colours instead of the five loose words, 2 open
+ld22_colours6_e13	L22	e13	six colour words instead of the five loose words, 0 open
+ld22_colours6_e12	L22	e12	six colour words instead of the five loose words, 0 open
+ld22_colours6_p	L22	p	six colour words instead of the five loose words, 0 open
+ld22_colours_12perm_p	L22	p	every order of the pins + six colour words (12!), empty passphrase
+ld42_countpins_e13	L42	e13	community count pins (camera@2 mask@4 police@5 liberty@7, alts twin/hand/one) with the loose words in the rest; any subset of the count pins, 0 open
+ld42_countpins_e12	L42	e12	community count pins (camera@2 mask@4 police@5 liberty@7, alts twin/hand/one) with the loose words in the rest; any subset of the count pins, 0 open
+ld42_countpins_p	L42	p	community count pins (camera@2 mask@4 police@5 liberty@7, alts twin/hand/one) with the loose words in the rest; any subset of the count pins, 0 open
+ld41_18word_p	L41	p	18-word BIP39 (18 chapters): community table + the five loose words in 6,8,14,15,18, 0 open
+ld41_18word_novote_p	L41	p	18-word BIP39, vote@12 released to the full list, 1 open
+ld41_18word_noliberty_p	L41	p	18-word BIP39, liberty@7 released to the full list, 1 open
+ld41_18word_nopolice_p	L41	p	18-word BIP39, police@5 released to the full list, 1 open
+ld40_21word_p	L40	p	21-word BIP39 (hour hand 21 = length): community table, loose words in 6,8,14,15,18,21, 1 open; BREATHE as the 25th word
+ld69_zerobased_12perm_p	L69	p	hzeattar's index set re-read 0-based (task double measure wish), every order (12!)
+ld69_zerobased_pool_p	L69	p	c04b re-read 0-based: 4 slots from task double measure wish puzzle truck, MOON passphrases
+ld_pass_moonword_p	L06/L09/L12/L21/L26/L27/L32/L46/L57/L58/L59/L60/L61/L62/L63/L71	p	172 lead passphrases on the c01a shape (moon a word, 1 open)
+ld_pass_moonabsent_p	same leads	p	172 lead passphrases replacing MOON on the p1 shape (moon absent, vote@12, 1 open)
+ld_pass_ext_e13	same leads	e13	172 lead strings as the Electrum-13 extension on the E1 shape (moon@13, 1 open)
+ld_pass_ext_e12_moonword	same leads	e12	172 lead strings as the Electrum-12 extension, moon a word, 1 open
+ld_pass_ext_e12_moonabsent	same leads	e12	172 lead strings as the Electrum-12 extension, moon absent, vote@12, 1 open
+ld30_thispass_p	L30	p	THIS as the passphrase, this not a word, moon a word, 1 open
+ld30_thispass_e13	L30	e13	this as the Electrum-13 extension, this not a word, 2 open
+ld30_thisext_e12	L30	e12	this as the Electrum-12 extension, this not a word, moon a word, 1 open
+ld12_foodpass_p	L12	p	FOOD (the label with no position) as the passphrase, food not a word, moon a word, 1 open
+ld12_foodpass_e13	L12	e13	food as the Electrum-13 extension, food not a word, 2 open
+ld12_foodext_e12	L12	e12	food as the Electrum-12 extension, food not a word, moon a word, 1 open
+ld74_pathsA_p1	L74	p	p1 shape at address indices 2-9 of account 0
+ld74_pathsB_p1	L74	p	p1 shape at the change chain 0-3 and account 1 indices 0-3
+ld74_pathsA_moonword_p	L74	p	c01a shape (moon a word, empty passphrase) at indices 2-9
+ld74_pathsB_moonword_p	L74	p	c01a shape at the change chain and account 1
+ld74_pathsC_e13	L74	e13	E1 shape at Electrum receive indices 3-9 and change index 1
+ld74_pathsC_e12	L74	e12	p1e shape at Electrum receive indices 3-9 and change index 1

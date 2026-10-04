@@ -1,0 +1,23 @@
+QUEUE START 2026-09-30T16:31:06-04:00 (alongside the other units, at the operator's request); signoff: the operator 2026-09-30, in chat: "i want them run, yes" = the 10 Electrum single-word-drop configs rv_drop_{eye,pyramid,black,tower,subject}_{e13,e12} in harness/templates/review-2026-09-30 (Q20); the 5 model-P versions excluded
+RUN rv_drop_eye_e13 START 2026-09-30T16:31:06-04:00 (other searches running: 3)
+RUN rv_drop_eye_e13 NO_MATCH 2026-09-30T16:43:34-04:00 rc=0
+RUN rv_drop_pyramid_e13 START 2026-09-30T16:43:34-04:00 (other searches running: 3)
+RUN rv_drop_pyramid_e13 NO_MATCH 2026-09-30T16:56:52-04:00 rc=0
+RUN rv_drop_black_e13 START 2026-09-30T16:56:52-04:00 (other searches running: 5)
+RUN rv_drop_black_e13 NO_MATCH 2026-09-30T17:15:09-04:00 rc=0
+RUN rv_drop_tower_e13 START 2026-09-30T17:15:09-04:00 (other searches running: 4)
+RUN rv_drop_tower_e13 NO_MATCH 2026-09-30T17:30:06-04:00 rc=0
+RUN rv_drop_subject_e13 START 2026-09-30T17:30:06-04:00 (other searches running: 4)
+RUN rv_drop_subject_e13 NO_MATCH 2026-09-30T17:45:09-04:00 rc=0
+RUN rv_drop_eye_e12 START 2026-09-30T17:45:09-04:00 (other searches running: 4)
+RUN rv_drop_eye_e12 NO_MATCH 2026-09-30T18:13:08-04:00 rc=0
+RUN rv_drop_pyramid_e12 START 2026-09-30T18:13:08-04:00 (other searches running: 4)
+RUN rv_drop_pyramid_e12 NO_MATCH 2026-09-30T18:41:00-04:00 rc=0
+RUN rv_drop_black_e12 START 2026-09-30T18:41:00-04:00 (other searches running: 4)
+STOPPED 2026-09-30T18:57:58-04:00 by operator request via another session ("can you stop them all?"): unit stopped, checkpoint kept
+RUN rv_drop_black_e12 START 2026-10-01T05:48:18-04:00 (resume from 11 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN rv_drop_black_e12 NO_MATCH 2026-10-01T05:50:36-04:00 rc=0
+RUN rv_drop_tower_e12 START 2026-10-01T05:50:36-04:00 (resume from 0 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN rv_drop_tower_e12 NO_MATCH 2026-10-01T05:55:25-04:00 rc=0
+RUN rv_drop_subject_e12 START 2026-10-01T05:55:25-04:00 (resume from 0 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN rv_drop_subject_e12 NO_MATCH 2026-10-01T06:00:17-04:00 rc=0

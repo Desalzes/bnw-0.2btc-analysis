@@ -1,0 +1,5 @@
+address   1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ
+version   00
+hash160   ccbd031e54cde2a3189fd59bc49f731367a1779e
+checksum  b0bd07dc OK
+shifted   bd031e54cde2a3189fd59bc49f731367a1779eb0  (payload bytes [2:22]; the void community scan's 'Target Hash160')

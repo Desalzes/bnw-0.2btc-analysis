@@ -1,0 +1,8 @@
+QUEUE START 2026-09-29T11:19:23-04:00 signoff: the operator 2026-09-29, in chat (answer to the sign-off question): "Stage 1 now (~3.7 h)" = p6e, p7e, p6 in that order
+RUN p6e START 2026-09-29T11:19:23-04:00 config=p6e_moonpass_slot12_open.conf max_hours=1
+RUN p6e NO_MATCH 2026-09-29T11:24:29-04:00 rc=0
+RUN p7e START 2026-09-29T11:24:29-04:00 config=p7e_moonpass_pins_only.conf max_hours=2
+RUN p7e NO_MATCH 2026-09-29T12:04:01-04:00 rc=0
+RUN p6 START 2026-09-29T12:04:01-04:00 config=p6_moonpass_slot12_open.conf max_hours=4
+RUN p6 NO_MATCH 2026-09-29T14:46:52-04:00 rc=0
+QUEUE DONE 2026-09-29T14:46:52-04:00 all three NO MATCH (verified)

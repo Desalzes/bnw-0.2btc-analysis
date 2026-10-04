@@ -1,0 +1,33 @@
+# 0.2 BTC puzzle - BIP39 passphrase candidates (from the runes/dates/theme).
+# One candidate per line. The empty passphrase is ALWAYS tried automatically.
+# '#' lines are ignored. These are guesses derived from the image meta-layer:
+#   runes "sum of two numbers" / "Tuesday" / "rainy day number X"; dates
+#   05.25.20 (Floyd), 11.03.20 (election Tue), 1865-202? (statue tablet);
+#   title "Welcome to the Brave New World".
+Tuesday
+tuesday
+TUESDAY
+1865
+2020
+2021
+2024
+18652020
+1865-2020
+1865_2020
+05252020
+05/25/2020
+11032020
+11/03/2020
+BraveNewWorld
+Brave New World
+brave new world
+bravenewworld
+5G
+covid19
+COVID19
+rainyday
+rainy day
+sum of two numbers
+sumoftwonumbers
+3885
+30

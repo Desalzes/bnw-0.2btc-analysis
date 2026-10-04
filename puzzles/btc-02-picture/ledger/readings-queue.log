@@ -1,0 +1,40 @@
+QUEUE START 2026-09-30T15:55:22-04:00 signoff: the operator 2026-09-30, in chat: "yes run the quick ones first" = the 15 configs in harness/templates/readings-2026-09-30 (14 quick ones, then rd_this_section1_p)
+RUN rd_peace11_e13 START 2026-09-30T15:55:22-04:00
+RUN rd_peace11_e13 NO_MATCH 2026-09-30T15:55:26-04:00 rc=0
+RUN rd_peace11_e12 START 2026-09-30T15:55:26-04:00
+RUN rd_peace11_e12 NO_MATCH 2026-09-30T15:55:31-04:00 rc=0
+RUN rd_peace11_p START 2026-09-30T15:55:31-04:00
+RUN rd_peace11_p NO_MATCH 2026-09-30T15:55:45-04:00 rc=0
+RUN rd_eye13_e13 START 2026-09-30T15:55:45-04:00
+RUN rd_eye13_e13 NO_MATCH 2026-09-30T15:55:51-04:00 rc=0
+RUN rd_eyefree_e13 START 2026-09-30T15:55:51-04:00
+RUN rd_eyefree_e13 NO_MATCH 2026-09-30T15:55:57-04:00 rc=0
+RUN rd_eyeext_e12 START 2026-09-30T15:55:57-04:00
+RUN rd_eyeext_e12 NO_MATCH 2026-09-30T15:56:03-04:00 rc=0
+RUN rd_eyefree_e12 START 2026-09-30T15:56:03-04:00
+RUN rd_eyefree_e12 NO_MATCH 2026-09-30T15:56:10-04:00 rc=0
+RUN rd_eyepass_p START 2026-09-30T15:56:10-04:00
+RUN rd_eyepass_p NO_MATCH 2026-09-30T15:56:52-04:00 rc=0
+RUN rd_eyefree_p START 2026-09-30T15:56:52-04:00
+RUN rd_eyefree_p NO_MATCH 2026-09-30T15:57:36-04:00 rc=0
+RUN rd_xx_pass_p START 2026-09-30T15:57:36-04:00
+RUN rd_xx_pass_p NO_MATCH 2026-09-30T15:58:59-04:00 rc=0
+RUN rd_this_section1_e13 START 2026-09-30T15:58:59-04:00
+RUN rd_this_section1_e13 NO_MATCH 2026-09-30T16:01:38-04:00 rc=0
+RUN rd_this_section1_e12 START 2026-09-30T16:01:38-04:00
+RUN rd_this_section1_e12 NO_MATCH 2026-09-30T16:06:28-04:00 rc=0
+RUN rd_xx_ext_e13 START 2026-09-30T16:06:28-04:00
+RUN rd_xx_ext_e13 NO_MATCH 2026-09-30T16:52:08-04:00 rc=0
+RUN rd_xx_ext_e12 START 2026-09-30T16:52:08-04:00
+RUN rd_xx_ext_e12 NO_MATCH 2026-09-30T18:01:54-04:00 rc=0
+QUICK DONE 2026-09-30T18:01:54-04:00 all 14 quick readings NO_MATCH (verified)
+RUN rd_this_section1_p START 2026-09-30T18:01:54-04:00
+RUN rd_this_section1_p NOT_CLEAN 2026-09-30T18:02:04-04:00 rc=3 (2 FOUND, 3 refused, 4 VOID, 5 STOPPED, 64 usage) - see scratch/btc02-gpu/readings/rd_this_section1_p-run.log
+QUEUE STOPPED 2026-09-30T18:02:04-04:00 at rd_this_section1_p
+RESUME START 2026-09-30T18:51:39-04:00 at rd_this_section1_p (refused by the cost guard at 18:02 on a shared GPU; --max-hours 10) signoff: the operator 2026-09-30, in chat: "yes run the quick ones first" = the 15 configs in harness/templates/readings-2026-09-30 (14 quick ones, then rd_this_section1_p)
+RUN rd_this_section1_p START 2026-09-30T18:51:39-04:00 (other searches running: 5)
+STOPPED 2026-09-30T18:57:45-04:00 by operator request via another session ("can you stop them all?"): unit stopped, checkpoint kept
+RESUME START 2026-10-01T08:01:14-04:00 at rd_this_section1_p (refused by the cost guard at 18:02 on a shared GPU; --max-hours 10) signoff: the operator 2026-09-30, in chat: "yes run the quick ones first" = the 15 configs in harness/templates/readings-2026-09-30 (14 quick ones, then rd_this_section1_p)
+RUN rd_this_section1_p START 2026-10-01T08:01:14-04:00 (other searches running: 0)
+RUN rd_this_section1_p NO_MATCH 2026-10-01T08:47:54-04:00 rc=0
+QUEUE DONE 2026-10-01T08:47:54-04:00 all 15 readings NO_MATCH (verified)

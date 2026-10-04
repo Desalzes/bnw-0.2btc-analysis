@@ -1,0 +1,24 @@
+# a user's own runs: the engine writes its ledger and checkpoints under scratch/
+scratch/
+__pycache__/
+*.pyc
+
+# third-party kernels are fetched by tools/fetch_kernels.py and are not redistributed
+puzzles/btc-02-picture/harness/kernels/address.cl
+puzzles/btc-02-picture/harness/kernels/common.cl
+puzzles/btc-02-picture/harness/kernels/int_to_address.cl
+puzzles/btc-02-picture/harness/kernels/just_address.cl
+puzzles/btc-02-picture/harness/kernels/just_seed.cl
+puzzles/btc-02-picture/harness/kernels/mnemonic_constants.cl
+puzzles/btc-02-picture/harness/kernels/ripemd.cl
+puzzles/btc-02-picture/harness/kernels/secp256k1.cl
+puzzles/btc-02-picture/harness/kernels/secp256k1_common.cl
+puzzles/btc-02-picture/harness/kernels/secp256k1_field.cl
+puzzles/btc-02-picture/harness/kernels/secp256k1_group.cl
+puzzles/btc-02-picture/harness/kernels/secp256k1_prec.cl
+puzzles/btc-02-picture/harness/kernels/secp256k1_scalar.cl
+puzzles/btc-02-picture/harness/kernels/sha2.cl
+
+# a hit file must never be committed
+puzzles/btc-02-picture/harness/FOUND*
+puzzles/btc-02-picture/harness/CANDIDATE*

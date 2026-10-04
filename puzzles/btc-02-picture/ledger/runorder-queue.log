@@ -1,0 +1,106 @@
+QUEUE START 2026-09-30T19:01:54-04:00 set=all (52 configs); signoff: the operator 2026-09-30, in chat: "i stopped everything else so you could start it. you have the go ahead" = the 52 run-order drafts in harness/templates/runorder-2026-09-30 (BTC02-RUN-ORDER-2026-09-30.md stages 2a, 2d, 3a/3b model P, 5, 6), cheapest first
+RUN ro_alt_clock3_p START 2026-09-30T19:01:54-04:00 [1/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_clock3_p NO_MATCH 2026-09-30T19:01:58-04:00 rc=0
+RUN ro_alt_minute3_e12 START 2026-09-30T19:01:58-04:00 [2/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_minute3_e12 NO_MATCH 2026-09-30T19:02:00-04:00 rc=0
+RUN ro_alt_minute3_e13 START 2026-09-30T19:02:00-04:00 [3/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_minute3_e13 NO_MATCH 2026-09-30T19:02:01-04:00 rc=0
+RUN ro_alt_minute3_p START 2026-09-30T19:02:01-04:00 [4/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_minute3_p NO_MATCH 2026-09-30T19:02:05-04:00 rc=0
+RUN ro_alt_moon2_vote_e12 START 2026-09-30T19:02:05-04:00 [5/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_moon2_vote_e12 NO_MATCH 2026-09-30T19:02:07-04:00 rc=0
+RUN ro_alt_second13_e13 START 2026-09-30T19:02:07-04:00 [6/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_second13_e13 NO_MATCH 2026-09-30T19:02:08-04:00 rc=0
+RUN ro_alt_second13_minute3_e13 START 2026-09-30T19:02:08-04:00 [7/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_second13_minute3_e13 NO_MATCH 2026-09-30T19:02:10-04:00 rc=0
+RUN ro_s2a_18word_moonpass_p START 2026-09-30T19:02:10-04:00 [8/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2a_18word_moonpass_p NO_MATCH 2026-09-30T19:02:11-04:00 rc=0
+RUN ro_s2a_18word_noliberty_moonpass_p START 2026-09-30T19:02:11-04:00 [9/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2a_18word_noliberty_moonpass_p NO_MATCH 2026-09-30T19:02:14-04:00 rc=0
+RUN ro_s2a_18word_nopolice_moonpass_p START 2026-09-30T19:02:14-04:00 [10/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2a_18word_nopolice_moonpass_p NO_MATCH 2026-09-30T19:02:17-04:00 rc=0
+RUN ro_s2a_18word_novote_moonpass_p START 2026-09-30T19:02:17-04:00 [11/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2a_18word_novote_moonpass_p NO_MATCH 2026-09-30T19:02:19-04:00 rc=0
+RUN ro_s2d_pathsD_moonword_p START 2026-09-30T19:02:19-04:00 [12/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2d_pathsD_moonword_p NO_MATCH 2026-09-30T19:02:25-04:00 rc=0
+RUN ro_s2d_pathsD_p1 START 2026-09-30T19:02:25-04:00 [13/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2d_pathsD_p1 NO_MATCH 2026-09-30T19:02:29-04:00 rc=0
+RUN ro_s2d_pathsE_moonword_p START 2026-09-30T19:02:29-04:00 [14/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2d_pathsE_moonword_p NO_MATCH 2026-09-30T19:02:35-04:00 rc=0
+RUN ro_s2d_pathsE_p1 START 2026-09-30T19:02:35-04:00 [15/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2d_pathsE_p1 NO_MATCH 2026-09-30T19:02:39-04:00 rc=0
+RUN ro_s2d_pathsF_moonword_p START 2026-09-30T19:02:39-04:00 [16/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2d_pathsF_moonword_p NO_MATCH 2026-09-30T19:02:45-04:00 rc=0
+RUN ro_s2d_pathsF_p1 START 2026-09-30T19:02:45-04:00 [17/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2d_pathsF_p1 NO_MATCH 2026-09-30T19:02:49-04:00 rc=0
+RUN ro_s2d_pathsG_moonword_p START 2026-09-30T19:02:49-04:00 [18/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2d_pathsG_moonword_p NO_MATCH 2026-09-30T19:02:55-04:00 rc=0
+RUN ro_s2d_pathsG_p1 START 2026-09-30T19:02:55-04:00 [19/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s2d_pathsG_p1 NO_MATCH 2026-09-30T19:02:59-04:00 rc=0
+RUN ro_s5_rem_ext_e12_moonabsent START 2026-09-30T19:02:59-04:00 [20/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_rem_ext_e12_moonabsent NO_MATCH 2026-09-30T19:03:02-04:00 rc=0
+RUN ro_s5_rem_ext_e12_moonword START 2026-09-30T19:03:02-04:00 [21/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_rem_ext_e12_moonword NO_MATCH 2026-09-30T19:03:08-04:00 rc=0
+RUN ro_s5_rem_ext_e13 START 2026-09-30T19:03:08-04:00 [22/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_rem_ext_e13 NO_MATCH 2026-09-30T19:03:11-04:00 rc=0
+RUN ro_s5_rem_moonabsent_p START 2026-09-30T19:03:11-04:00 [23/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_rem_moonabsent_p NO_MATCH 2026-09-30T19:03:23-04:00 rc=0
+RUN ro_s5_t1_loo_food_e12 START 2026-09-30T19:03:23-04:00 [24/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_food_e12 NO_MATCH 2026-09-30T19:03:32-04:00 rc=0
+RUN ro_s5_t1_loo_one_e12 START 2026-09-30T19:03:32-04:00 [25/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_one_e12 NO_MATCH 2026-09-30T19:03:41-04:00 rc=0
+RUN ro_s5_t1_loo_order_e12 START 2026-09-30T19:03:41-04:00 [26/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_order_e12 NO_MATCH 2026-09-30T19:03:50-04:00 rc=0
+RUN ro_s5_t1_loo_real_e12 START 2026-09-30T19:03:50-04:00 [27/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_real_e12 NO_MATCH 2026-09-30T19:03:59-04:00 rc=0
+RUN ro_s5_t1_loo_this_e12 START 2026-09-30T19:04:00-04:00 [28/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_this_e12 NO_MATCH 2026-09-30T19:04:09-04:00 rc=0
+RUN ro_alt_moon2_vote_p START 2026-09-30T19:04:09-04:00 [29/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_moon2_vote_p NO_MATCH 2026-09-30T19:05:02-04:00 rc=0
+RUN ro_s5_t1_loo_food_p START 2026-09-30T19:05:02-04:00 [30/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_food_p NO_MATCH 2026-09-30T19:05:55-04:00 rc=0
+RUN ro_s5_t1_loo_one_p START 2026-09-30T19:05:55-04:00 [31/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_one_p NO_MATCH 2026-09-30T19:06:48-04:00 rc=0
+RUN ro_s5_t1_loo_order_p START 2026-09-30T19:06:48-04:00 [32/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_order_p NO_MATCH 2026-09-30T19:07:40-04:00 rc=0
+RUN ro_s5_t1_loo_real_p START 2026-09-30T19:07:40-04:00 [33/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_real_p NO_MATCH 2026-09-30T19:08:32-04:00 rc=0
+RUN ro_s5_t1_loo_this_p START 2026-09-30T19:08:33-04:00 [34/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_t1_loo_this_p NO_MATCH 2026-09-30T19:09:25-04:00 rc=0
+RUN ro_s5_rem_moonword_p START 2026-09-30T19:09:25-04:00 [35/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s5_rem_moonword_p NO_MATCH 2026-09-30T19:10:22-04:00 rc=0
+RUN ro_alt_food3_open2_e13 START 2026-09-30T19:10:22-04:00 [36/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_food3_open2_e13 NO_MATCH 2026-09-30T19:12:58-04:00 rc=0
+RUN ro_alt_moon2_open2_e13 START 2026-09-30T19:12:58-04:00 [37/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_moon2_open2_e13 NO_MATCH 2026-09-30T19:15:34-04:00 rc=0
+RUN ro_alt_food3_open2_e12 START 2026-09-30T19:15:34-04:00 [38/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_food3_open2_e12 NO_MATCH 2026-09-30T19:20:32-04:00 rc=0
+RUN ro_alt_month13_open2_e12 START 2026-09-30T19:20:32-04:00 [39/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_month13_open2_e12 NO_MATCH 2026-09-30T19:25:26-04:00 rc=0
+RUN ro_s3_slot11open_p_t1 START 2026-09-30T19:25:26-04:00 [40/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot11open_p_t1 NO_MATCH 2026-09-30T19:38:39-04:00 rc=0
+RUN ro_s3_slot11open_p_t2 START 2026-09-30T19:38:39-04:00 [41/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot11open_p_t2 NO_MATCH 2026-09-30T19:48:41-04:00 rc=0
+RUN ro_s3_slot11open_p_t3 START 2026-09-30T19:48:41-04:00 [42/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot11open_p_t3 NO_MATCH 2026-09-30T19:58:41-04:00 rc=0
+RUN ro_s3_slot11open_p_t4 START 2026-09-30T19:58:41-04:00 [43/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot11open_p_t4 NO_MATCH 2026-09-30T20:07:55-04:00 rc=0
+RUN ro_s3_slot11open_p_t5 START 2026-09-30T20:07:55-04:00 [44/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot11open_p_t5 NO_MATCH 2026-09-30T20:17:04-04:00 rc=0
+RUN ro_s3_slot9open_p_t1 START 2026-09-30T20:17:04-04:00 [45/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot9open_p_t1 NO_MATCH 2026-09-30T20:26:15-04:00 rc=0
+RUN ro_s3_slot9open_p_t2 START 2026-09-30T20:26:15-04:00 [46/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot9open_p_t2 NO_MATCH 2026-09-30T20:35:25-04:00 rc=0
+RUN ro_s3_slot9open_p_t3 START 2026-09-30T20:35:25-04:00 [47/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot9open_p_t3 NO_MATCH 2026-09-30T20:44:36-04:00 rc=0
+RUN ro_s3_slot9open_p_t4 START 2026-09-30T20:44:36-04:00 [48/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot9open_p_t4 NO_MATCH 2026-09-30T20:53:47-04:00 rc=0
+RUN ro_s3_slot9open_p_t5 START 2026-09-30T20:53:47-04:00 [49/52, max-hours 2.0] (other searches running: 0)
+RUN ro_s3_slot9open_p_t5 NO_MATCH 2026-09-30T21:02:55-04:00 rc=0
+RUN ro_alt_subject13_open2_e13 START 2026-09-30T21:02:55-04:00 [50/52, max-hours 2.0] (other searches running: 0)
+RUN ro_alt_subject13_open2_e13 NO_MATCH 2026-09-30T21:23:08-04:00 rc=0
+RUN ro_alt_food3_open2_p START 2026-09-30T21:23:08-04:00 [51/52, max-hours 12.8] (other searches running: 0)
+RUN ro_alt_food3_open2_p NO_MATCH 2026-10-01T00:03:42-04:00 rc=0
+RUN ro_alt_month13_open2_p START 2026-10-01T00:03:42-04:00 [52/52, max-hours 16.0] (other searches running: 0)
+RUN ro_alt_month13_open2_p NO_MATCH 2026-10-01T03:23:30-04:00 rc=0
+QUEUE DONE 2026-10-01T03:23:30-04:00 set=all: every run ended (NO_MATCH lines above; any NOT_CLEAN rc=3 line needs a re-run)

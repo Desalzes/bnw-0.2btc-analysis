@@ -1,0 +1,15 @@
+rd_eye13_e13               raw 10,321,920 | deriv 40,320 | ~0.00 h
+rd_eyeext_e12              raw 10,321,920 | deriv 80,640 | ~0.00 h
+rd_eyefree_e12             raw 10,321,920 | deriv 80,640 | ~0.00 h
+rd_eyefree_e13             raw 10,321,920 | deriv 40,320 | ~0.00 h
+rd_eyefree_p               raw 10,321,920 | deriv 2,580,480 | ~0.00 h
+rd_eyepass_p               raw 10,321,920 | deriv 2,580,480 | ~0.00 h
+rd_peace11_e12             raw 1,474,560 | deriv 11,520 | ~0.00 h
+rd_peace11_e13             raw 1,474,560 | deriv 5,760 | ~0.00 h
+rd_peace11_p               raw 1,474,560 | deriv 368,640 | ~0.00 h
+rd_this_section1_e12       raw 3,019,898,880 | deriv 23,592,960 | ~0.03 h
+rd_this_section1_e13       raw 3,019,898,880 | deriv 11,796,480 | ~0.01 h
+rd_this_section1_p         raw 3,019,898,880 | deriv 754,974,720 | ~0.91 h
+rd_xx_ext_e12              raw 10,569,646,080 | deriv 206,438,400 | ~0.25 h
+rd_xx_ext_e13              raw 10,569,646,080 | deriv 206,438,400 | ~0.25 h
+rd_xx_pass_p               raw 10,321,920 | deriv 5,160,960 | ~0.01 h

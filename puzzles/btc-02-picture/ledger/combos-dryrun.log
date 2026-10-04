@@ -1,0 +1,8 @@
+cb_e12_open2             raw 21,139,292,160 | deriv 412,876,800 | ~0.50 h
+cb_e12_s9_slot2open      raw 743,178,240 | deriv 14,515,200 | ~0.02 h
+cb_e13_open2             raw 21,139,292,160 | deriv 412,876,800 | ~0.50 h
+cb_e13_s9_secondfree     raw 743,178,240 | deriv 14,515,200 | ~0.02 h
+cb_p_open1               raw 20,643,840 | deriv 10,321,920 | ~0.01 h
+cb_p_open2               raw 21,139,292,160 | deriv 10,569,646,080 | ~12.77 h
+cb_p_s9                  raw 51,840 | deriv 25,920 | ~0.00 h
+cb_p_s9_slot2open        raw 743,178,240 | deriv 371,589,120 | ~0.45 h

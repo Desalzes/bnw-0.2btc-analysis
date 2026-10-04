@@ -1,0 +1,12 @@
+QUEUE START 2026-09-30T16:56:30-04:00; signoff: the operator 2026-09-30, in chat: "yes i want them" = harness/passphrases.txt (its 13 entries the Q21 batch lacks; the other 14 repeat Q21 strings) on the five ld_pass shapes, templates/leads-2026-09-30/pt_*.conf
+RUN pt_ext_e13 START 2026-09-30T16:56:30-04:00
+RUN pt_ext_e13 NO_MATCH 2026-09-30T16:56:59-04:00 rc=0
+RUN pt_ext_e12_moonabsent START 2026-09-30T16:56:59-04:00
+RUN pt_ext_e12_moonabsent NO_MATCH 2026-09-30T16:57:27-04:00 rc=0
+RUN pt_ext_e12_moonword START 2026-09-30T16:57:27-04:00
+RUN pt_ext_e12_moonword NO_MATCH 2026-09-30T16:58:22-04:00 rc=0
+RUN pt_moonabsent_p START 2026-09-30T16:58:22-04:00
+RUN pt_moonabsent_p NO_MATCH 2026-09-30T17:00:15-04:00 rc=0
+RUN pt_moonword_p START 2026-09-30T17:00:15-04:00
+RUN pt_moonword_p NO_MATCH 2026-09-30T17:09:53-04:00 rc=0
+QUEUE DONE 2026-09-30T17:09:53-04:00 all 5 passphrases.txt runs NO_MATCH (verified)

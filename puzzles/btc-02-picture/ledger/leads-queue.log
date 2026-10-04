@@ -1,0 +1,191 @@
+QUEUE START 2026-09-30T16:51:23-04:00 (alongside the other units); signoff: the operator 2026-09-30, in chat: "i want these ran too, quickest first" = the leads in LEADS-2026-09-30.md as the 94 configs in harness/templates/leads-2026-09-30 (Q21), ordered by dry-run price
+RUN ld41_18word_p START 2026-09-30T16:51:23-04:00 [1/94, max-hours 1] (other searches running: 4)
+RUN ld41_18word_p NO_MATCH 2026-09-30T16:51:28-04:00 rc=0
+RUN ld22_colours6_e12 START 2026-09-30T16:51:28-04:00 [2/94, max-hours 1] (other searches running: 4)
+RUN ld22_colours6_e12 NO_MATCH 2026-09-30T16:51:33-04:00 rc=0
+RUN ld22_colours6_e13 START 2026-09-30T16:51:33-04:00 [3/94, max-hours 1] (other searches running: 4)
+RUN ld22_colours6_e13 NO_MATCH 2026-09-30T16:51:37-04:00 rc=0
+RUN ld22_colours6_p START 2026-09-30T16:51:37-04:00 [4/94, max-hours 1] (other searches running: 4)
+RUN ld22_colours6_p NO_MATCH 2026-09-30T16:51:44-04:00 rc=0
+RUN ld08_twenty_one_10_11_e12 START 2026-09-30T16:51:44-04:00 [5/94, max-hours 1] (other searches running: 4)
+RUN ld08_twenty_one_10_11_e12 NO_MATCH 2026-09-30T16:51:49-04:00 rc=0
+RUN ld08_twenty_one_10_11_e13 START 2026-09-30T16:51:49-04:00 [6/94, max-hours 1] (other searches running: 4)
+RUN ld08_twenty_one_10_11_e13 NO_MATCH 2026-09-30T16:51:54-04:00 rc=0
+RUN ld08_twenty_one_10_11_p START 2026-09-30T16:51:54-04:00 [7/94, max-hours 1] (other searches running: 4)
+RUN ld08_twenty_one_10_11_p NO_MATCH 2026-09-30T16:52:01-04:00 rc=0
+RUN ld42_countpins_e12 START 2026-09-30T16:52:01-04:00 [8/94, max-hours 1] (other searches running: 4)
+RUN ld42_countpins_e12 NO_MATCH 2026-09-30T16:52:07-04:00 rc=0
+RUN ld42_countpins_e13 START 2026-09-30T16:52:07-04:00 [9/94, max-hours 1] (other searches running: 4)
+RUN ld42_countpins_e13 NO_MATCH 2026-09-30T16:52:12-04:00 rc=0
+RUN ld42_countpins_p START 2026-09-30T16:52:12-04:00 [10/94, max-hours 1] (other searches running: 4)
+RUN ld42_countpins_p NO_MATCH 2026-09-30T16:52:21-04:00 rc=0
+RUN ld11_food3_towerloose_e12 START 2026-09-30T16:52:21-04:00 [11/94, max-hours 1] (other searches running: 4)
+RUN ld11_food3_towerloose_e12 NO_MATCH 2026-09-30T16:52:30-04:00 rc=0
+RUN ld11_food3_towerloose_e13 START 2026-09-30T16:52:30-04:00 [12/94, max-hours 1] (other searches running: 4)
+RUN ld11_food3_towerloose_e13 NO_MATCH 2026-09-30T16:52:37-04:00 rc=0
+RUN ld11_food3_towerloose_p START 2026-09-30T16:52:37-04:00 [13/94, max-hours 1] (other searches running: 4)
+RUN ld11_food3_towerloose_p NO_MATCH 2026-09-30T16:53:04-04:00 rc=0
+RUN ld12_foodext_e12 START 2026-09-30T16:53:04-04:00 [14/94, max-hours 1] (other searches running: 4)
+RUN ld12_foodext_e12 NO_MATCH 2026-09-30T16:53:16-04:00 rc=0
+RUN ld12_foodpass_p START 2026-09-30T16:53:16-04:00 [15/94, max-hours 1] (other searches running: 4)
+RUN ld12_foodpass_p NO_MATCH 2026-09-30T16:53:54-04:00 rc=0
+RUN ld13_food11_e12 START 2026-09-30T16:53:54-04:00 [16/94, max-hours 1] (other searches running: 4)
+RUN ld13_food11_e12 NO_MATCH 2026-09-30T16:54:02-04:00 rc=0
+RUN ld13_food11_e13 START 2026-09-30T16:54:02-04:00 [17/94, max-hours 1] (other searches running: 4)
+RUN ld13_food11_e13 NO_MATCH 2026-09-30T16:54:10-04:00 rc=0
+RUN ld13_food11_p START 2026-09-30T16:54:10-04:00 [18/94, max-hours 1] (other searches running: 4)
+RUN ld13_food11_p NO_MATCH 2026-09-30T16:54:37-04:00 rc=0
+RUN ld15_month13_e13 START 2026-09-30T16:54:37-04:00 [19/94, max-hours 1] (other searches running: 4)
+RUN ld15_month13_e13 NO_MATCH 2026-09-30T16:54:44-04:00 rc=0
+RUN ld15_monthext_e12 START 2026-09-30T16:54:44-04:00 [20/94, max-hours 1] (other searches running: 4)
+RUN ld15_monthext_e12 NO_MATCH 2026-09-30T16:54:53-04:00 rc=0
+RUN ld15_monthpass_p START 2026-09-30T16:54:53-04:00 [21/94, max-hours 1] (other searches running: 4)
+RUN ld15_monthpass_p NO_MATCH 2026-09-30T16:55:24-04:00 rc=0
+RUN ld19_moon2_e12 START 2026-09-30T16:55:24-04:00 [22/94, max-hours 1] (other searches running: 4)
+RUN ld19_moon2_e12 NO_MATCH 2026-09-30T16:55:31-04:00 rc=0
+RUN ld19_moon2_e13 START 2026-09-30T16:55:31-04:00 [23/94, max-hours 1] (other searches running: 4)
+RUN ld19_moon2_e13 NO_MATCH 2026-09-30T16:55:38-04:00 rc=0
+RUN ld19_moon2_p START 2026-09-30T16:55:38-04:00 [24/94, max-hours 1] (other searches running: 4)
+RUN ld19_moon2_p NO_MATCH 2026-09-30T16:55:51-04:00 rc=0
+RUN ld20_vote2_e12 START 2026-09-30T16:55:51-04:00 [25/94, max-hours 1] (other searches running: 4)
+RUN ld20_vote2_e12 NO_MATCH 2026-09-30T16:56:00-04:00 rc=0
+RUN ld20_vote2_e13 START 2026-09-30T16:56:00-04:00 [26/94, max-hours 1] (other searches running: 4)
+RUN ld20_vote2_e13 NO_MATCH 2026-09-30T16:56:07-04:00 rc=0
+RUN ld20_vote2_p START 2026-09-30T16:56:07-04:00 [27/94, max-hours 1] (other searches running: 4)
+RUN ld20_vote2_p NO_MATCH 2026-09-30T16:56:35-04:00 rc=0
+RUN ld30_thisext_e12 START 2026-09-30T16:56:35-04:00 [28/94, max-hours 1] (other searches running: 5)
+RUN ld30_thisext_e12 NO_MATCH 2026-09-30T16:56:45-04:00 rc=0
+RUN ld30_thispass_p START 2026-09-30T16:56:45-04:00 [29/94, max-hours 1] (other searches running: 5)
+RUN ld30_thispass_p NO_MATCH 2026-09-30T16:57:15-04:00 rc=0
+RUN ld33_dup_e13 START 2026-09-30T16:57:15-04:00 [30/94, max-hours 1] (other searches running: 5)
+RUN ld33_dup_e13 NO_MATCH 2026-09-30T16:57:24-04:00 rc=0
+RUN ld33_mirror_e12 START 2026-09-30T16:57:24-04:00 [31/94, max-hours 1] (other searches running: 5)
+RUN ld33_mirror_e12 NO_MATCH 2026-09-30T16:57:34-04:00 rc=0
+RUN ld33_mirror_e13 START 2026-09-30T16:57:34-04:00 [32/94, max-hours 1] (other searches running: 5)
+RUN ld33_mirror_e13 NO_MATCH 2026-09-30T16:57:43-04:00 rc=0
+RUN ld33_mirror_p START 2026-09-30T16:57:43-04:00 [33/94, max-hours 1] (other searches running: 5)
+RUN ld33_mirror_p NO_MATCH 2026-09-30T16:58:15-04:00 rc=0
+RUN ld38_reversed_e12 START 2026-09-30T16:58:15-04:00 [34/94, max-hours 1] (other searches running: 5)
+RUN ld38_reversed_e12 NO_MATCH 2026-09-30T16:58:25-04:00 rc=0
+RUN ld38_reversed_e13 START 2026-09-30T16:58:25-04:00 [35/94, max-hours 1] (other searches running: 5)
+RUN ld38_reversed_e13 NO_MATCH 2026-09-30T16:58:34-04:00 rc=0
+RUN ld38_reversed_p START 2026-09-30T16:58:34-04:00 [36/94, max-hours 1] (other searches running: 5)
+RUN ld38_reversed_p NO_MATCH 2026-09-30T16:59:05-04:00 rc=0
+RUN ld41_18word_noliberty_p START 2026-09-30T16:59:05-04:00 [37/94, max-hours 1] (other searches running: 5)
+RUN ld41_18word_noliberty_p NO_MATCH 2026-09-30T16:59:17-04:00 rc=0
+RUN ld41_18word_nopolice_p START 2026-09-30T16:59:17-04:00 [38/94, max-hours 1] (other searches running: 5)
+RUN ld41_18word_nopolice_p NO_MATCH 2026-09-30T16:59:29-04:00 rc=0
+RUN ld41_18word_novote_p START 2026-09-30T16:59:29-04:00 [39/94, max-hours 1] (other searches running: 5)
+RUN ld41_18word_novote_p NO_MATCH 2026-09-30T16:59:41-04:00 rc=0
+RUN ld44_one11_e12 START 2026-09-30T16:59:41-04:00 [40/94, max-hours 1] (other searches running: 5)
+RUN ld44_one11_e12 NO_MATCH 2026-09-30T16:59:51-04:00 rc=0
+RUN ld44_one11_e13 START 2026-09-30T16:59:51-04:00 [41/94, max-hours 1] (other searches running: 5)
+RUN ld44_one11_e13 NO_MATCH 2026-09-30T17:00:00-04:00 rc=0
+RUN ld44_one11_p START 2026-09-30T17:00:00-04:00 [42/94, max-hours 1] (other searches running: 5)
+RUN ld44_one11_p NO_MATCH 2026-09-30T17:00:32-04:00 rc=0
+RUN ld47_order11_e12 START 2026-09-30T17:00:32-04:00 [43/94, max-hours 1] (other searches running: 5)
+RUN ld47_order11_e12 NO_MATCH 2026-09-30T17:00:42-04:00 rc=0
+RUN ld47_order11_e13 START 2026-09-30T17:00:42-04:00 [44/94, max-hours 1] (other searches running: 5)
+RUN ld47_order11_e13 NO_MATCH 2026-09-30T17:00:51-04:00 rc=0
+RUN ld47_order11_p START 2026-09-30T17:00:51-04:00 [45/94, max-hours 1] (other searches running: 5)
+RUN ld47_order11_p NO_MATCH 2026-09-30T17:01:23-04:00 rc=0
+RUN ld49_moon12_vote13_e13 START 2026-09-30T17:01:23-04:00 [46/94, max-hours 1] (other searches running: 5)
+RUN ld49_moon12_vote13_e13 NO_MATCH 2026-09-30T17:01:32-04:00 rc=0
+RUN ld74_pathsA_p1 START 2026-09-30T17:01:32-04:00 [47/94, max-hours 1] (other searches running: 5)
+RUN ld74_pathsA_p1 NO_MATCH 2026-09-30T17:02:06-04:00 rc=0
+RUN ld74_pathsB_p1 START 2026-09-30T17:02:06-04:00 [48/94, max-hours 1] (other searches running: 5)
+RUN ld74_pathsB_p1 NO_MATCH 2026-09-30T17:02:41-04:00 rc=0
+RUN ld74_pathsC_e12 START 2026-09-30T17:02:41-04:00 [49/94, max-hours 1] (other searches running: 5)
+RUN ld74_pathsC_e12 NO_MATCH 2026-09-30T17:02:55-04:00 rc=0
+RUN ld74_pathsC_e13 START 2026-09-30T17:02:55-04:00 [50/94, max-hours 1] (other searches running: 5)
+RUN ld74_pathsC_e13 NO_MATCH 2026-09-30T17:03:08-04:00 rc=0
+RUN ld_pass_ext_e12_moonabsent START 2026-09-30T17:03:08-04:00 [51/94, max-hours 1] (other searches running: 5)
+RUN ld_pass_ext_e12_moonabsent NO_MATCH 2026-09-30T17:04:31-04:00 rc=0
+RUN ld_pass_ext_e13 START 2026-09-30T17:04:31-04:00 [52/94, max-hours 1] (other searches running: 5)
+RUN ld_pass_ext_e13 NO_MATCH 2026-09-30T17:05:53-04:00 rc=0
+RUN ld40_21word_p START 2026-09-30T17:05:53-04:00 [53/94, max-hours 1] (other searches running: 5)
+RUN ld40_21word_p NO_MATCH 2026-09-30T17:06:11-04:00 rc=0
+RUN ld02_subject13_e13 START 2026-09-30T17:06:11-04:00 [54/94, max-hours 1] (other searches running: 5)
+RUN ld02_subject13_e13 NO_MATCH 2026-09-30T17:06:23-04:00 rc=0
+RUN ld02_subjectext_e12 START 2026-09-30T17:06:23-04:00 [55/94, max-hours 1] (other searches running: 5)
+RUN ld02_subjectext_e12 NO_MATCH 2026-09-30T17:06:39-04:00 rc=0
+RUN ld05_slot1open_e12 START 2026-09-30T17:06:39-04:00 [56/94, max-hours 1] (other searches running: 5)
+RUN ld05_slot1open_e12 NO_MATCH 2026-09-30T17:06:53-04:00 rc=0
+RUN ld05_slot1open_e13 START 2026-09-30T17:06:53-04:00 [57/94, max-hours 1] (other searches running: 5)
+RUN ld05_slot1open_e13 NO_MATCH 2026-09-30T17:07:05-04:00 rc=0
+RUN ld05_slot1open_p START 2026-09-30T17:07:05-04:00 [58/94, max-hours 1] (other searches running: 5)
+RUN ld05_slot1open_p NO_MATCH 2026-09-30T17:08:45-04:00 rc=0
+RUN ld21_black13_e13 START 2026-09-30T17:08:45-04:00 [59/94, max-hours 1] (other searches running: 5)
+RUN ld21_black13_e13 NO_MATCH 2026-09-30T17:08:56-04:00 rc=0
+RUN ld46_world13_e13 START 2026-09-30T17:08:56-04:00 [60/94, max-hours 1] (other searches running: 5)
+RUN ld46_world13_e13 NO_MATCH 2026-09-30T17:09:08-04:00 rc=0
+RUN ld48_vote11_e12 START 2026-09-30T17:09:08-04:00 [61/94, max-hours 1] (other searches running: 5)
+RUN ld48_vote11_e12 NO_MATCH 2026-09-30T17:09:23-04:00 rc=0
+RUN ld48_vote11_e13 START 2026-09-30T17:09:23-04:00 [62/94, max-hours 1] (other searches running: 5)
+RUN ld48_vote11_e13 NO_MATCH 2026-09-30T17:09:34-04:00 rc=0
+RUN ld48_vote11_p START 2026-09-30T17:09:34-04:00 [63/94, max-hours 1] (other searches running: 5)
+RUN ld48_vote11_p NO_MATCH 2026-09-30T17:11:02-04:00 rc=0
+RUN ld74_pathsA_moonword_p START 2026-09-30T17:11:02-04:00 [64/94, max-hours 1] (other searches running: 4)
+RUN ld74_pathsA_moonword_p NO_MATCH 2026-09-30T17:11:36-04:00 rc=0
+RUN ld74_pathsB_moonword_p START 2026-09-30T17:11:36-04:00 [65/94, max-hours 1] (other searches running: 4)
+RUN ld74_pathsB_moonword_p NO_MATCH 2026-09-30T17:12:11-04:00 rc=0
+RUN ld_pass_ext_e12_moonword START 2026-09-30T17:12:11-04:00 [66/94, max-hours 1] (other searches running: 4)
+RUN ld_pass_ext_e12_moonword NO_MATCH 2026-09-30T17:14:13-04:00 rc=0
+RUN ld49_slot12_alts_e12 START 2026-09-30T17:14:13-04:00 [67/94, max-hours 1] (other searches running: 4)
+RUN ld49_slot12_alts_e12 NO_MATCH 2026-09-30T17:14:26-04:00 rc=0
+RUN ld49_slot12_alts_e13 START 2026-09-30T17:14:26-04:00 [68/94, max-hours 1] (other searches running: 4)
+RUN ld49_slot12_alts_e13 NO_MATCH 2026-09-30T17:14:36-04:00 rc=0
+RUN ld49_slot12_alts_p START 2026-09-30T17:14:36-04:00 [69/94, max-hours 1] (other searches running: 4)
+RUN ld49_slot12_alts_p NO_MATCH 2026-09-30T17:16:25-04:00 rc=0
+RUN ld21_blood13_e13 START 2026-09-30T17:16:25-04:00 [70/94, max-hours 1] (other searches running: 4)
+RUN ld21_blood13_e13 NO_MATCH 2026-09-30T17:16:37-04:00 rc=0
+RUN ld43_camera9_eyeloose_e12 START 2026-09-30T17:16:37-04:00 [71/94, max-hours 1] (other searches running: 4)
+RUN ld43_camera9_eyeloose_e12 NO_MATCH 2026-09-30T17:16:52-04:00 rc=0
+RUN ld43_camera9_eyeloose_e13 START 2026-09-30T17:16:52-04:00 [72/94, max-hours 1] (other searches running: 4)
+RUN ld43_camera9_eyeloose_e13 NO_MATCH 2026-09-30T17:17:03-04:00 rc=0
+RUN ld54_stripwords_9_11_e12 START 2026-09-30T17:17:03-04:00 [73/94, max-hours 1] (other searches running: 4)
+RUN ld54_stripwords_9_11_e12 NO_MATCH 2026-09-30T17:17:24-04:00 rc=0
+RUN ld54_stripwords_9_11_e13 START 2026-09-30T17:17:24-04:00 [74/94, max-hours 1] (other searches running: 4)
+RUN ld54_stripwords_9_11_e13 NO_MATCH 2026-09-30T17:17:38-04:00 rc=0
+RUN ld36_sealwords_anywhere_e12 START 2026-09-30T17:17:38-04:00 [75/94, max-hours 1] (other searches running: 4)
+RUN ld36_sealwords_anywhere_e12 NO_MATCH 2026-09-30T17:18:05-04:00 rc=0
+RUN ld36_sealwords_anywhere_e13 START 2026-09-30T17:18:05-04:00 [76/94, max-hours 1] (other searches running: 4)
+RUN ld36_sealwords_anywhere_e13 NO_MATCH 2026-09-30T17:18:27-04:00 rc=0
+RUN ld02_subjectpass_p START 2026-09-30T17:18:27-04:00 [77/94, max-hours 1] (other searches running: 4)
+RUN ld02_subjectpass_p NO_MATCH 2026-09-30T17:20:42-04:00 rc=0
+RUN ld69_zerobased_pool_p START 2026-09-30T17:20:42-04:00 [78/94, max-hours 1] (other searches running: 4)
+RUN ld69_zerobased_pool_p NO_MATCH 2026-09-30T17:21:29-04:00 rc=0
+RUN ld43_camera9_eyeloose_p START 2026-09-30T17:21:29-04:00 [79/94, max-hours 1] (other searches running: 4)
+RUN ld43_camera9_eyeloose_p NO_MATCH 2026-09-30T17:24:00-04:00 rc=0
+RUN ld54_stripwords_9_11_p START 2026-09-30T17:24:00-04:00 [80/94, max-hours 1] (other searches running: 4)
+RUN ld54_stripwords_9_11_p NO_MATCH 2026-09-30T17:28:15-04:00 rc=0
+RUN ld22_colours4_e12 START 2026-09-30T17:28:15-04:00 [81/94, max-hours 1] (other searches running: 4)
+RUN ld22_colours4_e12 NO_MATCH 2026-09-30T17:32:27-04:00 rc=0
+RUN ld22_colours4_e13 START 2026-09-30T17:32:27-04:00 [82/94, max-hours 1] (other searches running: 4)
+RUN ld22_colours4_e13 NO_MATCH 2026-09-30T17:34:49-04:00 rc=0
+RUN ld30_thispass_e13 START 2026-09-30T17:34:49-04:00 [83/94, max-hours 1] (other searches running: 4)
+RUN ld30_thispass_e13 NO_MATCH 2026-09-30T17:39:03-04:00 rc=0
+RUN ld_pass_moonabsent_p START 2026-09-30T17:39:03-04:00 [84/94, max-hours 1] (other searches running: 4)
+RUN ld_pass_moonabsent_p NO_MATCH 2026-09-30T17:48:31-04:00 rc=0
+RUN ld36_sealwords_anywhere_p START 2026-09-30T17:48:31-04:00 [85/94, max-hours 1] (other searches running: 4)
+RUN ld36_sealwords_anywhere_p NO_MATCH 2026-09-30T17:57:46-04:00 rc=0
+RUN ld08_twenty_one_dropped_e13 START 2026-09-30T17:57:46-04:00 [86/94, max-hours 1] (other searches running: 4)
+RUN ld08_twenty_one_dropped_e13 NO_MATCH 2026-09-30T18:06:24-04:00 rc=0
+RUN ld22_colours_12perm_p START 2026-09-30T18:06:24-04:00 [87/94, max-hours 1] (other searches running: 4)
+RUN ld22_colours_12perm_p NO_MATCH 2026-09-30T18:19:27-04:00 rc=0
+RUN ld69_zerobased_12perm_p START 2026-09-30T18:19:27-04:00 [88/94, max-hours 1] (other searches running: 4)
+RUN ld69_zerobased_12perm_p NO_MATCH 2026-09-30T18:32:34-04:00 rc=0
+RUN ld12_foodpass_e13 START 2026-09-30T18:32:34-04:00 [89/94, max-hours 1] (other searches running: 4)
+RUN ld12_foodpass_e13 NO_MATCH 2026-09-30T18:44:11-04:00 rc=0
+RUN ld15_month13_open2_e13 START 2026-09-30T18:44:11-04:00 [90/94, max-hours 1] (other searches running: 4)
+STOPPED 2026-09-30T18:57:45-04:00 by operator request via another session ("can you stop them all?"): unit stopped, checkpoint kept
+RUN ld15_month13_open2_e13 START 2026-10-01T05:44:47-04:00 (resume from 8 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld15_month13_open2_e13 NO_MATCH 2026-10-01T05:45:27-04:00 rc=0
+RUN ld08_twenty_one_dropped_e12 START 2026-10-01T05:45:27-04:00 (resume from 0 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld08_twenty_one_dropped_e12 NO_MATCH 2026-10-01T05:48:18-04:00 rc=0
+RUN ld_pass_moonword_p START 2026-10-01T06:00:17-04:00 (resume from 0 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld_pass_moonword_p NO_MATCH 2026-10-01T06:07:51-04:00 rc=0
+RUN ld22_colours4_p START 2026-10-01T06:25:12-04:00 (resume from 0 saved blocks, max-hours 4; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld22_colours4_p NO_MATCH 2026-10-01T06:48:15-04:00 rc=0
+RUN ld08_twenty_one_dropped_p START 2026-10-01T08:47:54-04:00 (resume from 0 saved blocks, max-hours 8; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld08_twenty_one_dropped_p NO_MATCH 2026-10-01T10:26:49-04:00 rc=0

@@ -1,0 +1,50 @@
+QUEUE START 2026-09-30T13:06:43-04:00 signoff: the operator 2026-09-30, in chat: "can you run these through real quick" = BNW-NEW-WORD-LEADS-2026-09-30.md quick pass: LUN/plunge variants plus ranked 9/11 pairs 1-6 in E13/E12/model-P forms
+RUN q8_plunge_e13 START 2026-09-30T13:06:43-04:00
+RUN q8_plunge_e13 NO_MATCH 2026-09-30T13:06:47-04:00 rc=0
+RUN q8_plunge_p1_pass START 2026-09-30T13:06:47-04:00
+RUN q8_plunge_p1_pass NO_MATCH 2026-09-30T13:06:56-04:00 rc=0
+RUN q8_plunge_e12_ext START 2026-09-30T13:06:56-04:00
+RUN q8_plunge_e12_ext NO_MATCH 2026-09-30T13:06:59-04:00 rc=0
+RUN q8_lun_p1_pass START 2026-09-30T13:06:59-04:00
+RUN q8_lun_p1_pass NO_MATCH 2026-09-30T13:07:09-04:00 rc=0
+RUN q8_lun_e12_ext START 2026-09-30T13:07:09-04:00
+RUN q8_lun_e12_ext NO_MATCH 2026-09-30T13:07:12-04:00 rc=0
+RUN q8_lun_e13_ext START 2026-09-30T13:07:12-04:00
+RUN q8_lun_e13_ext NO_MATCH 2026-09-30T13:07:16-04:00 rc=0
+RUN pair01_know_pyramid_e13 START 2026-09-30T13:07:16-04:00
+RUN pair01_know_pyramid_e13 NO_MATCH 2026-09-30T13:07:19-04:00 rc=0
+RUN pair01_know_pyramid_e12 START 2026-09-30T13:07:19-04:00
+RUN pair01_know_pyramid_e12 NO_MATCH 2026-09-30T13:07:22-04:00 rc=0
+RUN pair01_know_pyramid_p START 2026-09-30T13:07:22-04:00
+RUN pair01_know_pyramid_p NO_MATCH 2026-09-30T13:07:31-04:00 rc=0
+RUN pair02_learn_pyramid_e13 START 2026-09-30T13:07:31-04:00
+RUN pair02_learn_pyramid_e13 NO_MATCH 2026-09-30T13:07:35-04:00 rc=0
+RUN pair02_learn_pyramid_e12 START 2026-09-30T13:07:35-04:00
+RUN pair02_learn_pyramid_e12 NO_MATCH 2026-09-30T13:07:38-04:00 rc=0
+RUN pair02_learn_pyramid_p START 2026-09-30T13:07:38-04:00
+RUN pair02_learn_pyramid_p NO_MATCH 2026-09-30T13:07:47-04:00 rc=0
+RUN pair03_reason_pyramid_e13 START 2026-09-30T13:07:47-04:00
+RUN pair03_reason_pyramid_e13 NO_MATCH 2026-09-30T13:07:50-04:00 rc=0
+RUN pair03_reason_pyramid_e12 START 2026-09-30T13:07:50-04:00
+RUN pair03_reason_pyramid_e12 NO_MATCH 2026-09-30T13:07:54-04:00 rc=0
+RUN pair03_reason_pyramid_p START 2026-09-30T13:07:54-04:00
+RUN pair03_reason_pyramid_p NO_MATCH 2026-09-30T13:08:03-04:00 rc=0
+RUN pair04_eye_strong_e13 START 2026-09-30T13:08:03-04:00
+RUN pair04_eye_strong_e13 NO_MATCH 2026-09-30T13:08:06-04:00 rc=0
+RUN pair04_eye_strong_e12 START 2026-09-30T13:08:06-04:00
+RUN pair04_eye_strong_e12 NO_MATCH 2026-09-30T13:08:10-04:00 rc=0
+RUN pair04_eye_strong_p START 2026-09-30T13:08:10-04:00
+RUN pair04_eye_strong_p NO_MATCH 2026-09-30T13:08:19-04:00 rc=0
+RUN pair05_eye_time_e13 START 2026-09-30T13:08:19-04:00
+RUN pair05_eye_time_e13 NO_MATCH 2026-09-30T13:08:22-04:00 rc=0
+RUN pair05_eye_time_e12 START 2026-09-30T13:08:22-04:00
+RUN pair05_eye_time_e12 NO_MATCH 2026-09-30T13:08:26-04:00 rc=0
+RUN pair05_eye_time_p START 2026-09-30T13:08:26-04:00
+RUN pair05_eye_time_p NO_MATCH 2026-09-30T13:08:35-04:00 rc=0
+RUN pair06_eye_target_e13 START 2026-09-30T13:08:35-04:00
+RUN pair06_eye_target_e13 NO_MATCH 2026-09-30T13:08:38-04:00 rc=0
+RUN pair06_eye_target_e12 START 2026-09-30T13:08:38-04:00
+RUN pair06_eye_target_e12 NO_MATCH 2026-09-30T13:08:41-04:00 rc=0
+RUN pair06_eye_target_p START 2026-09-30T13:08:41-04:00
+RUN pair06_eye_target_p NO_MATCH 2026-09-30T13:08:51-04:00 rc=0
+QUEUE DONE 2026-09-30T13:08:51-04:00 all 24 BNW-new quick-pass runs NO_MATCH (verified)

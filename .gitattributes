@@ -1,0 +1,3 @@
+# the published bytes are the bytes the run signatures and the engine hash were computed on: no line-ending
+# conversion, no diff or merge normalisation, whatever a contributor's git is set to
+* -text

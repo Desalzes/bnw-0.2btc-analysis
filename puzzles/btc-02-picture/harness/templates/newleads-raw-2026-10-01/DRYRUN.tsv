@@ -1,0 +1,250 @@
+stage	name	model	raw_candidates	passphrases	derivations	hours_at_230k	dry_run	note
+1	nr1_n0_zero_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 the twelve device words pinned, moon a plain word, zero unknown, no checksum; every passphrase string on record or newly listed
+1	nr1_n1_moon13_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 13 words, moon@13, 1 open, no checksum, no passphrase
+1	nr1_n2_slot13open_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 13 words, moon demoted to a required word, the open word in any of the 7 free slots (slot 13 among them), no checksum
+1	nr1_n3_p_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 the P shape (12 words, 1 open) without the checksum filter; passphrase empty / MOON / moon / Moon
+1	nr1_n1_moon13_tok_raw13	bip39raw13	1474560	117	172523520	0.2084	ok	N-1 with the 116 run-order tokens as the passphrase
+1	nr1_n3_p_tok_raw12	bip39raw12	1474560	117	172523520	0.2084	ok	N-3 with the 116 run-order tokens as the passphrase
+1	nr1_n0_zero_b1_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B1
+1	nr1_n1_moon13_b1_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B1
+1	nr1_n2_slot13open_b1_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B1
+1	nr1_n3_p_b1_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B1
+1	nr1_n0_zero_b2_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B2
+1	nr1_n1_moon13_b2_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B2
+1	nr1_n2_slot13open_b2_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B2
+1	nr1_n3_p_b2_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B2
+1	nr1_n0_zero_b3_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B3
+1	nr1_n1_moon13_b3_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B3
+1	nr1_n2_slot13open_b3_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B3
+1	nr1_n3_p_b3_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B3
+1	nr1_n0_zero_b4_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B4
+1	nr1_n1_moon13_b4_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B4
+1	nr1_n2_slot13open_b4_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B4
+1	nr1_n3_p_b4_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B4
+1	nr1_n0_zero_b5_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B5
+1	nr1_n1_moon13_b5_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B5
+1	nr1_n2_slot13open_b5_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B5
+1	nr1_n3_p_b5_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B5
+1	nr1_n0_zero_b5b_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B5b
+1	nr1_n1_moon13_b5b_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B5b
+1	nr1_n2_slot13open_b5b_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B5b
+1	nr1_n3_p_b5b_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B5b
+1	nr1_n0_zero_b6_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B6
+1	nr1_n1_moon13_b6_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B6
+1	nr1_n2_slot13open_b6_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B6
+1	nr1_n3_p_b6_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B6
+1	nr1_n0_zero_b7_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B7
+1	nr1_n1_moon13_b7_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B7
+1	nr1_n2_slot13open_b7_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B7
+1	nr1_n3_p_b7_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B7
+1	nr1_n0_zero_b8_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B8
+1	nr1_n1_moon13_b8_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B8
+1	nr1_n2_slot13open_b8_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B8
+1	nr1_n3_p_b8_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B8
+1	nr1_n0_zero_b9_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B9
+1	nr1_n1_moon13_b9_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B9
+1	nr1_n2_slot13open_b9_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B9
+1	nr1_n3_p_b9_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B9
+1	nr1_n0_zero_b10_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 on path batch B10
+1	nr1_n1_moon13_b10_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 on path batch B10
+1	nr1_n2_slot13open_b10_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 on path batch B10
+1	nr1_n3_p_b10_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 on path batch B10
+1	nr1_n0_zero_upper_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 with the phrase in upper case (a raw text keeps case), every passphrase string
+1	nr1_n1_moon13_upper_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 with the phrase in upper case, 1 open
+1	nr1_n2_slot13open_upper_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 with the phrase in upper case, 1 open
+1	nr1_n3_p_upper_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 with the phrase in upper case, 1 open, passphrase empty / MOON / moon / Moon
+1	nr1_n0_zero_title_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 with the phrase in title case (a raw text keeps case), every passphrase string
+1	nr1_n1_moon13_title_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 with the phrase in title case, 1 open
+1	nr1_n2_slot13open_title_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 with the phrase in title case, 1 open
+1	nr1_n3_p_title_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 with the phrase in title case, 1 open, passphrase empty / MOON / moon / Moon
+1	nr1_n0_zero_pic_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 with the phrase in pic case (a raw text keeps case), every passphrase string
+1	nr1_n1_moon13_pic_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 with the phrase in pic case, 1 open
+1	nr1_n2_slot13open_pic_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 with the phrase in pic case, 1 open
+1	nr1_n3_p_pic_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 with the phrase in pic case, 1 open, passphrase empty / MOON / moon / Moon
+1	nr1_n0_zero_first_raw12	bip39raw12	720	1319	949680	0.0011	ok	N-0 with the phrase in first case (a raw text keeps case), every passphrase string
+1	nr1_n1_moon13_first_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	N-1 with the phrase in first case, 1 open
+1	nr1_n2_slot13open_first_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	N-2 with the phrase in first case, 1 open
+1	nr1_n3_p_first_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	N-3 with the phrase in first case, 1 open, passphrase empty / MOON / moon / Moon
+6	nr6_t0_weak_raw12	bip39raw12	40320	1319	53182080	0.0642	ok	tier 0, weak pins (subject tower eye pyramid only; black, vote and moon float), no checksum, every passphrase string
+6	nr6_t0_strong_e12	electrum12	720	671	1887	0.0000	ok	tier 0, strong pins, Electrum-12, every string as the extension
+6	nr6_t0_weak_e12	electrum12	40320	671	105682	0.0001	ok	tier 0, weak pins, Electrum-12, every string as the extension
+6	nr6_j3_ste_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, tower, eye lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_stb_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, tower, black lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_stp_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, tower, pyramid lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_stv_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, tower, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_seb_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, eye, black lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_sep_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, eye, pyramid lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_sev_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, eye, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_sbp_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, black, pyramid lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_sbv_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, black, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_spv_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: subject, pyramid, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_teb_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: tower, eye, black lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_tep_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: tower, eye, pyramid lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_tev_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: tower, eye, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_tbp_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: tower, black, pyramid lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_tbv_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: tower, black, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_tpv_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: tower, pyramid, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_ebp_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: eye, black, pyramid lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_ebv_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: eye, black, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_epv_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: eye, pyramid, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_j3_bpv_tok_p	bip3912	362880	117	2653560	0.0032	ok	j-ladder: black, pyramid, vote lose their slots (words kept), moon a word, zero unknown, BIP39 checksum, the 116 run-order tokens as the passphrase (L4-10 row 1)
+6	nr6_t1_moonabsent_p	bip3912	1474560	819	75479040	0.0912	ok	tier 1, the pt_moonabsent_p shape (pins, 1 open, moon absent), the 783 strings new to the record as the passphrase
+6	nr6_t1_ext_e13	electrum13	1474560	390	2246400	0.0027	ok	tier 1, Electrum-13 tight, the 378 new strings (folded) as the extension
+6	nr6_t1_ext_e12_moonabsent	electrum12	1474560	390	2246400	0.0027	ok	tier 1, Electrum-12 tight (moon absent), the 378 new strings as the extension
+6	nr6_t1_ext_e12_moonword	electrum12	10321920	390	15724800	0.0190	ok	tier 1, Electrum-12 with moon a word (vote released), the 378 new strings as the extension
+6	nr6_t1_moonword_p	bip3912	10321920	819	528353280	0.6381	ok	tier 1, the pt_moonword_p shape (moon a word, vote released, 1 open), the 783 new strings as the passphrase
+6	nr6_t1_loo_food_p	bip3912	1474560	819	75479040	0.0912	ok	tier 1, the ro_s5_t1_loo_food_p shape (moon a word, 'food' left out, 1 open), the strings new to the record as the passphrase
+6	nr6_t1_loo_food_e12	electrum12	1474560	390	2246400	0.0027	ok	tier 1, Electrum-12, moon a word, 'food' left out, 1 open, the new strings as the extension
+6	nr6_t1_loo_this_p	bip3912	1474560	819	75479040	0.0912	ok	tier 1, the ro_s5_t1_loo_this_p shape (moon a word, 'this' left out, 1 open), the strings new to the record as the passphrase
+6	nr6_t1_loo_this_e12	electrum12	1474560	390	2246400	0.0027	ok	tier 1, Electrum-12, moon a word, 'this' left out, 1 open, the new strings as the extension
+6	nr6_t1_loo_real_p	bip3912	1474560	819	75479040	0.0912	ok	tier 1, the ro_s5_t1_loo_real_p shape (moon a word, 'real' left out, 1 open), the strings new to the record as the passphrase
+6	nr6_t1_loo_real_e12	electrum12	1474560	390	2246400	0.0027	ok	tier 1, Electrum-12, moon a word, 'real' left out, 1 open, the new strings as the extension
+6	nr6_t1_loo_one_p	bip3912	1474560	819	75479040	0.0912	ok	tier 1, the ro_s5_t1_loo_one_p shape (moon a word, 'one' left out, 1 open), the strings new to the record as the passphrase
+6	nr6_t1_loo_one_e12	electrum12	1474560	390	2246400	0.0027	ok	tier 1, Electrum-12, moon a word, 'one' left out, 1 open, the new strings as the extension
+6	nr6_t1_loo_order_p	bip3912	1474560	819	75479040	0.0912	ok	tier 1, the ro_s5_t1_loo_order_p shape (moon a word, 'order' left out, 1 open), the strings new to the record as the passphrase
+6	nr6_t1_loo_order_e12	electrum12	1474560	390	2246400	0.0027	ok	tier 1, Electrum-12, moon a word, 'order' left out, 1 open, the new strings as the extension
+6	nr6_charley_f1_p	bip3912	10321920	4	2580480	0.0031	ok	section 8.1: slot 1 open (subject required), CHARLEY / Charley / charley as the passphrase; BIP39-12
+6	nr6_charley_f1_e13	electrum13	10321920	2	80640	0.0001	ok	section 8.1: slot 1 open (subject required), charley as the extension; Electrum-13
+6	nr6_charley_f1_e12	electrum12	10321920	2	80640	0.0001	ok	section 8.1: slot 1 open (subject required), charley as the extension; Electrum-12
+6	nr6_t1_n3_raw12	bip39raw12	1474560	819	1207664640	1.4585	ok	tier 1, N-3 (12 raw words, 1 open, moon absent), the strings new to the record as the passphrase
+6	nr6_t1_n1_raw13	bip39raw13	1474560	819	1207664640	1.4585	ok	tier 1, N-1 (13 raw words, moon@13, 1 open), the strings new to the record as the passphrase
+6	nr6_t2_top6_e13	electrum13	10569646080	8	330301440	0.3989	ok	tier 2, the E3 shape (vote released, 2 open), the top six strings and charley (section 8.1) as the extension
+6	nr6_t2_top6_e12	electrum12	10569646080	8	330301440	0.3989	ok	tier 2, the p6e shape (vote released, 2 open, moon absent), the top six strings and charley as the extension
+6	nr6_t2_top6_p	bip3912	10569646080	10	6606028800	7.9783	ok	tier 2, the p6 shape (vote released, 2 open, moon absent), the top six strings and CHARLEY / Charley / charley as the passphrase
+6	nr6_d0_bip39a_raw12	bip39raw12	720	3030	2181600	0.0026	ok	tier 0 dictionary: the twelve device words pinned (no checksum), every BIP39 word as the passphrase in lower / UPPER / Title case (part a)
+6	nr6_d0_bip39b_raw12	bip39raw12	720	3030	2181600	0.0026	ok	tier 0 dictionary: the twelve device words pinned (no checksum), every BIP39 word as the passphrase in lower / UPPER / Title case (part b)
+6	nr6_d0_digitsa_raw12	bip39raw12	720	3693	2658960	0.0032	ok	tier 0 dictionary: the twelve device words pinned (no checksum), the digit strings 0-9999 and their zero-padded forms as the passphrase (part a)
+6	nr6_d0_digitsb_raw12	bip39raw12	720	3693	2658960	0.0032	ok	tier 0 dictionary: the twelve device words pinned (no checksum), the digit strings 0-9999 and their zero-padded forms as the passphrase (part b)
+6	nr6_d0_digitsc_raw12	bip39raw12	720	3692	2658240	0.0032	ok	tier 0 dictionary: the twelve device words pinned (no checksum), the digit strings 0-9999 and their zero-padded forms as the passphrase (part c)
+6	nr6_d0_rubip39a_raw12	bip39raw12	720	3055	2199600	0.0027	ok	tier 0 dictionary: the twelve device words pinned (no checksum), the 2,048-word Russian mnemonic list in lower / Capitalised / UPPER case as the passphrase (part a)
+6	nr6_d0_rubip39b_raw12	bip39raw12	720	3054	2198880	0.0027	ok	tier 0 dictionary: the twelve device words pinned (no checksum), the 2,048-word Russian mnemonic list in lower / Capitalised / UPPER case as the passphrase (part b)
+6	nr6_d0_bip39_e12	electrum12	720	2049	5763	0.0000	ok	tier 0 dictionary: Electrum-12, strong pins, every BIP39 word as the extension
+6	nr6_d0_digitsa_e12	electrum12	720	3693	10387	0.0000	ok	tier 0 dictionary: Electrum-12, strong pins, the digit strings as the extension (part a)
+6	nr6_d0_digitsb_e12	electrum12	720	3693	10387	0.0000	ok	tier 0 dictionary: Electrum-12, strong pins, the digit strings as the extension (part b)
+6	nr6_d0_digitsc_e12	electrum12	720	3692	10384	0.0000	ok	tier 0 dictionary: Electrum-12, strong pins, the digit strings as the extension (part c)
+6	nr6_d0_rubip39_e12	electrum12	720	1021	2872	0.0000	ok	tier 0 dictionary: Electrum-12, strong pins, the Russian mnemonic list as the extension (Electrum folds case and drops accents; part a holds the first half of the words in three case forms)
+6	nr6_d0_rubip39b_e12	electrum12	720	1020	2869	0.0000	ok	tier 0 dictionary: Electrum-12, strong pins, the Russian mnemonic list as the extension (part b)
+3	nr3_g2_minus1_raw12	bip39raw12	720	1319	949680	0.0011	ok	convention g2_minus1: zero unknown, no checksum (so the checksum-valid orders too), every passphrase string
+3	nr3_c1_moon1_raw12	bip39raw12	720	1319	949680	0.0011	ok	convention c1_moon1: zero unknown, no checksum (so the checksum-valid orders too), every passphrase string
+3	nr3_c2_lower_raw12	bip39raw12	5040	1319	6647760	0.0080	ok	convention c2_lower: zero unknown, no checksum (so the checksum-valid orders too), every passphrase string
+3	nr3_c2_upper_raw12	bip39raw12	720	1319	949680	0.0011	ok	convention c2_upper: zero unknown, no checksum (so the checksum-valid orders too), every passphrase string
+3	nr3_c2b_seal45_raw12	bip39raw12	720	1319	949680	0.0011	ok	convention c2b_seal45: zero unknown, no checksum (so the checksum-valid orders too), every passphrase string
+3	nr3_c3_halved_raw12	bip39raw12	120	1319	158280	0.0002	ok	convention c3_halved: zero unknown, no checksum (so the checksum-valid orders too), every passphrase string
+3	nr3_ped_lines_raw12	bip39raw12	120	1319	158280	0.0002	ok	convention ped_lines: zero unknown, no checksum (so the checksum-valid orders too), every passphrase string
+3	nr3_g2_minus1_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	g2_minus1_raw13: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_c1_moon1_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	c1_moon1_raw13: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_ped_lines_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	ped_lines_raw13: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_g1_zero_based_raw12	bip39raw12	10321920	4	41287680	0.0499	ok	g1_zero_based_raw12: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_g3b_rev0_raw12	bip39raw12	10321920	4	41287680	0.0499	ok	g3b_rev0_raw12: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_c4_mirror_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	c4_mirror_raw12: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_c4_mirror_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	c4_mirror_raw13: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_g3_reversed_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	g3_reversed_raw12: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_g3_reversed_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	g3_reversed_raw13: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_dup_hands_raw12	bip39raw12	1474560	4	5898240	0.0071	ok	dup_hands_raw12: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_dup_hands_raw13	bip39raw13	1474560	1	1474560	0.0018	ok	dup_hands_raw13: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_g4_indices_raw12	bip39raw12	23592960	4	94371840	0.1140	ok	g4_indices_raw12: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_g4_indices_raw13	bip39raw13	23592960	1	23592960	0.0285	ok	g4_indices_raw13: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_slot1open_raw13	bip39raw13	10321920	1	10321920	0.0125	ok	slot1open_raw13: the 1-open form of the record / conventions batch, without the checksum filter
+3	nr3_slot1open_raw12	bip39raw12	10321920	4	41287680	0.0499	ok	slot1open_raw12: the 1-open form of the record / conventions batch, without the checksum filter
+4	nr4_ec0_a15_raw13	bip39raw13	10800	1	10800	0.0000	ok	E-c0 as a raw text: the twelve device words pinned + one of the fifteen generator words at 13
+4	nr4_a15_open_raw13	bip39raw13	22118400	1	22118400	0.0267	ok	one of the fifteen generator words at 13, moon absent, 1 open, as a raw text
+9	nr9_t3d_tokslot_raw13	bip39raw13	38880	1	38880	0.0000	ok	T3d the open slot of N-1 takes a marked token outside BIP39 (18 tokens x lower / UPPER / Title)
+9	nr9_t3d_tokslot_raw12	bip39raw12	38880	4	155520	0.0002	ok	T3d the open slot of N-3 takes a marked token (passphrase MOON / moon / Moon)
+9	nr9_t3d_tok13_raw13	bip39raw13	40320	1	40320	0.0000	ok	the twelve device words pinned + a marked token (or MOON / Moon in capitals) as word 13, zero unknown
+9	nr9_t3d_tokslot_e13	electrum13	12960	1	51	0.0000	ok	T3d Electrum-13 native: the open slot takes a marked token (Electrum folds case)
+9	nr9_t3d_tokslot_e12	electrum12	12960	2	101	0.0000	ok	T3d Electrum-12 native, extension moon: the open slot takes a marked token
+9	nr9_t3d_ea_tok13_e13	electrum13	12960	1	51	0.0000	ok	T3d on E-a: Electrum-13 native, moon a required word, a marked token as word 13, zero unknown
+9	nr9_t3b_pin1_e13	electrum13	26542080	1	103680	0.0001	ok	T3b a marked token replaces the pin subject@1, 1 open; Electrum-13 native
+9	nr9_t3b_pin1_raw13	bip39raw13	79626240	1	79626240	0.0962	ok	T3b a marked token (3 case forms) replaces the pin subject@1, 1 open; raw 13 words
+9	nr9_t3b_pin3_e13	electrum13	26542080	1	103680	0.0001	ok	T3b a marked token replaces the pin tower@3, 1 open; Electrum-13 native
+9	nr9_t3b_pin3_raw13	bip39raw13	79626240	1	79626240	0.0962	ok	T3b a marked token (3 case forms) replaces the pin tower@3, 1 open; raw 13 words
+9	nr9_t3b_pin9_e13	electrum13	26542080	1	103680	0.0001	ok	T3b a marked token replaces the pin eye@9, 1 open; Electrum-13 native
+9	nr9_t3b_pin9_raw13	bip39raw13	79626240	1	79626240	0.0962	ok	T3b a marked token (3 case forms) replaces the pin eye@9, 1 open; raw 13 words
+9	nr9_t3b_pin10_e13	electrum13	26542080	1	103680	0.0001	ok	T3b a marked token replaces the pin black@10, 1 open; Electrum-13 native
+9	nr9_t3b_pin10_raw13	bip39raw13	79626240	1	79626240	0.0962	ok	T3b a marked token (3 case forms) replaces the pin black@10, 1 open; raw 13 words
+9	nr9_t3b_pin11_e13	electrum13	26542080	1	103680	0.0001	ok	T3b a marked token replaces the pin pyramid@11, 1 open; Electrum-13 native
+9	nr9_t3b_pin11_raw13	bip39raw13	79626240	1	79626240	0.0962	ok	T3b a marked token (3 case forms) replaces the pin pyramid@11, 1 open; raw 13 words
+9	nr9_t3b_pin12_e13	electrum13	26542080	1	103680	0.0001	ok	T3b a marked token replaces the pin vote@12, 1 open; Electrum-13 native
+9	nr9_t3b_pin12_raw13	bip39raw13	79626240	1	79626240	0.0962	ok	T3b a marked token (3 case forms) replaces the pin vote@12, 1 open; raw 13 words
+9	nr9_t3b_pin13_e13	electrum13	26542080	1	103680	0.0001	ok	T3b a marked token replaces the pin moon@13, 1 open; Electrum-13 native
+9	nr9_t3b_pin13_raw13	bip39raw13	79626240	1	79626240	0.0962	ok	T3b a marked token (3 case forms) replaces the pin moon@13, 1 open; raw 13 words
+9	nr9_t3c_food_tok2_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'food' is replaced by a marked token (3 case forms) at slot 2, 1 open; raw 13 words
+9	nr9_t3c_food_tok2_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'food' is replaced by a marked token at slot 2, 1 open; Electrum-13 native
+9	nr9_t3c_food_tok4_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'food' is replaced by a marked token (3 case forms) at slot 4, 1 open; raw 13 words
+9	nr9_t3c_food_tok4_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'food' is replaced by a marked token at slot 4, 1 open; Electrum-13 native
+9	nr9_t3c_food_tok5_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'food' is replaced by a marked token (3 case forms) at slot 5, 1 open; raw 13 words
+9	nr9_t3c_food_tok5_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'food' is replaced by a marked token at slot 5, 1 open; Electrum-13 native
+9	nr9_t3c_food_tok6_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'food' is replaced by a marked token (3 case forms) at slot 6, 1 open; raw 13 words
+9	nr9_t3c_food_tok6_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'food' is replaced by a marked token at slot 6, 1 open; Electrum-13 native
+9	nr9_t3c_food_tok7_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'food' is replaced by a marked token (3 case forms) at slot 7, 1 open; raw 13 words
+9	nr9_t3c_food_tok7_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'food' is replaced by a marked token at slot 7, 1 open; Electrum-13 native
+9	nr9_t3c_food_tok8_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'food' is replaced by a marked token (3 case forms) at slot 8, 1 open; raw 13 words
+9	nr9_t3c_food_tok8_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'food' is replaced by a marked token at slot 8, 1 open; Electrum-13 native
+9	nr9_t3c_this_tok2_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'this' is replaced by a marked token (3 case forms) at slot 2, 1 open; raw 13 words
+9	nr9_t3c_this_tok2_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'this' is replaced by a marked token at slot 2, 1 open; Electrum-13 native
+9	nr9_t3c_this_tok4_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'this' is replaced by a marked token (3 case forms) at slot 4, 1 open; raw 13 words
+9	nr9_t3c_this_tok4_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'this' is replaced by a marked token at slot 4, 1 open; Electrum-13 native
+9	nr9_t3c_this_tok5_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'this' is replaced by a marked token (3 case forms) at slot 5, 1 open; raw 13 words
+9	nr9_t3c_this_tok5_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'this' is replaced by a marked token at slot 5, 1 open; Electrum-13 native
+9	nr9_t3c_this_tok6_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'this' is replaced by a marked token (3 case forms) at slot 6, 1 open; raw 13 words
+9	nr9_t3c_this_tok6_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'this' is replaced by a marked token at slot 6, 1 open; Electrum-13 native
+9	nr9_t3c_this_tok7_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'this' is replaced by a marked token (3 case forms) at slot 7, 1 open; raw 13 words
+9	nr9_t3c_this_tok7_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'this' is replaced by a marked token at slot 7, 1 open; Electrum-13 native
+9	nr9_t3c_this_tok8_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'this' is replaced by a marked token (3 case forms) at slot 8, 1 open; raw 13 words
+9	nr9_t3c_this_tok8_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'this' is replaced by a marked token at slot 8, 1 open; Electrum-13 native
+9	nr9_t3c_real_tok2_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'real' is replaced by a marked token (3 case forms) at slot 2, 1 open; raw 13 words
+9	nr9_t3c_real_tok2_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'real' is replaced by a marked token at slot 2, 1 open; Electrum-13 native
+9	nr9_t3c_real_tok4_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'real' is replaced by a marked token (3 case forms) at slot 4, 1 open; raw 13 words
+9	nr9_t3c_real_tok4_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'real' is replaced by a marked token at slot 4, 1 open; Electrum-13 native
+9	nr9_t3c_real_tok5_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'real' is replaced by a marked token (3 case forms) at slot 5, 1 open; raw 13 words
+9	nr9_t3c_real_tok5_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'real' is replaced by a marked token at slot 5, 1 open; Electrum-13 native
+9	nr9_t3c_real_tok6_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'real' is replaced by a marked token (3 case forms) at slot 6, 1 open; raw 13 words
+9	nr9_t3c_real_tok6_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'real' is replaced by a marked token at slot 6, 1 open; Electrum-13 native
+9	nr9_t3c_real_tok7_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'real' is replaced by a marked token (3 case forms) at slot 7, 1 open; raw 13 words
+9	nr9_t3c_real_tok7_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'real' is replaced by a marked token at slot 7, 1 open; Electrum-13 native
+9	nr9_t3c_real_tok8_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'real' is replaced by a marked token (3 case forms) at slot 8, 1 open; raw 13 words
+9	nr9_t3c_real_tok8_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'real' is replaced by a marked token at slot 8, 1 open; Electrum-13 native
+9	nr9_t3c_one_tok2_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'one' is replaced by a marked token (3 case forms) at slot 2, 1 open; raw 13 words
+9	nr9_t3c_one_tok2_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'one' is replaced by a marked token at slot 2, 1 open; Electrum-13 native
+9	nr9_t3c_one_tok4_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'one' is replaced by a marked token (3 case forms) at slot 4, 1 open; raw 13 words
+9	nr9_t3c_one_tok4_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'one' is replaced by a marked token at slot 4, 1 open; Electrum-13 native
+9	nr9_t3c_one_tok5_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'one' is replaced by a marked token (3 case forms) at slot 5, 1 open; raw 13 words
+9	nr9_t3c_one_tok5_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'one' is replaced by a marked token at slot 5, 1 open; Electrum-13 native
+9	nr9_t3c_one_tok6_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'one' is replaced by a marked token (3 case forms) at slot 6, 1 open; raw 13 words
+9	nr9_t3c_one_tok6_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'one' is replaced by a marked token at slot 6, 1 open; Electrum-13 native
+9	nr9_t3c_one_tok7_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'one' is replaced by a marked token (3 case forms) at slot 7, 1 open; raw 13 words
+9	nr9_t3c_one_tok7_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'one' is replaced by a marked token at slot 7, 1 open; Electrum-13 native
+9	nr9_t3c_one_tok8_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'one' is replaced by a marked token (3 case forms) at slot 8, 1 open; raw 13 words
+9	nr9_t3c_one_tok8_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'one' is replaced by a marked token at slot 8, 1 open; Electrum-13 native
+9	nr9_t3c_order_tok2_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'order' is replaced by a marked token (3 case forms) at slot 2, 1 open; raw 13 words
+9	nr9_t3c_order_tok2_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'order' is replaced by a marked token at slot 2, 1 open; Electrum-13 native
+9	nr9_t3c_order_tok4_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'order' is replaced by a marked token (3 case forms) at slot 4, 1 open; raw 13 words
+9	nr9_t3c_order_tok4_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'order' is replaced by a marked token at slot 4, 1 open; Electrum-13 native
+9	nr9_t3c_order_tok5_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'order' is replaced by a marked token (3 case forms) at slot 5, 1 open; raw 13 words
+9	nr9_t3c_order_tok5_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'order' is replaced by a marked token at slot 5, 1 open; Electrum-13 native
+9	nr9_t3c_order_tok6_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'order' is replaced by a marked token (3 case forms) at slot 6, 1 open; raw 13 words
+9	nr9_t3c_order_tok6_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'order' is replaced by a marked token at slot 6, 1 open; Electrum-13 native
+9	nr9_t3c_order_tok7_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'order' is replaced by a marked token (3 case forms) at slot 7, 1 open; raw 13 words
+9	nr9_t3c_order_tok7_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'order' is replaced by a marked token at slot 7, 1 open; Electrum-13 native
+9	nr9_t3c_order_tok8_raw13	bip39raw13	13271040	1	13271040	0.0160	ok	T3c the floater 'order' is replaced by a marked token (3 case forms) at slot 8, 1 open; raw 13 words
+9	nr9_t3c_order_tok8_e13	electrum13	4423680	1	17280	0.0000	ok	T3c the floater 'order' is replaced by a marked token at slot 8, 1 open; Electrum-13 native
+9	nr9_t3a_completer_e13	electrum13	19940681880	1	77893289	0.0941	ok	T3a the E3 shape (vote released, 2 open) over Electrum's 2,813-word completer vocabulary (BIP39 + 765 old-list words)
+9	nr9_t3a_completer_e12	electrum12	19940681880	2	155786577	0.1881	ok	T3a the p6e shape over the 2,813-word completer vocabulary, extension moon
+2	nr2_z_d12_raw12	bip39raw12	479001600	1	479001600	0.5785	ok	Z the twelve device words (moon a word), every order, no pin, no checksum, no passphrase
+2	nr2_z_u12t_raw12	bip39raw12	479001600	4	1916006400	2.3140	ok	Z the inventory without moon (ten in), every order, no pin, no checksum, passphrase empty / MOON / moon / Moon
+5	nr5_s05_12perm_raw12	bip39raw12	479001600	1	479001600	0.5785	ok	bitcointalk digest S05, every order, as a raw text (no checksum, tokens outside BIP39), no passphrase
+5	nr5_s06_12perm_raw12	bip39raw12	479001600	1	479001600	0.5785	ok	bitcointalk digest S06, every order, as a raw text (no checksum, tokens outside BIP39), no passphrase
+5	nr5_s07_12perm_raw12	bip39raw12	479001600	1	479001600	0.5785	ok	bitcointalk digest S07, every order, as a raw text (no checksum, tokens outside BIP39), no passphrase
+5	nr5_tbl_18word_raw18	bip39raw18	120	4	480	0.0000	ok	the 18-word community table (18word) of ro_s2a_18word_moonpass_p / ld41_18word_p as a raw text, passphrase empty / MOON / moon / Moon
+5	nr5_tbl_18word_novote_raw18	bip39raw18	1474560	4	5898240	0.0071	ok	the 18-word community table (18word_novote) of ro_s2a_18word_novote_moonpass_p / ld41_18word_novote_p as a raw text, passphrase empty / MOON / moon / Moon
+5	nr5_tbl_18word_noliberty_raw18	bip39raw18	1474560	4	5898240	0.0071	ok	the 18-word community table (18word_noliberty) of ro_s2a_18word_noliberty_moonpass_p / ld41_18word_noliberty_p as a raw text, passphrase empty / MOON / moon / Moon
+5	nr5_tbl_18word_nopolice_raw18	bip39raw18	1474560	4	5898240	0.0071	ok	the 18-word community table (18word_nopolice) of ro_s2a_18word_nopolice_moonpass_p / ld41_18word_nopolice_p as a raw text, passphrase empty / MOON / moon / Moon
+5	nr5_tbl_21word_raw21	bip39raw21	2949120	4	11796480	0.0142	ok	the 21-word community table of ld40_21word_p as a raw text, passphrase empty / BREATHE / breathe / Breathe
+11	nr11_t1a_n13_raw13	bip39raw13	461623680	1	461623680	0.5575	ok	T1a structure n13: both open words from the 428-entry picture pool (depicted + marked + slot words + the Bush pool + tokens), no checksum, one path
+11	nr11_t1a_np_raw12	bip39raw12	461623680	2	923247360	1.1150	ok	T1a structure np: both open words from the 428-entry picture pool (depicted + marked + slot words + the Bush pool + tokens), no checksum, one path
+11	nr11_t1a_n13b_raw13	bip39raw13	461623680	1	461623680	0.5575	ok	T1a structure n13b: both open words from the 428-entry picture pool (depicted + marked + slot words + the Bush pool + tokens), no checksum, one path
+11	nr11_t1a_n2_raw13	bip39raw13	461623680	1	461623680	0.5575	ok	T1a structure n2: both open words from the 428-entry picture pool (depicted + marked + slot words + the Bush pool + tokens), no checksum, one path
+11	nr11_t2_n13_raw13	bip39raw13	10569646080	1	10569646080	12.7653	ok	T2 structure n13: two open words over the full list, no checksum, one path
+11	nr11_t2_np_raw12	bip39raw12	10569646080	2	21139292160	25.5305	ok	T2 structure np: two open words over the full list, no checksum, one path
+11	nr11_t2_n13b_raw13	bip39raw13	10569646080	1	10569646080	12.7653	ok	T2 structure n13b: two open words over the full list, no checksum, one path
+11	nr11_t2_n2_raw13	bip39raw13	10569646080	1	10569646080	12.7653	ok	T2 structure n2: two open words over the full list, no checksum, one path

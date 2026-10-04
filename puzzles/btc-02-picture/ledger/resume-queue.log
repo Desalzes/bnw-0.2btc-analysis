@@ -1,0 +1,31 @@
+CHAIN START 2026-10-01T05:44:47-04:00: resume of the runs stopped 2026-09-30 18:57; operator 2026-10-01, in chat: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h)
+RUN ld15_month13_open2_e13 START 2026-10-01T05:44:47-04:00 (resume from 8 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld15_month13_open2_e13 NO_MATCH 2026-10-01T05:45:27-04:00 rc=0
+RUN ld08_twenty_one_dropped_e12 START 2026-10-01T05:45:27-04:00 (resume from 0 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld08_twenty_one_dropped_e12 NO_MATCH 2026-10-01T05:48:18-04:00 rc=0
+RUN rv_drop_black_e12 START 2026-10-01T05:48:18-04:00 (resume from 11 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN rv_drop_black_e12 NO_MATCH 2026-10-01T05:50:36-04:00 rc=0
+RUN rv_drop_tower_e12 START 2026-10-01T05:50:36-04:00 (resume from 0 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN rv_drop_tower_e12 NO_MATCH 2026-10-01T05:55:25-04:00 rc=0
+RUN rv_drop_subject_e12 START 2026-10-01T05:55:25-04:00 (resume from 0 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN rv_drop_subject_e12 NO_MATCH 2026-10-01T06:00:17-04:00 rc=0
+RUN ld_pass_moonword_p START 2026-10-01T06:00:17-04:00 (resume from 0 saved blocks, max-hours 2; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld_pass_moonword_p NO_MATCH 2026-10-01T06:07:51-04:00 rc=0
+RUN cb_p_s9_slot2open START 2026-10-01T06:07:51-04:00 (resume from 22 saved blocks, max-hours 4; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN cb_p_s9_slot2open NO_MATCH 2026-10-01T06:25:12-04:00 rc=0
+RUN ld22_colours4_p START 2026-10-01T06:25:12-04:00 (resume from 0 saved blocks, max-hours 4; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld22_colours4_p NO_MATCH 2026-10-01T06:48:15-04:00 rc=0
+RUN cb_e13_open2 START 2026-10-01T06:48:15-04:00 (resume from 0 saved blocks, max-hours 4; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN cb_e13_open2 NO_MATCH 2026-10-01T07:10:39-04:00 rc=0
+RUN cb_e12_open2 START 2026-10-01T07:10:39-04:00 (resume from 0 saved blocks, max-hours 4; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN cb_e12_open2 NO_MATCH 2026-10-01T07:33:03-04:00 rc=0
+STEP p7b12-resume.sh START 2026-10-01T07:33:03-04:00
+STEP p7b12-resume.sh END 2026-10-01T08:01:14-04:00: QUEUE DONE 2026-10-01T08:01:14-04:00 all seven slices NO MATCH (verified)
+STEP readings-resume.sh START 2026-10-01T08:01:14-04:00
+STEP readings-resume.sh END 2026-10-01T08:47:54-04:00: QUEUE DONE 2026-10-01T08:47:54-04:00 all 15 readings NO_MATCH (verified)
+RUN ld08_twenty_one_dropped_p START 2026-10-01T08:47:54-04:00 (resume from 0 saved blocks, max-hours 8; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN ld08_twenty_one_dropped_p NO_MATCH 2026-10-01T10:26:49-04:00 rc=0
+RUN c02b_e4_ext_tokens START 2026-10-01T10:26:49-04:00 (resume from 0 saved blocks, max-hours 10; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+RUN c02b_e4_ext_tokens NO_MATCH 2026-10-01T12:19:14-04:00 rc=0
+RUN c06b_e12_date_ext START 2026-10-01T12:19:14-04:00 (resume from 0 saved blocks, max-hours 10; operator 2026-10-01: "run everthing thts under 4 hours" = every pending run priced under 4 h each, including the runs stopped at 18:57 (each under 4 h))
+STOPPED 2026-10-01T13:41:29-04:00 by operator request ("stop whatever you were running and do a handoff"): unit stopped, checkpoint kept (c06b_e12_date_ext in progress; resume = resume-stopped.sh, it skips finished runs)

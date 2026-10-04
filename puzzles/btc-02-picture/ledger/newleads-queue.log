@@ -1,0 +1,724 @@
+QUEUE START 2026-10-01T13:53:37-04:00; signoff: the operator 2026-10-01, in chat, with BNW-NEW-LEADS-2026-10-01.md attached: "I want you to manage running all these in a logical order, you dont need to ask me permission as you have my permission now to run them in an order you decide." = the run order of that document (section 0, rows 1-11); configs from harness/gen_newleads_20261001.py and gen_newleads_raw_20261001.py, each priced by a dry run first
+RUN nl3_g2_minus1_b START 2026-10-01T13:53:37-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g2_minus1_b.conf
+RUN nl3_g2_minus1_b NO_MATCH 2026-10-01T13:53:38-04:00 rc=0
+RUN nl3_g2_minus1_e START 2026-10-01T13:53:38-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g2_minus1_e.conf
+RUN nl3_g2_minus1_e NO_MATCH 2026-10-01T13:53:39-04:00 rc=0
+RUN nl3_g2_minus1_e13 START 2026-10-01T13:53:39-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g2_minus1_e13.conf
+RUN nl3_g2_minus1_e13 NO_MATCH 2026-10-01T13:53:41-04:00 rc=0
+RUN nl3_c1_moon1_e13 START 2026-10-01T13:53:41-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_c1_moon1_e13.conf
+RUN nl3_c1_moon1_e13 NO_MATCH 2026-10-01T13:53:43-04:00 rc=0
+RUN nl3_g1_zero_based_e12 START 2026-10-01T13:53:43-04:00 [priced 0.0001 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g1_zero_based_e12.conf
+RUN nl3_g1_zero_based_e12 NO_MATCH 2026-10-01T13:53:45-04:00 rc=0
+RUN nl3_g1_zero_based_p START 2026-10-01T13:53:45-04:00 [priced 0.0031 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g1_zero_based_p.conf
+RUN nl3_g1_zero_based_p NO_MATCH 2026-10-01T13:53:57-04:00 rc=0
+RUN nl3_c3_halved_b START 2026-10-01T13:53:57-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_c3_halved_b.conf
+RUN nl3_c3_halved_b NO_MATCH 2026-10-01T13:53:58-04:00 rc=0
+RUN nl3_c3_halved_e START 2026-10-01T13:53:58-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_c3_halved_e.conf
+RUN nl3_c3_halved_e NO_MATCH 2026-10-01T13:53:59-04:00 rc=0
+RUN nl3_c2_lower_e START 2026-10-01T13:53:59-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_c2_lower_e.conf
+RUN nl3_c2_lower_e NO_MATCH 2026-10-01T13:54:00-04:00 rc=0
+RUN nl3_c2_upper_e START 2026-10-01T13:54:00-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_c2_upper_e.conf
+RUN nl3_c2_upper_e NO_MATCH 2026-10-01T13:54:00-04:00 rc=0
+RUN nl3_c2b_seal45_b START 2026-10-01T13:54:01-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_c2b_seal45_b.conf
+RUN nl3_c2b_seal45_b NO_MATCH 2026-10-01T13:54:02-04:00 rc=0
+RUN nl3_c2b_seal45_e START 2026-10-01T13:54:02-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_c2b_seal45_e.conf
+RUN nl3_c2b_seal45_e NO_MATCH 2026-10-01T13:54:02-04:00 rc=0
+RUN nl3_ped_lines_b START 2026-10-01T13:54:02-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_ped_lines_b.conf
+RUN nl3_ped_lines_b NO_MATCH 2026-10-01T13:54:03-04:00 rc=0
+RUN nl3_ped_lines_e13 START 2026-10-01T13:54:03-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_ped_lines_e13.conf
+RUN nl3_ped_lines_e13 NO_MATCH 2026-10-01T13:54:05-04:00 rc=0
+RUN nl3_g3b_rev0_e12 START 2026-10-01T13:54:05-04:00 [priced 0.0001 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g3b_rev0_e12.conf
+RUN nl3_g3b_rev0_e12 NO_MATCH 2026-10-01T13:54:07-04:00 rc=0
+RUN nl3_g3b_rev0_p START 2026-10-01T13:54:07-04:00 [priced 0.0031 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g3b_rev0_p.conf
+RUN nl3_g3b_rev0_p NO_MATCH 2026-10-01T13:54:19-04:00 rc=0
+RUN nl3_g4_indices_e13 START 2026-10-01T13:54:19-04:00 [priced 0.0001 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g4_indices_e13.conf
+RUN nl3_g4_indices_e13 NO_MATCH 2026-10-01T13:54:21-04:00 rc=0
+RUN nl3_g4_indices_e12 START 2026-10-01T13:54:21-04:00 [priced 0.0002 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g4_indices_e12.conf
+RUN nl3_g4_indices_e12 NO_MATCH 2026-10-01T13:54:24-04:00 rc=0
+RUN nl3_g4_indices_p START 2026-10-01T13:54:24-04:00 [priced 0.0071 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_g4_indices_p.conf
+RUN nl3_g4_indices_p NO_MATCH 2026-10-01T13:54:49-04:00 rc=0
+RUN nl3_dup_hands_e12 START 2026-10-01T13:54:49-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_dup_hands_e12.conf
+RUN nl3_dup_hands_e12 NO_MATCH 2026-10-01T13:54:50-04:00 rc=0
+RUN nl3_dup_hands_p START 2026-10-01T13:54:50-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl3_dup_hands_p.conf
+RUN nl3_dup_hands_p NO_MATCH 2026-10-01T13:54:55-04:00 rc=0
+RUN nl2_z_d12_e12 START 2026-10-01T13:54:55-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_z_d12_e12.conf
+RUN nl2_z_d12_e12 NO_MATCH 2026-10-01T13:55:10-04:00 rc=0
+RUN nl2_z_u12t_e12 START 2026-10-01T13:55:10-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_z_u12t_e12.conf
+RUN nl2_z_u12t_e12 NO_MATCH 2026-10-01T13:55:25-04:00 rc=0
+RUN nl2_z_u13_e13 START 2026-10-01T13:55:26-04:00 [priced 0.0294 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_z_u13_e13.conf
+RUN nl2_z_u13_e13 NO_MATCH 2026-10-01T13:57:00-04:00 rc=0
+RUN nl2_zm_subject_e START 2026-10-01T13:57:00-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_subject_e.conf
+RUN nl2_zm_subject_e NO_MATCH 2026-10-01T13:57:10-04:00 rc=0
+RUN nl2_zm_tower_e START 2026-10-01T13:57:10-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_tower_e.conf
+RUN nl2_zm_tower_e NO_MATCH 2026-10-01T13:57:19-04:00 rc=0
+RUN nl2_zm_eye_e START 2026-10-01T13:57:19-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_eye_e.conf
+RUN nl2_zm_eye_e NO_MATCH 2026-10-01T13:57:29-04:00 rc=0
+RUN nl2_zm_pyramid_e START 2026-10-01T13:57:29-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_pyramid_e.conf
+RUN nl2_zm_pyramid_e NO_MATCH 2026-10-01T13:57:38-04:00 rc=0
+RUN nl2_zm_black_e START 2026-10-01T13:57:38-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_black_e.conf
+RUN nl2_zm_black_e NO_MATCH 2026-10-01T13:57:48-04:00 rc=0
+RUN nl2_zm_vote_e START 2026-10-01T13:57:48-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_vote_e.conf
+RUN nl2_zm_vote_e NO_MATCH 2026-10-01T13:57:58-04:00 rc=0
+RUN nl2_zm_food_e START 2026-10-01T13:57:58-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_food_e.conf
+RUN nl2_zm_food_e NO_MATCH 2026-10-01T13:58:07-04:00 rc=0
+RUN nl2_zm_this_e START 2026-10-01T13:58:07-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_this_e.conf
+RUN nl2_zm_this_e NO_MATCH 2026-10-01T13:58:17-04:00 rc=0
+RUN nl2_zm_real_e START 2026-10-01T13:58:17-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_real_e.conf
+RUN nl2_zm_real_e NO_MATCH 2026-10-01T13:58:27-04:00 rc=0
+RUN nl2_zm_one_e START 2026-10-01T13:58:27-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_one_e.conf
+RUN nl2_zm_one_e NO_MATCH 2026-10-01T13:58:36-04:00 rc=0
+RUN nl2_zm_order_e START 2026-10-01T13:58:36-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_order_e.conf
+RUN nl2_zm_order_e NO_MATCH 2026-10-01T13:58:46-04:00 rc=0
+RUN nl2_sw_moon_month_e START 2026-10-01T13:58:46-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_moon_month_e.conf
+RUN nl2_sw_moon_month_e NO_MATCH 2026-10-01T13:59:01-04:00 rc=0
+RUN nl2_sw_moon_lunar_e START 2026-10-01T13:59:01-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_moon_lunar_e.conf
+RUN nl2_sw_moon_lunar_e NO_MATCH 2026-10-01T13:59:17-04:00 rc=0
+RUN nl2_sw_black_day_e START 2026-10-01T13:59:17-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_black_day_e.conf
+RUN nl2_sw_black_day_e NO_MATCH 2026-10-01T13:59:27-04:00 rc=0
+RUN nl2_sw_black_rain_e START 2026-10-01T13:59:27-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_black_rain_e.conf
+RUN nl2_sw_black_rain_e NO_MATCH 2026-10-01T13:59:36-04:00 rc=0
+RUN nl2_sw_black_number_e START 2026-10-01T13:59:36-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_black_number_e.conf
+RUN nl2_sw_black_number_e NO_MATCH 2026-10-01T13:59:46-04:00 rc=0
+RUN nl2_sw_order_stable_e START 2026-10-01T13:59:46-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_order_stable_e.conf
+RUN nl2_sw_order_stable_e NO_MATCH 2026-10-01T13:59:55-04:00 rc=0
+RUN nl2_sw_vote_voice_e START 2026-10-01T13:59:56-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_vote_voice_e.conf
+RUN nl2_sw_vote_voice_e NO_MATCH 2026-10-01T14:00:05-04:00 rc=0
+RUN nl2_sw_vote_choice_e START 2026-10-01T14:00:05-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_vote_choice_e.conf
+RUN nl2_sw_vote_choice_e NO_MATCH 2026-10-01T14:00:15-04:00 rc=0
+RUN nl2_sw_vote_twelve_e START 2026-10-01T14:00:15-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_vote_twelve_e.conf
+RUN nl2_sw_vote_twelve_e NO_MATCH 2026-10-01T14:00:24-04:00 rc=0
+RUN nl2_sw_real_present_e START 2026-10-01T14:00:24-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_real_present_e.conf
+RUN nl2_sw_real_present_e NO_MATCH 2026-10-01T14:00:34-04:00 rc=0
+RUN nl2_sw_one_unit_e START 2026-10-01T14:00:34-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_one_unit_e.conf
+RUN nl2_sw_one_unit_e NO_MATCH 2026-10-01T14:00:44-04:00 rc=0
+RUN nl2_sw_one_alone_e START 2026-10-01T14:00:44-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_one_alone_e.conf
+RUN nl2_sw_one_alone_e NO_MATCH 2026-10-01T14:00:53-04:00 rc=0
+RUN nl2_sw_this_that_e START 2026-10-01T14:00:53-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_this_that_e.conf
+RUN nl2_sw_this_that_e NO_MATCH 2026-10-01T14:01:03-04:00 rc=0
+RUN nl2_sw_this_thing_e START 2026-10-01T14:01:03-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_this_thing_e.conf
+RUN nl2_sw_this_thing_e NO_MATCH 2026-10-01T14:01:13-04:00 rc=0
+RUN nl2_sw_subject_object_e START 2026-10-01T14:01:13-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_subject_object_e.conf
+RUN nl2_sw_subject_object_e NO_MATCH 2026-10-01T14:01:22-04:00 rc=0
+RUN nl2_sw_subject_item_e START 2026-10-01T14:01:23-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_subject_item_e.conf
+RUN nl2_sw_subject_item_e NO_MATCH 2026-10-01T14:01:32-04:00 rc=0
+RUN nl2_sw_subject_topic_e START 2026-10-01T14:01:32-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_subject_topic_e.conf
+RUN nl2_sw_subject_topic_e NO_MATCH 2026-10-01T14:01:42-04:00 rc=0
+RUN nl2_sw_subject_section_e START 2026-10-01T14:01:42-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_subject_section_e.conf
+RUN nl2_sw_subject_section_e NO_MATCH 2026-10-01T14:01:52-04:00 rc=0
+RUN nl2_sw_food_need_e START 2026-10-01T14:01:52-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_food_need_e.conf
+RUN nl2_sw_food_need_e NO_MATCH 2026-10-01T14:02:01-04:00 rc=0
+RUN nl2_sw_food_space_e START 2026-10-01T14:02:01-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_food_space_e.conf
+RUN nl2_sw_food_space_e NO_MATCH 2026-10-01T14:02:11-04:00 rc=0
+RUN nl2_sw_food_lunch_e START 2026-10-01T14:02:11-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_sw_food_lunch_e.conf
+RUN nl2_sw_food_lunch_e NO_MATCH 2026-10-01T14:02:21-04:00 rc=0
+RUN nl4_ec0_a15_zero START 2026-10-01T14:02:21-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl4_ec0_a15_zero.conf
+RUN nl4_ec0_a15_zero NO_MATCH 2026-10-01T14:02:22-04:00 rc=0
+RUN nl4_ea_slot13open START 2026-10-01T14:02:22-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl4_ea_slot13open.conf
+RUN nl4_ea_slot13open NO_MATCH 2026-10-01T14:02:24-04:00 rc=0
+RUN nl4_eb_slot13_open2 START 2026-10-01T14:02:24-04:00 [priced 0.0499 h, max-hours 2.0] templates/newleads-2026-10-01/nl4_eb_slot13_open2.conf
+RUN nl4_eb_slot13_open2 NO_MATCH 2026-10-01T14:05:02-04:00 rc=0
+RUN nl5_s05_12perm_e START 2026-10-01T14:05:02-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl5_s05_12perm_e.conf
+RUN nl5_s05_12perm_e NO_MATCH 2026-10-01T14:05:11-04:00 rc=0
+RUN nl5_s06_12perm_e START 2026-10-01T14:05:11-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl5_s06_12perm_e.conf
+RUN nl5_s06_12perm_e NO_MATCH 2026-10-01T14:05:21-04:00 rc=0
+RUN nl5_s07_12perm_e START 2026-10-01T14:05:21-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl5_s07_12perm_e.conf
+RUN nl5_s07_12perm_e NO_MATCH 2026-10-01T14:05:31-04:00 rc=0
+RUN nl7_r2_st_e13 START 2026-10-01T14:05:31-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_st_e13.conf
+RUN nl7_r2_st_e13 NO_MATCH 2026-10-01T14:05:35-04:00 rc=0
+RUN nl7_r2_se_e13 START 2026-10-01T14:05:35-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_se_e13.conf
+RUN nl7_r2_se_e13 NO_MATCH 2026-10-01T14:05:39-04:00 rc=0
+RUN nl7_r2_sb_e13 START 2026-10-01T14:05:39-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_sb_e13.conf
+RUN nl7_r2_sb_e13 NO_MATCH 2026-10-01T14:05:43-04:00 rc=0
+RUN nl7_r2_sp_e13 START 2026-10-01T14:05:43-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_sp_e13.conf
+RUN nl7_r2_sp_e13 NO_MATCH 2026-10-01T14:05:46-04:00 rc=0
+RUN nl7_r2_sv_e13 START 2026-10-01T14:05:47-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_sv_e13.conf
+RUN nl7_r2_sv_e13 NO_MATCH 2026-10-01T14:05:50-04:00 rc=0
+RUN nl7_r2_sm_e13 START 2026-10-01T14:05:50-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_sm_e13.conf
+RUN nl7_r2_sm_e13 NO_MATCH 2026-10-01T14:05:54-04:00 rc=0
+RUN nl7_r2_te_e13 START 2026-10-01T14:05:54-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_te_e13.conf
+RUN nl7_r2_te_e13 NO_MATCH 2026-10-01T14:05:58-04:00 rc=0
+RUN nl7_r2_tb_e13 START 2026-10-01T14:05:58-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_tb_e13.conf
+RUN nl7_r2_tb_e13 NO_MATCH 2026-10-01T14:06:02-04:00 rc=0
+RUN nl7_r2_tp_e13 START 2026-10-01T14:06:02-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_tp_e13.conf
+RUN nl7_r2_tp_e13 NO_MATCH 2026-10-01T14:06:06-04:00 rc=0
+RUN nl7_r2_tv_e13 START 2026-10-01T14:06:06-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_tv_e13.conf
+RUN nl7_r2_tv_e13 NO_MATCH 2026-10-01T14:06:10-04:00 rc=0
+RUN nl7_r2_tm_e13 START 2026-10-01T14:06:10-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_tm_e13.conf
+RUN nl7_r2_tm_e13 NO_MATCH 2026-10-01T14:06:14-04:00 rc=0
+RUN nl7_r2_eb_e13 START 2026-10-01T14:06:14-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_eb_e13.conf
+RUN nl7_r2_eb_e13 NO_MATCH 2026-10-01T14:06:18-04:00 rc=0
+RUN nl7_r2_ep_e13 START 2026-10-01T14:06:18-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_ep_e13.conf
+RUN nl7_r2_ep_e13 NO_MATCH 2026-10-01T14:06:22-04:00 rc=0
+RUN nl7_r2_ev_e13 START 2026-10-01T14:06:22-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_ev_e13.conf
+RUN nl7_r2_ev_e13 NO_MATCH 2026-10-01T14:06:26-04:00 rc=0
+RUN nl7_r2_em_e13 START 2026-10-01T14:06:26-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_em_e13.conf
+RUN nl7_r2_em_e13 NO_MATCH 2026-10-01T14:06:30-04:00 rc=0
+RUN nl7_r2_bp_e13 START 2026-10-01T14:06:30-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_bp_e13.conf
+RUN nl7_r2_bp_e13 NO_MATCH 2026-10-01T14:06:34-04:00 rc=0
+RUN nl7_r2_bm_e13 START 2026-10-01T14:06:34-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_bm_e13.conf
+RUN nl7_r2_bm_e13 NO_MATCH 2026-10-01T14:06:38-04:00 rc=0
+RUN nl7_r2_pv_e13 START 2026-10-01T14:06:38-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_pv_e13.conf
+RUN nl7_r2_pv_e13 NO_MATCH 2026-10-01T14:06:42-04:00 rc=0
+RUN nl7_r2_pm_e13 START 2026-10-01T14:06:42-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_pm_e13.conf
+RUN nl7_r2_pm_e13 NO_MATCH 2026-10-01T14:06:46-04:00 rc=0
+RUN nl7_r2_vm_e13 START 2026-10-01T14:06:46-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_vm_e13.conf
+RUN nl7_r2_vm_e13 NO_MATCH 2026-10-01T14:06:49-04:00 rc=0
+RUN nl7_r2_st_e12 START 2026-10-01T14:06:50-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_st_e12.conf
+RUN nl7_r2_st_e12 NO_MATCH 2026-10-01T14:06:55-04:00 rc=0
+RUN nl7_r2_se_e12 START 2026-10-01T14:06:55-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_se_e12.conf
+RUN nl7_r2_se_e12 NO_MATCH 2026-10-01T14:06:59-04:00 rc=0
+RUN nl7_r2_sb_e12 START 2026-10-01T14:07:00-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_sb_e12.conf
+RUN nl7_r2_sb_e12 NO_MATCH 2026-10-01T14:07:04-04:00 rc=0
+RUN nl7_r2_sp_e12 START 2026-10-01T14:07:05-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_sp_e12.conf
+RUN nl7_r2_sp_e12 NO_MATCH 2026-10-01T14:07:09-04:00 rc=0
+RUN nl7_r2_sv_e12 START 2026-10-01T14:07:09-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_sv_e12.conf
+RUN nl7_r2_sv_e12 NO_MATCH 2026-10-01T14:07:14-04:00 rc=0
+RUN nl7_r2_te_e12 START 2026-10-01T14:07:14-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_te_e12.conf
+RUN nl7_r2_te_e12 NO_MATCH 2026-10-01T14:07:19-04:00 rc=0
+RUN nl7_r2_tb_e12 START 2026-10-01T14:07:19-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_tb_e12.conf
+RUN nl7_r2_tb_e12 NO_MATCH 2026-10-01T14:07:24-04:00 rc=0
+RUN nl7_r2_tp_e12 START 2026-10-01T14:07:24-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_tp_e12.conf
+RUN nl7_r2_tp_e12 NO_MATCH 2026-10-01T14:07:29-04:00 rc=0
+RUN nl7_r2_tv_e12 START 2026-10-01T14:07:29-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_tv_e12.conf
+RUN nl7_r2_tv_e12 NO_MATCH 2026-10-01T14:07:34-04:00 rc=0
+RUN nl7_r2_eb_e12 START 2026-10-01T14:07:34-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_eb_e12.conf
+RUN nl7_r2_eb_e12 NO_MATCH 2026-10-01T14:07:39-04:00 rc=0
+RUN nl7_r2_ep_e12 START 2026-10-01T14:07:39-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_ep_e12.conf
+RUN nl7_r2_ep_e12 NO_MATCH 2026-10-01T14:07:44-04:00 rc=0
+RUN nl7_r2_ev_e12 START 2026-10-01T14:07:44-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_ev_e12.conf
+RUN nl7_r2_ev_e12 NO_MATCH 2026-10-01T14:07:49-04:00 rc=0
+RUN nl7_r2_bp_e12 START 2026-10-01T14:07:49-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_bp_e12.conf
+RUN nl7_r2_bp_e12 NO_MATCH 2026-10-01T14:07:54-04:00 rc=0
+RUN nl7_r2_pv_e12 START 2026-10-01T14:07:54-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r2_pv_e12.conf
+RUN nl7_r2_pv_e12 NO_MATCH 2026-10-01T14:07:59-04:00 rc=0
+RUN nl7_slot10_list_p START 2026-10-01T14:07:59-04:00 [priced 0.0040 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_slot10_list_p.conf
+RUN nl7_slot10_list_p NO_MATCH 2026-10-01T14:08:14-04:00 rc=0
+RUN nl7_bxv_cross_e13 START 2026-10-01T14:08:14-04:00 [priced 0.0011 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_bxv_cross_e13.conf
+RUN nl7_bxv_cross_e13 NO_MATCH 2026-10-01T14:08:20-04:00 rc=0
+RUN nl7_bxv_cross_e12 START 2026-10-01T14:08:20-04:00 [priced 0.0023 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_bxv_cross_e12.conf
+RUN nl7_bxv_cross_e12 NO_MATCH 2026-10-01T14:08:29-04:00 rc=0
+RUN nl7_r3_tep_e12 START 2026-10-01T14:08:29-04:00 [priced 0.0070 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r3_tep_e12.conf
+RUN nl7_r3_tep_e12 NO_MATCH 2026-10-01T14:08:52-04:00 rc=0
+RUN nl7_r4_tmep_e13 START 2026-10-01T14:08:52-04:00 [priced 0.0351 h, max-hours 2.0] templates/newleads-2026-10-01/nl7_r4_tmep_e13.conf
+RUN nl7_r4_tmep_e13 NO_MATCH 2026-10-01T14:10:49-04:00 rc=0
+RUN nl8_b1_p1 START 2026-10-01T14:10:49-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b1_p1.conf
+RUN nl8_b1_p1 NO_MATCH 2026-10-01T14:10:53-04:00 rc=0
+RUN nl8_b1_moonword_p START 2026-10-01T14:10:53-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b1_moonword_p.conf
+RUN nl8_b1_moonword_p NO_MATCH 2026-10-01T14:10:59-04:00 rc=0
+RUN nl8_b2_p1 START 2026-10-01T14:10:59-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b2_p1.conf
+RUN nl8_b2_p1 NO_MATCH 2026-10-01T14:11:03-04:00 rc=0
+RUN nl8_b2_moonword_p START 2026-10-01T14:11:03-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b2_moonword_p.conf
+RUN nl8_b2_moonword_p NO_MATCH 2026-10-01T14:11:08-04:00 rc=0
+RUN nl8_b3_p1 START 2026-10-01T14:11:08-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b3_p1.conf
+RUN nl8_b3_p1 NO_MATCH 2026-10-01T14:11:13-04:00 rc=0
+RUN nl8_b3_moonword_p START 2026-10-01T14:11:13-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b3_moonword_p.conf
+RUN nl8_b3_moonword_p NO_MATCH 2026-10-01T14:11:18-04:00 rc=0
+RUN nl8_b4_p1 START 2026-10-01T14:11:18-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b4_p1.conf
+RUN nl8_b4_p1 NO_MATCH 2026-10-01T14:11:24-04:00 rc=0
+RUN nl8_b4_moonword_p START 2026-10-01T14:11:24-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b4_moonword_p.conf
+RUN nl8_b4_moonword_p NO_MATCH 2026-10-01T14:11:31-04:00 rc=0
+RUN nl8_b5_p1 START 2026-10-01T14:11:31-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b5_p1.conf
+RUN nl8_b5_p1 NO_MATCH 2026-10-01T14:11:37-04:00 rc=0
+RUN nl8_b5_moonword_p START 2026-10-01T14:11:37-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b5_moonword_p.conf
+RUN nl8_b5_moonword_p NO_MATCH 2026-10-01T14:11:45-04:00 rc=0
+RUN nl8_b5b_p1 START 2026-10-01T14:11:45-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b5b_p1.conf
+RUN nl8_b5b_p1 NO_MATCH 2026-10-01T14:11:49-04:00 rc=0
+RUN nl8_b5b_moonword_p START 2026-10-01T14:11:49-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b5b_moonword_p.conf
+RUN nl8_b5b_moonword_p NO_MATCH 2026-10-01T14:11:54-04:00 rc=0
+RUN nl8_b6_p1 START 2026-10-01T14:11:54-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b6_p1.conf
+RUN nl8_b6_p1 NO_MATCH 2026-10-01T14:12:00-04:00 rc=0
+RUN nl8_b6_moonword_p START 2026-10-01T14:12:00-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b6_moonword_p.conf
+RUN nl8_b6_moonword_p NO_MATCH 2026-10-01T14:12:06-04:00 rc=0
+RUN nl8_b7_p1 START 2026-10-01T14:12:06-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b7_p1.conf
+RUN nl8_b7_p1 NO_MATCH 2026-10-01T14:12:11-04:00 rc=0
+RUN nl8_b7_moonword_p START 2026-10-01T14:12:11-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b7_moonword_p.conf
+RUN nl8_b7_moonword_p NO_MATCH 2026-10-01T14:12:17-04:00 rc=0
+RUN nl8_b8_p1 START 2026-10-01T14:12:17-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b8_p1.conf
+RUN nl8_b8_p1 NO_MATCH 2026-10-01T14:12:21-04:00 rc=0
+RUN nl8_b8_moonword_p START 2026-10-01T14:12:21-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b8_moonword_p.conf
+RUN nl8_b8_moonword_p NO_MATCH 2026-10-01T14:12:27-04:00 rc=0
+RUN nl8_b9_p1 START 2026-10-01T14:12:27-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b9_p1.conf
+RUN nl8_b9_p1 NO_MATCH 2026-10-01T14:12:33-04:00 rc=0
+RUN nl8_b9_moonword_p START 2026-10-01T14:12:33-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b9_moonword_p.conf
+RUN nl8_b9_moonword_p NO_MATCH 2026-10-01T14:12:41-04:00 rc=0
+RUN nl8_b10_p1 START 2026-10-01T14:12:41-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b10_p1.conf
+RUN nl8_b10_p1 NO_MATCH 2026-10-01T14:12:45-04:00 rc=0
+RUN nl8_b10_moonword_p START 2026-10-01T14:12:45-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_b10_moonword_p.conf
+RUN nl8_b10_moonword_p NO_MATCH 2026-10-01T14:12:50-04:00 rc=0
+RUN nl8_e1_tight_e13 START 2026-10-01T14:12:50-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_e1_tight_e13.conf
+RUN nl8_e1_tight_e13 NO_MATCH 2026-10-01T14:12:52-04:00 rc=0
+RUN nl8_e1_tight_e12 START 2026-10-01T14:12:52-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_e1_tight_e12.conf
+RUN nl8_e1_tight_e12 NO_MATCH 2026-10-01T14:12:54-04:00 rc=0
+RUN nl8_e1_ea_e13 START 2026-10-01T14:12:54-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_e1_ea_e13.conf
+RUN nl8_e1_ea_e13 NO_MATCH 2026-10-01T14:12:56-04:00 rc=0
+RUN nl8_e2_tight_e13 START 2026-10-01T14:12:57-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_e2_tight_e13.conf
+RUN nl8_e2_tight_e13 NO_MATCH 2026-10-01T14:12:58-04:00 rc=0
+RUN nl8_e2_tight_e12 START 2026-10-01T14:12:58-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_e2_tight_e12.conf
+RUN nl8_e2_tight_e12 NO_MATCH 2026-10-01T14:13:01-04:00 rc=0
+RUN nl8_e2_ea_e13 START 2026-10-01T14:13:01-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_e2_ea_e13.conf
+RUN nl8_e2_ea_e13 NO_MATCH 2026-10-01T14:13:03-04:00 rc=0
+RUN nl6_zmw_subject_e12 START 2026-10-01T14:13:03-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_subject_e12.conf
+RUN nl6_zmw_subject_e12 NO_MATCH 2026-10-01T14:13:18-04:00 rc=0
+RUN nl6_zmw_tower_e12 START 2026-10-01T14:13:18-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_tower_e12.conf
+RUN nl6_zmw_tower_e12 NO_MATCH 2026-10-01T14:13:34-04:00 rc=0
+RUN nl6_zmw_eye_e12 START 2026-10-01T14:13:34-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_eye_e12.conf
+RUN nl6_zmw_eye_e12 NO_MATCH 2026-10-01T14:13:49-04:00 rc=0
+RUN nl6_zmw_pyramid_e12 START 2026-10-01T14:13:49-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_pyramid_e12.conf
+RUN nl6_zmw_pyramid_e12 NO_MATCH 2026-10-01T14:14:05-04:00 rc=0
+RUN nl6_zmw_black_e12 START 2026-10-01T14:14:05-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_black_e12.conf
+RUN nl6_zmw_black_e12 NO_MATCH 2026-10-01T14:14:21-04:00 rc=0
+RUN nl6_zmw_vote_e12 START 2026-10-01T14:14:21-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_vote_e12.conf
+RUN nl6_zmw_vote_e12 NO_MATCH 2026-10-01T14:14:36-04:00 rc=0
+RUN nl6_zmw_food_e12 START 2026-10-01T14:14:37-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_food_e12.conf
+RUN nl6_zmw_food_e12 NO_MATCH 2026-10-01T14:14:52-04:00 rc=0
+RUN nl6_zmw_this_e12 START 2026-10-01T14:14:52-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_this_e12.conf
+RUN nl6_zmw_this_e12 NO_MATCH 2026-10-01T14:15:08-04:00 rc=0
+RUN nl6_zmw_real_e12 START 2026-10-01T14:15:08-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_real_e12.conf
+RUN nl6_zmw_real_e12 NO_MATCH 2026-10-01T14:15:23-04:00 rc=0
+RUN nl6_zmw_one_e12 START 2026-10-01T14:15:23-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_one_e12.conf
+RUN nl6_zmw_one_e12 NO_MATCH 2026-10-01T14:15:39-04:00 rc=0
+RUN nl6_zmw_order_e12 START 2026-10-01T14:15:39-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_order_e12.conf
+RUN nl6_zmw_order_e12 NO_MATCH 2026-10-01T14:15:54-04:00 rc=0
+RUN nl6_zmw_ten_e12 START 2026-10-01T14:15:54-04:00 [priced 0.0045 h, max-hours 2.0] templates/newleads-2026-10-01/nl6_zmw_ten_e12.conf
+RUN nl6_zmw_ten_e12 NO_MATCH 2026-10-01T14:16:10-04:00 rc=0
+RUN nl8_x01_p1 START 2026-10-01T14:16:10-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x01_p1.conf
+RUN nl8_x01_p1 NO_MATCH 2026-10-01T14:16:14-04:00 rc=0
+RUN nl8_x01_moonword_p START 2026-10-01T14:16:14-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x01_moonword_p.conf
+RUN nl8_x01_moonword_p NO_MATCH 2026-10-01T14:16:19-04:00 rc=0
+RUN nl8_x02_p1 START 2026-10-01T14:16:19-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x02_p1.conf
+RUN nl8_x02_p1 NO_MATCH 2026-10-01T14:16:24-04:00 rc=0
+RUN nl8_x02_moonword_p START 2026-10-01T14:16:24-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x02_moonword_p.conf
+RUN nl8_x02_moonword_p NO_MATCH 2026-10-01T14:16:29-04:00 rc=0
+RUN nl8_x03_p1 START 2026-10-01T14:16:29-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x03_p1.conf
+RUN nl8_x03_p1 NO_MATCH 2026-10-01T14:16:34-04:00 rc=0
+RUN nl8_x03_moonword_p START 2026-10-01T14:16:34-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x03_moonword_p.conf
+RUN nl8_x03_moonword_p NO_MATCH 2026-10-01T14:16:39-04:00 rc=0
+RUN nl8_x04_p1 START 2026-10-01T14:16:39-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x04_p1.conf
+RUN nl8_x04_p1 NO_MATCH 2026-10-01T14:16:43-04:00 rc=0
+RUN nl8_x04_moonword_p START 2026-10-01T14:16:44-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x04_moonword_p.conf
+RUN nl8_x04_moonword_p NO_MATCH 2026-10-01T14:16:49-04:00 rc=0
+RUN nl8_x05_p1 START 2026-10-01T14:16:49-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x05_p1.conf
+RUN nl8_x05_p1 NO_MATCH 2026-10-01T14:16:53-04:00 rc=0
+RUN nl8_x05_moonword_p START 2026-10-01T14:16:54-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x05_moonword_p.conf
+RUN nl8_x05_moonword_p NO_MATCH 2026-10-01T14:16:59-04:00 rc=0
+RUN nl8_x06_p1 START 2026-10-01T14:16:59-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x06_p1.conf
+RUN nl8_x06_p1 NO_MATCH 2026-10-01T14:17:03-04:00 rc=0
+RUN nl8_x06_moonword_p START 2026-10-01T14:17:03-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x06_moonword_p.conf
+RUN nl8_x06_moonword_p NO_MATCH 2026-10-01T14:17:09-04:00 rc=0
+RUN nl8_x07_p1 START 2026-10-01T14:17:09-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x07_p1.conf
+RUN nl8_x07_p1 NO_MATCH 2026-10-01T14:17:13-04:00 rc=0
+RUN nl8_x07_moonword_p START 2026-10-01T14:17:13-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x07_moonword_p.conf
+RUN nl8_x07_moonword_p NO_MATCH 2026-10-01T14:17:18-04:00 rc=0
+RUN nl8_x08_p1 START 2026-10-01T14:17:19-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x08_p1.conf
+RUN nl8_x08_p1 NO_MATCH 2026-10-01T14:17:23-04:00 rc=0
+RUN nl8_x08_moonword_p START 2026-10-01T14:17:23-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x08_moonword_p.conf
+RUN nl8_x08_moonword_p NO_MATCH 2026-10-01T14:17:28-04:00 rc=0
+RUN nl8_x09_p1 START 2026-10-01T14:17:28-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x09_p1.conf
+RUN nl8_x09_p1 NO_MATCH 2026-10-01T14:17:32-04:00 rc=0
+RUN nl8_x09_moonword_p START 2026-10-01T14:17:33-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x09_moonword_p.conf
+RUN nl8_x09_moonword_p NO_MATCH 2026-10-01T14:17:38-04:00 rc=0
+RUN nl8_x10_p1 START 2026-10-01T14:17:38-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x10_p1.conf
+RUN nl8_x10_p1 NO_MATCH 2026-10-01T14:17:42-04:00 rc=0
+RUN nl8_x10_moonword_p START 2026-10-01T14:17:42-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x10_moonword_p.conf
+RUN nl8_x10_moonword_p NO_MATCH 2026-10-01T14:17:47-04:00 rc=0
+RUN nl8_x11_p1 START 2026-10-01T14:17:47-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x11_p1.conf
+RUN nl8_x11_p1 NO_MATCH 2026-10-01T14:17:52-04:00 rc=0
+RUN nl8_x11_moonword_p START 2026-10-01T14:17:52-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x11_moonword_p.conf
+RUN nl8_x11_moonword_p NO_MATCH 2026-10-01T14:17:57-04:00 rc=0
+RUN nl8_x12_p1 START 2026-10-01T14:17:57-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x12_p1.conf
+RUN nl8_x12_p1 NO_MATCH 2026-10-01T14:18:02-04:00 rc=0
+RUN nl8_x12_moonword_p START 2026-10-01T14:18:02-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_x12_moonword_p.conf
+RUN nl8_x12_moonword_p NO_MATCH 2026-10-01T14:18:09-04:00 rc=0
+RUN nl2_z_d12_p START 2026-10-01T14:18:09-04:00 [priced 0.1446 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_z_d12_p.conf
+RUN nl2_z_d12_p NO_MATCH 2026-10-01T14:26:53-04:00 rc=0
+RUN nl2_z_u12t_p START 2026-10-01T14:26:53-04:00 [priced 0.1446 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_z_u12t_p.conf
+RUN nl2_z_u12t_p NO_MATCH 2026-10-01T14:34:35-04:00 rc=0
+RUN nl8_y01_p1 START 2026-10-01T14:34:35-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_y01_p1.conf
+RUN nl8_y01_p1 NO_MATCH 2026-10-01T14:34:39-04:00 rc=0
+RUN nl8_y01_moonword_p START 2026-10-01T14:34:39-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_y01_moonword_p.conf
+RUN nl8_y01_moonword_p NO_MATCH 2026-10-01T14:34:45-04:00 rc=0
+RUN nl8_y02_p1 START 2026-10-01T14:34:45-04:00 [priced 0.0004 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_y02_p1.conf
+RUN nl8_y02_p1 NO_MATCH 2026-10-01T14:34:49-04:00 rc=0
+RUN nl8_y02_moonword_p START 2026-10-01T14:34:49-04:00 [priced 0.0008 h, max-hours 2.0] templates/newleads-2026-10-01/nl8_y02_moonword_p.conf
+RUN nl8_y02_moonword_p NO_MATCH 2026-10-01T14:34:53-04:00 rc=0
+RUN nl2_z_d12_top50_e12 START 2026-10-01T14:34:53-04:00 [priced 0.0814 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_z_d12_top50_e12.conf
+RUN nl2_z_d12_top50_e12 NO_MATCH 2026-10-01T14:39:30-04:00 rc=0
+QUEUE PAUSED 2026-10-01T14:39:30-04:00: engine change (SCHEME bip39raw / NOCHECKSUM / PASSFILE) is being landed between two runs; set 2026-10-01T14:35:47-04:00 by the leads session
+QUEUE RESUMED 2026-10-01T14:42:01-04:00
+RUN nr1_n0_zero_raw12 START 2026-10-01T14:42:01-04:00 [priced 0.0011 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr1_n0_zero_raw12.conf
+RUN nr1_n0_zero_raw12 NO_MATCH 2026-10-01T14:45:00-04:00 rc=0
+RUN nr1_n1_moon13_raw13 START 2026-10-01T14:45:00-04:00 [priced 0.0018 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr1_n1_moon13_raw13.conf
+RUN nr1_n1_moon13_raw13 NO_MATCH 2026-10-01T14:45:08-04:00 rc=0
+RUN nr1_n2_slot13open_raw13 START 2026-10-01T14:45:08-04:00 [priced 0.0125 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_raw13.conf
+RUN nr1_n2_slot13open_raw13 NO_MATCH 2026-10-01T14:45:48-04:00 rc=0
+RUN nr1_n3_p_raw12 START 2026-10-01T14:45:48-04:00 [priced 0.0071 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr1_n3_p_raw12.conf
+RUN nr1_n3_p_raw12 NO_MATCH 2026-10-01T14:46:13-04:00 rc=0
+RUN nr6_t0_weak_raw12 START 2026-10-01T14:46:13-04:00 [priced 0.0642 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr6_t0_weak_raw12.conf
+RUN nr6_t0_weak_raw12 NO_MATCH 2026-10-01T14:52:58-04:00 rc=0
+RUN nr6_t0_strong_e12 START 2026-10-01T14:52:58-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr6_t0_strong_e12.conf
+RUN nr6_t0_strong_e12 NO_MATCH 2026-10-01T14:53:38-04:00 rc=0
+RUN nr6_t0_weak_e12 START 2026-10-01T14:53:38-04:00 [priced 0.0001 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr6_t0_weak_e12.conf
+RUN nr6_t0_weak_e12 NO_MATCH 2026-10-01T14:54:57-04:00 rc=0
+RUN nr9_t3d_tokslot_raw13 START 2026-10-01T14:54:57-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr9_t3d_tokslot_raw13.conf
+RUN nr9_t3d_tokslot_raw13 NO_MATCH 2026-10-01T14:54:59-04:00 rc=0
+RUN nr9_t3d_tokslot_raw12 START 2026-10-01T14:54:59-04:00 [priced 0.0002 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr9_t3d_tokslot_raw12.conf
+RUN nr9_t3d_tokslot_raw12 NO_MATCH 2026-10-01T14:55:02-04:00 rc=0
+RUN nr9_t3d_tok13_raw13 START 2026-10-01T14:55:02-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr9_t3d_tok13_raw13.conf
+RUN nr9_t3d_tok13_raw13 NO_MATCH 2026-10-01T14:55:03-04:00 rc=0
+RUN nr9_t3d_tokslot_e13 START 2026-10-01T14:55:03-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr9_t3d_tokslot_e13.conf
+RUN nr9_t3d_tokslot_e13 NO_MATCH 2026-10-01T14:55:04-04:00 rc=0
+RUN nr9_t3d_tokslot_e12 START 2026-10-01T14:55:04-04:00 [priced 0.0000 h, max-hours 2.0] templates/newleads-raw-2026-10-01/nr9_t3d_tokslot_e12.conf
+RUN nr9_t3d_tokslot_e12 NO_MATCH 2026-10-01T14:55:06-04:00 rc=0
+RUN nl2_zm_subject_b START 2026-10-01T14:55:06-04:00 [priced 0.1446 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_subject_b.conf
+RUN nl2_zm_subject_b NO_MATCH 2026-10-01T15:02:33-04:00 rc=0
+RUN nl2_zm_tower_b START 2026-10-01T15:02:33-04:00 [priced 0.1446 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_tower_b.conf
+RUN nl2_zm_tower_b NO_MATCH 2026-10-01T15:09:56-04:00 rc=0
+RUN nl2_zm_eye_b START 2026-10-01T15:09:56-04:00 [priced 0.1446 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_eye_b.conf
+RUN nl2_zm_eye_b NO_MATCH 2026-10-01T15:18:09-04:00 rc=0
+QUEUE PAUSED 2026-10-01T15:18:09-04:00: second engine change (a '#' on a token or passphrase line is refused) is being landed between two runs; set 2026-10-01T15:14:14-04:00 by the leads session
+QUEUE RESUMED 2026-10-01T15:19:59-04:00
+RUN nl2_zm_pyramid_b START 2026-10-01T15:20:00-04:00 [priced 0.1446 h, max-hours 2.0] templates/newleads-2026-10-01/nl2_zm_pyramid_b.conf
+RUN nl2_zm_pyramid_b NO_MATCH 2026-10-01T15:27:29-04:00 rc=0
+QUEUE PAUSED 2026-10-01T15:27:29-04:00: queue script restart for per-run sign-off files (stage 8 appended behind the queue on the operator's word, 15:25); set 2026-10-01T15:27:17-04:00 by the leads session
+QUEUE NOTE 2026-10-01T15:27:41-04:00: unit restarted between two runs with the queue script that reads a per-run sign-off file (4th column of order.txt); stage 8 (66 configs) appended behind everything else
+QUEUE START 2026-10-01T15:27:41-04:00; signoff: the operator 2026-10-01, in chat, with BNW-NEW-LEADS-2026-10-01.md attached: "I want you to manage running all these in a logical order, you dont need to ask me permission as you have my permission now to run them in an order you decide." = the run order of that document (section 0, rows 1-11); configs from harness/gen_newleads_20261001.py and gen_newleads_raw_20261001.py, each priced by a dry run first
+RUN nl2_zm_black_b START 2026-10-01T15:27:41-04:00 [priced 0.1446 h, max-hours 2.0, the queue's sign-off] templates/newleads-2026-10-01/nl2_zm_black_b.conf
+RUN nl2_zm_black_b NO_MATCH 2026-10-01T15:35:08-04:00 rc=0
+RUN nl2_zm_vote_b START 2026-10-01T15:35:08-04:00 [priced 0.1446 h, max-hours 2.0, the queue's sign-off] templates/newleads-2026-10-01/nl2_zm_vote_b.conf
+RUN nl2_zm_vote_b NO_MATCH 2026-10-01T15:42:31-04:00 rc=0
+RUN nl2_zm_food_b START 2026-10-01T15:42:31-04:00 [priced 0.1446 h, max-hours 2.0, the queue's sign-off] templates/newleads-2026-10-01/nl2_zm_food_b.conf
+RUN nl2_zm_food_b NO_MATCH 2026-10-01T15:49:52-04:00 rc=0
+RUN nl2_zm_this_b START 2026-10-01T15:49:53-04:00 [priced 0.1446 h, max-hours 2.0, the queue's sign-off] templates/newleads-2026-10-01/nl2_zm_this_b.conf
+RUN nl2_zm_this_b NO_MATCH 2026-10-01T15:57:15-04:00 rc=0
+RUN nl2_zm_real_b START 2026-10-01T15:57:15-04:00 [priced 0.1446 h, max-hours 2.0, the queue's sign-off] templates/newleads-2026-10-01/nl2_zm_real_b.conf
+RUN nl2_zm_real_b NO_MATCH 2026-10-01T16:04:36-04:00 rc=0
+RUN nl2_zm_one_b START 2026-10-01T16:04:36-04:00 [priced 0.1446 h, max-hours 2.0, the queue's sign-off] templates/newleads-2026-10-01/nl2_zm_one_b.conf
+RUN nl2_zm_one_b NO_MATCH 2026-10-01T16:12:00-04:00 rc=0
+RUN nl2_zm_order_b START 2026-10-01T16:12:00-04:00 [priced 0.1446 h, max-hours 2.0, the queue's sign-off] templates/newleads-2026-10-01/nl2_zm_order_b.conf
+RUN nl2_zm_order_b NO_MATCH 2026-10-01T16:19:22-04:00 rc=0
+RUN nl6_zmw_ten_b START 2026-10-01T16:19:22-04:00 [priced 0.1446 h, max-hours 2.0, the queue's sign-off] templates/newleads-2026-10-01/nl6_zmw_ten_b.conf
+RUN nl6_zmw_ten_b NO_MATCH 2026-10-01T16:26:48-04:00 rc=0
+RUN nr1_n1_moon13_tok_raw13 START 2026-10-01T16:26:48-04:00 [priced 0.2084 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_tok_raw13.conf
+RUN nr1_n1_moon13_tok_raw13 NO_MATCH 2026-10-01T16:37:52-04:00 rc=0
+RUN nr1_n3_p_tok_raw12 START 2026-10-01T16:37:52-04:00 [priced 0.2084 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_tok_raw12.conf
+RUN nr1_n3_p_tok_raw12 NO_MATCH 2026-10-01T16:48:53-04:00 rc=0
+RUN nr1_n0_zero_b1_raw12 START 2026-10-01T16:48:53-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b1_raw12.conf
+RUN nr1_n0_zero_b1_raw12 NO_MATCH 2026-10-01T16:51:49-04:00 rc=0
+RUN nr1_n1_moon13_b1_raw13 START 2026-10-01T16:51:50-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b1_raw13.conf
+RUN nr1_n1_moon13_b1_raw13 NO_MATCH 2026-10-01T16:51:58-04:00 rc=0
+RUN nr1_n2_slot13open_b1_raw13 START 2026-10-01T16:51:58-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b1_raw13.conf
+RUN nr1_n2_slot13open_b1_raw13 NO_MATCH 2026-10-01T16:52:37-04:00 rc=0
+RUN nr1_n3_p_b1_raw12 START 2026-10-01T16:52:37-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b1_raw12.conf
+RUN nr1_n3_p_b1_raw12 NO_MATCH 2026-10-01T16:53:01-04:00 rc=0
+RUN nr1_n0_zero_b2_raw12 START 2026-10-01T16:53:01-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b2_raw12.conf
+RUN nr1_n0_zero_b2_raw12 NO_MATCH 2026-10-01T16:55:57-04:00 rc=0
+RUN nr1_n1_moon13_b2_raw13 START 2026-10-01T16:55:58-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b2_raw13.conf
+RUN nr1_n1_moon13_b2_raw13 NO_MATCH 2026-10-01T16:56:05-04:00 rc=0
+RUN nr1_n2_slot13open_b2_raw13 START 2026-10-01T16:56:06-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b2_raw13.conf
+RUN nr1_n2_slot13open_b2_raw13 NO_MATCH 2026-10-01T16:56:45-04:00 rc=0
+RUN nr1_n3_p_b2_raw12 START 2026-10-01T16:56:45-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b2_raw12.conf
+RUN nr1_n3_p_b2_raw12 NO_MATCH 2026-10-01T16:57:09-04:00 rc=0
+RUN nr1_n0_zero_b3_raw12 START 2026-10-01T16:57:09-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b3_raw12.conf
+RUN nr1_n0_zero_b3_raw12 NO_MATCH 2026-10-01T17:00:05-04:00 rc=0
+RUN nr1_n1_moon13_b3_raw13 START 2026-10-01T17:00:05-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b3_raw13.conf
+RUN nr1_n1_moon13_b3_raw13 NO_MATCH 2026-10-01T17:00:13-04:00 rc=0
+RUN nr1_n2_slot13open_b3_raw13 START 2026-10-01T17:00:13-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b3_raw13.conf
+RUN nr1_n2_slot13open_b3_raw13 NO_MATCH 2026-10-01T17:00:52-04:00 rc=0
+RUN nr1_n3_p_b3_raw12 START 2026-10-01T17:00:52-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b3_raw12.conf
+RUN nr1_n3_p_b3_raw12 NO_MATCH 2026-10-01T17:01:17-04:00 rc=0
+RUN nr1_n0_zero_b4_raw12 START 2026-10-01T17:01:17-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b4_raw12.conf
+RUN nr1_n0_zero_b4_raw12 NO_MATCH 2026-10-01T17:05:32-04:00 rc=0
+RUN nr1_n1_moon13_b4_raw13 START 2026-10-01T17:05:32-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b4_raw13.conf
+RUN nr1_n1_moon13_b4_raw13 NO_MATCH 2026-10-01T17:05:44-04:00 rc=0
+RUN nr1_n2_slot13open_b4_raw13 START 2026-10-01T17:05:44-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b4_raw13.conf
+RUN nr1_n2_slot13open_b4_raw13 NO_MATCH 2026-10-01T17:06:44-04:00 rc=0
+RUN nr1_n3_p_b4_raw12 START 2026-10-01T17:06:44-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b4_raw12.conf
+RUN nr1_n3_p_b4_raw12 NO_MATCH 2026-10-01T17:07:20-04:00 rc=0
+RUN nr1_n0_zero_b5_raw12 START 2026-10-01T17:07:20-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b5_raw12.conf
+RUN nr1_n0_zero_b5_raw12 NO_MATCH 2026-10-01T17:11:31-04:00 rc=0
+RUN nr1_n1_moon13_b5_raw13 START 2026-10-01T17:11:31-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b5_raw13.conf
+RUN nr1_n1_moon13_b5_raw13 NO_MATCH 2026-10-01T17:11:42-04:00 rc=0
+RUN nr1_n2_slot13open_b5_raw13 START 2026-10-01T17:11:43-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b5_raw13.conf
+RUN nr1_n2_slot13open_b5_raw13 NO_MATCH 2026-10-01T17:12:41-04:00 rc=0
+RUN nr1_n3_p_b5_raw12 START 2026-10-01T17:12:42-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b5_raw12.conf
+RUN nr1_n3_p_b5_raw12 NO_MATCH 2026-10-01T17:13:17-04:00 rc=0
+RUN nr1_n0_zero_b5b_raw12 START 2026-10-01T17:13:17-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b5b_raw12.conf
+RUN nr1_n0_zero_b5b_raw12 NO_MATCH 2026-10-01T17:16:20-04:00 rc=0
+RUN nr1_n1_moon13_b5b_raw13 START 2026-10-01T17:16:21-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b5b_raw13.conf
+RUN nr1_n1_moon13_b5b_raw13 NO_MATCH 2026-10-01T17:16:29-04:00 rc=0
+RUN nr1_n2_slot13open_b5b_raw13 START 2026-10-01T17:16:29-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b5b_raw13.conf
+RUN nr1_n2_slot13open_b5b_raw13 NO_MATCH 2026-10-01T17:17:10-04:00 rc=0
+RUN nr1_n3_p_b5b_raw12 START 2026-10-01T17:17:10-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b5b_raw12.conf
+RUN nr1_n3_p_b5b_raw12 NO_MATCH 2026-10-01T17:17:35-04:00 rc=0
+RUN nr1_n0_zero_b6_raw12 START 2026-10-01T17:17:35-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b6_raw12.conf
+RUN nr1_n0_zero_b6_raw12 NO_MATCH 2026-10-01T17:21:22-04:00 rc=0
+RUN nr1_n1_moon13_b6_raw13 START 2026-10-01T17:21:22-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b6_raw13.conf
+RUN nr1_n1_moon13_b6_raw13 NO_MATCH 2026-10-01T17:21:32-04:00 rc=0
+RUN nr1_n2_slot13open_b6_raw13 START 2026-10-01T17:21:32-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b6_raw13.conf
+RUN nr1_n2_slot13open_b6_raw13 NO_MATCH 2026-10-01T17:22:24-04:00 rc=0
+RUN nr1_n3_p_b6_raw12 START 2026-10-01T17:22:24-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b6_raw12.conf
+RUN nr1_n3_p_b6_raw12 NO_MATCH 2026-10-01T17:22:55-04:00 rc=0
+RUN nr1_n0_zero_b7_raw12 START 2026-10-01T17:22:55-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b7_raw12.conf
+RUN nr1_n0_zero_b7_raw12 NO_MATCH 2026-10-01T17:26:07-04:00 rc=0
+RUN nr1_n1_moon13_b7_raw13 START 2026-10-01T17:26:07-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b7_raw13.conf
+RUN nr1_n1_moon13_b7_raw13 NO_MATCH 2026-10-01T17:26:15-04:00 rc=0
+RUN nr1_n2_slot13open_b7_raw13 START 2026-10-01T17:26:16-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b7_raw13.conf
+RUN nr1_n2_slot13open_b7_raw13 NO_MATCH 2026-10-01T17:26:59-04:00 rc=0
+RUN nr1_n3_p_b7_raw12 START 2026-10-01T17:26:59-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b7_raw12.conf
+RUN nr1_n3_p_b7_raw12 NO_MATCH 2026-10-01T17:27:26-04:00 rc=0
+RUN nr1_n0_zero_b8_raw12 START 2026-10-01T17:27:26-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b8_raw12.conf
+RUN nr1_n0_zero_b8_raw12 NO_MATCH 2026-10-01T17:30:28-04:00 rc=0
+RUN nr1_n1_moon13_b8_raw13 START 2026-10-01T17:30:29-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b8_raw13.conf
+RUN nr1_n1_moon13_b8_raw13 NO_MATCH 2026-10-01T17:30:37-04:00 rc=0
+RUN nr1_n2_slot13open_b8_raw13 START 2026-10-01T17:30:37-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b8_raw13.conf
+RUN nr1_n2_slot13open_b8_raw13 NO_MATCH 2026-10-01T17:31:17-04:00 rc=0
+RUN nr1_n3_p_b8_raw12 START 2026-10-01T17:31:17-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b8_raw12.conf
+RUN nr1_n3_p_b8_raw12 NO_MATCH 2026-10-01T17:31:41-04:00 rc=0
+RUN nr1_n0_zero_b9_raw12 START 2026-10-01T17:31:41-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b9_raw12.conf
+RUN nr1_n0_zero_b9_raw12 NO_MATCH 2026-10-01T17:34:41-04:00 rc=0
+RUN nr1_n1_moon13_b9_raw13 START 2026-10-01T17:34:42-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b9_raw13.conf
+RUN nr1_n1_moon13_b9_raw13 NO_MATCH 2026-10-01T17:34:50-04:00 rc=0
+RUN nr1_n2_slot13open_b9_raw13 START 2026-10-01T17:34:50-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b9_raw13.conf
+RUN nr1_n2_slot13open_b9_raw13 NO_MATCH 2026-10-01T17:35:30-04:00 rc=0
+RUN nr1_n3_p_b9_raw12 START 2026-10-01T17:35:30-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b9_raw12.conf
+RUN nr1_n3_p_b9_raw12 NO_MATCH 2026-10-01T17:35:54-04:00 rc=0
+RUN nr1_n0_zero_b10_raw12 START 2026-10-01T17:35:54-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_b10_raw12.conf
+RUN nr1_n0_zero_b10_raw12 NO_MATCH 2026-10-01T17:38:44-04:00 rc=0
+RUN nr1_n1_moon13_b10_raw13 START 2026-10-01T17:38:44-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_b10_raw13.conf
+RUN nr1_n1_moon13_b10_raw13 NO_MATCH 2026-10-01T17:38:51-04:00 rc=0
+RUN nr1_n2_slot13open_b10_raw13 START 2026-10-01T17:38:51-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_b10_raw13.conf
+RUN nr1_n2_slot13open_b10_raw13 NO_MATCH 2026-10-01T17:39:29-04:00 rc=0
+RUN nr1_n3_p_b10_raw12 START 2026-10-01T17:39:29-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_b10_raw12.conf
+RUN nr1_n3_p_b10_raw12 NO_MATCH 2026-10-01T17:39:52-04:00 rc=0
+RUN nr1_n0_zero_upper_raw12 START 2026-10-01T17:39:52-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_upper_raw12.conf
+RUN nr1_n0_zero_upper_raw12 NO_MATCH 2026-10-01T17:42:51-04:00 rc=0
+RUN nr1_n1_moon13_upper_raw13 START 2026-10-01T17:42:51-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_upper_raw13.conf
+RUN nr1_n1_moon13_upper_raw13 NO_MATCH 2026-10-01T17:42:59-04:00 rc=0
+RUN nr1_n2_slot13open_upper_raw13 START 2026-10-01T17:42:59-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_upper_raw13.conf
+RUN nr1_n2_slot13open_upper_raw13 NO_MATCH 2026-10-01T17:43:39-04:00 rc=0
+RUN nr1_n3_p_upper_raw12 START 2026-10-01T17:43:39-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_upper_raw12.conf
+RUN nr1_n3_p_upper_raw12 NO_MATCH 2026-10-01T17:44:03-04:00 rc=0
+RUN nr1_n0_zero_title_raw12 START 2026-10-01T17:44:03-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_title_raw12.conf
+RUN nr1_n0_zero_title_raw12 NO_MATCH 2026-10-01T17:47:03-04:00 rc=0
+RUN nr1_n1_moon13_title_raw13 START 2026-10-01T17:47:03-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_title_raw13.conf
+RUN nr1_n1_moon13_title_raw13 NO_MATCH 2026-10-01T17:47:11-04:00 rc=0
+RUN nr1_n2_slot13open_title_raw13 START 2026-10-01T17:47:11-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_title_raw13.conf
+RUN nr1_n2_slot13open_title_raw13 NO_MATCH 2026-10-01T17:47:51-04:00 rc=0
+RUN nr1_n3_p_title_raw12 START 2026-10-01T17:47:51-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_title_raw12.conf
+RUN nr1_n3_p_title_raw12 NO_MATCH 2026-10-01T17:48:15-04:00 rc=0
+RUN nr1_n0_zero_pic_raw12 START 2026-10-01T17:48:15-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_pic_raw12.conf
+RUN nr1_n0_zero_pic_raw12 NO_MATCH 2026-10-01T17:51:13-04:00 rc=0
+RUN nr1_n1_moon13_pic_raw13 START 2026-10-01T17:51:13-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_pic_raw13.conf
+RUN nr1_n1_moon13_pic_raw13 NO_MATCH 2026-10-01T17:51:21-04:00 rc=0
+RUN nr1_n2_slot13open_pic_raw13 START 2026-10-01T17:51:21-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_pic_raw13.conf
+RUN nr1_n2_slot13open_pic_raw13 NO_MATCH 2026-10-01T17:52:01-04:00 rc=0
+RUN nr1_n3_p_pic_raw12 START 2026-10-01T17:52:01-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_pic_raw12.conf
+RUN nr1_n3_p_pic_raw12 NO_MATCH 2026-10-01T17:52:25-04:00 rc=0
+RUN nr1_n0_zero_first_raw12 START 2026-10-01T17:52:25-04:00 [priced 0.0011 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n0_zero_first_raw12.conf
+RUN nr1_n0_zero_first_raw12 NO_MATCH 2026-10-01T17:55:23-04:00 rc=0
+RUN nr1_n1_moon13_first_raw13 START 2026-10-01T17:55:23-04:00 [priced 0.0018 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n1_moon13_first_raw13.conf
+RUN nr1_n1_moon13_first_raw13 NO_MATCH 2026-10-01T17:55:31-04:00 rc=0
+RUN nr1_n2_slot13open_first_raw13 START 2026-10-01T17:55:31-04:00 [priced 0.0125 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n2_slot13open_first_raw13.conf
+RUN nr1_n2_slot13open_first_raw13 NO_MATCH 2026-10-01T17:56:12-04:00 rc=0
+RUN nr1_n3_p_first_raw12 START 2026-10-01T17:56:12-04:00 [priced 0.0071 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr1_n3_p_first_raw12.conf
+RUN nr1_n3_p_first_raw12 NO_MATCH 2026-10-01T17:56:36-04:00 rc=0
+RUN nr6_t1_moonabsent_p START 2026-10-01T17:56:36-04:00 [priced 0.0912 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_moonabsent_p.conf
+RUN nr6_t1_moonabsent_p NO_MATCH 2026-10-01T18:03:16-04:00 rc=0
+RUN nr6_t1_ext_e13 START 2026-10-01T18:03:17-04:00 [priced 0.0027 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_ext_e13.conf
+RUN nr6_t1_ext_e13 NO_MATCH 2026-10-01T18:04:10-04:00 rc=0
+RUN nr6_t1_ext_e12_moonabsent START 2026-10-01T18:04:10-04:00 [priced 0.0027 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_ext_e12_moonabsent.conf
+RUN nr6_t1_ext_e12_moonabsent NO_MATCH 2026-10-01T18:05:03-04:00 rc=0
+RUN nr6_t1_ext_e12_moonword START 2026-10-01T18:05:03-04:00 [priced 0.0190 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_ext_e12_moonword.conf
+RUN nr6_t1_ext_e12_moonword NO_MATCH 2026-10-01T18:06:38-04:00 rc=0
+RUN nr6_t1_moonword_p START 2026-10-01T18:06:39-04:00 [priced 0.6381 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_moonword_p.conf
+RUN nr6_t1_moonword_p NO_MATCH 2026-10-01T18:42:51-04:00 rc=0
+RUN nr6_t1_loo_food_e12 START 2026-10-01T18:42:52-04:00 [priced 0.0027 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_loo_food_e12.conf
+RUN nr6_t1_loo_food_e12 NO_MATCH 2026-10-01T18:43:46-04:00 rc=0
+RUN nr6_t1_loo_this_e12 START 2026-10-01T18:43:46-04:00 [priced 0.0027 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_loo_this_e12.conf
+RUN nr6_t1_loo_this_e12 NO_MATCH 2026-10-01T18:44:40-04:00 rc=0
+RUN nr6_t1_loo_real_e12 START 2026-10-01T18:44:40-04:00 [priced 0.0027 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_loo_real_e12.conf
+RUN nr6_t1_loo_real_e12 NO_MATCH 2026-10-01T18:45:33-04:00 rc=0
+RUN nr6_t1_loo_one_e12 START 2026-10-01T18:45:34-04:00 [priced 0.0027 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_loo_one_e12.conf
+RUN nr6_t1_loo_one_e12 NO_MATCH 2026-10-01T18:46:27-04:00 rc=0
+RUN nr6_t1_loo_order_e12 START 2026-10-01T18:46:27-04:00 [priced 0.0027 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_t1_loo_order_e12.conf
+RUN nr6_t1_loo_order_e12 NO_MATCH 2026-10-01T18:47:22-04:00 rc=0
+RUN nr6_charley_f1_p START 2026-10-01T18:47:22-04:00 [priced 0.0031 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_charley_f1_p.conf
+RUN nr6_charley_f1_p NO_MATCH 2026-10-01T18:47:34-04:00 rc=0
+RUN nr6_charley_f1_e13 START 2026-10-01T18:47:35-04:00 [priced 0.0001 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_charley_f1_e13.conf
+RUN nr6_charley_f1_e13 NO_MATCH 2026-10-01T18:47:37-04:00 rc=0
+RUN nr6_charley_f1_e12 START 2026-10-01T18:47:37-04:00 [priced 0.0001 h, max-hours 2.0, the queue's sign-off] templates/newleads-raw-2026-10-01/nr6_charley_f1_e12.conf
+RUN nr6_charley_f1_e12 NO_MATCH 2026-10-01T18:47:39-04:00 rc=0
+QUEUE DONE 2026-10-01T18:47:39-04:00: every listed run ended (NO_MATCH lines above; any NOT_CLEAN line needs a look)
+QUEUE NOTE 2026-10-01T23:23:29-04:00: operator 23:22 "when the limit resets, run everything you listed." - block mode: the 85 configs of newleads/block.txt (six rows, about 8.3 GPU-hours), each with the sign-off of signoff-block-2026-10-01-2322.txt; 527 other lines stay held
+QUEUE START 2026-10-01T23:23:29-04:00; signoff: the operator 2026-10-01, in chat, with BNW-NEW-LEADS-2026-10-01.md attached: "I want you to manage running all these in a logical order, you dont need to ask me permission as you have my permission now to run them in an order you decide." = the run order of that document (section 0, rows 1-11); configs from harness/gen_newleads_20261001.py and gen_newleads_raw_20261001.py, each priced by a dry run first
+RUN nr2_z_d12_raw12 START 2026-10-01T23:23:29-04:00 [priced 0.5785 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr2_z_d12_raw12.conf
+RUN nr2_z_d12_raw12 NO_MATCH 2026-10-01T23:52:34-04:00 rc=0
+RUN nl7_bxv_cross_p START 2026-10-01T23:52:34-04:00 [priced 0.0721 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_bxv_cross_p.conf
+RUN nl7_bxv_cross_p NO_MATCH 2026-10-01T23:56:15-04:00 rc=0
+RUN nl7_r2_st_p START 2026-10-01T23:56:15-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_st_p.conf
+RUN nl7_r2_st_p NO_MATCH 2026-10-01T23:57:34-04:00 rc=0
+RUN nl7_r2_se_p START 2026-10-01T23:57:34-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_se_p.conf
+RUN nl7_r2_se_p NO_MATCH 2026-10-01T23:58:52-04:00 rc=0
+RUN nl7_r2_sb_p START 2026-10-01T23:58:52-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_sb_p.conf
+RUN nl7_r2_sb_p NO_MATCH 2026-10-02T00:00:10-04:00 rc=0
+RUN nl7_r2_sp_p START 2026-10-02T00:00:10-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_sp_p.conf
+RUN nl7_r2_sp_p NO_MATCH 2026-10-02T00:01:28-04:00 rc=0
+RUN nl7_r2_sv_p START 2026-10-02T00:01:28-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_sv_p.conf
+RUN nl7_r2_sv_p NO_MATCH 2026-10-02T00:02:47-04:00 rc=0
+RUN nl7_r2_te_p START 2026-10-02T00:02:47-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_te_p.conf
+RUN nl7_r2_te_p NO_MATCH 2026-10-02T00:04:05-04:00 rc=0
+RUN nl7_r2_tb_p START 2026-10-02T00:04:05-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_tb_p.conf
+RUN nl7_r2_tb_p NO_MATCH 2026-10-02T00:05:23-04:00 rc=0
+RUN nl7_r2_tp_p START 2026-10-02T00:05:23-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_tp_p.conf
+RUN nl7_r2_tp_p NO_MATCH 2026-10-02T00:06:42-04:00 rc=0
+RUN nl7_r2_tv_p START 2026-10-02T00:06:42-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_tv_p.conf
+RUN nl7_r2_tv_p NO_MATCH 2026-10-02T00:08:00-04:00 rc=0
+RUN nl7_r2_eb_p START 2026-10-02T00:08:00-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_eb_p.conf
+RUN nl7_r2_eb_p NO_MATCH 2026-10-02T00:09:19-04:00 rc=0
+RUN nl7_r2_ev_p START 2026-10-02T00:09:19-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_ev_p.conf
+RUN nl7_r2_ev_p NO_MATCH 2026-10-02T00:10:37-04:00 rc=0
+RUN nl7_r2_bp_p START 2026-10-02T00:10:37-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_bp_p.conf
+RUN nl7_r2_bp_p NO_MATCH 2026-10-02T00:11:55-04:00 rc=0
+RUN nl7_r2_pv_p START 2026-10-02T00:11:55-04:00 [priced 0.0249 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r2_pv_p.conf
+RUN nl7_r2_pv_p NO_MATCH 2026-10-02T00:13:14-04:00 rc=0
+RUN nl7_r3_tep_p START 2026-10-02T00:13:14-04:00 [priced 0.2244 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r3_tep_p.conf
+RUN nl7_r3_tep_p NO_MATCH 2026-10-02T00:24:36-04:00 rc=0
+RUN nl7_r3_sbv_p START 2026-10-02T00:24:36-04:00 [priced 0.2244 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl7_r3_sbv_p.conf
+RUN nl7_r3_sbv_p NO_MATCH 2026-10-02T00:35:58-04:00 rc=0
+RUN rv_drop_black_p START 2026-10-02T00:35:58-04:00 [priced 3.1914 h, max-hours 9.6, sign-off file signoff-block-2026-10-01-2322.txt] templates/review-2026-09-30/rv_drop_black_p.conf
+RUN rv_drop_black_p NO_MATCH 2026-10-02T03:17:49-04:00 rc=0
+RUN nr3_g2_minus1_raw12 START 2026-10-02T03:17:49-04:00 [priced 0.0011 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_g2_minus1_raw12.conf
+RUN nr3_g2_minus1_raw12 NO_MATCH 2026-10-02T03:20:47-04:00 rc=0
+RUN nr3_c1_moon1_raw12 START 2026-10-02T03:20:47-04:00 [priced 0.0011 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_c1_moon1_raw12.conf
+RUN nr3_c1_moon1_raw12 NO_MATCH 2026-10-02T03:23:44-04:00 rc=0
+RUN nr3_c2_lower_raw12 START 2026-10-02T03:23:44-04:00 [priced 0.0080 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_c2_lower_raw12.conf
+RUN nr3_c2_lower_raw12 NO_MATCH 2026-10-02T03:27:20-04:00 rc=0
+RUN nr3_c2_upper_raw12 START 2026-10-02T03:27:20-04:00 [priced 0.0011 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_c2_upper_raw12.conf
+RUN nr3_c2_upper_raw12 NO_MATCH 2026-10-02T03:30:18-04:00 rc=0
+RUN nr3_c2b_seal45_raw12 START 2026-10-02T03:30:18-04:00 [priced 0.0011 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_c2b_seal45_raw12.conf
+RUN nr3_c2b_seal45_raw12 NO_MATCH 2026-10-02T03:33:15-04:00 rc=0
+RUN nr3_c3_halved_raw12 START 2026-10-02T03:33:15-04:00 [priced 0.0002 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_c3_halved_raw12.conf
+RUN nr3_c3_halved_raw12 NO_MATCH 2026-10-02T03:36:07-04:00 rc=0
+RUN nr3_ped_lines_raw12 START 2026-10-02T03:36:07-04:00 [priced 0.0002 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_ped_lines_raw12.conf
+RUN nr3_ped_lines_raw12 NO_MATCH 2026-10-02T03:39:00-04:00 rc=0
+RUN nr3_g2_minus1_raw13 START 2026-10-02T03:39:00-04:00 [priced 0.0125 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_g2_minus1_raw13.conf
+RUN nr3_g2_minus1_raw13 NO_MATCH 2026-10-02T03:39:40-04:00 rc=0
+RUN nr3_c1_moon1_raw13 START 2026-10-02T03:39:40-04:00 [priced 0.0125 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_c1_moon1_raw13.conf
+RUN nr3_c1_moon1_raw13 NO_MATCH 2026-10-02T03:40:20-04:00 rc=0
+RUN nr3_ped_lines_raw13 START 2026-10-02T03:40:20-04:00 [priced 0.0018 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_ped_lines_raw13.conf
+RUN nr3_ped_lines_raw13 NO_MATCH 2026-10-02T03:40:27-04:00 rc=0
+RUN nr3_g1_zero_based_raw12 START 2026-10-02T03:40:27-04:00 [priced 0.0499 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_g1_zero_based_raw12.conf
+RUN nr3_g1_zero_based_raw12 NO_MATCH 2026-10-02T03:43:01-04:00 rc=0
+RUN nr3_g3b_rev0_raw12 START 2026-10-02T03:43:01-04:00 [priced 0.0499 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_g3b_rev0_raw12.conf
+RUN nr3_g3b_rev0_raw12 NO_MATCH 2026-10-02T03:45:34-04:00 rc=0
+RUN nr3_c4_mirror_raw12 START 2026-10-02T03:45:34-04:00 [priced 0.0071 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_c4_mirror_raw12.conf
+RUN nr3_c4_mirror_raw12 NO_MATCH 2026-10-02T03:45:58-04:00 rc=0
+RUN nr3_c4_mirror_raw13 START 2026-10-02T03:45:58-04:00 [priced 0.0018 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_c4_mirror_raw13.conf
+RUN nr3_c4_mirror_raw13 NO_MATCH 2026-10-02T03:46:06-04:00 rc=0
+RUN nr3_g3_reversed_raw12 START 2026-10-02T03:46:06-04:00 [priced 0.0071 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_g3_reversed_raw12.conf
+RUN nr3_g3_reversed_raw12 NO_MATCH 2026-10-02T03:46:30-04:00 rc=0
+RUN nr3_g3_reversed_raw13 START 2026-10-02T03:46:30-04:00 [priced 0.0018 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_g3_reversed_raw13.conf
+RUN nr3_g3_reversed_raw13 NO_MATCH 2026-10-02T03:46:38-04:00 rc=0
+RUN nr3_dup_hands_raw12 START 2026-10-02T03:46:38-04:00 [priced 0.0071 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_dup_hands_raw12.conf
+RUN nr3_dup_hands_raw12 NO_MATCH 2026-10-02T03:47:02-04:00 rc=0
+RUN nr3_dup_hands_raw13 START 2026-10-02T03:47:02-04:00 [priced 0.0018 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_dup_hands_raw13.conf
+RUN nr3_dup_hands_raw13 NO_MATCH 2026-10-02T03:47:10-04:00 rc=0
+RUN nr3_g4_indices_raw12 START 2026-10-02T03:47:10-04:00 [priced 0.1140 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_g4_indices_raw12.conf
+RUN nr3_g4_indices_raw12 NO_MATCH 2026-10-02T03:52:57-04:00 rc=0
+RUN nr3_g4_indices_raw13 START 2026-10-02T03:52:57-04:00 [priced 0.0285 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_g4_indices_raw13.conf
+RUN nr3_g4_indices_raw13 NO_MATCH 2026-10-02T03:54:25-04:00 rc=0
+RUN nr3_slot1open_raw13 START 2026-10-02T03:54:25-04:00 [priced 0.0125 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_slot1open_raw13.conf
+RUN nr3_slot1open_raw13 NO_MATCH 2026-10-02T03:55:05-04:00 rc=0
+RUN nr3_slot1open_raw12 START 2026-10-02T03:55:05-04:00 [priced 0.0499 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr3_slot1open_raw12.conf
+RUN nr3_slot1open_raw12 NO_MATCH 2026-10-02T03:57:38-04:00 rc=0
+RUN nr9_t3d_ea_tok13_e13 START 2026-10-02T03:57:38-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3d_ea_tok13_e13.conf
+RUN nr9_t3d_ea_tok13_e13 NO_MATCH 2026-10-02T03:57:39-04:00 rc=0
+RUN nr9_t3b_pin1_e13 START 2026-10-02T03:57:39-04:00 [priced 0.0001 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3b_pin1_e13.conf
+RUN nr9_t3b_pin1_e13 NO_MATCH 2026-10-02T03:57:41-04:00 rc=0
+RUN nr9_t3b_pin3_e13 START 2026-10-02T03:57:41-04:00 [priced 0.0001 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3b_pin3_e13.conf
+RUN nr9_t3b_pin3_e13 NO_MATCH 2026-10-02T03:57:44-04:00 rc=0
+RUN nr9_t3b_pin9_e13 START 2026-10-02T03:57:44-04:00 [priced 0.0001 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3b_pin9_e13.conf
+RUN nr9_t3b_pin9_e13 NO_MATCH 2026-10-02T03:57:46-04:00 rc=0
+RUN nr9_t3b_pin10_e13 START 2026-10-02T03:57:46-04:00 [priced 0.0001 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3b_pin10_e13.conf
+RUN nr9_t3b_pin10_e13 NO_MATCH 2026-10-02T03:57:48-04:00 rc=0
+RUN nr9_t3b_pin11_e13 START 2026-10-02T03:57:48-04:00 [priced 0.0001 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3b_pin11_e13.conf
+RUN nr9_t3b_pin11_e13 NO_MATCH 2026-10-02T03:57:51-04:00 rc=0
+RUN nr9_t3b_pin12_e13 START 2026-10-02T03:57:51-04:00 [priced 0.0001 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3b_pin12_e13.conf
+RUN nr9_t3b_pin12_e13 NO_MATCH 2026-10-02T03:57:53-04:00 rc=0
+RUN nr9_t3b_pin13_e13 START 2026-10-02T03:57:53-04:00 [priced 0.0001 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3b_pin13_e13.conf
+RUN nr9_t3b_pin13_e13 NO_MATCH 2026-10-02T03:57:56-04:00 rc=0
+RUN nr9_t3c_food_tok2_e13 START 2026-10-02T03:57:56-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_food_tok2_e13.conf
+RUN nr9_t3c_food_tok2_e13 NO_MATCH 2026-10-02T03:57:57-04:00 rc=0
+RUN nr9_t3c_food_tok4_e13 START 2026-10-02T03:57:57-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_food_tok4_e13.conf
+RUN nr9_t3c_food_tok4_e13 NO_MATCH 2026-10-02T03:57:59-04:00 rc=0
+RUN nr9_t3c_food_tok5_e13 START 2026-10-02T03:57:59-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_food_tok5_e13.conf
+RUN nr9_t3c_food_tok5_e13 NO_MATCH 2026-10-02T03:58:01-04:00 rc=0
+RUN nr9_t3c_food_tok6_e13 START 2026-10-02T03:58:01-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_food_tok6_e13.conf
+RUN nr9_t3c_food_tok6_e13 NO_MATCH 2026-10-02T03:58:02-04:00 rc=0
+RUN nr9_t3c_food_tok7_e13 START 2026-10-02T03:58:02-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_food_tok7_e13.conf
+RUN nr9_t3c_food_tok7_e13 NO_MATCH 2026-10-02T03:58:04-04:00 rc=0
+RUN nr9_t3c_food_tok8_e13 START 2026-10-02T03:58:04-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_food_tok8_e13.conf
+RUN nr9_t3c_food_tok8_e13 NO_MATCH 2026-10-02T03:58:06-04:00 rc=0
+RUN nr9_t3c_this_tok2_e13 START 2026-10-02T03:58:06-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_this_tok2_e13.conf
+RUN nr9_t3c_this_tok2_e13 NO_MATCH 2026-10-02T03:58:07-04:00 rc=0
+RUN nr9_t3c_this_tok4_e13 START 2026-10-02T03:58:08-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_this_tok4_e13.conf
+RUN nr9_t3c_this_tok4_e13 NO_MATCH 2026-10-02T03:58:09-04:00 rc=0
+RUN nr9_t3c_this_tok5_e13 START 2026-10-02T03:58:09-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_this_tok5_e13.conf
+RUN nr9_t3c_this_tok5_e13 NO_MATCH 2026-10-02T03:58:11-04:00 rc=0
+RUN nr9_t3c_this_tok6_e13 START 2026-10-02T03:58:11-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_this_tok6_e13.conf
+RUN nr9_t3c_this_tok6_e13 NO_MATCH 2026-10-02T03:58:13-04:00 rc=0
+RUN nr9_t3c_this_tok7_e13 START 2026-10-02T03:58:13-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_this_tok7_e13.conf
+RUN nr9_t3c_this_tok7_e13 NO_MATCH 2026-10-02T03:58:14-04:00 rc=0
+RUN nr9_t3c_this_tok8_e13 START 2026-10-02T03:58:14-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_this_tok8_e13.conf
+RUN nr9_t3c_this_tok8_e13 NO_MATCH 2026-10-02T03:58:16-04:00 rc=0
+RUN nr9_t3c_real_tok2_e13 START 2026-10-02T03:58:16-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_real_tok2_e13.conf
+RUN nr9_t3c_real_tok2_e13 NO_MATCH 2026-10-02T03:58:18-04:00 rc=0
+RUN nr9_t3c_real_tok4_e13 START 2026-10-02T03:58:18-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_real_tok4_e13.conf
+RUN nr9_t3c_real_tok4_e13 NO_MATCH 2026-10-02T03:58:20-04:00 rc=0
+RUN nr9_t3c_real_tok5_e13 START 2026-10-02T03:58:20-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_real_tok5_e13.conf
+RUN nr9_t3c_real_tok5_e13 NO_MATCH 2026-10-02T03:58:21-04:00 rc=0
+RUN nr9_t3c_real_tok6_e13 START 2026-10-02T03:58:21-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_real_tok6_e13.conf
+RUN nr9_t3c_real_tok6_e13 NO_MATCH 2026-10-02T03:58:23-04:00 rc=0
+RUN nr9_t3c_real_tok7_e13 START 2026-10-02T03:58:23-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_real_tok7_e13.conf
+RUN nr9_t3c_real_tok7_e13 NO_MATCH 2026-10-02T03:58:25-04:00 rc=0
+RUN nr9_t3c_real_tok8_e13 START 2026-10-02T03:58:25-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_real_tok8_e13.conf
+RUN nr9_t3c_real_tok8_e13 NO_MATCH 2026-10-02T03:58:26-04:00 rc=0
+RUN nr9_t3c_one_tok2_e13 START 2026-10-02T03:58:26-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_one_tok2_e13.conf
+RUN nr9_t3c_one_tok2_e13 NO_MATCH 2026-10-02T03:58:28-04:00 rc=0
+RUN nr9_t3c_one_tok4_e13 START 2026-10-02T03:58:28-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_one_tok4_e13.conf
+RUN nr9_t3c_one_tok4_e13 NO_MATCH 2026-10-02T03:58:30-04:00 rc=0
+RUN nr9_t3c_one_tok5_e13 START 2026-10-02T03:58:30-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_one_tok5_e13.conf
+RUN nr9_t3c_one_tok5_e13 NO_MATCH 2026-10-02T03:58:32-04:00 rc=0
+RUN nr9_t3c_one_tok6_e13 START 2026-10-02T03:58:32-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_one_tok6_e13.conf
+RUN nr9_t3c_one_tok6_e13 NO_MATCH 2026-10-02T03:58:33-04:00 rc=0
+RUN nr9_t3c_one_tok7_e13 START 2026-10-02T03:58:33-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_one_tok7_e13.conf
+RUN nr9_t3c_one_tok7_e13 NO_MATCH 2026-10-02T03:58:35-04:00 rc=0
+RUN nr9_t3c_one_tok8_e13 START 2026-10-02T03:58:35-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_one_tok8_e13.conf
+RUN nr9_t3c_one_tok8_e13 NO_MATCH 2026-10-02T03:58:37-04:00 rc=0
+RUN nr9_t3c_order_tok2_e13 START 2026-10-02T03:58:37-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_order_tok2_e13.conf
+RUN nr9_t3c_order_tok2_e13 NO_MATCH 2026-10-02T03:58:38-04:00 rc=0
+RUN nr9_t3c_order_tok4_e13 START 2026-10-02T03:58:39-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_order_tok4_e13.conf
+RUN nr9_t3c_order_tok4_e13 NO_MATCH 2026-10-02T03:58:40-04:00 rc=0
+RUN nr9_t3c_order_tok5_e13 START 2026-10-02T03:58:40-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_order_tok5_e13.conf
+RUN nr9_t3c_order_tok5_e13 NO_MATCH 2026-10-02T03:58:42-04:00 rc=0
+RUN nr9_t3c_order_tok6_e13 START 2026-10-02T03:58:42-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_order_tok6_e13.conf
+RUN nr9_t3c_order_tok6_e13 NO_MATCH 2026-10-02T03:58:44-04:00 rc=0
+RUN nr9_t3c_order_tok7_e13 START 2026-10-02T03:58:44-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_order_tok7_e13.conf
+RUN nr9_t3c_order_tok7_e13 NO_MATCH 2026-10-02T03:58:45-04:00 rc=0
+RUN nr9_t3c_order_tok8_e13 START 2026-10-02T03:58:45-04:00 [priced 0.0000 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3c_order_tok8_e13.conf
+RUN nr9_t3c_order_tok8_e13 NO_MATCH 2026-10-02T03:58:47-04:00 rc=0
+RUN nr9_t3a_completer_e13 START 2026-10-02T03:58:47-04:00 [priced 0.0941 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3a_completer_e13.conf
+RUN nr9_t3a_completer_e13 NO_MATCH 2026-10-02T04:03:46-04:00 rc=0
+RUN nr9_t3a_completer_e12 START 2026-10-02T04:03:46-04:00 [priced 0.1881 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr9_t3a_completer_e12.conf
+RUN nr9_t3a_completer_e12 NO_MATCH 2026-10-02T04:12:55-04:00 rc=0
+RUN nl4_ec_a15_voteopen START 2026-10-02T04:12:55-04:00 [priced 1.4959 h, max-hours 4.5, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-2026-10-01/nl4_ec_a15_voteopen.conf
+RUN nl4_ec_a15_voteopen NO_MATCH 2026-10-02T05:25:33-04:00 rc=0
+RUN nr11_t1a_n13_raw13 START 2026-10-02T05:25:33-04:00 [priced 0.5575 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr11_t1a_n13_raw13.conf
+RUN nr11_t1a_n13_raw13 NO_MATCH 2026-10-02T05:46:37-04:00 rc=0
+RUN nr11_t1a_np_raw12 START 2026-10-02T05:46:37-04:00 [priced 1.1150 h, max-hours 3.3, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr11_t1a_np_raw12.conf
+RUN nr11_t1a_np_raw12 NO_MATCH 2026-10-02T06:28:50-04:00 rc=0
+RUN nr11_t1a_n13b_raw13 START 2026-10-02T06:28:50-04:00 [priced 0.5575 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr11_t1a_n13b_raw13.conf
+RUN nr11_t1a_n13b_raw13 NO_MATCH 2026-10-02T06:49:53-04:00 rc=0
+RUN nr11_t1a_n2_raw13 START 2026-10-02T06:49:53-04:00 [priced 0.5575 h, max-hours 2.0, sign-off file signoff-block-2026-10-01-2322.txt] templates/newleads-raw-2026-10-01/nr11_t1a_n2_raw13.conf
+RUN nr11_t1a_n2_raw13 NO_MATCH 2026-10-02T07:10:45-04:00 rc=0
+QUEUE DONE 2026-10-02T07:10:45-04:00: every listed run ended (NO_MATCH lines above; any NOT_CLEAN line needs a look)
