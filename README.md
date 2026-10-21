@@ -17,7 +17,7 @@ has been tried. A few things are deliberately not published; they are listed nea
 (1,479,268,494,119), every finished run NO MATCH, with what each family of runs excludes and what it does not.
 The figures are recomputed from the run ledger by `python3 tools/tally.py`.
 
-## The short version
+## Summary
 
 - **The picture pins words to slots, and the pins are real.** Three tiny hand-written labels (MOON and
   TOWER along two clock hands, FOOD on the Space Needle), a mirrored Great Seal placed on the clock
@@ -115,7 +115,7 @@ and could not be searched.
 | Passphrases and extensions tried | a 1,318-string list and 818 more at tier 1, 55 date forms, the strings in the table below |
 | Engine checks | 383 tests (115 need a GPU), five independent agent reviews and audits, 49 mutants (45 killed, the 4 survivors unreachable), a ledger reconciliation that matches every run to an unchanged config |
 
-## The picture, clue by clue
+## The clues
 
 Each section shows the crop (plain pixel copies of the original, made by
 `artifacts/readme-crops-2026-10-21/make_crops.py`; the few zooms repeat pixels and add nothing), what is
