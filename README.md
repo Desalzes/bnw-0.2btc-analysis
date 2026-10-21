@@ -89,7 +89,6 @@ and could not be searched.
 | 2020-10-08 | u/stsh_n posts the picture [1]. The r/bitcoinpuzzles repost [2] and a bitcointalk thread follow within weeks. |
 | 2021 | The community decodes the Russian rune sentences and the Bill Cipher line; the r/CryptoPuzzlers thread opens [3]. |
 | 2022-07 | bitcointalk topic 5404767 opens [4]; the 13-stripes passphrase and 44-stars BIP44 readings are posted there in 2023. |
-| 2026-05-30 | Our first session. The puzzle is taken on as "parked, dead end". |
 | 2026-05-31 | The border cipher turns out to be a one-to-one substitution over Russian Cyrillic; the clock is confirmed as a real dial with labelled hands; a first GPU sweep (every order of a community set, ten passphrases) ends NO MATCH. |
 | 2026-06 | A month of image and source work (the June record), all negative. |
 | 2026-09-22 | The re-orientation: the clock re-measured (three hands, all on numeral midpoints, 13 / 3 / 21), the device ledger, the positional ledger, the funding-date argument. |
@@ -107,7 +106,7 @@ and could not be searched.
 | Measure | Value |
 |---|---|
 | Published record (to 2026-10-02 07:12) | 718 verified GPU runs, 1.48 × 10¹² candidates enumerated (1,479,268,494,119); every finished run NO MATCH. `TESTED.md` has the valid and derived counts and the plants |
-| Work since then, in the private ledger (to 2026-10-21) | 1,701 finished runs, 4.81 x 10¹² candidates, 48.5 billion checksum-valid and derived in full; every finished run NO MATCH. Not yet in this repository's ledger ([since the published record](#since-the-published-record)) |
+| Work since then, in the private ledger (to 2026-10-21) | 983 finished runs, 3.33 x 10¹² candidates, 30.7 billion checksum-valid and derived in full; every finished run NO MATCH. Home cards only; the rented tiles and rows have their own row below. Not yet in this repository's ledger ([since the published record](#since-the-published-record)) |
 | Before the ledger (May to September 2026) | the full 12! sweeps of three community sets x about ten passphrases, 65 CPU runs (15.1 billion candidates), June's sets: all NO MATCH |
 | Rented compute | 53 tiles on two Lightning L4 studios (9 to 10 October), 126 and 134 rows on two 4 x RTX 4090 boxes on vast.ai (17 to 19 October); all NO MATCH |
 | The engine | 426k seeds/s on the PBKDF2 kernel alone, 255k to 381k derivations/s through the whole pipeline by scheme and path count, on one RTX 5060 Ti |
@@ -544,9 +543,10 @@ paths and passphrases outside the lists above. The full tables, with every famil
 
 The ledger in this repository ends at **2026-10-02 07:12**. The search went on for three more weeks; what
 follows is a dated summary of it, from the private record, so that nobody repeats it. None of these runs
-is in `ledger/runs.jsonl` yet, and their configs are not in `harness/templates/` here; the private ledger
-counts 1,701 finished runs and 4.81 x 10¹² candidates to 2026-10-21, every one NO MATCH. A later export
-will carry them.
+is in `ledger/runs.jsonl` yet, and their configs are not in `harness/templates/` here; since the cutoff
+the private ledger counts 983 finished runs and 3.33 x 10¹² candidates on the home cards to 2026-10-21,
+every one NO MATCH, with the rented tiles and rows below logged apart from it. A later export will
+carry them.
 
 | When | What was tried | Result |
 |---|---|---|
