@@ -2,6 +2,11 @@
 
 Target: [`1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ`](https://mempool.space/address/1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ) · still unsolved. The prize (20,107,284 sat in 5 outputs) has never been spent; read from the chain on 2026-10-21.
 
+**New to the puzzle?** This repository is dense and was made for people who have been working on it.
+If you are new, start with these and come back: [HomelessPhD's write-up](https://github.com/HomelessPhD/BLM_0.2BTC),
+[rarsn4's analysis](https://github.com/rarsn4/blm-0.2btc-analysis) and
+[panchpasha's script](https://github.com/panchpasha/0.2-BTC-Puzzle-script).
+
 This is one picture, posted to Reddit in October 2020 with no words at all [1], and a funded address
 written down its left edge. The community has read it as a seed-phrase puzzle ever since [2, 3, 4, 5].
 This repository is a working record of our attempt: the readings of the picture, the GPU code that
