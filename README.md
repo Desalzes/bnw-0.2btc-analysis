@@ -82,6 +82,8 @@ and could not be searched.
 
 ## Timeline
 
+Every search in this table ended NO MATCH; the rows say what was run and when.
+
 | When | What happened |
 |---|---|
 | 2020-05-10 | The address is funded with 0.2 BTC. |
@@ -89,26 +91,26 @@ and could not be searched.
 | 2020-10-08 | u/stsh_n posts the picture [1]. The r/bitcoinpuzzles repost [2] and a bitcointalk thread follow within weeks. |
 | 2021 | The community decodes the Russian rune sentences and the Bill Cipher line; the r/CryptoPuzzlers thread opens [3]. |
 | 2022-07 | bitcointalk topic 5404767 opens [4]; the 13-stripes passphrase and 44-stars BIP44 readings are posted there in 2023. |
-| 2026-05-31 | The border cipher turns out to be a one-to-one substitution over Russian Cyrillic; the clock is confirmed as a real dial with labelled hands; a first GPU sweep (every order of a community set, ten passphrases) ends NO MATCH. |
+| 2026-05-31 | The border cipher turns out to be a one-to-one substitution over Russian Cyrillic; the clock is confirmed as a real dial with labelled hands; a first GPU sweep (every order of a community set, ten passphrases). |
 | 2026-06 | A month of image and source work (the June record), all negative. |
 | 2026-09-22 | The re-orientation: the clock re-measured (three hands, all on numeral midpoints, 13 / 3 / 21), the device ledger, the positional ledger, the funding-date argument. |
-| 2026-09-23 to 28 | Electrum-13 closed at one and two unknowns; model P and the clock-model battery NO MATCH; a GPU engine designed and written (K1 to K3). |
+| 2026-09-23 to 28 | Electrum-13 closed at one and two unknowns; model P and the clock-model battery closed; a GPU engine designed and written (K1 to K3). |
 | 2026-09-29 | The engine's first day: E4 (84.6 billion candidates) in 21 minutes; an independent review injects faults and the engine is hardened (64 plants per block, the prize at two slots, a required sign-off). |
 | 2026-09-30 to 10-02 | 718 runs in four days: the broad lead hunt, replacement readings, passphrase batteries, the raw-text scheme, two more audits. The published ledger ends here, at **2026-10-02 07:12**. |
 | 2026-10-03 | This repository is published. |
-| 2026-10-09 | Every reading of the clock we could enumerate (840 configs) ends NO MATCH; the first rented cards run a 53-tile batch of the widest shapes. |
+| 2026-10-09 | Every reading of the clock we could enumerate (840 configs) is run and the clock closed; the first rented cards run a 53-tile batch of the widest shapes. |
 | 2026-10-16 to 17 | Image forensics, an object inventory by hand and by detector, two local vision-language readers, key forms other than BIP39, solved-puzzle conventions: nothing new. The queue is rebuilt as one evidence-ranked registry. |
-| 2026-10-17 to 19 | Two rented 4 x RTX 4090 boxes run 260 rows of the ranked queue; NO MATCH. |
-| 2026-10-21 | The engine's ceiling is measured against hashcat's class; the "misdirection" closures and a 24-word Trezor reading end NO MATCH; the search is paused. |
+| 2026-10-17 to 19 | Two rented 4 x RTX 4090 boxes run 260 rows of the ranked queue. |
+| 2026-10-21 | The engine's ceiling is measured against hashcat's class; the "misdirection" closures and a 24-word Trezor reading are run; the search is paused. |
 
 ## The numbers (as of 21 October 2026)
 
 | Measure | Value |
 |---|---|
-| Published record (to 2026-10-02 07:12) | 718 verified GPU runs, 1.48 × 10¹² candidates enumerated (1,479,268,494,119); every finished run NO MATCH. `TESTED.md` has the valid and derived counts and the plants |
-| Work since then, in the private ledger (to 2026-10-21) | 983 finished runs, 3.33 x 10¹² candidates, 30.7 billion checksum-valid and derived in full; every finished run NO MATCH. Home cards only; the rented tiles and rows have their own row below. Not yet in this repository's ledger ([since the published record](#since-the-published-record)) |
-| Before the ledger (May to September 2026) | the full 12! sweeps of three community sets x about ten passphrases, 65 CPU runs (15.1 billion candidates), June's sets: all NO MATCH |
-| Rented compute | 53 tiles on two Lightning L4 studios (9 to 10 October), 126 and 134 rows on two 4 x RTX 4090 boxes on vast.ai (17 to 19 October); all NO MATCH |
+| Published record (to 2026-10-02 07:12) | 718 verified GPU runs, 1.48 × 10¹² candidates enumerated (1,479,268,494,119); every finished run NO MATCH, here and in the rows below. `TESTED.md` has the valid and derived counts and the plants |
+| Work since then, in the private ledger (to 2026-10-21) | 983 finished runs, 3.33 x 10¹² candidates, 30.7 billion checksum-valid and derived in full. Home cards only; the rented tiles and rows have their own row below. Not yet in this repository's ledger ([since the published record](#since-the-published-record)) |
+| Before the ledger (May to September 2026) | the full 12! sweeps of three community sets x about ten passphrases, 65 CPU runs (15.1 billion candidates), June's sets |
+| Rented compute | 53 tiles on two Lightning L4 studios (9 to 10 October), 126 and 134 rows on two 4 x RTX 4090 boxes on vast.ai (17 to 19 October) |
 | The engine | 426k seeds/s on the PBKDF2 kernel alone, 255k to 381k derivations/s through the whole pipeline by scheme and path count, on one RTX 5060 Ti |
 | The picture | 27 drawn objects in the hand register, 66 BIP39 names of depicted things, 11 device-backed words, 20 image investigations closed |
 | Passphrases and extensions tried | a 1,318-string list and 818 more at tier 1, 55 date forms, the strings in the table below |
@@ -157,7 +159,7 @@ black has also been searched absent and anywhere.
 **Tried:** black @ 10 in every shape; black free; black absent; the Russian words of the sentences as
 passphrases and as Electrum extensions; "ten", "there" (здесь can be read "there") and "need" (Nauthiz's
 name) as words; the Elder Futhark route (17 configs that read the other glyphs as rune names); numerals
-and brainwallets of all the decoded texts. All NO MATCH.
+and brainwallets of all the decoded texts.
 
 ### 2. The clock
 
@@ -189,9 +191,9 @@ and avoids colliding with "Section 1".
 
 **Tried:** tower @ 3 and moon @ 13 (as Electrum's 13th word and as the BIP39 passphrase) in every shape;
 moon @ 1, @ 2, @ 12 and as a plain word; the hour hand's 21 as a word count, a slot and "21000000"; every
-placement rule we could enumerate for the three hands (2,816 readings, 280 placements, 840 configs, all
-NO MATCH on 2026-10-09); the rotated dial; the hour hand as a pointer to the strip; the clock as a compass
-bearing. All NO MATCH or chance-level.
+placement rule we could enumerate for the three hands (2,816 readings, 280 placements, 840 configs,
+on 2026-10-09); the rotated dial; the hour hand as a pointer to the strip; the clock as a compass
+bearing (chance-level).
 
 ### 3. The Great Seal, mirrored
 
@@ -231,7 +233,7 @@ properties of the painting the bust copies ([clue 5](#5-the-hooded-bust)), not t
 
 **Tried:** subject @ 1 in every shape; slot 1 open with subject anywhere; subject dropped; this or section
 @ 1; LUN, lunar, lunch, plunge, luna as words and passphrases (six runs); "section" and the amendment's
-line numbers as slot counts; FUCK THIS SHIT, SHT and "fuck this shit" as passphrases. All NO MATCH.
+line numbers as slot counts; FUCK THIS SHIT, SHT and "fuck this shit" as passphrases.
 
 ### 5. The hooded bust
 
@@ -242,7 +244,7 @@ all in the source. The author's own changes: the name band is blank, the inscrip
 amendment text, the three strokes on the medallion, and the word **BREATHE** on the neck band.
 
 **Tried:** BREATHE and "I can't breathe" as passphrases and extensions in every shape (it is not a BIP39
-word); breeze; the bust's XX as 20 and the hood's name. All NO MATCH. Reading the XX eyes as a number was
+word); breeze; the bust's XX as 20 and the hood's name. Reading the XX eyes as a number was
 withdrawn once the source painting was found.
 
 ### 6. The Space Needle: FOOD
@@ -260,7 +262,7 @@ tested as Morse: the dash lengths are a continuum and the decode is gibberish.
 
 **Tried:** food required anywhere in every tight shape; food @ 3 with tower loose; food replaced by any
 word; food as passphrase; space, need, tower, eye (the restaurant was once called "Eye of the Needle")
-as words and needle as a passphrase. All NO MATCH.
+as words and needle as a passphrase.
 
 ### 7. The Statue of Liberty
 
@@ -279,7 +281,7 @@ The circled XX most likely means 2020. Seven rays on the crown is a stock featur
 
 **Tried:** real required anywhere in every tight shape and replaced; liberty, torch, future, pay, predict,
 first as words, statue and crown as passphrases; BLM, XX, 20, twenty, 2020, 1865, "1865-2020", 18652020, SHT, "july iv
-mdcclxxvi", 1776 and their casings as passphrases. All NO MATCH.
+mdcclxxvi", 1776 and their casings as passphrases.
 
 ### 8. The flag and the fist
 
@@ -293,7 +295,7 @@ We counted the stars three times; 44 is exact and looks chosen.
 13 stripes have been read as "a 13th word, the passphrase". Neither names a word.
 
 **Tried:** BIP44 paths in every run; the account and index sweeps on the tight shapes; punch, power, black,
-flag as words, stop and star as passphrases and Electrum words; "13 stripes" readings as model P. All NO MATCH.
+flag as words, stop and star as passphrases and Electrum words; "13 stripes" readings as model P.
 
 ### 9. Trump, Biden, ".VS." and the cipher row
 
@@ -311,7 +313,7 @@ TUESVAP misread two glyphs. It does not fit the author's own Cyrillic key, and i
 
 **Tried:** vote @ 12 pinned and released; debate, swap, switch, exchange, change, flip, trade, blue, twelve,
 second, party, enemy, match, oppose at 12; tuesday, вторник, 11032020, 11.03.20, 110320, biden, trump,
-байден, трамп and 38 Tuesday and election-date strings as passphrases. All NO MATCH.
+байден, трамп and 38 Tuesday and election-date strings as passphrases.
 
 ### 10. The masked crowd, the face boxes and the cameras
 
@@ -332,7 +334,7 @@ not devices.
 
 **Tried:** order required anywhere and replaced; camera, mask, police, face, crowd, twin, security, watch,
 video, box, bracket, focus, identify, target as words; "order and stability", "порядок и стабильность",
-"new world order", "nwo" as passphrases. All NO MATCH. "Order" also appears as the last word of the
+"new world order", "nwo" as passphrases. "Order" also appears as the last word of the
 whitepaper micro-text before it is cut off ([clue 15](#15-the-title-and-the-header)).
 
 ### 11. The gold chart, the gloved hand and the sign
@@ -348,7 +350,7 @@ and the sign write 19 twice, the firmest number past 13 in the picture, with no 
 "1713" read in the COVID area is "19 IS" misread.
 
 **Tried:** gold, price, axis, maximum, glove, hand, virus, disease, phone, mobile as words; covid, cvd19 and
-hoax as passphrases; the chart's values as indices. All NO MATCH.
+hoax as passphrases; the chart's values as indices.
 
 ### 12. George Floyd and the slogans
 
@@ -363,7 +365,7 @@ police @ 5: a count, not a device, and in conflict with the device pins. The dat
 drawing after the funding.
 
 **Tried:** one required anywhere and replaced; black, life, police, peace, security, matter as words,
-justice and kill as passphrases; breathe, 05252020, 05.25.20, 052520, blm, "blm xx" as passphrases. All NO MATCH.
+justice and kill as passphrases; breathe, 05252020, 05.25.20, 052520, blm, "blm xx" as passphrases.
 
 ### 13. The maps and the rifle
 
@@ -374,7 +376,7 @@ behind NEW WORLD with no stamped text. The community read it as an M16 aimed at 
 (rifle @ 16, from the model number); the drawing carries no 16.
 
 **Tried:** rifle, gun, weapon, trade, deal, country, world as words; war, russia, niger and map as passphrases;
-the maps as a shape key (no map behind the faint patches). All NO MATCH.
+the maps as a shape key (no map behind the faint patches).
 
 ### 14. The Bitcoin whitepaper in the letters
 
@@ -392,7 +394,7 @@ noise, and a control recovered every confirmable edit. It is handwriting, so gly
 the doubtful letters. The micro-text carries no message that we can find.
 
 **Tried:** sign, sing, proof, first, agree, receive, major, order, trust, party, history, system as words;
-"a trusted" and "must be" as passphrases; the edit letters as indices. All NO MATCH.
+"a trusted" and "must be" as passphrases; the edit letters as indices.
 
 ### 15. The title and the header
 
@@ -407,7 +409,7 @@ a BIP39 word.
 
 **Tried:** this required anywhere, replaced, and at slot 1; bitcoin, BITCOIN, Bitcoin, "brave new world",
 "welcome to the brave new world" as passphrases and extensions; find, seed, phrase, picture, welcome, brave,
-world, paper as words. All NO MATCH.
+world, paper as words.
 
 ### 16. The bottom border
 
@@ -423,7 +425,7 @@ Latin rendering of "the pot calling the kettle black".
 word with a number ([clue 1](#1-the-borders-the-address-and-the-rune-cipher)).
 
 **Tried:** black in every role; niger, "esse quam niger es" and the proverb's forms as passphrases; fire,
-accuse, verb as words and pot as a passphrase. All NO MATCH.
+accuse, verb as words and pot as a passphrase.
 
 ### 17. The signature
 
@@ -436,7 +438,7 @@ joined; a "-CHR-" monogram stamp in the bottom-right corner with the same joined
 author's signature. They identify nobody we could verify, and we do not profile or contact people.
 
 **Tried:** CHARLEY, Charley, charley, CHaRLy, Charly, CHR, -CHR-, Charles, Чарли as passphrases and
-extensions. All NO MATCH.
+extensions.
 
 ## The pins, slot by slot
 
@@ -548,24 +550,24 @@ the private ledger counts 983 finished runs and 3.33 x 10¹² candidates on the 
 every one NO MATCH, with the rented tiles and rows below logged apart from it. A later export will
 carry them.
 
-| When | What was tried | Result |
-|---|---|---|
-| 2026-10-03 to 06 | The held rows of the second lead hunt (124 configs), swapped-tier and count-pin forms, two word matrices posted on the forum (12 configs), fifteen every-order readings of the core words, a forum member's own slot reading (5 configs), a 42-config queue of the remaining drafts | all NO MATCH |
-| 2026-10-07 | The Elder Futhark route: the other border glyphs read as rune names (17 configs, 4.06 billion candidates); 18 model-P triples; an overnight block of 24 | all NO MATCH |
-| 2026-10-08 to 09 | Eight batches of words proposed by fresh readings of the picture (uw1 to uw8: 37 configs, 53 billion candidates); the faint BITCOIN behind the title recovered and tested as a passphrase (5 configs) | all NO MATCH |
-| 2026-10-09 | **Every clock reading we could define:** 2,816 readings of the three hands, 280 placements, 840 configs | all NO MATCH; the clock is closed as a reading |
-| 2026-10-09 to 10 | The widest shapes (two unknowns with weak pins) cut into 6-hour tiles for rented cards: 53 tiles on two Lightning L4 studios | all NO MATCH |
-| 2026-10-15 to 17 | Word associations from the 66 clues against random-noun controls: not selective (2.71 words per clue against 3.11 for random nouns) | no new rule |
-| 2026-10-16 | Image forensics on the file: noise and chroma maps (the grey ground carries a texture overlay; pasted pieces show in chroma), resampling (only the statue was resized, by about 1.33), copy-move (no repeats beyond the known ones), opacity (the seal is opaque), a learned forgery detector (fires on everything, no claim), OCR at three sizes (nothing below 8 px x-height). Steganalysis repeated: no metadata, no trailing bytes, LSB planes are paper grain | nothing new |
-| 2026-10-16 | Solved-puzzle conventions (11 conventions, 318,304 derivations); key forms other than a BIP39 seed over the 720 orders of the device words: brainwallets, a BIP32 master node from the raw words, PBKDF2 seed halves, entropy forms, WarpWallet | all NO MATCH, controls found |
-| 2026-10-16 | BIP39 at 15 words with the 13 device words and two unknowns, at a web tool's default path (8 configs) | all NO MATCH |
-| 2026-10-17 | An object inventory by hand (27 objects, 458 readings) and by four detectors over 52 views (no drawn object the register missed; planted control found); two local vision-language readers over 1,003 crops (56 of 63 known words re-read, nothing new); the 29 cheapest no-checksum twins on the CPU | nothing new; NO MATCH |
-| 2026-10-17 to 19 | Every GPU family ranked by evidence into one registry and cut into an order; 260 rows run on two rented 4 x RTX 4090 boxes; 51 more at home | all NO MATCH |
-| 2026-10-20 | A format-coverage pass (one row of each shape the ranking had not reached); phrases keyed on the address's own characters (59, from a pasted outside analysis); the clock read as a compass (chance-level city hits) | all NO MATCH; nothing |
-| 2026-10-21 | The "misdirection" closures: the picture's numbers as pair sums (966), Fibonacci and hand-sum strings (54), the address itself as the passphrase, coin types 13' and 44', 38 Tuesday and election-date strings, 26,239 brainwallet strings, the picture's numbers as a key; one-unknown and two-unknown forms of the above on the GPU; a forum member's pooled Electrum phrases at 15, 19 and 20 words | all NO MATCH, controls found |
-| 2026-10-21 | A Trezor reading: 24 words with every pin above 13 from the community table and the open slots from the 66 depicted words (10 rows) | all NO MATCH; 24 words closed as a reading, not as a search |
-| 2026-10-21 | Two bounded image mechanisms: a flag-star lattice fitted to the 44 stars (zero vacancies, a planted removal found) and the red dotted line read as Morse (no stable mark/gap split); the Bill Cipher row re-read (TUESDAY, 7 of 7) | no new rule |
-| 2026-10-21 | "One picture, two words": each device word paired with its picture's second word, 24 words, four pairing rules (619,170 valid phrases on the CPU) | NO MATCH, controls found |
+| When | What was tried |
+|---|---|
+| 2026-10-03 to 06 | The held rows of the second lead hunt (124 configs), swapped-tier and count-pin forms, two word matrices posted on the forum (12 configs), fifteen every-order readings of the core words, a forum member's own slot reading (5 configs), a 42-config queue of the remaining drafts |
+| 2026-10-07 | The Elder Futhark route: the other border glyphs read as rune names (17 configs, 4.06 billion candidates); 18 model-P triples; an overnight block of 24 |
+| 2026-10-08 to 09 | Eight batches of words proposed by fresh readings of the picture (uw1 to uw8: 37 configs, 53 billion candidates); the faint BITCOIN behind the title recovered and tested as a passphrase (5 configs) |
+| 2026-10-09 | **Every clock reading we could define:** 2,816 readings of the three hands, 280 placements, 840 configs; the clock is closed as a reading |
+| 2026-10-09 to 10 | The widest shapes (two unknowns with weak pins) cut into 6-hour tiles for rented cards: 53 tiles on two Lightning L4 studios |
+| 2026-10-15 to 17 | Word associations from the 66 clues against random-noun controls: not selective (2.71 words per clue against 3.11 for random nouns); no new rule |
+| 2026-10-16 | Image forensics on the file: noise and chroma maps (the grey ground carries a texture overlay; pasted pieces show in chroma), resampling (only the statue was resized, by about 1.33), copy-move (no repeats beyond the known ones), opacity (the seal is opaque), a learned forgery detector (fires on everything, no claim), OCR at three sizes (nothing below 8 px x-height). Steganalysis repeated: no metadata, no trailing bytes, LSB planes are paper grain; nothing new |
+| 2026-10-16 | Solved-puzzle conventions (11 conventions, 318,304 derivations); key forms other than a BIP39 seed over the 720 orders of the device words: brainwallets, a BIP32 master node from the raw words, PBKDF2 seed halves, entropy forms, WarpWallet; controls found |
+| 2026-10-16 | BIP39 at 15 words with the 13 device words and two unknowns, at a web tool's default path (8 configs) |
+| 2026-10-17 | An object inventory by hand (27 objects, 458 readings) and by four detectors over 52 views (no drawn object the register missed; planted control found); two local vision-language readers over 1,003 crops (56 of 63 known words re-read, nothing new); the 29 cheapest no-checksum twins on the CPU; nothing new |
+| 2026-10-17 to 19 | Every GPU family ranked by evidence into one registry and cut into an order; 260 rows run on two rented 4 x RTX 4090 boxes; 51 more at home |
+| 2026-10-20 | A format-coverage pass (one row of each shape the ranking had not reached); phrases keyed on the address's own characters (59, from a pasted outside analysis); the clock read as a compass (chance-level city hits); nothing new |
+| 2026-10-21 | The "misdirection" closures: the picture's numbers as pair sums (966), Fibonacci and hand-sum strings (54), the address itself as the passphrase, coin types 13' and 44', 38 Tuesday and election-date strings, 26,239 brainwallet strings, the picture's numbers as a key; one-unknown and two-unknown forms of the above on the GPU; a forum member's pooled Electrum phrases at 15, 19 and 20 words; controls found |
+| 2026-10-21 | A Trezor reading: 24 words with every pin above 13 from the community table and the open slots from the 66 depicted words (10 rows); 24 words closed as a reading, not as a search |
+| 2026-10-21 | Two bounded image mechanisms: a flag-star lattice fitted to the 44 stars (zero vacancies, a planted removal found) and the red dotted line read as Morse (no stable mark/gap split); the Bill Cipher row re-read (TUESDAY, 7 of 7); no new rule |
+| 2026-10-21 | "One picture, two words": each device word paired with its picture's second word, 24 words, four pairing rules (619,170 valid phrases on the CPU); controls found |
 
 ## Readings we withdrew
 
