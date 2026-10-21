@@ -1,9 +1,7 @@
 # The 0.2 BTC "Brave New World" puzzle: what we know so far
 
-Target: [`1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ`](https://mempool.space/address/1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ) · still unsolved. The prize (20,107,284 sat in 5 outputs) has never been spent; read from the chain on 2026-10-21.
-
 **New to the puzzle?** This repository is dense and was made for people who have been working on it.
-If you are new, start with these and come back: [HomelessPhD's write-up](https://github.com/HomelessPhD/BLM_0.2BTC),
+If you are new, you might want to start with these: [HomelessPhD's write-up](https://github.com/HomelessPhD/BLM_0.2BTC),
 [rarsn4's analysis](https://github.com/rarsn4/blm-0.2btc-analysis) and
 [panchpasha's script](https://github.com/panchpasha/0.2-BTC-Puzzle-script).
 
