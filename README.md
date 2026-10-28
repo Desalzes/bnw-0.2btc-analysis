@@ -812,15 +812,6 @@ privatekeys.pw [5].
 
 Questions, corrections, or a lead to test: open an issue on this repository.
 
-## Support
-
-If this helped you figure it out and you feel generous:
-
-- **BTC:** `bc1qptzpgk0z33nku9xrh8duay4jgt654uh65cc9rr`
-- **ETH:** `0xd2C2408E370293aC7ac116512C1c57071B9FA5B6`
-
-Optional. Everything here is public either way.
-
 ## Provenance
 
 A working record kept by the operator together with AI coding agents (Claude). Code is MIT (`LICENSE`); text
@@ -851,3 +842,12 @@ the working tree to produce this copy.
 17. Wikipedia, the Great Seal of the United States (reverse), <https://en.wikipedia.org/wiki/Great_Seal_of_the_United_States>
 
 *Figures and counts are as of 21 October 2026 unless a cutoff is stated. This page does not update itself.*
+
+## Support
+
+If this helped you figure it out and you feel generous:
+
+- **BTC:** `bc1qptzpgk0z33nku9xrh8duay4jgt654uh65cc9rr`
+- **ETH:** `0xd2C2408E370293aC7ac116512C1c57071B9FA5B6`
+
+Optional. Everything here is public either way.
