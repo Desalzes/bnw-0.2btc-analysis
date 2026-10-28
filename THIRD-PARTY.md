@@ -6,7 +6,7 @@
 [johncantrell97/bip39-solver-gpu](https://github.com/johncantrell97/bip39-solver-gpu) (`cl/`, commit
 `c820aff3e16e80839ce24c53734a8b02daadd138`). That repository has no licence file, so no right to redistribute them is
 granted, and they are not in this repository. `python3 tools/fetch_kernels.py` downloads them from the author's own
-repository at that commit, checks each file against `harness/kernels/UPSTREAM.sha256`, inserts one function of ours
+repository at that commit, checks each file against `harness/kernels/UPSTREAM.sha256`, inserts one function of the project's own
 (`harness/kernels/address_p2pkh.part`: 20 lines of standard base58check construction, written against the upstream's
 helper API) into `address.cl`, and checks the assembled file too. 13 of the 14 files are byte-identical to upstream;
 `address.cl` is upstream plus that function. If the upstream disappears, the hash file still identifies the exact
@@ -27,7 +27,7 @@ it, and it is not part of the engine hash. `gpu_solve.py` is published for the r
 ## The puzzle image
 
 `puzzles/btc-02-picture/artifacts/puzzle.png` is the puzzle's artwork, posted to Reddit by u/stsh_n on 2020-10-08
-(sha256 `d0b04378f75d63997b8034ec2ef1bdd108178e4546de78237bd35abf4189a782`). It is not ours and is not covered by
+(sha256 `d0b04378f75d63997b8034ec2ef1bdd108178e4546de78237bd35abf4189a782`). It belongs to its artist and is not covered by
 LICENSE or LICENSE-DATA. It is here so the forensics in the report reproduce; if you own it and want it removed, open
 an issue. Crops and other derived images under `artifacts/` are analysis of that artwork.
 
