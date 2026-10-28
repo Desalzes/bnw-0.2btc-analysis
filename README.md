@@ -1,4 +1,4 @@
-# The 0.2 BTC "Brave New World" puzzle: what we know so far
+# The 0.2 BTC "Brave New World" puzzle: what is known so far
 
 **New to the puzzle?** This repository is dense and was made for people who have been working on it.
 If you are new, you might want to start with these: [HomelessPhD's write-up](https://github.com/HomelessPhD/BLM_0.2BTC),
@@ -7,7 +7,7 @@ If you are new, you might want to start with these: [HomelessPhD's write-up](htt
 
 This is one picture, posted to Reddit in October 2020 with no words at all [1], and a funded address
 written down its left edge. The community has read it as a seed-phrase puzzle ever since [2, 3, 4, 5].
-This repository is a working record of our attempt: the readings of the picture, the GPU code that
+This repository is a working record of one attempt at the puzzle: the readings of the picture, the GPU code that
 turned those readings into searches, and the log of every search, so that a "NO MATCH" can be checked
 and not just believed. It contains **no solution**. The published ledger stops at **2026-10-02 07:12** (local
 time); the page itself is written as of 21 October 2026 and says where it goes past the ledger.
@@ -55,14 +55,14 @@ The figures are recomputed from the run ledger by `python3 tools/tally.py`.
 | Funding | [`fcee21d4…d043`](https://mempool.space/tx/fcee21d44ee94c09869947c74b61669bf928358e9c2d1699fb075bb6ebf5d043), 2020-05-10 08:01 UTC: exactly 0.2 BTC from four nested-segwit inputs, change to a P2SH address. The other 107,284 sat are four later deposits from strangers (2023 to 2025) |
 | The funder's wallet | version 1, no RBF, BIP69 ordering, a 3 sat/vB fee that reproduces exactly with the 2020 Trezor web wallet's size table; compatible with a Trezor, not proven. One seed can hold both the funding account and the prize account, so this says nothing about how the prize mnemonic was made |
 | Posted | Reddit u/stsh_n, 2020-10-08 09:25 UTC, title "Bitcoin puzzle (2000$)", image only, one post ever, no comment, no hint since [1] |
-| The picture | `puzzles/btc-02-picture/artifacts/puzzle.png`, 1600 x 1200, 2,383,395 bytes, sha256 `d0b04378f75d63997b8034ec2ef1bdd108178e4546de78237bd35abf4189a782`. The Reddit original and every mirror we checked are byte-identical; no larger version exists anywhere we could reach. AI super-resolution is banned here: it invents glyphs |
-| The author | unknown. A "CHaRLy" signature and a "-CHR-" monogram are in the corners ([clue 17](#17-the-signature)). Community guesses (an Atlanta painter, a French street artist) are unverified and we record neither as the creator |
+| The picture | `puzzles/btc-02-picture/artifacts/puzzle.png`, 1600 x 1200, 2,383,395 bytes, sha256 `d0b04378f75d63997b8034ec2ef1bdd108178e4546de78237bd35abf4189a782`. The Reddit original and every mirror checked are byte-identical; no larger version was found anywhere reachable. AI super-resolution is banned here: it invents glyphs |
+| The author | unknown. A "CHaRLy" signature and a "-CHR-" monogram are in the corners ([clue 17](#17-the-signature)). Community guesses (an Atlanta painter, a French street artist) are unverified, and neither is recorded as the creator |
 
 ![The picture at half size](puzzles/btc-02-picture/artifacts/readme-crops-2026-10-21/overview_800.png)
 
 ### What a solver has to guess
 
-The community standard, and the one our verifier reproduces against the Trezor test vector, is **12 BIP39
+The community standard, and the one this repository's verifier reproduces against the Trezor test vector, is **12 BIP39
 words to `m/44'/0'/0'/0/0` to a legacy address** [11]. A BIP39 phrase has 2,048 possible words at each slot,
 a checksum in the last word (1 in 16 twelve-word phrases are valid), and an optional passphrase that
 changes the key entirely. Electrum's own seed format [12] (12 or 13 words, a version prefix instead of a
@@ -71,7 +71,7 @@ thirteenth element. So a search has to fix:
 
 1. **Which words.** The picture's device words, plus unknowns taken from the whole list or from pools.
 2. **Their order.** Six slots are pinned by the picture; the rest float.
-3. **The format.** We call the three that survive the picture's "13" reading the three models:
+3. **The format.** The three that survive the picture's "13" reading are called the three models:
    **E13** (Electrum, 13 words, moon the 13th), **E12** (Electrum, 12 words, extension "moon") and
    **P** (BIP39, 12 words, passphrase MOON, moon or Moon). The empty passphrase is always tried too.
 4. **The path and key form.** BIP44 account 0, receive 0 first; then `m/44'/0'/0'/0/{1,10}`, `m/0'/0/0`,
@@ -80,7 +80,7 @@ thirteenth element. So a search has to fix:
 
 A 12-word phrase with eleven words known and their order fixed has 2,048 candidates. With one unknown
 word and six free positions it has 6! x 2,048 = 1,474,560. With two unknown words over the whole list,
-10.6 billion; three, about 170 GPU-days on our card. That arithmetic is the whole story of what could
+10.6 billion; three, about 170 GPU-days on one RTX 5060 Ti. That arithmetic is the whole story of what could
 and could not be searched.
 
 ## Timeline
@@ -101,7 +101,7 @@ Every search in this table ended NO MATCH; the rows say what was run and when.
 | 2026-09-29 | The engine's first day: E4 (84.6 billion candidates) in 21 minutes; an independent review injects faults and the engine is hardened (64 plants per block, the prize at two slots, a required sign-off). |
 | 2026-09-30 to 10-02 | 718 runs in four days: the broad lead hunt, replacement readings, passphrase batteries, the raw-text scheme, two more audits. The published ledger ends here, at **2026-10-02 07:12**. |
 | 2026-10-03 | This repository is published. |
-| 2026-10-09 | Every reading of the clock we could enumerate (840 configs) is run and the clock closed; the first rented cards run a 53-tile batch of the widest shapes. |
+| 2026-10-09 | Every reading of the clock that could be enumerated (840 configs) is run and the clock closed; the first rented cards run a 53-tile batch of the widest shapes. |
 | 2026-10-16 to 17 | Image forensics, an object inventory by hand and by detector, two local vision-language readers, key forms other than BIP39, solved-puzzle conventions: nothing new. The queue is rebuilt as one evidence-ranked registry. |
 | 2026-10-17 to 19 | Two rented 4 x RTX 4090 boxes run 260 rows of the ranked queue. |
 | 2026-10-21 | The engine's ceiling is measured against hashcat's class; the "misdirection" closures and a 24-word Trezor reading are run; the search is paused. |
@@ -140,7 +140,7 @@ and one long row down the right edge, in a hand-drawn alphabet that mixes Bill C
 Cyrillic-looking shapes. A caption in the faint layer under the address reads "PAY FOR THE FUTURE. THIS IS
 THE FIRST PREDICTION".
 
-**What it is:** a one-to-one substitution cipher over **Russian**. We recovered eleven glyphs by crib on
+**What it is:** a one-to-one substitution cipher over **Russian**. Eleven glyphs were recovered by crib on
 2026-05-31 and a 19-glyph key in June; a key rebuilt from the right border and the clock strip alone
 predicted every group length of the held-out top rows. The glyphs are about 47 px tall and legible after
 binarisation; resolution was never the obstacle.
@@ -152,7 +152,7 @@ binarisation; resolution was never the obstacle.
 | Clock dial strip | СУММА ДВУХ ЧИСЕЛ | "Sum of two numbers" |
 
 **The number glyph.** The sign after "номер" ("number") is a full-height stave crossed by one diagonal:
-the rune **Nauthiz**, the 10th rune of the Elder Futhark, which is how the community and we read
+the rune **Nauthiz**, the 10th rune of the Elder Futhark, which is how the community and the record read
 "number 10". "Чёрный день" is literally "black day" (idiomatically "a rainy day"), and the Latin proverb
 along the bottom edge says "look how **black** you are" ([clue 16](#16-the-bottom-border)), so the record
 pins **black @ 10** at medium confidence. The glyph does not force 10: it could be a Latin X, the
@@ -188,13 +188,13 @@ nine o'clock is the rune text "sum of two numbers".
 
 It is not a time: a real hour hand for 7.6 minutes past would sit a tenth of the way from 10 to 11, and
 this one sits at 0.45, nearly ten degrees off. MOON's hand is the only one with a tail, and the tail points
-at 6 and 7, which also sum to 13. Of the readings we could define (literal sum, mod 12, 12 as 0, a 24-hour
+at 6 and 7, which also sum to 13. Of the readings that could be defined (literal sum, mod 12, 12 as 0, a 24-hour
 ring, lower numeral, upper numeral), only the literal sum gives MOON's hand the same number from both ends
 and avoids colliding with "Section 1".
 
 **Tried:** tower @ 3 and moon @ 13 (as Electrum's 13th word and as the BIP39 passphrase) in every shape;
 moon @ 1, @ 2, @ 12 and as a plain word; the hour hand's 21 as a word count, a slot and "21000000"; every
-placement rule we could enumerate for the three hands (2,816 readings, 280 placements, 840 configs,
+placement rule that could be enumerated for the three hands (2,816 readings, 280 placements, 840 configs,
 on 2026-10-09); the rotated dial; the hour hand as a pointer to the strip; the clock as a compass
 bearing (chance-level).
 
@@ -210,7 +210,7 @@ real one does.
 
 **What the record reads:** the seal was pasted on the clock on purpose. Its outer ring's centre sits on
 the dial's 5|6 midpoint to within 0.3 degrees (**slot 11**), and the pupil of the eye on 4|5 (**slot 9**).
-The community's "eye 4+5 = 9, pyramid 5+6 = 11" is geometrically right. But "eye" and "pyramid" are our
+The community's "eye 4+5 = 9, pyramid 5+6 = 11" is geometrically right. But "eye" and "pyramid" are a viewer's
 names for unlabelled objects, not words the author wrote, so slots 9 and 11 are position-strong and
 word-weak.
 
@@ -256,7 +256,7 @@ withdrawn once the source painting was found.
 
 **Written:** the word **FOOD** down the tower's shaft, in the same tiny graphite hand as MOON and TOWER. It
 is a pure addition to the photograph the drawing copies, which makes it the positive control for the label
-hunts: a method that cannot find FOOD cannot be trusted to find a label we have not seen.
+hunts: a method that cannot find FOOD cannot be trusted to find a label not yet seen.
 
 **What the record reads:** FOOD is a device word with no slot. Its ink centroid sits at dial position 4.7
 (between 4 and 5), not on the seal's 5|6 line, so "the Needle marks 11" is not supported. The two small
@@ -292,7 +292,7 @@ mdcclxxvi", 1776 and their casings as passphrases.
 
 **What it is:** a US flag with **44** red stars on a black canton and 13 stripes in black, red and teal
 (the Pan-African colours), on a pole held by the statue; the word STOP with a raised black fist as its O.
-We counted the stars three times; 44 is exact and looks chosen.
+The stars were counted three times; 44 is exact and looks chosen.
 
 **What the record reads:** 44 supports the BIP44 derivation path, as the community has said since 2023.
 13 stripes have been read as "a 13th word, the passphrase". Neither names a word.
@@ -310,7 +310,7 @@ flag as words, stop and star as passphrases and Electrum words; "13 stripes" rea
 and "11.03.20", the date of the 2020 election; a short row of Bill Cipher glyphs above the left profile.
 
 **What the record reads:** ".VS." read upside down is **12**, which is how the community put **vote @ 12**;
-we keep it as a weak pin and release slot 12 in most two-unknown searches. The glyph row reads **TUESDAY**
+the record keeps it as a weak pin and releases slot 12 in most two-unknown searches. The glyph row reads **TUESDAY**
 under the public Bill Cipher chart, 7 of 7 glyphs (the election fell on a Tuesday); an earlier reading of
 TUESVAP misread two glyphs. It does not fit the author's own Cyrillic key, and it names no slot.
 
@@ -394,7 +394,7 @@ TO, THE, then along the bottom border, readable at 5x to 8x
 participans, wich, proot, transactian, a deleted "a trusted", and "oder" for "order", the only edit on a
 device word). Nine pre-registered extraction rules over the deleted, inserted and substituted letters give
 noise, and a control recovered every confirmable edit. It is handwriting, so glyph matching cannot settle
-the doubtful letters. The micro-text carries no message that we can find.
+the doubtful letters. No message has been found in the micro-text.
 
 **Tried:** sign, sing, proof, first, agree, receive, major, order, trust, party, history, system as words;
 "a trusted" and "must be" as passphrases; the edit letters as indices.
@@ -438,7 +438,7 @@ accuse, verb as words and pot as a passphrase.
 
 **What it is:** "CHaRLy", small, underlined and turned 90 degrees in the top-left corner, with the C and H
 joined; a "-CHR-" monogram stamp in the bottom-right corner with the same joined C-H. Together they are the
-author's signature. They identify nobody we could verify, and we do not profile or contact people.
+author's signature. They identify nobody that could be verified, and no one is profiled or contacted.
 
 **Tried:** CHARLEY, Charley, charley, CHaRLy, Charly, CHR, -CHR-, Charles, Чарли as passphrases and
 extensions.
@@ -478,7 +478,7 @@ Six slots at grade A or B, five device words with no slot (food, this, real, one
 no device at all. That is why the searches live in the 12-word and 13-word shapes: a 24-word phrase from
 this picture has at least 13 unknown words, and 2,048 to the 13th is not a search.
 
-## What we've tried, at a glance
+## What has been tried, at a glance
 
 Condensed from TESTED.md and the configs so you can see what is covered before you spend compute. It is cut
 at **2026-10-02 07:12** and counts only searches that finished NO MATCH by then; a NO MATCH covers only its own
@@ -486,7 +486,7 @@ family of candidates, never more. Names like E3, E4, p6 and p7e are the named se
 TESTED.md. Everything else is in the repository: pull it, the configs are in
 `puzzles/btc-02-picture/harness/templates/`.
 
-### Positions: what the art pins, and what we tried at each slot
+### Positions: what the art pins, and what was tried at each slot
 
 <!-- words:start -->
 | Slot | The art's pin | Other words tried at this slot (most-used first, not complete) | Opened over the whole 2048-word list? |
@@ -558,7 +558,7 @@ carry them.
 | 2026-10-03 to 06 | The held rows of the second lead hunt (124 configs), swapped-tier and count-pin forms, two word matrices posted on the forum (12 configs), fifteen every-order readings of the core words, a forum member's own slot reading (5 configs), a 42-config queue of the remaining drafts |
 | 2026-10-07 | The Elder Futhark route: the other border glyphs read as rune names (17 configs, 4.06 billion candidates); 18 model-P triples; an overnight block of 24 |
 | 2026-10-08 to 09 | Eight batches of words proposed by fresh readings of the picture (uw1 to uw8: 37 configs, 53 billion candidates); the faint BITCOIN behind the title recovered and tested as a passphrase (5 configs) |
-| 2026-10-09 | **Every clock reading we could define:** 2,816 readings of the three hands, 280 placements, 840 configs; the clock is closed as a reading |
+| 2026-10-09 | **Every clock reading that could be defined:** 2,816 readings of the three hands, 280 placements, 840 configs; the clock is closed as a reading |
 | 2026-10-09 to 10 | The widest shapes (two unknowns with weak pins) cut into 6-hour tiles for rented cards: 53 tiles on two Lightning L4 studios |
 | 2026-10-15 to 17 | Word associations from the 66 clues against random-noun controls: not selective (2.71 words per clue against 3.11 for random nouns); no new rule |
 | 2026-10-16 | Image forensics on the file: noise and chroma maps (the grey ground carries a texture overlay; pasted pieces show in chroma), resampling (only the statue was resized, by about 1.33), copy-move (no repeats beyond the known ones), opacity (the seal is opaque), a learned forgery detector (fires on everything, no claim), OCR at three sizes (nothing below 8 px x-height). Steganalysis repeated: no metadata, no trailing bytes, LSB planes are paper grain; nothing new |
@@ -572,9 +572,9 @@ carry them.
 | 2026-10-21 | Two bounded image mechanisms: a flag-star lattice fitted to the 44 stars (zero vacancies, a planted removal found) and the red dotted line read as Morse (no stable mark/gap split); the Bill Cipher row re-read (TUESDAY, 7 of 7); no new rule |
 | 2026-10-21 | "One picture, two words": each device word paired with its picture's second word, 24 words, four pairing rules (619,170 valid phrases on the CPU); controls found |
 
-## Readings we withdrew
+## Withdrawn readings
 
-The record keeps its corrections. These are the readings that were believed at some point, by us or by
+The record keeps its corrections. These are the readings that were believed at some point, by the record or by
 the community, and that a measurement later overturned.
 
 | It was read as | What the measurement says |
@@ -671,7 +671,7 @@ The gap between 426k and the pipeline's 269k on five paths is the paths, not the
 **What a purpose-built engine would buy.** Modelled with PBKDF2 at hashcat class and the walk and pipeline
 halved: 1.12x on one-path configs, 1.29x on five-path configs; with a 50k to 100k CPU lane beside the card,
 1.25x to 1.66x. Not 2x. The held families that cost hundreds of hours stay hundreds of hours, so the lever is
-which reading to run, not how fast. We left the engine as it is.
+which reading to run, not how fast. The engine was left as it is.
 
 ### Why a NO MATCH can be trusted
 
@@ -734,7 +734,7 @@ addresses: it never builds, signs or broadcasts a transaction, and on a hit it w
 | `harness/templates/` | every committed config that ran before the cutoff; `passlists/` and `passphrases.txt` the string lists |
 | `harness/kernels/UPSTREAM.sha256`, `address_p2pkh.part`, `tools/fetch_kernels.py` | the pins and the one inserted function for the 14 fetched kernels |
 
-## How we work
+## How the work is done
 
 - **Read-only, by construction.** There is no transaction code in this repository and there will be none.
   The engine compares a hash160 and stops. A candidate key, if one ever appears, is written to a file and
@@ -749,12 +749,12 @@ addresses: it never builds, signs or broadcasts a transaction, and on a hit it w
   nouns. A negative that fails its control is recorded as a failed method, not as a negative.
 - **The record keeps its mistakes.** Corrections are logged next to the readings they overturn, and the
   withdrawn readings above are part of the published record.
-- **Puzzle content, not people.** We do not profile, contact or name the author or anyone who might be.
+- **Puzzle content, not people.** The author, and anyone who might be the author, is never profiled, contacted or named.
 
 ## What's next
 
 As of 21 October 2026 the search is paused: nothing is queued at home or on a rented card. What would
-restart it, in the order we rate it:
+restart it, in rank order:
 
 1. A word from the author, anywhere public.
 2. A new device-backed word: a label found with a method whose recall is measured first, or a mark that a
@@ -767,7 +767,7 @@ If you have one of the first three, open an issue.
 
 ## Not published here
 
-Some of the work is kept back, partly because it is the only edge we have left and partly because it is
+Some of the work is kept back, partly because it is the only edge left and partly because it is
 unfinished. Some of it is available in exchange for comparable work; ask.
 
 - **The open hypotheses and the ranking.** The list of readings still open, the evidence ranking that orders
@@ -776,7 +776,7 @@ unfinished. Some of it is available in exchange for comparable work; ask.
   659-config brainstorm of 2026-10-16 and the no-checksum twins.
 - **The open places in the picture.** What the reading-rule and misdirection investigations of October left
   under examination.
-- **Leads under test**, and the outside analyses sent to us that have not been closed yet.
+- **Leads under test**, and the outside analyses received that have not been closed yet.
 - **The engine-ceiling prototype**: the CUDA port of the PBKDF2 kernel, the roofline kernels and the timing
   runner. The numbers are above; the code stays private for now.
 - **The working log, the session handoffs and the internal reports.** The reviews in `lanes/` cite
@@ -804,7 +804,7 @@ Paths in the documents are relative to `puzzles/btc-02-picture/`.
 
 The same puzzle is analysed in [HomelessPhD/BLM_0.2BTC](https://github.com/HomelessPhD/BLM_0.2BTC) [8], whose
 page this one is modelled on, and in [rarsn4/blm-0.2btc-analysis](https://github.com/rarsn4/blm-0.2btc-analysis)
-[9], whose layout this repository follows and whose rune and clock measurements we reproduced independently.
+[9], whose layout this repository follows and whose rune and clock measurements were reproduced independently here.
 The community candidate sets of 2020 to 2023 are in the Reddit and bitcointalk threads [2, 3, 4] and on
 privatekeys.pw [5].
 
@@ -824,7 +824,7 @@ Optional. Everything here is public either way.
 ## Provenance
 
 A working record kept by the operator together with AI coding agents (Claude). Code is MIT (`LICENSE`); text
-and data are CC BY 4.0 (`LICENSE-DATA`); the puzzle image is the artist's, not ours, and the third-party
+and data are CC BY 4.0 (`LICENSE-DATA`); the puzzle image is the artist's and is not licensed here, and the third-party
 kernels are fetched, not redistributed (`THIRD-PARTY.md`). `PUBLICATION.md` says, by count, what was done to
 the working tree to produce this copy.
 
