@@ -843,7 +843,9 @@ the working tree to produce this copy.
 
 *Figures and counts are as of 21 October 2026 unless a cutoff is stated. This page does not update itself.*
 
-## Support
+## Support and contact
+
+Reddit: [u/Desalzes_](https://www.reddit.com/user/Desalzes_/)
 
 If this helped you figure it out and you feel generous:
 
