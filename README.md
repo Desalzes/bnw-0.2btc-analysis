@@ -777,10 +777,6 @@ page this one is modelled on, and in [rarsn4/blm-0.2btc-analysis](https://github
 The community candidate sets of 2020 to 2023 are in the Reddit and bitcointalk threads [2, 3, 4] and on
 privatekeys.pw [5].
 
-## Contact
-
-Questions, corrections, or a lead to test: open an issue on this repository.
-
 ## Provenance
 
 A working record kept by the operator together with AI coding agents (Claude). Code is MIT (`LICENSE`); text
@@ -813,6 +809,8 @@ the working tree to produce this copy.
 *Figures and counts are as of 21 October 2026 unless a cutoff is stated. This page does not update itself.*
 
 ## Support and contact
+
+Questions, corrections, or a lead to test: open an issue on this repository.
 
 Reddit: [u/Desalzes_](https://www.reddit.com/user/Desalzes_/)
 
