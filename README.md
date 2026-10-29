@@ -85,39 +85,8 @@ and could not be searched.
 
 ## Timeline
 
-Every search in this table ended NO MATCH; the rows say what was run and when.
-
-| When | What happened |
-|---|---|
-| 2020-05-10 | The address is funded with 0.2 BTC. |
-| 2020-05-25 to June | George Floyd is killed (the picture shows "05.25.20"); statues are defaced across Europe and the US. |
-| 2020-10-08 | u/stsh_n posts the picture [1]. The r/bitcoinpuzzles repost [2] and a bitcointalk thread follow within weeks. |
-| 2021 | The community decodes the Russian rune sentences and the Bill Cipher line; the r/CryptoPuzzlers thread opens [3]. |
-| 2022-07 | bitcointalk topic 5404767 opens [4]; the 13-stripes passphrase and 44-stars BIP44 readings are posted there in 2023. |
-| 2026-05-31 | The border cipher turns out to be a one-to-one substitution over Russian Cyrillic; the clock is confirmed as a real dial with labelled hands; a first GPU sweep (every order of a community set, ten passphrases). |
-| 2026-06 | A month of image and source work (the June record), all negative. |
-| 2026-09-22 | The re-orientation: the clock re-measured (three hands, all on numeral midpoints, 13 / 3 / 21), the device ledger, the positional ledger, the funding-date argument. |
-| 2026-09-23 to 28 | Electrum-13 closed at one and two unknowns; model P and the clock-model battery closed; a GPU engine designed and written (K1 to K3). |
-| 2026-09-29 | The engine's first day: E4 (84.6 billion candidates) in 21 minutes; an independent review injects faults and the engine is hardened (64 plants per block, the prize at two slots, a required sign-off). |
-| 2026-09-30 to 10-02 | 718 runs in four days: the broad lead hunt, replacement readings, passphrase batteries, the raw-text scheme, two more audits. The published ledger ends here, at **2026-10-02 07:12**. |
-| 2026-10-03 | This repository is published. |
-| 2026-10-09 | Every reading of the clock that could be enumerated (840 configs) is run and the clock closed; the first rented cards run a 53-tile batch of the widest shapes. |
-| 2026-10-16 to 17 | Image forensics, an object inventory by hand and by detector, two local vision-language readers, key forms other than BIP39, solved-puzzle conventions: nothing new. The queue is rebuilt as one evidence-ranked registry. |
-| 2026-10-17 to 19 | Two rented 4 x RTX 4090 boxes run 260 rows of the ranked queue. |
-| 2026-10-21 | The engine's ceiling is measured against hashcat's class; the "misdirection" closures and a 24-word Trezor reading are run; the search is paused. |
-
-## The numbers (as of 21 October 2026)
-
-| Measure | Value |
-|---|---|
-| Published record (to 2026-10-02 07:12) | 718 verified GPU runs, 1.48 × 10¹² candidates enumerated (1,479,268,494,119); every finished run NO MATCH, here and in the rows below. `TESTED.md` has the valid and derived counts and the plants |
-| Work since then, in the private ledger (to 2026-10-21) | 983 finished runs, 3.33 x 10¹² candidates, 30.7 billion checksum-valid and derived in full. Home cards only; the rented tiles and rows have their own row below. Not yet in this repository's ledger ([since the published record](#since-the-published-record)) |
-| Before the ledger (May to September 2026) | the full 12! sweeps of three community sets x about ten passphrases, 65 CPU runs (15.1 billion candidates), June's sets |
-| Rented compute | 53 tiles on two Lightning L4 studios (9 to 10 October), 126 and 134 rows on two 4 x RTX 4090 boxes on vast.ai (17 to 19 October) |
-| The engine | 426k seeds/s on the PBKDF2 kernel alone, 255k to 381k derivations/s through the whole pipeline by scheme and path count, on one RTX 5060 Ti |
-| The picture | 27 drawn objects in the hand register, 66 BIP39 names of depicted things, 11 device-backed words, 20 image investigations closed |
-| Passphrases and extensions tried | a 1,318-string list and 818 more at tier 1, 55 date forms, the strings in the table below |
-| Engine checks | 383 tests (115 need a GPU), five independent agent reviews and audits, 49 mutants (45 killed, the 4 survivors unreachable), a ledger reconciliation that matches every run to an unchanged config |
+- **2020-05-10:** the address is funded with 0.2 BTC.
+- **2020-05-25:** George Floyd is killed (the picture shows "05.25.20"); statues are defaced across Europe and the US in the weeks after.
 
 ## The clues
 
