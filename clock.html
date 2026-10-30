@@ -66,9 +66,10 @@
       </div>
       <div class="row">
         <button class="primary" id="rotCsv">Download CSV</button>
+        <button id="rotPaste" title="Add a table copied with Copy slices as a row">Add clipboard to CSV</button>
         <button id="rotClear">Clear all</button>
       </div>
-      <p class="note">Save this rotation keeps every ticked thing in each cone, whatever colour its dot is. In the CSV each cone is a column, its words joined by |. Click a row to put the clock back. Rows stay in this browser.</p>
+      <p class="note">Save this rotation keeps every ticked thing in each cone, whatever colour its dot is. In the CSV each cone is a column, its words joined by |. Click a row to put the clock back; a row added from the clipboard, with that button or Ctrl+V on the page, has no clock position. Rows stay in this browser.</p>
     </section>
     <section>
       <h2>Fit</h2>
@@ -84,6 +85,10 @@
     </section>
     <section>
       <h2>Slices</h2>
+      <div class="row">
+        <button class="primary" id="copySlices">Copy slices</button>
+      </div>
+      <p id="status"></p>
       <table>
         <thead><tr><th>Slot</th><th>Between</th><th>Things</th></tr></thead>
         <tbody id="sliceRows"></tbody>
@@ -99,10 +104,8 @@
     </section>
     <section>
       <div class="row">
-        <button class="primary" id="copyPlace">Copy this placement</button>
         <button id="fitView">Fit picture to window</button>
       </div>
-      <p id="status"></p>
       <p class="note">Your own marks stay in this browser. Word positions were measured from the picture, and the address bar carries the placement, so a spot can be bookmarked.</p>
     </section>
   </aside>

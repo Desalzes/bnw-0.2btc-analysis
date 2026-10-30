@@ -53,7 +53,7 @@ tbody tr:hover td, tbody tr.sel td { background: var(--chip); }
 .legend { display: flex; flex-wrap: wrap; gap: 4px 14px; color: var(--ink2); font-size: 12px; margin-top: 8px; }
 .legend svg { vertical-align: -2px; }
 .row { display: flex; flex-wrap: wrap; gap: 6px; }
-#status { color: var(--ink2); font-size: 12px; min-height: 1.2em; margin: 8px 0 0; }
+#status { color: var(--ink2); font-size: 12px; min-height: 1.2em; margin: 6px 0; }
 @media (max-width: 900px) {
   .wrap { grid-template-columns: 1fr; height: auto; }
   #stage { height: 70vh; }

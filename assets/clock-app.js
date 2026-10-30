@@ -203,11 +203,11 @@
   function writeSlices(on, res) {
     const body = $("sliceRows");
     body.replaceChildren();
+    const table = S.sliceTable(on.map((t) => t.name), res, place.rule);
     res.slices.forEach((idx, i) => {
       const tr = document.createElement("tr");
       tr.className = (idx.length === 0 ? "empty" : idx.length === 1 ? "alone" : "crowded") + (i === selSlice ? " sel" : "");
-      [String(S.sliceLabel(i, place.rule)), S.sliceName(i, place.rule), idx.map((j) => on[j].name).join(", ") || "none"]
-        .forEach((txt) => { const td = document.createElement("td"); td.textContent = txt; tr.append(td); });
+      table[i].forEach((txt) => { const td = document.createElement("td"); td.textContent = txt; tr.append(td); });
       tr.addEventListener("click", () => { selSlice = selSlice === i ? -1 : i; schedule(); });
       body.append(tr);
     });
@@ -411,26 +411,10 @@
     } else fallback();
   }
 
-  function placementText() {
+  $("copySlices").addEventListener("click", () => {
     const { on, res } = last;
-    const rule = S.RULES.find((r) => r.id === place.rule).text;
-    const lines = [
-      "btc-02 clock slices" + (current === PICTURES[0] ? "" : ", on " + current.name),
-      "centre (" + r1(place.cx) + ", " + r1(place.cy) + "); 12 points " + r2(turnOf(place.t12)) +
-        " deg clockwise from straight up (record t12 " + r2(place.t12) + "); size " + r1(place.r) + " px",
-      "slices: " + rule + "; mirrored " + (place.mirrored ? "yes" : "no") + "; only inside the ring " +
-        (place.insideOnly ? "yes" : "no"),
-      res.alone + " of " + on.length + " ticked things alone; " + res.crowded + " crowded slices; " + res.empty + " empty",
-    ];
-    res.slices.forEach((idx, i) => {
-      if (idx.length) lines.push(S.sliceLabel(i, place.rule) + " (" + S.sliceName(i, place.rule) + "): " + idx.map((j) => on[j].name).join(", "));
-    });
-    if (res.outside) lines.push("outside the ring: " + on.filter((t, i) => res.where[i] < 0).map((t) => t.name).join(", "));
-    lines.push("link: " + location.href.split("#")[0] + "#" + hashText());
-    return lines.join("\n");
-  }
-
-  $("copyPlace").addEventListener("click", () => copyText(placementText(), "the placement"));
+    copyText(S.tableText(S.sliceTable(on.map((t) => t.name), res, place.rule)), "the slices");
+  });
   $("copyMarks").addEventListener("click", () => {
     const mine = things.filter((t) => t.group === "marks" && here(t));
     if (!mine.length) { setStatus("No marks yet: use Add a mark, then click the picture."); return; }
@@ -465,9 +449,26 @@
   const wordsKey = (r) => JSON.stringify(r.cones.map((c) => c.words));
 
   function saveRotation() {
-    const rot = Object.assign(S.capture(things.filter((t) => t.on && here(t)), place), { picture: current.name, pic: current.id });
+    addRow(Object.assign(S.capture(things.filter((t) => t.on && here(t)), place), { picture: current.name, pic: current.id }),
+           "No ticked things inside any cone.");
+  }
+
+  function addTable(text) {
+    const rot = S.parseTable(text);
+    if (!rot) { say("The clipboard does not hold a whole slices table."); return; }
+    addRow(Object.assign(rot, { picture: "From the clipboard" }), "That table has no words in it.");
+  }
+
+  async function addClipboard() {
+    let text = null;
+    try { text = await navigator.clipboard.readText(); } catch (e) { text = null; }
+    if (text === null) say("The browser would not let this page read the clipboard. Press Ctrl+V on the page instead.");
+    else addTable(text);
+  }
+
+  function addRow(rot, whenEmpty) {
     const words = rot.cones.reduce((n, c) => n + c.words.length, 0);
-    if (!words) { say("No ticked things inside any cone."); return; }
+    if (!words) { say(whenEmpty); return; }
     const twin = rows.findIndex((r) => wordsKey(r) === wordsKey(rot));
     if (twin >= 0) { say("Same words as row " + (twin + 1) + ", so not saved again."); return; }
     rows.push(rot);
@@ -479,6 +480,7 @@
   }
 
   function showRotation(r) {
+    if (r.cx == null) { say("This row came from the clipboard, so it has no clock position."); return; }
     const p = PICTURES.find((q) => q.id === r.pic);
     if (p && p !== current) showPicture(p);
     Object.assign(place, { cx: r.cx, cy: r.cy, t12: r.t12, r: r.r, mirrored: r.mirrored, rule: r.rule, insideOnly: r.insideOnly });
@@ -492,7 +494,7 @@
     rows.forEach((r, i) => {
       const tr = document.createElement("tr");
       const held = r.cones.filter((c) => c.words.length).map((c) => c.slot + ": " + c.words.join(" ")).join(" · ");
-      [String(i + 1), r2(turnOf(r.t12)) + "°", held].forEach((txt) => {
+      [String(i + 1), r.cx == null ? "pasted" : r2(turnOf(r.t12)) + "°", held].forEach((txt) => {
         const td = document.createElement("td");
         td.textContent = txt;
         tr.append(td);
@@ -510,7 +512,7 @@
       const td = document.createElement("td");
       td.append(x);
       tr.append(td);
-      tr.title = "Put the clock back here";
+      tr.title = r.cx == null ? "Added from the clipboard" : "Put the clock back here";
       tr.addEventListener("click", () => showRotation(r));
       body.append(tr);
     });
@@ -520,6 +522,12 @@
   }
 
   $("saveRot").addEventListener("click", saveRotation);
+  $("rotPaste").addEventListener("click", addClipboard);
+  window.addEventListener("paste", (e) => {     // needs no permission, unlike the button: a page opened from disk may be refused
+    if (e.target.closest && e.target.closest("input, select, textarea")) return;
+    e.preventDefault();
+    addTable(e.clipboardData.getData("text/plain"));
+  });
   $("rotCsv").addEventListener("click", () => {
     const url = URL.createObjectURL(new Blob([S.rowsCsv(rows)], { type: "text/csv;charset=utf-8" }));
     const a = document.createElement("a");

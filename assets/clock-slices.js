@@ -124,6 +124,27 @@
              insideOnly: !!place.insideOnly, cones };
   }
 
+  function sliceTable(names, res, rule) {
+    return res.slices.map((idx, k) => [String(sliceLabel(k, rule)), sliceName(k, rule), idx.map((i) => names[i]).join(", ") || "none"]);
+  }
+
+  function tableText(rows) {
+    return ["Slices", "Slot\tBetween\tThings"].concat(rows.map((r) => r.join("\t"))).join("\n");
+  }
+
+  function parseTable(text) {
+    const rows = text.split(/\r?\n/).map((ln) => ln.trim().match(/^(\d+)\s+(\d+(?:\|\d+)?)\s+(.+)$/)).filter(Boolean);
+    const rule = RULES.map((r) => r.id).find((id) => rows.length === sliceCount(id) &&
+      rows.every((row, k) => row[1] === String(sliceLabel(k, id)) && row[2] === sliceName(k, id)));
+    if (!rule) return null;
+    const cones = rows.map((row, k) => ({
+      slot: sliceLabel(k, rule),
+      name: sliceName(k, rule),
+      words: row[3] === "none" ? [] : [...new Set(row[3].split(",").map((w) => w.trim().toLowerCase()).filter(Boolean))],
+    }));
+    return { rule, cones };
+  }
+
   const csvCell = (v) => { v = String(v); return /[",\r\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
   const round = (v, places) => Math.round(v * 10 ** places) / 10 ** places;
 
@@ -134,8 +155,9 @@
       sameRule ? rows[0].cones[k].slot + " (" + rows[0].cones[k].name + ")" : "cone " + (k + 1));
     head.push("picture", "centre_x", "centre_y", "turn", "size", "slices", "mirrored", "only_inside_ring");
     const lines = rows.map((r) => Array.from({ length: n }, (_, k) => (r.cones[k] ? r.cones[k].words.join("|") : ""))
-      .concat([r.picture, round(r.cx, 1), round(r.cy, 1), round(mod(r.t12 + 90, 360), 2), round(r.r, 1), r.rule,
-               r.mirrored ? "yes" : "no", r.insideOnly ? "yes" : "no"]));
+      .concat(r.cx == null ? [r.picture, "", "", "", "", r.rule, "", ""] :    // a row from the clipboard has no clock position
+        [r.picture, round(r.cx, 1), round(r.cy, 1), round(mod(r.t12 + 90, 360), 2), round(r.r, 1), r.rule,
+         r.mirrored ? "yes" : "no", r.insideOnly ? "yes" : "no"]));
     return [head].concat(lines).map((cells) => cells.map(csvCell).join(",") + "\r\n").join("");
   }
 
@@ -161,5 +183,5 @@
     return { current, n, atLeast, share: atLeast / n };
   }
 
-  return { RULES, ang, dial, snap, sliceCount, sliceOf, sliceStart, sliceLabel, sliceName, fit, capture, rowsCsv, chance };
+  return { RULES, ang, dial, snap, sliceCount, sliceOf, sliceStart, sliceLabel, sliceName, fit, capture, sliceTable, tableText, parseTable, rowsCsv, chance };
 });
