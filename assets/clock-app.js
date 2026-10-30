@@ -8,6 +8,7 @@
   let current = PICTURES[0];
   let [W, H] = current.size;
   const STORE = "btc02-clock-slices-v1";
+  const ROW_STORE = "btc02-clock-rotations-v1";
   const CHANCE_N = 20000;
   const $ = (id) => document.getElementById(id);
   const svg = $("svg");
@@ -24,6 +25,7 @@
   const here = (t) => (t.sheet || PICTURES[0].src) === current.src;      // labels and marks stay on the picture they belong to
   const view = { x: 0, y: 0, w: W, h: H };
   let selSlice = -1, hotId = null, marking = false, raf = 0, hashTimer = 0, chanceSig = null, last = null;
+  let rows = [], sayTimer = 0;              // rows: the saved rotations, oldest first
 
   const turnOf = (t12) => mod(t12 + 90, 360);
   const t12Of = (turn) => mod(turn - 90, 360);
@@ -444,6 +446,97 @@
 
   $("addMark").addEventListener("click", () => setMarking(!marking));
 
+  function saveRows() {
+    try { localStorage.setItem(ROW_STORE, JSON.stringify(rows)); return true; } catch (e) { return false; }
+  }
+
+  function loadRows() {
+    let s = null;
+    try { s = JSON.parse(localStorage.getItem(ROW_STORE) || "null"); } catch (e) { s = null; }
+    rows = Array.isArray(s) ? s.filter((r) => r && Array.isArray(r.cones)) : [];
+  }
+
+  function say(msg) {
+    $("rotSay").textContent = msg;
+    clearTimeout(sayTimer);
+    sayTimer = setTimeout(() => { $("rotSay").textContent = ""; }, 6000);
+  }
+
+  const wordsKey = (r) => JSON.stringify(r.cones.map((c) => c.words));
+
+  function saveRotation() {
+    const rot = Object.assign(S.capture(things.filter((t) => t.on && here(t)), place), { picture: current.name, pic: current.id });
+    const words = rot.cones.reduce((n, c) => n + c.words.length, 0);
+    if (!words) { say("No ticked things inside any cone."); return; }
+    const twin = rows.findIndex((r) => wordsKey(r) === wordsKey(rot));
+    if (twin >= 0) { say("Same words as row " + (twin + 1) + ", so not saved again."); return; }
+    rows.push(rot);
+    const kept = saveRows();
+    writeRows();
+    say("Row " + rows.length + ": " + plural(words, "word", "words") + " in " +
+        plural(rot.cones.filter((c) => c.words.length).length, "cone", "cones") + "." +
+        (kept ? "" : " This browser will not keep it: download before you close the page."));
+  }
+
+  function showRotation(r) {
+    const p = PICTURES.find((q) => q.id === r.pic);
+    if (p && p !== current) showPicture(p);
+    Object.assign(place, { cx: r.cx, cy: r.cy, t12: r.t12, r: r.r, mirrored: r.mirrored, rule: r.rule, insideOnly: r.insideOnly });
+    selSlice = -1;
+    changed();
+  }
+
+  function writeRows() {
+    const body = $("rotRows");
+    body.replaceChildren();
+    rows.forEach((r, i) => {
+      const tr = document.createElement("tr");
+      const held = r.cones.filter((c) => c.words.length).map((c) => c.slot + ": " + c.words.join(" ")).join(" · ");
+      [String(i + 1), r2(turnOf(r.t12)) + "°", held].forEach((txt) => {
+        const td = document.createElement("td");
+        td.textContent = txt;
+        tr.append(td);
+      });
+      const x = document.createElement("button");
+      x.className = "x";
+      x.textContent = "×";
+      x.title = "Delete this row";
+      x.addEventListener("click", (e) => {
+        e.stopPropagation();
+        rows.splice(i, 1);
+        saveRows();
+        writeRows();
+      });
+      const td = document.createElement("td");
+      td.append(x);
+      tr.append(td);
+      tr.title = "Put the clock back here";
+      tr.addEventListener("click", () => showRotation(r));
+      body.append(tr);
+    });
+    $("rotList").hidden = !rows.length;
+    $("rotCsv").disabled = !rows.length;
+    $("rotClear").disabled = !rows.length;
+  }
+
+  $("saveRot").addEventListener("click", saveRotation);
+  $("rotCsv").addEventListener("click", () => {
+    const url = URL.createObjectURL(new Blob([S.rowsCsv(rows)], { type: "text/csv;charset=utf-8" }));
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "clock-rotations.csv";
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+  $("rotClear").addEventListener("click", () => {
+    if (!confirm("Delete " + plural(rows.length, "saved rotation", "saved rotations") + "?")) return;
+    rows = [];
+    saveRows();
+    writeRows();
+  });
+
   $("chance").addEventListener("click", () => {
     const on = things.filter((t) => t.on && here(t));
     if (!on.length) { $("chanceOut").textContent = "Tick some things first."; return; }
@@ -555,6 +648,7 @@
       "=": () => { place.r += step; }, "+": () => { place.r += step; },
     };
     if (e.key === "Escape" && marking) { setMarking(false); return; }
+    if (e.key.toLowerCase() === "s" && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); saveRotation(); return; }
     if (!keys[e.key]) return;
     e.preventDefault();
     keys[e.key]();
@@ -573,6 +667,8 @@
     });
   }
   load();
+  loadRows();
+  writeRows();
   const asked = new URLSearchParams(location.hash.slice(1)).get("pic");
   showPicture(PICTURES.find((p) => p.id === asked) || PICTURES[0]);
   readHash();

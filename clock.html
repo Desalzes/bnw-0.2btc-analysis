@@ -29,7 +29,11 @@
       <g id="gThings"></g>
       <g id="gHandles"></g>
     </svg>
-    <div id="hint">Drag the blue dot to move the clock, the yellow knob to turn it, the ring to resize it. Drag the picture to pan, scroll to zoom. Keys: arrows move (Shift: 10 px), [ and ] turn, - and = resize.</div>
+    <div id="rotBar">
+      <button class="primary" id="saveRot" title="Save every ticked thing in each cone as a row (key: S)">Save this rotation</button>
+      <span id="rotSay" aria-live="polite"></span>
+    </div>
+    <div id="hint">Drag the blue dot to move the clock, the yellow knob to turn it, the ring to resize it. Drag the picture to pan, scroll to zoom. Keys: arrows move (Shift: 10 px), [ and ] turn, - and = resize, S saves the rotation.</div>
   </div>
   <aside>
     <section>
@@ -51,6 +55,20 @@
       <label class="check"><input id="mirrored" type="checkbox"> Mirrored (the numerals run anticlockwise)</label>
       <label class="check"><input id="inside" type="checkbox"> Only count things inside the ring</label>
       <label class="check">Flag things within <input id="edgeDeg" class="inline-num" type="number" step="0.5" min="0"> degrees of a slice edge</label>
+    </section>
+    <section>
+      <h2>Saved rotations</h2>
+      <div id="rotList" hidden>
+        <table>
+          <thead><tr><th>Row</th><th>Turn</th><th>Possible words, by slot</th><th></th></tr></thead>
+          <tbody id="rotRows"></tbody>
+        </table>
+      </div>
+      <div class="row">
+        <button class="primary" id="rotCsv">Download CSV</button>
+        <button id="rotClear">Clear all</button>
+      </div>
+      <p class="note">Save this rotation keeps every ticked thing in each cone, whatever colour its dot is. In the CSV each cone is a column, its words joined by |. Click a row to put the clock back. Rows stay in this browser.</p>
     </section>
     <section>
       <h2>Fit</h2>

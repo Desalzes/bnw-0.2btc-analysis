@@ -113,6 +113,32 @@
     return { slices, where, edge, alone, crowded, empty, outside };
   }
 
+  function capture(things, place) {
+    const { slices } = fit(things.map((t) => [t.x, t.y]), place);
+    const cones = slices.map((idx, k) => ({
+      slot: sliceLabel(k, place.rule),
+      name: sliceName(k, place.rule),
+      words: [...new Set(idx.map((i) => things[i].name.trim().toLowerCase()))],
+    }));
+    return { cx: place.cx, cy: place.cy, t12: place.t12, r: place.r, mirrored: !!place.mirrored, rule: place.rule,
+             insideOnly: !!place.insideOnly, cones };
+  }
+
+  const csvCell = (v) => { v = String(v); return /[",\r\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+  const round = (v, places) => Math.round(v * 10 ** places) / 10 ** places;
+
+  function rowsCsv(rows) {
+    const n = Math.max(0, ...rows.map((r) => r.cones.length));
+    const sameRule = rows.every((r) => r.rule === rows[0].rule);
+    const head = Array.from({ length: n }, (_, k) =>
+      sameRule ? rows[0].cones[k].slot + " (" + rows[0].cones[k].name + ")" : "cone " + (k + 1));
+    head.push("picture", "centre_x", "centre_y", "turn", "size", "slices", "mirrored", "only_inside_ring");
+    const lines = rows.map((r) => Array.from({ length: n }, (_, k) => (r.cones[k] ? r.cones[k].words.join("|") : ""))
+      .concat([r.picture, round(r.cx, 1), round(r.cy, 1), round(mod(r.t12 + 90, 360), 2), round(r.r, 1), r.rule,
+               r.mirrored ? "yes" : "no", r.insideOnly ? "yes" : "no"]));
+    return [head].concat(lines).map((cells) => cells.map(csvCell).join(",") + "\r\n").join("");
+  }
+
   function rng(seed) {
     let a = seed >>> 0;
     return function () {
@@ -135,5 +161,5 @@
     return { current, n, atLeast, share: atLeast / n };
   }
 
-  return { RULES, ang, dial, snap, sliceCount, sliceOf, sliceStart, sliceLabel, sliceName, fit, chance };
+  return { RULES, ang, dial, snap, sliceCount, sliceOf, sliceStart, sliceLabel, sliceName, fit, capture, rowsCsv, chance };
 });

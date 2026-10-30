@@ -7,6 +7,11 @@
 #svg.marking { cursor: crosshair; }
 #hint { position: absolute; left: 10px; bottom: 10px; right: 10px; color: #f4f3ef; font-size: 12px;
         text-shadow: 0 1px 2px #000; pointer-events: none; }
+#rotBar { position: absolute; left: 10px; top: 10px; right: 10px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; pointer-events: none; }
+#rotBar button { pointer-events: auto; box-shadow: 0 1px 3px rgba(0, 0, 0, .45); }
+#rotSay { color: #f4f3ef; font-size: 12px; background: rgba(0, 0, 0, .65); border-radius: 6px; padding: 3px 8px; }
+#rotSay:empty { display: none; }
+#rotList { max-height: 240px; overflow-y: auto; margin-bottom: 8px; }
 aside { overflow-y: auto; background: var(--panel); border-left: 1px solid var(--line); padding: 4px 16px 24px; }
 section { border-bottom: 1px solid var(--line); padding: 12px 0; }
 section:last-child { border-bottom: 0; }
@@ -18,6 +23,7 @@ button { font: inherit; color: var(--ink); background: var(--chip); border: 1px 
 button:hover { border-color: var(--muted); }
 button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 button.on { outline: 2px solid var(--accent); outline-offset: 1px; }
+button:disabled { opacity: .5; cursor: default; }
 .grid { display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; align-items: center; }
 .grid label { color: var(--ink2); }
 input[type=number], select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line);
