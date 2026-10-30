@@ -12,6 +12,7 @@ section { border-bottom: 1px solid var(--line); padding: 12px 0; }
 section:last-child { border-bottom: 0; }
 h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink2); margin: 0 0 8px; }
 .presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+#picture { width: 100%; margin-bottom: 8px; }
 button { font: inherit; color: var(--ink); background: var(--chip); border: 1px solid var(--line);
          border-radius: 6px; padding: 4px 9px; cursor: pointer; }
 button:hover { border-color: var(--muted); }

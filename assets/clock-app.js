@@ -3,7 +3,10 @@
   const S = window.ClockSlices;
   const D = window.CLOCK_DATA;
   const NS = "http://www.w3.org/2000/svg";
-  const [W, H] = D.size;
+  const PICTURES = [{ id: "painting", name: "The painting", src: D.picture, size: D.size, hub: D.hub, hubName: "painted centre",
+                      presets: D.presets, note: "" }].concat(D.pictures || []);
+  let current = PICTURES[0];
+  let [W, H] = current.size;
   const STORE = "btc02-clock-slices-v1";
   const CHANCE_N = 20000;
   const $ = (id) => document.getElementById(id);
@@ -18,6 +21,7 @@
   const things = [];       // {id, group, name, x, y, note, on}
   D.groups.forEach((g) => g.items.forEach((t) =>
     things.push({ id: g.id + ":" + t.name, group: g.id, name: t.name, x: t.x, y: t.y, note: t.note, on: g.ticked })));
+  const here = (t) => (t.sheet || PICTURES[0].src) === current.src;      // labels and marks stay on the picture they belong to
   const view = { x: 0, y: 0, w: W, h: H };
   let selSlice = -1, hotId = null, marking = false, raf = 0, hashTimer = 0, chanceSig = null, last = null;
 
@@ -28,7 +32,7 @@
     try {
       localStorage.setItem(STORE, JSON.stringify({
         on: Object.fromEntries(things.filter((t) => t.group !== "marks").map((t) => [t.id, t.on])),
-        marks: things.filter((t) => t.group === "marks").map(({ name, x, y, on }) => ({ name, x, y, on })),
+        marks: things.filter((t) => t.group === "marks").map(({ name, x, y, on, sheet }) => ({ name, x, y, on, sheet })),
       }));
     } catch (e) { /* storage blocked: nothing to keep */ }
   }
@@ -38,11 +42,11 @@
     try { s = JSON.parse(localStorage.getItem(STORE) || "null"); } catch (e) { s = null; }
     if (!s) return;
     things.forEach((t) => { if (s.on && t.id in s.on) t.on = !!s.on[t.id]; });
-    (s.marks || []).forEach((m, i) => addMark(m.name, m.x, m.y, m.on !== false, i));
+    (s.marks || []).forEach((m, i) => addMark(m.name, m.x, m.y, m.on !== false, i, m.sheet));
   }
 
-  function addMark(name, x, y, on, n) {
-    things.push({ id: "marks:" + Date.now() + ":" + n, group: "marks", name, x, y, note: "my mark at " + x + ", " + y, on });
+  function addMark(name, x, y, on, n, sheet) {
+    things.push({ id: "marks:" + Date.now() + ":" + n, group: "marks", name, x, y, note: "my mark at " + x + ", " + y, on, sheet });
   }
 
   function readHash() {
@@ -59,8 +63,9 @@
   }
 
   function hashText() {
-    return new URLSearchParams({ cx: r1(place.cx), cy: r1(place.cy), t12: r2(place.t12), r: r1(place.r),
-      rule: place.rule, mir: place.mirrored ? 1 : 0, in: place.insideOnly ? 1 : 0, edge: place.edgeDeg }).toString();
+    return new URLSearchParams(Object.assign(current === PICTURES[0] ? {} : { pic: current.id }, {
+      cx: r1(place.cx), cy: r1(place.cy), t12: r2(place.t12), r: r1(place.r),
+      rule: place.rule, mir: place.mirrored ? 1 : 0, in: place.insideOnly ? 1 : 0, edge: place.edgeDeg })).toString();
   }
 
   function writeHash() {
@@ -167,10 +172,10 @@
   function drawHandles(k) {
     const g = $("gHandles");
     g.replaceChildren();
-    const [hx, hy] = D.hub, a = 7 * k;      // where the painted clock's hands cross, once the clock leaves it
+    const [hx, hy] = current.hub, a = 7 * k;   // the picture's own centre mark, once the clock leaves it
     if (Math.hypot(place.cx - hx, place.cy - hy) > 4) {
       g.append(el("path", { d: `M${hx - a},${hy} H${hx + a} M${hx},${hy - a} V${hy + a}`, class: "hub-ref", "stroke-width": 1.5 * k }));
-      g.append(el("text", { x: hx + 9 * k, y: hy - 7 * k, class: "hub-ref-lab", "font-size": 10 * k, "stroke-width": 2.5 * k }, "painted centre"));
+      g.append(el("text", { x: hx + 9 * k, y: hy - 7 * k, class: "hub-ref-lab", "font-size": 10 * k, "stroke-width": 2.5 * k }, current.hubName));
     }
     g.append(el("circle", { cx: place.cx, cy: place.cy, r: place.r, class: "ring-hit", "stroke-width": 14 * k, "data-handle": "size" }));
     const q = at(place.t12, place.r + 10 * k), p = at(place.t12, place.r + 36 * k);
@@ -183,7 +188,10 @@
 
   function writeFit(on, res) {
     const p = $("fit");
-    if (!on.length) { p.textContent = "Tick some things below to see how they fall."; return; }
+    if (!on.length) {
+      p.textContent = things.some(here) ? "Tick some things below to see how they fall." : "Nothing is labelled on this picture. Add a mark to see how a spot falls.";
+      return;
+    }
     const bits = [plural(res.crowded, "slice holds", "slices hold") + " two or more", res.empty + " empty"];
     if (place.insideOnly) bits.push(res.outside + " outside the ring");
     p.innerHTML = "<b>" + res.alone + " of " + on.length + "</b> ticked things sit alone in a slice; " + bits.join(", ") + "." +
@@ -211,8 +219,8 @@
     rowOf.clear();
     const groups = D.groups.map((g) => ({ id: g.id, name: g.name })).concat([{ id: "marks", name: "My marks" }]);
     groups.forEach((g) => {
-      const mine = things.filter((t) => t.group === g.id);
-      if (g.id === "marks" && !mine.length) return;
+      const mine = things.filter((t) => t.group === g.id && here(t));
+      if (!mine.length) return;
       const div = document.createElement("div");
       div.className = "group";
       const head = document.createElement("label");
@@ -273,7 +281,7 @@
       row.slot.textContent = s < 0 ? "outside" : S.sliceLabel(s, place.rule) + " (" + S.sliceName(s, place.rule) + ")";
     });
     document.querySelectorAll("input[data-group]").forEach((all) => {
-      const mine = things.filter((t) => t.group === all.dataset.group);
+      const mine = things.filter((t) => t.group === all.dataset.group && here(t));
       const n = mine.filter((t) => t.on).length;
       all.checked = n === mine.length && n > 0;
       all.indeterminate = n > 0 && n < mine.length;
@@ -287,7 +295,7 @@
   function render() {
     raf = 0;
     const k = scale();
-    const on = things.filter((t) => t.on);
+    const on = things.filter((t) => t.on && here(t));
     const res = S.fit(on.map((t) => [t.x, t.y]), place);
     last = { on, res };
     drawWedges(k, res);
@@ -353,15 +361,33 @@
   $("mirrored").addEventListener("change", () => { place.mirrored = $("mirrored").checked; changed(); });
   $("inside").addEventListener("change", () => { place.insideOnly = $("inside").checked; changed(); });
 
-  D.presets.forEach((p) => {
-    const b = document.createElement("button");
-    b.textContent = p.name;
-    b.addEventListener("click", () => {
-      Object.assign(place, { cx: p.cx, cy: p.cy, t12: p.t12, r: p.r, mirrored: p.mirrored });
-      changed();
-    });
-    $("presets").append(b);
-  });
+  function usePreset(p) {
+    Object.assign(place, { cx: p.cx, cy: p.cy, t12: p.t12, r: p.r, mirrored: p.mirrored });
+  }
+
+  function presetButtons() {
+    $("presets").replaceChildren(...current.presets.map((p) => {
+      const b = document.createElement("button");
+      b.textContent = p.name;
+      b.addEventListener("click", () => { usePreset(p); changed(); });
+      return b;
+    }));
+  }
+
+  function showPicture(p) {
+    current = p;
+    [W, H] = p.size;
+    const img = $("pic"), clip = document.querySelector("#picClip rect");
+    [img, clip].forEach((e) => { e.setAttribute("width", W); e.setAttribute("height", H); });
+    img.setAttribute("href", p.src);
+    usePreset(p.presets[0]);
+    selSlice = -1;
+    hotId = null;
+    presetButtons();
+    if ($("picture")) { $("picture").value = p.id; $("pictureNote").textContent = p.note; }
+    buildThingList();
+    fitView();
+  }
 
   function setStatus(msg) {
     $("status").textContent = msg;
@@ -387,7 +413,7 @@
     const { on, res } = last;
     const rule = S.RULES.find((r) => r.id === place.rule).text;
     const lines = [
-      "btc-02 clock slices",
+      "btc-02 clock slices" + (current === PICTURES[0] ? "" : ", on " + current.name),
       "centre (" + r1(place.cx) + ", " + r1(place.cy) + "); 12 points " + r2(turnOf(place.t12)) +
         " deg clockwise from straight up (record t12 " + r2(place.t12) + "); size " + r1(place.r) + " px",
       "slices: " + rule + "; mirrored " + (place.mirrored ? "yes" : "no") + "; only inside the ring " +
@@ -404,7 +430,7 @@
 
   $("copyPlace").addEventListener("click", () => copyText(placementText(), "the placement"));
   $("copyMarks").addEventListener("click", () => {
-    const mine = things.filter((t) => t.group === "marks");
+    const mine = things.filter((t) => t.group === "marks" && here(t));
     if (!mine.length) { setStatus("No marks yet: use Add a mark, then click the picture."); return; }
     copyText(["name\tx\ty"].concat(mine.map((t) => t.name + "\t" + t.x + "\t" + t.y)).join("\n"), "your marks");
   });
@@ -419,11 +445,11 @@
   $("addMark").addEventListener("click", () => setMarking(!marking));
 
   $("chance").addEventListener("click", () => {
-    const on = things.filter((t) => t.on);
+    const on = things.filter((t) => t.on && here(t));
     if (!on.length) { $("chanceOut").textContent = "Tick some things first."; return; }
     $("chanceOut").textContent = "Checking " + CHANCE_N.toLocaleString() + " random placements...";
     setTimeout(() => {
-      const res = S.chance(on.map((t) => [t.x, t.y]), place, CHANCE_N, (Math.random() * 4294967296) >>> 0, D.size);
+      const res = S.chance(on.map((t) => [t.x, t.y]), place, CHANCE_N, (Math.random() * 4294967296) >>> 0, current.size);
       $("chanceOut").textContent = res.atLeast.toLocaleString() + " of " + res.n.toLocaleString() +
         " random placements (" + (100 * res.share).toFixed(1) + "%) leave at least " + res.current +
         " alone. Random means the centre anywhere on the picture and any turn, with this size and these slices." +
@@ -488,8 +514,8 @@
     if (drag && drag.kind === "pan" && !drag.moved && e.type === "pointerup") {
       if (marking) {
         const p = toPic(e);
-        const n = things.filter((t) => t.group === "marks").length + 1;
-        addMark("mark " + n, r1(p[0]), r1(p[1]), true, n);
+        const n = things.filter((t) => t.group === "marks" && here(t)).length + 1;
+        addMark("mark " + n, r1(p[0]), r1(p[1]), true, n, current.src);
         save();
         buildThingList();
         setMarking(false);
@@ -538,13 +564,18 @@
 
   window.addEventListener("resize", schedule);
 
-  const pic = $("pic");
-  pic.addEventListener("error", () => setStatus("The picture did not load from " + D.picture + "."));
-  pic.setAttribute("href", D.picture);
+  $("pic").addEventListener("error", () => setStatus("The picture did not load from " + current.src + "."));
+  if ($("picture")) {
+    PICTURES.forEach((p) => $("picture").append(new Option(p.name, p.id)));
+    $("picture").addEventListener("change", () => {
+      showPicture(PICTURES.find((p) => p.id === $("picture").value));
+      changed();
+    });
+  }
   load();
+  const asked = new URLSearchParams(location.hash.slice(1)).get("pic");
+  showPicture(PICTURES.find((p) => p.id === asked) || PICTURES[0]);
   readHash();
-  buildThingList();
   syncInputs();
-  applyView();
   schedule();
 })();
