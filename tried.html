@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Was It Tried?</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">0.2 BTC puzzle tools</a>
+  <nav>
+    <a href="picture.html">Picture lab</a>
+    <a href="clock.html">Clock overlay</a>
+    <a href="tried.html" aria-current="page">Was it tried?</a>
+    <a href="phrase.html">Try a phrase</a>
+    <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">GitHub</a>
+  </nav>
+</header>
+<main class="doc">
+  <h1>Was it tried?</h1>
+  <p class="lede">Search a word or a passphrase against the published search configs and the run ledger.</p>
+  <label class="field"><span>Word or passphrase</span>
+    <input id="q" type="search" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="tower, moon, a passphrase">
+  </label>
+  <p class="note" id="scope"></p>
+  <div id="out" aria-live="polite"></div>
+
+  <h2>How to read this</h2>
+  <ul class="facts">
+    <li><b>The record stops on 2 October 2026.</b> Searches after that are not published, so finding nothing here does not
+      mean something was never tried.</li>
+    <li><b>A config is a search with a fixed shape.</b> A word being in a config does not mean every phrase with that word
+      was tried. Open the config to see which slots were fixed and which were open.</li>
+    <li><b>"Finished, no match"</b> means a finished line of the ledger was tied to this config through the queue logs, by
+      its finish time. It rules out that config's exact search and nothing wider.</li>
+    <li><b>"No run tied to it"</b> means the published ledger cannot name a run for this config. Ledger lines carry a
+      signature, not a config name, so a config may have run before the queue logs began, may have run after the
+      cut-off, or may not have run at all.</li>
+    <li>Words match exactly as a config writes them, because raw configs keep case: moon and MOON are separate searches.</li>
+    <li>Passphrases are compared the way wallets use them. BIP39 keeps case, so MOON and moon are different. Electrum
+      lower-cases, so they are the same.</li>
+  </ul>
+</main>
+<script src="data/tried.js"></script>
+<script src="data/combining.js"></script>
+<script src="assets/btc.js"></script>
+<script src="assets/tried.js"></script>
+</body>
+</html>

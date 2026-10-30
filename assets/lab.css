@@ -1,0 +1,34 @@
+/* The picture lab. Tokens and the page shell are in site.css. */
+body { font-size: 14px; }
+.wrap { display: grid; grid-template-columns: minmax(0, 1fr) 340px; }
+#stage { position: relative; background: var(--stage); overflow: hidden; touch-action: none; min-height: 0; }
+#view { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; }
+#view.panning { cursor: grabbing; }
+#readout { position: absolute; left: 10px; bottom: 8px; right: 10px; color: #f4f3ef; font: 12px/1.3 ui-monospace, Menlo, Consolas, monospace;
+           text-shadow: 0 1px 2px #000; pointer-events: none; }
+#busy { position: absolute; left: 50%; top: 16px; transform: translateX(-50%); padding: 4px 12px; border-radius: 6px;
+        background: var(--panel); color: var(--ink); }
+aside { overflow-y: auto; background: var(--panel); border-left: 1px solid var(--line); padding: 4px 16px 24px; min-height: 0; }
+section { border-bottom: 1px solid var(--line); padding: 12px 0; }
+section:last-child { border-bottom: 0; }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink2); margin: 0 0 8px; }
+select, input[type=number] { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line);
+                             border-radius: 6px; padding: 3px 6px; width: 100%; min-width: 0; }
+button { font: inherit; color: var(--ink); background: var(--chip); border: 1px solid var(--line); border-radius: 6px; padding: 4px 9px; cursor: pointer; }
+button:hover { border-color: var(--muted); }
+button.on { outline: 2px solid var(--accent); outline-offset: 1px; }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.grid { display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; align-items: center; margin-top: 8px; }
+.grid label { color: var(--ink2); }
+.check { display: block; margin-top: 10px; color: var(--ink2); }
+.check span { display: block; margin-bottom: 3px; }
+.slider { display: block; margin-top: 10px; color: var(--ink2); }
+.slider span { display: block; }
+.slider input { width: 100%; accent-color: var(--accent); }
+.note { margin: 6px 0 0; font-size: 12px; }
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: 1fr; }
+  #stage { height: 62vh; }
+  aside { border-left: 0; border-top: 1px solid var(--line); }
+}

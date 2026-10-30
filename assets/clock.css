@@ -1,0 +1,83 @@
+/* The clock page. Tokens and the page shell are in site.css. */
+.inline-num { width: 64px; }
+.wrap { display: grid; grid-template-columns: minmax(0, 1fr) 380px; height: calc(100% - 46px); }
+#stage { position: relative; background: var(--stage); overflow: hidden; touch-action: none; }
+#svg { width: 100%; height: 100%; display: block; cursor: grab; user-select: none; }
+#svg.panning { cursor: grabbing; }
+#svg.marking { cursor: crosshair; }
+#hint { position: absolute; left: 10px; bottom: 10px; right: 10px; color: #f4f3ef; font-size: 12px;
+        text-shadow: 0 1px 2px #000; pointer-events: none; }
+aside { overflow-y: auto; background: var(--panel); border-left: 1px solid var(--line); padding: 4px 16px 24px; }
+section { border-bottom: 1px solid var(--line); padding: 12px 0; }
+section:last-child { border-bottom: 0; }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink2); margin: 0 0 8px; }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+button { font: inherit; color: var(--ink); background: var(--chip); border: 1px solid var(--line);
+         border-radius: 6px; padding: 4px 9px; cursor: pointer; }
+button:hover { border-color: var(--muted); }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button.on { outline: 2px solid var(--accent); outline-offset: 1px; }
+.grid { display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; align-items: center; }
+.grid label { color: var(--ink2); }
+input[type=number], select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line);
+                             border-radius: 6px; padding: 3px 6px; width: 100%; min-width: 0; }
+.check { display: flex; gap: 8px; align-items: flex-start; margin-top: 8px; color: var(--ink2); }
+.check input { margin-top: 3px; }
+.note { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
+#fit { margin: 0 0 8px; }
+#chanceOut { margin: 8px 0 0; color: var(--ink2); }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--ink2); font-weight: 600; border-bottom: 1px solid var(--line); padding: 3px 4px; }
+td { border-bottom: 1px solid var(--line); padding: 3px 4px; vertical-align: top; }
+tr.crowded td:first-child { box-shadow: inset 3px 0 0 var(--crit); }
+tr.alone td:first-child { box-shadow: inset 3px 0 0 var(--good); }
+tr.empty td { color: var(--muted); }
+tbody tr { cursor: pointer; }
+tbody tr:hover td, tbody tr.sel td { background: var(--chip); }
+.group { margin-bottom: 10px; }
+.group > label { font-weight: 600; display: flex; gap: 8px; align-items: center; }
+.items { list-style: none; margin: 4px 0 0 22px; padding: 0; }
+.items li { display: flex; gap: 8px; align-items: center; padding: 1px 0; }
+.items li .slot { margin-left: auto; color: var(--ink2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.items li.hot { background: var(--chip); }
+.items input[type=text] { flex: 1; min-width: 0; font: inherit; color: var(--ink); background: var(--bg);
+                          border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; }
+.x { padding: 0 6px; line-height: 1.2; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; color: var(--ink2); font-size: 12px; margin-top: 8px; }
+.legend svg { vertical-align: -2px; }
+.row { display: flex; flex-wrap: wrap; gap: 6px; }
+#status { color: var(--ink2); font-size: 12px; min-height: 1.2em; margin: 8px 0 0; }
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: 1fr; height: auto; }
+  #stage { height: 70vh; }
+  aside { border-left: 0; border-top: 1px solid var(--line); }
+}
+
+/* overlay on the picture: sizes are set per zoom from app.js through --k (picture px per screen px) */
+.wedge { pointer-events: none; }
+.wedge.w0 { fill: rgba(40, 90, 215, 0.13); }
+.wedge.w1 { fill: rgba(255, 255, 255, 0.10); }
+.wedge.crowded { fill: rgba(208, 59, 59, 0.20); }
+.wedge.sel { fill: rgba(250, 178, 25, 0.35); }
+.edge-line { stroke: #1d3f9e; stroke-opacity: .85; pointer-events: none; }
+.edge-halo { stroke: #fff; stroke-opacity: .7; pointer-events: none; }
+.ring { fill: none; stroke: #1d3f9e; pointer-events: none; }
+.ring-halo { fill: none; stroke: #fff; stroke-opacity: .8; pointer-events: none; }
+.ring-hit { fill: none; stroke: transparent; cursor: ew-resize; }
+.numeral { fill: #10235c; font-weight: 700; text-anchor: middle; dominant-baseline: central;
+           paint-order: stroke; stroke: #fff; stroke-linejoin: round; pointer-events: none; }
+.slotlab { fill: #8a1f1f; font-weight: 700; text-anchor: middle; dominant-baseline: central;
+           paint-order: stroke; stroke: #fff; stroke-linejoin: round; pointer-events: none; font-style: italic; }
+.thing { stroke: #fff; cursor: pointer; }
+.thing.alone { fill: var(--good); }
+.thing.crowded { fill: var(--crit); }
+.thing.out { fill: #9a9993; fill-opacity: .55; }
+.thing.hot { stroke: #fab219; }
+.edge-ring { fill: none; stroke: #fab219; stroke-dasharray: 3 2; pointer-events: none; }
+.tname { fill: #111; paint-order: stroke; stroke: #fff; stroke-linejoin: round; pointer-events: none; }
+.tname.out { fill: #555; }
+.handle { fill: #2a5bd7; stroke: #fff; cursor: move; }
+.handle.turn { fill: #fab219; cursor: grab; }
+.stem { stroke: #fab219; pointer-events: none; }
+.hub-ref { stroke: #fff; stroke-opacity: .9; pointer-events: none; }
+.hub-ref-lab { fill: #fff; paint-order: stroke; stroke: #000; stroke-opacity: .6; pointer-events: none; }

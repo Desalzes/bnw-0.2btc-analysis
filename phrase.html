@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Try a Phrase</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">0.2 BTC puzzle tools</a>
+  <nav>
+    <a href="picture.html">Picture lab</a>
+    <a href="clock.html">Clock overlay</a>
+    <a href="tried.html">Was it tried?</a>
+    <a href="phrase.html" aria-current="page">Try a phrase</a>
+    <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">GitHub</a>
+  </nav>
+</header>
+<main class="doc">
+  <h1>Try a phrase</h1>
+  <p class="lede">Works out the addresses a phrase leads to and compares them with the prize address,
+    <span class="address">1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ</span>.</p>
+  <p>Everything happens in this tab. The page's security policy blocks network requests, and nothing is stored or put in the
+    address bar. It shows addresses only: it has no way to show a key or to send a transaction.</p>
+  <p class="warn">This page is for puzzle guesses. Do not type the phrase of a real wallet here, or into any other web page.</p>
+
+  <label class="field"><span>Phrase</span>
+    <textarea id="phrase" rows="3" spellcheck="false" autocomplete="off" autocapitalize="off"
+              placeholder="twelve words separated by spaces"></textarea>
+  </label>
+  <label class="field"><span>Passphrase or seed extension (optional)</span>
+    <input id="pass" type="text" spellcheck="false" autocomplete="off" autocapitalize="off">
+  </label>
+  <div class="field"><span>Seed type</span>
+    <div class="choices">
+      <label><input type="radio" name="scheme" value="bip39" checked> BIP39</label>
+      <label><input type="radio" name="scheme" value="electrum"> Electrum (2.0 and later)</label>
+    </div>
+  </div>
+  <label class="field"><span>Derivation paths, one per line</span>
+    <textarea id="paths" rows="8" spellcheck="false" autocomplete="off"></textarea>
+  </label>
+  <button class="go" id="go">Check</button>
+
+  <div id="out" aria-live="polite"></div>
+
+  <h2>What is checked</h2>
+  <ul class="facts">
+    <li>Each path in both key forms, compressed and uncompressed, as a legacy address beginning with 1. The prize address is that type.</li>
+    <li>BIP39 uses the words as typed, with case kept, so a phrase with a bad checksum or a word outside the list still gets
+      addresses. The page tells you when that is the case.</li>
+    <li>Electrum lower-cases the words and drops accents, as Electrum does.</li>
+    <li>Old Electrum 1.x seeds are not covered here.</li>
+    <li>The derivation is the search engine's, checked in tests against its CPU reference: 60 random phrases on every listed path and both key forms, plus its ten known answers.</li>
+  </ul>
+</main>
+<script src="data/bip39-english.js"></script>
+<script src="data/combining.js"></script>
+<script src="assets/btc.js"></script>
+<script src="assets/phrase.js"></script>
+</body>
+</html>

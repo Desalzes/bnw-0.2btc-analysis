@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Clock Overlay</title>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/clock.css">
+</head>
+<body class="tool">
+<header class="top">
+  <a class="brand" href="index.html">0.2 BTC puzzle tools</a>
+  <nav>
+    <a href="picture.html">Picture lab</a>
+    <a href="clock.html" aria-current="page">Clock overlay</a>
+    <a href="tried.html">Was it tried?</a>
+    <a href="phrase.html">Try a phrase</a>
+    <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">GitHub</a>
+  </nav>
+</header>
+<div class="wrap">
+  <div id="stage">
+    <svg id="svg" viewBox="0 0 1600 1200" preserveAspectRatio="xMidYMid meet" aria-label="The puzzle picture with the clock overlay">
+      <defs><clipPath id="picClip"><rect x="0" y="0" width="1600" height="1200"/></clipPath></defs>
+      <image id="pic" x="0" y="0" width="1600" height="1200"/>
+      <g id="gWedges" clip-path="url(#picClip)"></g>
+      <g id="gRing"></g>
+      <g id="gThings"></g>
+      <g id="gHandles"></g>
+    </svg>
+    <div id="hint">Drag the blue dot to move the clock, the yellow knob to turn it, the ring to resize it. Drag the picture to pan, scroll to zoom. Keys: arrows move (Shift: 10 px), [ and ] turn, - and = resize.</div>
+  </div>
+  <aside>
+    <section>
+      <h2>Clock</h2>
+      <div class="presets" id="presets"></div>
+      <div class="grid">
+        <label for="cx">Centre x</label><input id="cx" type="number" step="0.5">
+        <label for="cy">Centre y</label><input id="cy" type="number" step="0.5">
+        <label for="turn">12 points at</label><input id="turn" type="number" step="0.5" title="degrees clockwise from straight up">
+        <label for="size">Size</label><input id="size" type="number" step="1" min="5" title="radius of the numeral ring, in picture pixels">
+        <label for="rule">Slices</label><select id="rule"></select>
+      </div>
+      <p class="note">12 points at: degrees clockwise from straight up. Size: the numeral ring's radius in picture pixels (the painted clock's numerals sit at about 183).</p>
+      <label class="check"><input id="mirrored" type="checkbox"> Mirrored (the numerals run anticlockwise)</label>
+      <label class="check"><input id="inside" type="checkbox"> Only count things inside the ring</label>
+      <label class="check">Flag things within <input id="edgeDeg" class="inline-num" type="number" step="0.5" min="0"> degrees of a slice edge</label>
+    </section>
+    <section>
+      <h2>Fit</h2>
+      <p id="fit"></p>
+      <button id="chance">How often does chance do this well?</button>
+      <p id="chanceOut"></p>
+      <div class="legend">
+        <span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#0ca30c" stroke="#fff"/></svg> alone in its slice</span>
+        <span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#d03b3b" stroke="#fff"/></svg> shares a slice</span>
+        <span><svg width="12" height="12"><circle cx="6" cy="6" r="5" fill="#9a9993" stroke="#fff"/></svg> outside the ring</span>
+        <span><svg width="14" height="14"><circle cx="7" cy="7" r="6" fill="none" stroke="#fab219" stroke-dasharray="3 2"/></svg> near a slice edge</span>
+      </div>
+    </section>
+    <section>
+      <h2>Slices</h2>
+      <table>
+        <thead><tr><th>Slot</th><th>Between</th><th>Things</th></tr></thead>
+        <tbody id="sliceRows"></tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Things</h2>
+      <div id="groups"></div>
+      <div class="row">
+        <button id="addMark">Add a mark</button>
+        <button id="copyMarks">Copy my marks</button>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <button class="primary" id="copyPlace">Copy this placement</button>
+        <button id="fitView">Fit picture to window</button>
+      </div>
+      <p id="status"></p>
+      <p class="note">Your own marks stay in this browser. Word positions were measured from the picture, and the address bar carries the placement, so a spot can be bookmarked.</p>
+    </section>
+  </aside>
+</div>
+<script src="assets/clock-slices.js"></script>
+<script src="data/clock-data.js"></script>
+<script src="assets/clock-app.js"></script>
+</body>
+</html>

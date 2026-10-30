@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' blob:; base-uri 'none'; form-action 'none'">
+<title>Picture Lab</title>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/lab.css">
+</head>
+<body class="tool">
+<header class="top">
+  <a class="brand" href="index.html">0.2 BTC puzzle tools</a>
+  <nav>
+    <a href="picture.html" aria-current="page">Picture lab</a>
+    <a href="clock.html">Clock overlay</a>
+    <a href="tried.html">Was it tried?</a>
+    <a href="phrase.html">Try a phrase</a>
+    <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">GitHub</a>
+  </nav>
+</header>
+<div class="wrap">
+  <div id="stage">
+    <canvas id="view" aria-label="The puzzle picture"></canvas>
+    <div id="readout">Loading the picture...</div>
+    <div id="busy" hidden>Working...</div>
+  </div>
+  <aside>
+    <section>
+      <h2>View</h2>
+      <select id="viewSel" aria-label="View"></select>
+      <p class="note" id="viewNote"></p>
+      <div id="controls"></div>
+      <label class="check" id="stretchRow"><span>Contrast</span>
+        <select id="stretch">
+          <option value="whole">Stretch to the whole picture</option>
+          <option value="screen">Stretch to what is on screen</option>
+          <option value="none">No stretch</option>
+        </select>
+      </label>
+      <div class="row"><button id="peek">Hold for the original</button></div>
+    </section>
+    <section>
+      <h2>Go to</h2>
+      <select id="jump" aria-label="Go to a part of the picture"></select>
+      <div class="row">
+        <button id="fit">Whole picture</button>
+        <button id="zoomIn" aria-label="Zoom in">+</button>
+        <button id="zoomOut" aria-label="Zoom out">-</button>
+        <button id="actual">1:1</button>
+      </div>
+    </section>
+    <section>
+      <h2>Orientation</h2>
+      <div class="row">
+        <button id="flipH">Mirror left-right</button>
+        <button id="flipV">Mirror top-bottom</button>
+      </div>
+      <label class="slider"><span>Turn <output id="rotateOut">0</output> degrees</span>
+        <input id="rotate" type="range" min="-180" max="180" step="0.5" value="0"></label>
+    </section>
+    <section>
+      <h2>Grid</h2>
+      <select id="grid" aria-label="Grid spacing">
+        <option value="0">No grid</option>
+        <option value="10">Every 10 px</option>
+        <option value="50">Every 50 px</option>
+        <option value="100">Every 100 px</option>
+      </select>
+    </section>
+    <section>
+      <h2>Polar unwrap</h2>
+      <p class="note">Rolls a circle out into a straight strip, using the current view: bearing runs left to right, radius runs top to bottom.</p>
+      <select id="polarPreset" aria-label="Circle to unwrap"></select>
+      <div class="grid">
+        <label for="pcx">Centre x</label><input id="pcx" type="number" step="0.1">
+        <label for="pcy">Centre y</label><input id="pcy" type="number" step="0.1">
+        <label for="pr0">Inner radius</label><input id="pr0" type="number" step="1" min="0">
+        <label for="pr1">Outer radius</label><input id="pr1" type="number" step="1" min="1">
+      </div>
+      <div class="row">
+        <button id="polarOn">Unwrap</button>
+        <button id="polarOff">Back to the picture</button>
+        <button id="polarHere">Use screen centre</button>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <button class="primary" id="save">Save as PNG, without the grid</button>
+        <button id="link">Copy a link to this view</button>
+      </div>
+      <p id="status" class="note"></p>
+      <p class="note">The picture is never changed: every view is worked out from the original file, in this browser. Drag to pan, scroll to zoom. Hold O for the original.</p>
+    </section>
+  </aside>
+</div>
+<script src="data/regions.js"></script>
+<script src="assets/lab-ops.js"></script>
+<script src="assets/lab.js"></script>
+</body>
+</html>
