@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' blob:; base-uri 'none'; form-action 'none'">
 <title>Clock Overlay</title>
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/clock.css">
@@ -25,6 +25,8 @@
       <defs><clipPath id="picClip"><rect x="0" y="0" width="1600" height="1200"/></clipPath></defs>
       <image id="pic" x="0" y="0" width="1600" height="1200"/>
       <g id="gWedges" clip-path="url(#picClip)"></g>
+      <image id="labelsLayer" x="0" y="0" width="1600" height="1200" display="none"/>
+      <g id="gGrid"></g>
       <g id="gRing"></g>
       <g id="gThings"></g>
       <g id="gHandles"></g>
@@ -33,13 +35,38 @@
       <button class="primary" id="saveRot" title="Save every ticked thing in each cone as a row (key: S)">Save this rotation</button>
       <span id="rotSay" aria-live="polite"></span>
     </div>
-    <div id="hint">Drag the blue dot to move the clock, the yellow knob to turn it, the ring to resize it. Drag the picture to pan, scroll to zoom. Keys: arrows move (Shift: 10 px), [ and ] turn, - and = resize, S saves the rotation.</div>
+    <div id="busy" hidden>Working...</div>
+    <div id="readout" aria-live="off"></div>
+    <div id="hint">Drag the blue dot to move the clock, the yellow knob to turn it, the ring to resize it. Drag the picture to pan, scroll to zoom. Keys: arrows move (Shift: 10 px), [ and ] turn, - and = resize, S saves the rotation, O shows the original.</div>
   </div>
   <aside>
     <section>
       <h2>Picture</h2>
       <select id="picture" aria-label="The picture under the clock"></select>
       <p class="note" id="pictureNote"></p>
+    </section>
+    <section>
+      <h2>Picture view</h2>
+      <select id="viewSel" aria-label="Picture view"></select>
+      <p class="note" id="viewNote"></p>
+      <div id="controls"></div>
+      <label class="stack" id="stretchRow"><span>Contrast</span>
+        <select id="stretch">
+          <option value="whole">Stretch to the whole picture</option>
+          <option value="screen">Stretch to what is on screen</option>
+          <option value="none">No stretch</option>
+        </select>
+      </label>
+      <label class="stack"><span>Grid</span>
+        <select id="grid" aria-label="Grid spacing">
+          <option value="0">No grid</option>
+          <option value="10">Every 10 px</option>
+          <option value="50">Every 50 px</option>
+          <option value="100">Every 100 px</option>
+        </select>
+      </label>
+      <div class="row"><button id="peek" title="Key: O">Hold for the original</button></div>
+      <p class="note">The views of the <a href="picture.html">picture lab</a>, worked out in this browser from the picture's own pixels; the clock, the word labels and the dots stay on top. Hold O for the original.</p>
     </section>
     <section>
       <h2>Clock</h2>
@@ -110,6 +137,8 @@
     </section>
   </aside>
 </div>
+<script src="assets/lab-ops.js"></script>
+<script src="assets/lab-views.js"></script>
 <script src="assets/clock-slices.js"></script>
 <script src="data/clock-data.js"></script>
 <script src="assets/clock-app.js"></script>

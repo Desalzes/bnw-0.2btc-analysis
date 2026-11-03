@@ -3,8 +3,17 @@
   const S = window.ClockSlices;
   const D = window.CLOCK_DATA;
   const NS = "http://www.w3.org/2000/svg";
+  const LV = window.LabViews;
   const PICTURES = [{ id: "painting", name: "The painting", src: D.picture, size: D.size, hub: D.hub, hubName: "painted centre",
-                      presets: D.presets, note: "" }].concat(D.pictures || []);
+                      presets: D.presets, note: "" },
+                    { id: "words", name: "The painting, words labelled", src: D.picture, labels: "img/puzzle-words-layer.png",
+                      size: D.size, hub: D.hub, hubName: "painted centre", presets: D.presets,
+                      note: "Each word in the picture has a bold label over it. Yellow: the candidate words (ORDER, STABILITY, TOWER, " +
+                            "MOON, FOOD, REAL, THIS, ONE, SUBJECT, EYE, PYRAMID, VOTE, and in the right-border runes BLACK and TEN). " +
+                            "Red: what each rune group says (right border bottom to top, the top-left rows, the clock strip, the line " +
+                            "above Trump), with the Russian beside the right border. Navy: weaker candidates. The labels are a layer " +
+                            "over the picture, so a picture view changes the paint under them and not the labels." }]
+    .concat(D.pictures || []);
   let current = PICTURES[0];
   let [W, H] = current.size;
   const STORE = "btc02-clock-slices-v1";
@@ -26,6 +35,9 @@
   const view = { x: 0, y: 0, w: W, h: H };
   let selSlice = -1, hotId = null, marking = false, raf = 0, hashTimer = 0, chanceSig = null, last = null;
   let rows = [], sayTimer = 0;              // rows: the saved rotations, oldest first
+  const look = Object.assign({ grid: 0 }, LV.DEFAULTS);   // the picture view: lab-views.js settings and the grid
+  let shown = null, peeking = false, viewGen = 0, viewUrl = null, stretchTimer = 0, viewTimer = 0;
+  const pixelJobs = new Map();               // picture src -> promise of {rgba, w, h, views}
 
   const turnOf = (t12) => mod(t12 + 90, 360);
   const t12Of = (turn) => mod(turn - 90, 360);
@@ -62,12 +74,27 @@
     if (S.RULES.some((r) => r.id === q.get("rule"))) place.rule = q.get("rule");
     if (q.has("mir")) place.mirrored = q.get("mir") === "1";
     if (q.has("in")) place.insideOnly = q.get("in") === "1";
+    Object.keys(LV.DEFAULTS).forEach((k) => {
+      if (!q.has(k)) return;
+      const v = q.get(k);
+      if (k === "view") { if (LV.find(v)) look.view = v; }
+      else if (k === "stretch") { if (["whole", "screen", "none"].includes(v)) look.stretch = v; }
+      else if (isFinite(parseFloat(v))) look[k] = parseFloat(v);
+    });
+    if ([10, 50, 100].includes(num("grid"))) look.grid = num("grid");
   }
 
-  function hashText() {
+  function clockText() {
     return new URLSearchParams(Object.assign(current === PICTURES[0] ? {} : { pic: current.id }, {
       cx: r1(place.cx), cy: r1(place.cy), t12: r2(place.t12), r: r1(place.r),
       rule: place.rule, mir: place.mirrored ? 1 : 0, in: place.insideOnly ? 1 : 0, edge: place.edgeDeg })).toString();
+  }
+
+  function hashText() {                    // the clock, then the picture view where it is not the starting one
+    const q = new URLSearchParams(clockText());
+    Object.keys(LV.DEFAULTS).forEach((k) => { if (look[k] !== LV.DEFAULTS[k]) q.set(k, String(look[k])); });
+    if (look.grid) q.set("grid", String(look.grid));
+    return q.toString();
   }
 
   function writeHash() {
@@ -165,6 +192,7 @@
                                "stroke-width": (hot ? 3 : 1.5) * k, "data-thing": t.id });
       c.append(el("title", {}, t.name + (t.note ? ": " + t.note : "")));
       g.append(c);
+      if (current.labels && t.group !== "marks") return;   // the labelled painting names its words already
       const left = t.x > W - 110;            // names near the right edge read leftward so they stay on the picture
       g.append(el("text", { x: t.x + (left ? -8 : 8) * k, y: t.y + 4 * k, "text-anchor": left ? "end" : "start",
                             class: "tname" + (st === "out" ? " out" : ""), "font-size": 12 * k, "stroke-width": 3 * k }, t.name));
@@ -291,7 +319,7 @@
   }
 
   function signature(on) {
-    return hashText() + "|" + on.map((t) => t.id).join(",");
+    return clockText() + "|" + on.map((t) => t.id).join(",");
   }
 
   function render() {
@@ -304,6 +332,7 @@
     drawRing(k);
     drawThings(k, on, res);
     drawHandles(k);
+    drawGrid(k);
     writeFit(on, res);
     writeSlices(on, res);
     writeThingList(on, res);
@@ -381,7 +410,13 @@
     [W, H] = p.size;
     const img = $("pic"), clip = document.querySelector("#picClip rect");
     [img, clip].forEach((e) => { e.setAttribute("width", W); e.setAttribute("height", H); });
-    img.setAttribute("href", p.src);
+    shown = p.src;
+    showHref();
+    const layer = $("labelsLayer");
+    layer.setAttribute("width", W);
+    layer.setAttribute("height", H);
+    if (p.labels) { layer.setAttribute("href", p.labels); layer.setAttribute("display", "inline"); }
+    else { layer.removeAttribute("href"); layer.setAttribute("display", "none"); }
     usePreset(p.presets[0]);
     selSlice = -1;
     hotId = null;
@@ -389,6 +424,157 @@
     if ($("picture")) { $("picture").value = p.id; $("pictureNote").textContent = p.note; }
     buildThingList();
     fitView();
+    refreshView();
+  }
+
+  // ---- picture views: the picture lab's views (lab-views.js) under the clock, worked out from the picture's own pixels
+
+  function showHref() {
+    $("pic").setAttribute("href", peeking ? current.src : shown || current.src);
+  }
+
+  function peek(on) {
+    if (peeking === on) return;
+    peeking = on;
+    $("peek").classList.toggle("on", on);
+    showHref();
+  }
+
+  function pixelsOf(p) {
+    if (!pixelJobs.has(p.src)) {
+      pixelJobs.set(p.src, new Promise((done, fail) => {
+        const img = new Image();
+        img.onload = () => {
+          const [w, h] = p.size, c = document.createElement("canvas");
+          c.width = w; c.height = h;
+          const g = c.getContext("2d", { willReadFrequently: true });
+          g.drawImage(img, 0, 0, w, h);
+          const rgba = g.getImageData(0, 0, w, h).data;
+          done({ rgba, w, h, views: LV.renderer(rgba, w, h) });
+        };
+        img.onerror = () => { pixelJobs.delete(p.src); fail(new Error("load")); };
+        img.src = p.src;
+      }));
+    }
+    return pixelJobs.get(p.src);
+  }
+
+  function screenBox() {                   // the part of the picture on screen, for the stretch to what is on screen
+    const x0 = Math.max(0, Math.floor(view.x)), y0 = Math.max(0, Math.floor(view.y));
+    const x1 = Math.min(W, Math.ceil(view.x + view.w)), y1 = Math.min(H, Math.ceil(view.y + view.h));
+    return x1 - x0 > 1 && y1 - y0 > 1 ? [x0, y0, x1, y1] : [0, 0, W, H];
+  }
+
+  const nextFrame = () => new Promise((done) => requestAnimationFrame(() => setTimeout(done, 0)));
+
+  async function refreshView() {
+    const gen = ++viewGen, p = current;
+    if (look.view === "original") {
+      $("busy").hidden = true;
+      shown = p.src;
+      showHref();
+      return;
+    }
+    let px;
+    try { px = await pixelsOf(p); } catch (e) { if (gen === viewGen) setStatus("The picture's pixels could not be read."); return; }
+    if (gen !== viewGen) return;
+    if (px.views.slow(look)) { $("busy").hidden = false; await nextFrame(); await nextFrame(); if (gen !== viewGen) return; }
+    const data = px.views.pixels(look, look.stretch === "screen" ? screenBox() : null);
+    $("busy").hidden = true;
+    if (gen !== viewGen || !data) return;
+    const c = document.createElement("canvas");
+    c.width = px.w; c.height = px.h;
+    c.getContext("2d").putImageData(new ImageData(new Uint8ClampedArray(data.buffer, data.byteOffset, data.length), px.w, px.h), 0, 0);
+    c.toBlob((blob) => {
+      if (!blob || gen !== viewGen) return;
+      const old = viewUrl;
+      viewUrl = URL.createObjectURL(blob);
+      shown = viewUrl;
+      showHref();
+      if (old) setTimeout(() => URL.revokeObjectURL(old), 2000);
+    }, "image/png");
+  }
+
+  function viewChanged() {                 // sliders fire fast: the work is done once the input settles a little
+    clearTimeout(viewTimer);
+    viewTimer = setTimeout(refreshView, 40);
+    schedule();
+  }
+
+  function buildControls() {
+    const box = $("controls"), v = LV.find(look.view);
+    box.replaceChildren();
+    for (const name of v.controls || []) {
+      const label = document.createElement("label"), span = document.createElement("span");
+      label.className = "slider";
+      if (name === "channel") {
+        const sel = document.createElement("select");
+        span.textContent = "Channel";
+        ["Red", "Green", "Blue", "Alpha"].forEach((t, i) => sel.add(new Option(t, String(i), false, i === look.channel)));
+        sel.addEventListener("change", () => { look.channel = Number(sel.value); viewChanged(); });
+        label.append(span, sel);
+      } else {
+        const c = LV.SLIDERS[name], input = document.createElement("input");
+        const show = () => { span.textContent = c.name + ": " + look[name] + (c.unit ? " " + c.unit : ""); };
+        Object.assign(input, { type: "range", min: c.min, max: c.max, step: c.step, value: look[name] });
+        input.addEventListener("input", () => { look[name] = Number(input.value); show(); viewChanged(); });
+        show();
+        label.append(span, input);
+      }
+      box.append(label);
+    }
+    $("stretchRow").hidden = !v.scalar;
+    $("viewNote").textContent = v.note;
+  }
+
+  function syncViewPanel() {
+    $("viewSel").value = look.view;
+    $("stretch").value = look.stretch;
+    $("grid").value = String(look.grid);
+    buildControls();
+  }
+
+  function buildViewPanel() {
+    LV.VIEWS.forEach((v) => $("viewSel").add(new Option(v.name, v.id)));
+    $("viewSel").addEventListener("change", () => { look.view = $("viewSel").value; buildControls(); viewChanged(); });
+    $("stretch").addEventListener("change", () => { look.stretch = $("stretch").value; viewChanged(); });
+    $("grid").addEventListener("change", () => { look.grid = Number($("grid").value); schedule(); });
+    $("peek").addEventListener("pointerdown", () => peek(true));
+    ["pointerup", "pointerleave", "pointercancel"].forEach((n) => $("peek").addEventListener(n, () => peek(false)));
+  }
+
+  function drawGrid(k) {
+    const g = $("gGrid");
+    g.replaceChildren();
+    const step = look.grid;
+    if (!step) return;
+    const every = Math.max(1, Math.ceil(44 * k / step)), fs = 11 * k;
+    let d = "";
+    for (let x = 0; x <= W; x += step) d += `M${x},0V${H}`;
+    for (let y = 0; y <= H; y += step) d += `M0,${y}H${W}`;
+    g.append(el("path", { d, class: "grid-line", "stroke-width": k }));
+    const lx = Math.min(Math.max(view.x, 0), W) + 3 * k, ly = Math.min(Math.max(view.y, 0), H) + 12 * k;
+    for (let x = 0, n = 0; x <= W; x += step, n++) {
+      if (!(n % every)) g.append(el("text", { x: x + 3 * k, y: ly, class: "grid-lab", "font-size": fs, "stroke-width": 3 * k }, String(x)));
+    }
+    for (let y = 0, n = 0; y <= H; y += step, n++) {
+      if (!(n % every)) g.append(el("text", { x: lx, y: y + 12 * k, class: "grid-lab", "font-size": fs, "stroke-width": 3 * k }, String(y)));
+    }
+  }
+
+  let readJob = null;
+  function readPixel(e) {
+    const [x, y] = toPic(e), ix = Math.floor(x), iy = Math.floor(y);
+    if (ix < 0 || iy < 0 || ix >= W || iy >= H) { $("readout").textContent = ""; return; }
+    const p = current;
+    const job = readJob = pixelsOf(p).then((px) => {
+      if (job !== readJob || p !== current) return;
+      const j = (iy * px.w + ix) * 4;
+      let text = "x " + ix + "  y " + iy + "  rgb " + px.rgba[j] + " " + px.rgba[j + 1] + " " + px.rgba[j + 2];
+      const value = look.view === "original" ? null : px.views.valueAt(look, iy * px.w + ix);
+      if (value !== null) text += "  value " + value.toFixed(1);
+      $("readout").textContent = text;
+    }, () => { /* no pixels to read */ });
   }
 
   function setStatus(msg) {
@@ -566,6 +752,10 @@
 
   function applyView() {
     svg.setAttribute("viewBox", [view.x, view.y, view.w, view.h].join(" "));
+    if (look.stretch === "screen" && (LV.find(look.view) || {}).scalar) {
+      clearTimeout(stretchTimer);
+      stretchTimer = setTimeout(refreshView, 140);
+    }
   }
 
   function fitView() {
@@ -590,6 +780,7 @@
   });
 
   svg.addEventListener("pointermove", (e) => {
+    readPixel(e);
     if (!drag) return;
     if (drag.kind === "pan") {
       const dx = e.clientX - drag.sx, dy = e.clientY - drag.sy;
@@ -656,6 +847,7 @@
       "=": () => { place.r += step; }, "+": () => { place.r += step; },
     };
     if (e.key === "Escape" && marking) { setMarking(false); return; }
+    if ((e.key === "o" || e.key === "O") && !e.ctrlKey && !e.metaKey && !e.altKey) { if (!e.repeat) peek(true); return; }
     if (e.key.toLowerCase() === "s" && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); saveRotation(); return; }
     if (!keys[e.key]) return;
     e.preventDefault();
@@ -664,9 +856,11 @@
     changed();
   });
 
+  window.addEventListener("keyup", (e) => { if (e.key === "o" || e.key === "O") peek(false); });
   window.addEventListener("resize", schedule);
 
   $("pic").addEventListener("error", () => setStatus("The picture did not load from " + current.src + "."));
+  $("labelsLayer").addEventListener("error", () => setStatus("The word labels did not load from " + current.labels + "."));
   if ($("picture")) {
     PICTURES.forEach((p) => $("picture").append(new Option(p.name, p.id)));
     $("picture").addEventListener("change", () => {
@@ -674,12 +868,15 @@
       changed();
     });
   }
+  buildViewPanel();
   load();
   loadRows();
   writeRows();
   const asked = new URLSearchParams(location.hash.slice(1)).get("pic");
   showPicture(PICTURES.find((p) => p.id === asked) || PICTURES[0]);
   readHash();
+  syncViewPanel();
+  refreshView();
   syncInputs();
   schedule();
 })();

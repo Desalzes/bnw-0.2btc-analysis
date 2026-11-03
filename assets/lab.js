@@ -1,4 +1,4 @@
-// The picture lab: the views of lab-ops.js on a pan-and-zoom canvas. The original pixels are never changed.
+// The picture lab: the views of lab-views.js on a pan-and-zoom canvas. The original pixels are never changed.
 (function () {
   "use strict";
   const $ = (id) => document.getElementById(id);
@@ -9,33 +9,7 @@
     { name: "The Great Seal ring (centre 646.2, 946.9)", cx: 646.2, cy: 946.9, r0: 150, r1: 205 },
     { name: "The whole Great Seal", cx: 646.2, cy: 946.9, r0: 0, r1: 205 },
   ];
-  const SLIDERS = {
-    radius: { name: "Blur radius", min: 1, max: 40, step: 1, unit: "px" },
-    low: { name: "Black point", min: 0, max: 254, step: 1, unit: "" },
-    high: { name: "White point", min: 1, max: 255, step: 1, unit: "" },
-    dark: { name: "Treat as art below", min: 100, max: 240, step: 1, unit: "" },
-    paperSigma: { name: "Blur radius", min: 5, max: 60, step: 1, unit: "px" },
-    gain: { name: "Gain", min: 2, max: 30, step: 1, unit: "x" },
-    bit: { name: "Bit", min: 0, max: 7, step: 1, unit: "" },
-    faintLo: { name: "Black at", min: -40, max: 0, step: 1, unit: "" },
-    faintHi: { name: "White at", min: -4, max: 10, step: 0.5, unit: "" },
-  };
-  const VIEWS = [
-    { id: "original", name: "Original", note: "The file as published, 1600 by 1200." },
-    { id: "negative", name: "Negative", note: "Every colour inverted." },
-    { id: "grey", name: "Greyscale", scalar: 1, note: "Brightness only, with the colour taken out." },
-    { id: "red", name: "Red channel", scalar: 1, note: "The red values alone." },
-    { id: "green", name: "Green channel", scalar: 1, note: "The green values alone." },
-    { id: "blue", name: "Blue channel", scalar: 1, note: "The blue values alone." },
-    { id: "saturation", name: "Saturation", scalar: 1, note: "How far each pixel is from grey. Coloured marks stand out from black ink and paper." },
-    { id: "redblue", name: "Red minus blue", scalar: 1, note: "Separates warm paint from cool paint." },
-    { id: "greenopp", name: "Green against red and blue", scalar: 1, note: "Green less the mean of red and blue. Shows green tints the eye skips." },
-    { id: "highpass", name: "High-pass", scalar: 1, controls: ["radius"], note: "Brightness less a blurred copy. Keeps fine detail and drops large shapes." },
-    { id: "levels", name: "Levels", controls: ["low", "high"], note: "Maps one brightness range to full black and white. The default is the pale range, 205 to 248." },
-    { id: "paper", name: "Paper texture", controls: ["dark", "paperSigma", "gain"], note: "High-pass of the paper alone: dark art is filled in first, so faint shapes between the lines show." },
-    { id: "faint", name: "Faint wash recovery", controls: ["faintLo", "faintHi"], note: "Estimates the paper level from the pixels between the ink, then removes the smooth background. Marks a few grey levels below the wash go dark. Slate means no paper was visible there. Takes a few seconds." },
-    { id: "bit", name: "Bit plane", controls: ["channel", "bit"], note: "One bit of one channel. Bit 0 is the lowest." },
-  ];
+  const { SLIDERS, VIEWS } = window.LabViews;
 
   const canvas = $("view"), ctx = canvas.getContext("2d");
   const output = document.createElement("canvas"), outCtx = output.getContext("2d", { willReadFrequently: true });
@@ -48,7 +22,7 @@
     channel: 0, bit: 0, faintLo: -16, faintHi: 2, flipH: false, flipV: false, rotate: 0, grid: 0, polar: false,
     pcx: CIRCLES[0].cx, pcy: CIRCLES[0].cy, pr0: CIRCLES[0].r0, pr1: CIRCLES[0].r1, x: W / 2, y: H / 2, zoom: 0,
   };
-  let rgba = null, field = null, fieldKey = "", invalid = null, lastRgba = null, peeking = false, drawn = 0, busy = false;
+  let rgba = null, views = null, lastRgba = null, peeking = false, drawn = 0, busy = false;
   let polarInfo = null, stretchTimer = 0;
 
   const current = () => VIEWS.find((v) => v.id === S.view);
@@ -61,49 +35,11 @@
 
   const nextFrame = () => new Promise((done) => requestAnimationFrame(() => setTimeout(done, 0)));
 
-  function fieldFor(view) {
-    const key = view === "highpass" ? "highpass:" + S.radius
-      : view === "paper" ? ["paper", S.dark, S.paperSigma, S.gain].join(":")
-      : view === "bit" ? ["bit", S.channel, S.bit].join(":") : view;
-    if (key === fieldKey) return field;
-    const grey = () => L.scalar(rgba, L.VIEWS.grey);
-    invalid = null;
-    if (view === "highpass") field = L.highPass(grey(), W, H, S.radius);
-    else if (view === "levels") field = grey();
-    else if (view === "paper") field = L.paperHighPass(grey(), W, H, S.dark, S.paperSigma, S.gain);
-    else if (view === "bit") field = L.bitPlane(rgba, S.channel, S.bit);
-    else if (view === "faint") {
-      const r = L.faintLayer(grey(), W, H);
-      field = r.residual;
-      invalid = r.invalid;
-    } else field = L.scalar(rgba, L.VIEWS[view]);
-    fieldKey = key;
-    return field;
-  }
-
   function visibleBox() {
     const corners = [[0, 0], [canvas.width, 0], [0, canvas.height], [canvas.width, canvas.height]].map(([a, b]) => toPicture(a, b));
     const x0 = Math.max(0, Math.floor(Math.min(...corners.map((c) => c[0])))), x1 = Math.min(W, Math.ceil(Math.max(...corners.map((c) => c[0]))));
     const y0 = Math.max(0, Math.floor(Math.min(...corners.map((c) => c[1])))), y1 = Math.min(H, Math.ceil(Math.max(...corners.map((c) => c[1]))));
     return x1 - x0 > 1 && y1 - y0 > 1 ? [x0, y0, x1, y1] : [0, 0, W, H];
-  }
-
-  function shade(values) {
-    const view = current();
-    if (S.view === "levels") return L.grey(values, S.low, Math.max(S.high, S.low + 1));
-    if (S.view === "paper" || S.view === "bit") return L.grey(values, 0, 255);
-    if (S.view === "faint") return L.grey(values, S.faintLo, Math.max(S.faintHi, S.faintLo + 0.5), invalid);
-    if (!view.scalar) return null;
-    if (S.stretch === "none") return L.grey(values, S.view === "highpass" ? -127.5 : 0, S.view === "highpass" ? 127.5 : 255);
-    const part = S.stretch === "screen" && !S.polar ? L.region(values, W, ...visibleBox()) : values;
-    const [lo, hi] = L.percentiles(part);
-    return L.grey(values, lo, hi);
-  }
-
-  function pixels() {
-    if (S.view === "original") return rgba;
-    if (S.view === "negative") return L.negative(rgba);
-    return shade(fieldFor(S.view));
   }
 
   function paint(data, w, h) {
@@ -113,13 +49,13 @@
 
   async function refresh() {
     if (!rgba || busy) return;
-    const slow = S.view === "faint" && !fieldKey.startsWith("faint");
+    const slow = views.slow(S);
     if (slow) {
       busy = true;
       $("busy").hidden = false;
       await nextFrame();
     }
-    const data = pixels();
+    const data = views.pixels(S, S.stretch === "screen" && !S.polar ? visibleBox() : null);
     busy = false;
     $("busy").hidden = true;
     lastRgba = data;
@@ -253,7 +189,8 @@
     if (ix < 0 || iy < 0 || ix >= W || iy >= H) { $("readout").textContent = ""; return; }
     const j = (iy * W + ix) * 4;
     let text = "x " + ix + "  y " + iy + "  rgb " + rgba[j] + " " + rgba[j + 1] + " " + rgba[j + 2];
-    if (field && fieldKey.split(":")[0] === S.view) text += "  value " + field[iy * W + ix].toFixed(1);
+    const value = views.valueAt(S, iy * W + ix);
+    if (value !== null) text += "  value " + value.toFixed(1);
     $("readout").textContent = text;
   }
 
@@ -481,6 +418,7 @@
   img.onload = () => {
     baseCtx.drawImage(img, 0, 0);
     rgba = baseCtx.getImageData(0, 0, W, H).data;
+    views = window.LabViews.renderer(rgba, W, H);
     $("readout").textContent = "Move over the picture to read x, y and colour.";
     refresh();
   };
