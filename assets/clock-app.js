@@ -11,7 +11,9 @@
                       note: "Each word in the picture has a bold label over it. Yellow: the candidate words (ORDER, STABILITY, TOWER, " +
                             "MOON, FOOD, REAL, THIS, ONE, SUBJECT, EYE, PYRAMID, VOTE, and in the right-border runes BLACK and TEN). " +
                             "Red: what each rune group says (right border bottom to top, the top-left rows, the clock strip, the line " +
-                            "above Trump), with the Russian beside the right border. Navy: weaker candidates. The labels are a layer " +
+                            "above Trump), with the Russian beside the right border. Navy: weaker candidates. Black: the rest of the " +
+                            "picture's text, rewritten in bold over where it is (the whitepaper micro-text inside the title letters " +
+                            "is left as drawn). The labels are a layer " +
                             "over the picture, so a picture view changes the paint under them and not the labels." }]
     .concat(D.pictures || []);
   let current = PICTURES[0];
