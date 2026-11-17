@@ -1,0 +1,103 @@
+/* Styles for config.html (CPU config builder). Uses color tokens from site.css. */
+.cfg-wrap { max-width: 1240px; margin: 0 auto; padding: 22px 16px 56px; }
+.cfg-intro h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+.cfg-intro .lede { margin: 0 0 6px; }
+
+.cfg-grid { display: grid; grid-template-columns: 320px 1fr; gap: 16px; align-items: start; margin-top: 18px; }
+.cfg-side { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 14px; }
+.cfg-main { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+
+.box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+.box h2 { font-size: 16px; margin: 0 0 8px; }
+.box-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.box-head h2 { margin: 0; }
+.box-tools { display: flex; align-items: center; gap: 10px; }
+
+.link-btn { background: none; border: 0; padding: 0; font: inherit; font-size: 13px; color: var(--accent); cursor: pointer; }
+.link-btn:hover { text-decoration: underline; }
+.danger-btn { color: var(--crit); }
+
+.row-inline { display: flex; gap: 6px; align-items: center; }
+.row-inline input { flex: 1; min-width: 0; }
+.row-inline .more { margin-top: 0; white-space: nowrap; }
+.row-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+.row-actions .more { margin-top: 0; }
+
+.special-row { margin: 8px 0 4px; }
+.word-list { max-height: 180px; overflow-y: auto; margin-top: 8px; }
+
+.chip { display: inline-flex; align-items: center; gap: 5px; font: inherit; font-size: 13px; color: var(--ink);
+        background: var(--chip); border: 1px solid var(--line); border-radius: 14px; padding: 2px 9px; cursor: grab;
+        user-select: none; }
+.chip:hover { border-color: var(--accent); }
+.chip-special { border-style: dashed; font-weight: 600; }
+.chip-nonbip { border-style: dashed; border-color: var(--crit); }
+.chip-group { background: var(--bg); font-weight: 600; }
+.chip-x { background: none; border: 0; color: var(--muted); font: inherit; font-weight: 700; cursor: pointer;
+          padding: 0 2px; line-height: 1; }
+.chip-x:hover { color: var(--crit); }
+
+.chip-zone { display: flex; flex-wrap: wrap; gap: 6px; min-height: 44px; padding: 8px; border: 1px dashed var(--line);
+             border-radius: 6px; background: var(--bg); align-items: flex-start; align-content: flex-start; }
+.chip-zone.empty { color: var(--muted); font-size: 13px; align-items: center; }
+
+.drop-card { border: 1px solid transparent; border-radius: 6px; padding: 4px; cursor: pointer; }
+.drop-card.active-target { border-color: var(--accent); background: var(--panel); }
+.drop-card.drag-over, .slot-card.drag-over, .chip-zone.drag-over { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.settings-row { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: flex-end; }
+.inline-field { display: flex; flex-direction: column; gap: 4px; min-width: 150px; }
+.inline-field span { font-size: 13px; font-weight: 600; color: var(--ink2); }
+.inline-field.note-field { flex: 1; min-width: 220px; }
+select, input[type=number] { font: inherit; color: var(--ink); background: var(--panel); border: 1px solid var(--line);
+                             border-radius: 6px; padding: 7px 10px; }
+.check-field { display: flex; align-items: center; gap: 6px; font-size: 14px; padding: 6px 0; cursor: pointer; }
+
+.paste-bar { margin: 8px 0; }
+.slots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin-top: 10px; }
+.slot-card { display: flex; flex-direction: column; gap: 6px; padding: 8px; border: 1px solid var(--line); border-radius: 6px;
+             background: var(--bg); min-height: 68px; cursor: pointer; }
+.slot-card.active-target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.slot-head { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--muted); }
+.slot-num { font-weight: 700; color: var(--ink2); }
+.slot-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.slot-open { font-size: 12px; color: var(--muted); font-style: italic; }
+
+.split-two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.path-checks { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 8px; }
+.path-checks label { display: inline-flex; align-items: center; gap: 5px; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 8px; margin: 12px 0 8px; }
+.stat-cell { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
+.stat-label { font-size: 12px; color: var(--muted); }
+.stat-val { font-size: 16px; font-weight: 700; margin-top: 2px; }
+.stat-cell.stat-good .stat-val { color: var(--good); }
+.stat-cell.stat-warn .stat-val { color: var(--crit); }
+
+.conf-preview { margin-top: 10px; font-size: 13px; line-height: 1.45; background: var(--bg); }
+.import-box { margin: 8px 0 12px; padding: 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+
+.cmd-box { margin-top: 12px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+.cmd-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 13px; }
+.cmd-box code { display: block; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; word-break: break-all; }
+
+.groups-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.group-row { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 6px 8px;
+             border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+.group-actions { display: flex; gap: 8px; align-items: center; }
+.group-form { display: flex; gap: 6px; align-items: center; margin-bottom: 8px; }
+.group-form input { flex: 1; min-width: 0; }
+.group-form .more { margin-top: 0; }
+
+.queue-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+.queue-table th { text-align: left; color: var(--ink2); font-weight: 600; border-bottom: 1px solid var(--line); padding: 6px 8px 6px 0; }
+.queue-table td { border-bottom: 1px solid var(--line); padding: 6px 8px 6px 0; vertical-align: middle; }
+.queue-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+html[dir="rtl"] .queue-table th { text-align: right; }
+
+@media (max-width: 960px) {
+  .cfg-grid { grid-template-columns: 1fr; }
+  .cfg-side { position: static; }
+  .split-two { grid-template-columns: 1fr; }
+}

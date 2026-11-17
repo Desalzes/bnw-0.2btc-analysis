@@ -1,0 +1,28 @@
+/* Persian pages read right to left. The two full-window tools keep their panel on the right and their picture on the left, so
+   a picture does not jump when the language changes; only the text in the panel flows the other way. */
+.top .lang { margin-inline-start: auto; font: inherit; font-size: 14px; color: var(--ink); background: var(--chip);
+             border: 1px solid var(--line); border-radius: 6px; padding: 2px 12px; cursor: pointer; }
+.top .lang:hover { border-color: var(--muted); }
+
+html[dir="rtl"] body { font-family: Vazirmatn, Tahoma, system-ui, -apple-system, "Segoe UI", sans-serif; }
+html[dir="rtl"] .facts { padding-left: 0; padding-right: 20px; }
+html[dir="rtl"] .doc th, html[dir="rtl"] th { text-align: right; }
+html[dir="rtl"] td, html[dir="rtl"] .slot { unicode-bidi: plaintext; }      /* each cell reads in the direction of its own first letter */
+html[dir="rtl"] .doc td.mono { direction: ltr; text-align: left; unicode-bidi: isolate; }
+html[dir="rtl"] .address { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+html[dir="rtl"] .warn { border-left: 0; border-right: 3px solid var(--crit); }
+html[dir="rtl"] h2 { letter-spacing: 0; }
+
+html[dir="rtl"] body.tool .wrap { direction: ltr; }
+html[dir="rtl"] body.tool aside { direction: rtl; }
+html[dir="rtl"] body.tool #hint, html[dir="rtl"] body.tool #rotBar { direction: rtl; }
+html[dir="rtl"] body.tool #readout { direction: rtl; unicode-bidi: plaintext; text-align: start; }
+html[dir="rtl"] body.tool .items { margin: 4px 22px 0 0; }
+html[dir="rtl"] body.tool .items li .slot { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] body.tool tr.crowded td:first-child { box-shadow: inset -3px 0 0 var(--crit); }
+html[dir="rtl"] body.tool tr.alone td:first-child { box-shadow: inset -3px 0 0 var(--good); }
+html[dir="rtl"] body.tool input[type=number], html[dir="rtl"] body.tool input[type=range] { direction: ltr; }
+html[dir="rtl"] body.tool .inline-num { text-align: center; }
+@media (max-width: 900px) {
+  html[dir="rtl"] body.tool .wrap { direction: rtl; }
+}

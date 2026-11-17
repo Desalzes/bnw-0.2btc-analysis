@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title data-i18n="config.title">CPU Config Builder</title>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/config.css">
+<link rel="stylesheet" href="assets/rtl.css">
+<script src="assets/i18n-fa.js"></script>
+<script src="assets/i18n.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html" data-i18n="nav.brand">0.2 BTC puzzle tools</a>
+  <nav>
+    <a href="picture.html" data-i18n="nav.picture">Picture lab</a>
+    <a href="clock.html" data-i18n="nav.clock">Clock overlay</a>
+    <a href="tried.html" data-i18n="nav.tried">Was it tried?</a>
+    <a href="phrase.html" data-i18n="nav.phrase">Try a phrase</a>
+    <a href="config.html" aria-current="page" data-i18n="nav.config">Config builder</a>
+    <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">GitHub</a>
+  </nav>
+</header>
+
+<main class="cfg-wrap">
+  <div class="cfg-intro">
+    <h1 data-i18n="config.h1">CPU config builder</h1>
+    <p class="lede" data-i18n="config.lede">Build search configs from BIP39 words and your own words, estimate run time on your CPU, and download ready-to-run files for <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">the public solver</a>.</p>
+    <p class="note" data-i18n="config.local">Runs entirely in this browser tab. Downloaded configs search only the 0.2 BTC prize address (<span class="address">1KfZGvwZxsvSmemoCmEV75uqcNzYBHjkHZ</span>) on your own computer.</p>
+  </div>
+
+  <div class="cfg-grid">
+    <aside class="cfg-side" aria-label="Words and groups" data-i18n-attr="aria-label:config.sideAria">
+      <section class="box">
+        <h2 data-i18n="config.find.h">BIP39 words</h2>
+        <input id="wordSearch" type="search" dir="ltr" spellcheck="false" autocomplete="off" autocapitalize="off"
+               placeholder="Search 2,048 BIP39 words..." data-i18n-attr="placeholder:config.find.ph">
+        <div class="special-row">
+          <button type="button" class="chip chip-special" id="anyWordChip" draggable="true" data-i18n="config.anyWord">@WORDLIST (all 2,048)</button>
+        </div>
+        <ul id="searchResults" class="pills word-list"></ul>
+      </section>
+
+      <section class="box">
+        <h2 data-i18n="config.custom.h">Your own words</h2>
+        <div class="row-inline">
+          <input id="customWordInput" type="text" dir="auto" spellcheck="false" autocomplete="off" autocapitalize="off"
+                 placeholder="Type words (space or comma)" data-i18n-attr="placeholder:config.custom.ph">
+          <button type="button" class="more" id="addCustomBtn" data-i18n="config.custom.add">Add</button>
+        </div>
+        <p class="note" data-i18n="config.custom.note">Non-BIP39 words need Electrum (free words) or BIP39 raw.</p>
+      </section>
+
+      <section class="box">
+        <div class="box-head">
+          <h2 data-i18n="config.tray.h">Word tray</h2>
+          <button type="button" class="link-btn" id="clearTrayBtn" data-i18n="config.clear">Clear</button>
+        </div>
+        <p class="note" id="targetHint"></p>
+        <div id="tray" class="chip-zone"></div>
+        <div class="row-actions">
+          <button type="button" class="more" id="trayToPoolBtn" data-i18n="config.tray.toPool">Add tray to pool</button>
+          <button type="button" class="more" id="trayToReqBtn" data-i18n="config.tray.toReq">Add tray to required</button>
+        </div>
+      </section>
+
+      <section class="box">
+        <div class="box-head">
+          <h2 data-i18n="config.groups.h">Saved word groups</h2>
+          <button type="button" class="link-btn" id="saveGroupBtn" data-i18n="config.groups.save">+ Save tray as group</button>
+        </div>
+        <div id="groupForm" class="group-form" hidden>
+          <input id="groupNameInput" type="text" dir="auto" spellcheck="false" autocomplete="off"
+                 placeholder="Group name" data-i18n-attr="placeholder:config.groups.namePh">
+          <button type="button" class="more" id="confirmGroupBtn" data-i18n="config.groups.confirm">Save</button>
+          <button type="button" class="link-btn" id="cancelGroupBtn" data-i18n="config.cancel">Cancel</button>
+        </div>
+        <div id="groupsList" class="groups-list"></div>
+      </section>
+    </aside>
+
+    <div class="cfg-main">
+      <section class="box">
+        <h2 data-i18n="config.settings.h">1. Seed format</h2>
+        <div class="settings-row">
+          <label class="inline-field">
+            <span data-i18n="config.scheme">Scheme</span>
+            <select id="schemeSelect">
+              <option value="bip39" data-i18n="config.scheme.bip39">BIP39 (standard)</option>
+              <option value="electrum" data-i18n="config.scheme.electrum">Electrum (v2 standard)</option>
+              <option value="bip39raw" data-i18n="config.scheme.raw">BIP39 raw (no checksum)</option>
+            </select>
+          </label>
+          <label class="inline-field">
+            <span data-i18n="config.wordsCount">Words</span>
+            <select id="wordsSelect"></select>
+          </label>
+          <label class="check-field">
+            <input type="checkbox" id="distinctCheck">
+            <span data-i18n="config.distinct">No repeated words (DISTINCT)</span>
+          </label>
+          <label class="check-field" id="freewordsWrap" hidden>
+            <input type="checkbox" id="freewordsCheck">
+            <span data-i18n="config.freewords">Allow non-BIP39 words (FREEWORDS)</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="box">
+        <div class="box-head">
+          <h2 data-i18n="config.slots.h">2. Fixed slots (FIX)</h2>
+          <div class="box-tools">
+            <button type="button" class="link-btn" id="togglePasteBtn" data-i18n="config.paste.btn">Paste phrase</button>
+            <button type="button" class="link-btn" id="clearSlotsBtn" data-i18n="config.clear">Clear</button>
+          </div>
+        </div>
+        <div id="pasteBar" class="row-inline paste-bar" hidden>
+          <input id="pastePhraseInput" type="text" dir="ltr" spellcheck="false" autocomplete="off"
+                 placeholder="Paste words separated by spaces (use ? or _ to leave a slot open)" data-i18n-attr="placeholder:config.paste.ph">
+          <button type="button" class="more" id="applyPasteBtn" data-i18n="config.paste.apply">Fill slots</button>
+        </div>
+        <p class="note" data-i18n="config.slots.note">Click a slot to select it, or drag words onto it. Drop multiple words on one slot for alternatives (word1|word2). Leave empty for open slots.</p>
+        <div id="slotsGrid" class="slots-grid"></div>
+      </section>
+
+      <section class="box split-two">
+        <div class="drop-card" id="reqZone" data-target="require">
+          <div class="box-head">
+            <h2 data-i18n="config.req.h">3. Required anywhere (REQUIRE)</h2>
+            <button type="button" class="link-btn" id="clearReqBtn" data-i18n="config.clear">Clear</button>
+          </div>
+          <p class="note" data-i18n="config.req.note">Words that must appear once in any of the open slots.</p>
+          <div id="reqChips" class="chip-zone"></div>
+        </div>
+
+        <div class="drop-card" id="poolZone" data-target="pool">
+          <div class="box-head">
+            <h2 data-i18n="config.pool.h">4. Filler pool (POOL)</h2>
+            <button type="button" class="link-btn" id="clearPoolBtn" data-i18n="config.clear">Clear</button>
+          </div>
+          <p class="note" data-i18n="config.pool.note">Words used to fill any open slots not taken by required words.</p>
+          <div id="poolChips" class="chip-zone"></div>
+        </div>
+      </section>
+
+      <section class="box split-two">
+        <div>
+          <h2 data-i18n="config.pass.h">5. Extra passphrases (PASS)</h2>
+          <p class="note" data-i18n="config.pass.note">One per line. The empty passphrase is always tried automatically.</p>
+          <textarea id="passesInput" rows="4" dir="auto" spellcheck="false" autocomplete="off" autocapitalize="off"
+                    placeholder="Optional extra passphrases, one per line" data-i18n-attr="placeholder:config.pass.ph"></textarea>
+        </div>
+
+        <div>
+          <h2 data-i18n="config.paths.h">6. Derivation paths (PATH)</h2>
+          <div id="pathChecks" class="path-checks"></div>
+          <textarea id="customPathsInput" rows="2" dir="ltr" spellcheck="false" autocomplete="off"
+                    placeholder="Extra custom paths, one per line (e.g. m/44'/0'/0'/0/2)" data-i18n-attr="placeholder:config.paths.ph"></textarea>
+        </div>
+      </section>
+
+      <section class="box est-box">
+        <h2 data-i18n="config.cpu.h">7. CPU time estimate</h2>
+        <div class="settings-row">
+          <label class="inline-field">
+            <span data-i18n="config.cpu.preset">Your CPU</span>
+            <select id="cpuPresetSelect"></select>
+          </label>
+          <label class="inline-field" id="customRateWrap" hidden>
+            <span data-i18n="config.cpu.rate">Seeds per second</span>
+            <input id="customRateInput" type="number" min="1" step="100" value="5000">
+          </label>
+        </div>
+        <div id="estimateStats" class="stats-grid"></div>
+        <p class="note" data-i18n="config.cpu.note">Averages are rough multi-core estimates for setperm_solve.py (PBKDF2-HMAC-SHA512). Actual speed depends on core count, clock speed, and thermal throttling.</p>
+      </section>
+
+      <section class="box">
+        <div class="box-head">
+          <h2 data-i18n="config.out.h">8. Generated config &amp; CPU run command</h2>
+          <button type="button" class="link-btn" id="toggleImportBtn" data-i18n="config.import.btn">Load existing .conf</button>
+        </div>
+        <div id="importBox" class="import-box" hidden>
+          <textarea id="importInput" rows="5" dir="ltr" spellcheck="false" placeholder="Paste a .conf file here..." data-i18n-attr="placeholder:config.import.ph"></textarea>
+          <div class="row-actions">
+            <button type="button" class="more" id="applyImportBtn" data-i18n="config.import.apply">Load into editor</button>
+            <button type="button" class="link-btn" id="cancelImportBtn" data-i18n="config.cancel">Cancel</button>
+          </div>
+        </div>
+
+        <div class="settings-row">
+          <label class="inline-field">
+            <span data-i18n="config.name">Config filename</span>
+            <input id="cfgNameInput" type="text" dir="ltr" spellcheck="false" value="my_search">
+          </label>
+          <label class="inline-field note-field">
+            <span data-i18n="config.noteLabel">Comment note (optional)</span>
+            <input id="cfgNoteInput" type="text" dir="auto" spellcheck="false"
+                   placeholder="What this search tests" data-i18n-attr="placeholder:config.notePh">
+          </label>
+        </div>
+
+        <div id="validationBox" aria-live="polite"></div>
+
+        <textarea id="confPreview" class="conf-preview" rows="10" dir="ltr" readonly></textarea>
+
+        <div class="row-actions">
+          <button type="button" class="go" id="downloadConfBtn" data-i18n="config.download">Download .conf</button>
+          <button type="button" class="more" id="copyConfBtn" data-i18n="config.copy">Copy .conf</button>
+          <button type="button" class="more" id="addToQueueBtn" data-i18n="config.addQueue">Add to queue</button>
+          <span id="actionStatus" class="note" aria-live="polite"></span>
+        </div>
+
+        <div class="cmd-box">
+          <div class="cmd-head">
+            <strong data-i18n="config.run.h">Run locally on CPU (from <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">bnw-0.2btc-analysis</a>):</strong>
+            <button type="button" class="link-btn" id="copyCmdBtn" data-i18n="config.copyCmd">Copy command</button>
+          </div>
+          <code id="runCmd" dir="ltr"></code>
+        </div>
+      </section>
+
+      <section class="box">
+        <div class="box-head">
+          <h2 data-i18n="config.queue.h">9. Saved CPU queue</h2>
+          <div class="box-tools">
+            <button type="button" class="go" id="downloadZipBtn" data-i18n="config.queue.zip">Download queue (.zip)</button>
+            <button type="button" class="link-btn" id="clearQueueBtn" data-i18n="config.clear">Clear</button>
+          </div>
+        </div>
+        <p class="note" data-i18n="config.queue.note">Build multiple configs, then download a single .zip containing every .conf file and a Python run_queue.py script that runs them one after another with checkpoints.</p>
+        <div id="queueBox"></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="data/bip39-english.js"></script>
+<script src="assets/config-core.js"></script>
+<script src="assets/config.js"></script>
+</body>
+</html>

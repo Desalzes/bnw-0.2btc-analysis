@@ -25,6 +25,7 @@ button.primary { background: var(--accent); color: var(--accent-ink); border-col
 .check span { display: block; margin-bottom: 3px; }
 .slider { display: block; margin-top: 10px; color: var(--ink2); }
 .slider span { display: block; }
+.slider span span { display: inline; }
 .slider input { width: 100%; accent-color: var(--accent); }
 .note { margin: 6px 0 0; font-size: 12px; }
 @media (max-width: 900px) {

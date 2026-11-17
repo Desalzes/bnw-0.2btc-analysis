@@ -29,7 +29,9 @@
   const size = () => (S.polar && polarInfo ? [polarInfo.width, polarInfo.height] : [W, H]);
   const dpr = () => window.devicePixelRatio || 1;
 
-  function setStatus(text) { $("status").textContent = text; }
+  let statusKey = "", readoutKey = "";                // the last fixed messages, written again when the language changes
+  function setStatus(key) { statusKey = key; $("status").textContent = key ? T(key) : ""; }
+  function setReadout(key) { readoutKey = key; $("readout").textContent = T(key); }
 
   // ---- the view, worked out from the original pixels
 
@@ -181,6 +183,7 @@
   function read(e) {
     const [px, py] = stagePoint(e);
     const [x, y] = toPicture(px, py);
+    readoutKey = "";
     if (S.polar) {
       $("readout").textContent = "bearing " + (x / 4).toFixed(1) + "°  radius " + (S.pr0 + y / 4).toFixed(1) + " px";
       return;
@@ -249,15 +252,15 @@
       if (name === "channel") {
         const label = document.createElement("label"), span = document.createElement("span"), sel = document.createElement("select");
         label.className = "slider";
-        span.textContent = "Channel";
-        ["Red", "Green", "Blue", "Alpha"].forEach((t, i) => sel.add(new Option(t, String(i), false, i === S.channel)));
+        span.textContent = T("Channel");
+        ["Red", "Green", "Blue", "Alpha"].forEach((t, i) => sel.add(new Option(T(t), String(i), false, i === S.channel)));
         sel.addEventListener("change", () => { S.channel = Number(sel.value); refresh(); });
         label.append(span, sel);
         box.append(label);
         continue;
       }
       const c = SLIDERS[name], label = document.createElement("label"), span = document.createElement("span");
-      const input = document.createElement("input"), show = () => { span.textContent = c.name + ": " + S[name] + (c.unit ? " " + c.unit : ""); };
+      const input = document.createElement("input"), show = () => { span.textContent = T(c.name) + ": " + S[name] + (c.unit ? " " + c.unit : ""); };
       label.className = "slider";
       Object.assign(input, { type: "range", min: c.min, max: c.max, step: c.step, value: S[name] });
       input.addEventListener("input", () => { S[name] = Number(input.value); show(); refresh(); });
@@ -266,7 +269,7 @@
       box.append(label);
     }
     $("stretchRow").hidden = !current().scalar;
-    $("viewNote").textContent = current().note;
+    $("viewNote").textContent = T(current().note);
   }
 
   function setView(id) {
@@ -276,7 +279,15 @@
     refresh();
   }
 
-  VIEWS.forEach((v) => $("viewSel").add(new Option(v.name, v.id)));
+  function fillLists() {                              // the three drop-down lists whose words come from this script and the data
+    const circle = $("polarPreset").value || "0";
+    $("viewSel").replaceChildren(...VIEWS.map((v) => new Option(T(v.name), v.id)));
+    $("viewSel").value = S.view;
+    $("jump").replaceChildren(new Option(T("Choose a part of the picture"), ""), ...window.LAB_REGIONS.map((r, i) => new Option(T(r.name), String(i))));
+    $("polarPreset").replaceChildren(...CIRCLES.map((c, i) => new Option(T(c.name), String(i))));
+    $("polarPreset").value = circle;
+  }
+  fillLists();
   $("viewSel").addEventListener("change", () => setView($("viewSel").value));
   $("stretch").addEventListener("change", () => { S.stretch = $("stretch").value; refresh(); });
   $("grid").addEventListener("change", () => { S.grid = Number($("grid").value); draw(); });
@@ -293,8 +304,6 @@
   }
   $("rotate").addEventListener("input", () => { setRotate(Number($("rotate").value)); viewMoved(); });
 
-  $("jump").add(new Option("Choose a part of the picture", ""));
-  window.LAB_REGIONS.forEach((r, i) => $("jump").add(new Option(r.name, String(i))));
   $("jump").addEventListener("change", () => {
     const r = window.LAB_REGIONS[Number($("jump").value)];
     if (!r) return;
@@ -310,7 +319,6 @@
   });
 
   const syncCircle = () => { ["pcx", "pcy", "pr0", "pr1"].forEach((k) => { $(k).value = S[k]; }); };
-  CIRCLES.forEach((c, i) => $("polarPreset").add(new Option(c.name, String(i))));
   $("polarPreset").addEventListener("change", () => {
     const c = CIRCLES[Number($("polarPreset").value)];
     Object.assign(S, { pcx: c.cx, pcy: c.cy, pr0: c.r0, pr1: c.r1 });
@@ -414,14 +422,21 @@
   readLink();
   buildControls();
   resize();
+  setReadout("Loading the picture...");
+  I18N.onChange(() => {
+    fillLists();
+    buildControls();
+    setStatus(statusKey);
+    if (readoutKey) setReadout(readoutKey);
+  });
   const img = new Image();
   img.onload = () => {
     baseCtx.drawImage(img, 0, 0);
     rgba = baseCtx.getImageData(0, 0, W, H).data;
     views = window.LabViews.renderer(rgba, W, H);
-    $("readout").textContent = "Move over the picture to read x, y and colour.";
+    setReadout("Move over the picture to read x, y and colour.");
     refresh();
   };
-  img.onerror = () => { $("readout").textContent = "The picture did not load."; };
+  img.onerror = () => setReadout("The picture did not load.");
   img.src = "img/puzzle.png";
 })();

@@ -4,42 +4,47 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
-<title>0.2 BTC Puzzle Tools</title>
+<title data-i18n="index.title">0.2 BTC Puzzle Tools</title>
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/rtl.css">
+<script src="assets/i18n-fa.js"></script>
+<script src="assets/i18n.js"></script>
 </head>
 <body>
 <header class="top">
-  <a class="brand" href="index.html">0.2 BTC puzzle tools</a>
+  <a class="brand" href="index.html" data-i18n="nav.brand">0.2 BTC puzzle tools</a>
   <nav>
-    <a href="picture.html">Picture lab</a>
-    <a href="clock.html">Clock overlay</a>
-    <a href="tried.html">Was it tried?</a>
-    <a href="phrase.html">Try a phrase</a>
+    <a href="picture.html" data-i18n="nav.picture">Picture lab</a>
+    <a href="clock.html" data-i18n="nav.clock">Clock overlay</a>
+    <a href="tried.html" data-i18n="nav.tried">Was it tried?</a>
+    <a href="phrase.html" data-i18n="nav.phrase">Try a phrase</a>
+    <a href="config.html" data-i18n="nav.config">Config builder</a>
     <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">GitHub</a>
   </nav>
 </header>
 <main class="doc">
-  <h1>Tools for the 0.2 BTC "Brave New World" puzzle</h1>
-  <p class="lede">Browser tools for working on the picture and checking ideas against the published record. They need no
+  <h1 data-i18n="index.h1">Tools for the 0.2 BTC "Brave New World" puzzle</h1>
+  <p class="lede" data-i18n="index.lede">Browser tools for working on the picture and checking ideas against the published record. They need no
     install and no account, and everything runs on your own machine.</p>
   <div class="cards">
-    <a class="card" href="picture.html"><h2>Picture lab</h2><p>Zoom in to the pixel, split the colour channels, stretch
+    <a class="card" href="picture.html"><h2 data-i18n="nav.picture">Picture lab</h2><p data-i18n="index.picture.p">Zoom in to the pixel, split the colour channels, stretch
       faint marks, pull up the pale wash, flip and turn the picture, and unwrap the seal and the clock into straight strips.</p></a>
-    <a class="card" href="clock.html"><h2>Clock overlay</h2><p>Lay the painted clock over the whole picture or the back
+    <a class="card" href="clock.html"><h2 data-i18n="nav.clock">Clock overlay</h2><p data-i18n="index.clock.p">Lay the painted clock over the whole picture or the back
       of a dollar bill, move and turn it by hand, and see which labelled items land in which slice. Show the painting with
       every word and rune group labelled, and look at it through the picture lab's views.</p></a>
-    <a class="card" href="tried.html"><h2>Was it tried?</h2><p>Search a word or a passphrase against the published
+    <a class="card" href="tried.html"><h2 data-i18n="nav.tried">Was it tried?</h2><p data-i18n="index.tried.p">Search a word or a passphrase against the published
       search configs and the run ledger.</p></a>
-    <a class="card" href="phrase.html"><h2>Try a phrase</h2><p>Type a phrase and compare its addresses with the prize
+    <a class="card" href="phrase.html"><h2 data-i18n="nav.phrase">Try a phrase</h2><p data-i18n="index.phrase.p">Type a phrase and compare its addresses with the prize
       address, here in the browser.</p></a>
+    <a class="card" href="config.html"><h2 data-i18n="nav.config">Config builder</h2><p data-i18n="index.config.p">Drag BIP39 or custom words into slots, estimate CPU time, and download configs for the local solver.</p></a>
   </div>
-  <h2>What these pages do</h2>
+  <h2 data-i18n="index.what.h">What these pages do</h2>
   <ul class="facts">
-    <li>Each page is a static file. Once it has loaded, nothing you type or do leaves your browser.</li>
-    <li>The pages only read and compare. None of them can build, sign or send a transaction.</li>
-    <li>The lookup covers the published record, which ends on 2 October 2026. Later searches are not in it.</li>
+    <li data-i18n="index.what.1">Each page is a static file. Once it has loaded, nothing you type or do leaves your browser.</li>
+    <li data-i18n="index.what.2">The pages only read and compare. None of them can build, sign or send a transaction.</li>
+    <li data-i18n="index.what.3">The lookup covers the published record, which ends on 2 October 2026. Later searches are not in it.</li>
   </ul>
-  <p>The full write-up, the search engine and the run ledger are in
+  <p data-i18n="index.repo">The full write-up, the search engine and the run ledger are in
     <a href="https://github.com/Desalzes/bnw-0.2btc-analysis">the GitHub repository</a>.</p>
 </main>
 </body>

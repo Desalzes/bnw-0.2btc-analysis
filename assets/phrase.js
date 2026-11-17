@@ -3,6 +3,7 @@
   "use strict";
   const $ = (id) => document.getElementById(id);
   const wordlist = window.BIP39_ENGLISH.split(" ");
+  let redraw = null;                                          // writes the last answer again, in the language now chosen
   $("paths").value = BTC.DEFAULT_PATHS.join("\n");
 
   function el(tag, cls, text) {
@@ -15,34 +16,35 @@
   function facts(r) {
     const out = [];
     if (r.scheme === "electrum") {
-      out.push(r.electrumStandard ? "This is a valid standard Electrum seed." :
-        "This is not a standard Electrum seed, the only kind the published searches cover. Its addresses are shown anyway.");
+      out.push(r.electrumStandard ? T("This is a valid standard Electrum seed.") :
+        T("This is not a standard Electrum seed, the only kind the published searches cover. Its addresses are shown anyway."));
     } else if (r.checksum === true) {
-      out.push("The BIP39 checksum is valid.");
+      out.push(T("The BIP39 checksum is valid."));
     } else if (r.checksum === false) {
-      out.push("The BIP39 checksum is not valid: a BIP39 wallet would refuse this phrase. Its addresses are shown anyway.");
+      out.push(T("The BIP39 checksum is not valid: a BIP39 wallet would refuse this phrase. Its addresses are shown anyway."));
     } else {
-      out.push("This is not a BIP39 phrase (it needs 12, 15, 18, 21 or 24 list words): a BIP39 wallet would refuse it. Its addresses are shown anyway.");
+      out.push(T("This is not a BIP39 phrase (it needs 12, 15, 18, 21 or 24 list words): a BIP39 wallet would refuse it. Its addresses are shown anyway."));
     }
-    if (r.unknown.length) out.push("Not on the BIP39 word list: " + r.unknown.join(", ") + ".");
+    if (r.unknown.length) out.push(T("Not on the BIP39 word list: {words}.", { words: r.unknown.join(", ") }));
     return out;
   }
 
   function show(r) {
+    redraw = () => show(r);
     const box = $("out");
     box.replaceChildren();
     box.append(r.match
-      ? el("p", "banner hit", "MATCH: this phrase reaches the prize address.")
-      : el("p", "banner", "No match. " + r.rows.length + " addresses checked."));
+      ? el("p", "banner hit", T("MATCH: this phrase reaches the prize address."))
+      : el("p", "banner", T("No match. {n} addresses checked.", { n: r.rows.length })));
     const list = el("ul", "facts");
     facts(r).forEach((f) => list.append(el("li", "", f)));
     box.append(list);
     const table = el("table"), head = el("tr");
-    ["Path", "Key form", "Address"].forEach((h) => head.append(el("th", "", h)));
+    ["Path", "Key form", "Address"].forEach((h) => head.append(el("th", "", T(h))));
     table.append(head);
     for (const row of r.rows) {
       const tr = el("tr", row.match ? "hit" : "");
-      tr.append(el("td", "mono", row.path), el("td", "", row.compressed ? "compressed" : "uncompressed"), el("td", "mono", row.address));
+      tr.append(el("td", "mono", row.path), el("td", "", row.compressed ? T("compressed") : T("uncompressed")), el("td", "mono", row.address));
       table.append(tr);
     }
     const scroll = el("div", "scroll");
@@ -50,8 +52,9 @@
     box.append(scroll);
   }
 
-  function fail(message) {
-    $("out").replaceChildren(el("p", "banner error", message));
+  function fail(key, vars) {
+    redraw = () => fail(key, vars);
+    $("out").replaceChildren(el("p", "banner error", T(key, vars)));
   }
 
   async function run() {
@@ -61,12 +64,12 @@
     if (!text.trim()) return fail("Enter a phrase first.");
     if (!paths.length) return fail("Enter at least one path.");
     const bad = paths.find((p) => !BTC.PATH_RE.test(p));
-    if (bad) return fail("This is not a path: " + bad + ". A path looks like m/44'/0'/0'/0/0.");
+    if (bad) return fail("This is not a path: {path}. A path looks like m/44'/0'/0'/0/0.", { path: bad });
     $("go").disabled = true;
     try {
       show(await BTC.check({ text, pass, scheme, paths, wordlist }));
     } catch (e) {
-      fail("That could not be checked: " + e.message);
+      fail("That could not be checked: {reason}", { reason: T(e.message) });
     } finally {
       $("go").disabled = false;
     }
@@ -76,4 +79,5 @@
   $("phrase").addEventListener("keydown", (e) => {
     if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); run(); }
   });
+  I18N.onChange(() => { if (redraw) redraw(); });
 })();
