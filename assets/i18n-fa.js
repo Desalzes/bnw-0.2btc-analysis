@@ -399,6 +399,8 @@ window.I18N_FA = {
 "config.queue.h": "9. صف CPU ذخیره‌شده",
 "config.queue.zip": "دانلود صف (.zip)",
 "config.queue.note": "چند پیکربندی بسازید، سپس یک فایل .zip حاوی همهٔ فایل‌های .conf و اسکریپت پایتون run_queue.py برای اجرای پشت‌سرهم با نقطهٔ ذخیره دانلود کنید.",
+"config.check.run": "بررسی در مرورگر",
+"config.check.stop": "توقف",
 
 "Remove": "حذف",
 "@WORDLIST belongs in the filler pool.": "@WORDLIST به مخزن پرکننده تعلق دارد.",
@@ -475,5 +477,17 @@ window.I18N_FA = {
 "{n} min": "{n} دقیقه",
 "{n} h": "{n} ساعت",
 "{n} days": "{n} روز",
-"{n} years": "{n} سال"
+"{n} years": "{n} سال",
+"Save as config, too much compute for the browser.": "به‌عنوان پیکربندی ذخیره کنید، محاسبه برای مرورگر بیش از حد سنگین است.",
+"Save as config, too much compute for the browser (limit: {maxDeriv} derivations or {maxRaw} raw phrases).": "به‌عنوان پیکربندی ذخیره کنید، محاسبه برای مرورگر بیش از حد سنگین است (سقف: {maxDeriv} اشتقاق یا {maxRaw} عبارت خام).",
+"MATCH: {phrase} (passphrase: {pass}, path: {path})": "تطابق: {phrase} (عبارت عبور: {pass}، مسیر: {path})",
+"Stopped. Checked {d} derivations ({v} valid phrases).": "متوقف شد. {d} اشتقاق بررسی شد ({v} عبارت معتبر).",
+"No match. Checked {d} derivations ({v} valid phrases).": "تطابقی نیست. {d} اشتقاق بررسی شد ({v} عبارت معتبر).",
+"Phrase": "عبارت",
+"Passphrase": "عبارت عبور",
+"First address": "نخستین آدرس",
+"Filtering valid candidates...": "در حال غربال کردن نامزدهای معتبر...",
+"Checking raw phrases: {n}...": "بررسی عبارت‌های خام: {n}...",
+"Checked {done} / {total} derivations...": "{done} از {total} اشتقاق بررسی شد...",
+"Check failed: {reason}": "بررسی انجام نشد: {reason}"
 };

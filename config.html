@@ -176,6 +176,12 @@
         </div>
         <div id="estimateStats" class="stats-grid"></div>
         <p class="note" data-i18n="config.cpu.note">Averages are rough multi-core estimates for setperm_solve.py (PBKDF2-HMAC-SHA512). Actual speed depends on core count, clock speed, and thermal throttling.</p>
+        <div class="row-actions">
+          <button type="button" class="go" id="runBrowserBtn" data-i18n="config.check.run">Check in browser</button>
+          <button type="button" class="more" id="stopBrowserBtn" hidden data-i18n="config.check.stop">Stop</button>
+          <span id="browserCheckProgress" class="note" aria-live="polite"></span>
+        </div>
+        <div id="browserCheckOut" aria-live="polite"></div>
       </section>
 
       <section class="box">
@@ -239,6 +245,8 @@
 </main>
 
 <script src="data/bip39-english.js"></script>
+<script src="data/combining.js"></script>
+<script src="assets/btc.js"></script>
 <script src="assets/config-core.js"></script>
 <script src="assets/config.js"></script>
 </body>

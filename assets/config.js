@@ -59,6 +59,8 @@
   let customRate = savedCpu && Number(savedCpu.customRate) > 0 ? Number(savedCpu.customRate) : 5000;
   let activeTarget = { kind: "slot", slot: 1 };
   let dragPayload = null;
+  let browserRunCancel = false;
+  let browserRunning = false;
 
   function currentCpuRate() {
     if (cpuPreset === "custom") return customRate > 0 ? customRate : 5000;
@@ -742,6 +744,153 @@
     const zipBytes = C.buildZip(entries);
     downloadBlob("bnw-cpu-queue.zip", zipBytes, "application/zip");
     setStatus("Downloaded bnw-cpu-queue.zip ({n} configs).", { n: filenames.length });
+  });
+
+  function renderBrowserResult(result) {
+    const out = $("browserCheckOut");
+    out.replaceChildren();
+    if (!result) return;
+    if (result.error) {
+      out.append(el("p", "banner error", result.error));
+      return;
+    }
+    if (result.match) {
+      out.append(el("p", "banner hit", T("MATCH: {phrase} (passphrase: {pass}, path: {path})", {
+        phrase: result.match.phrase,
+        pass: result.match.pass || "(empty)",
+        path: result.match.path,
+      })));
+    } else if (result.stopped) {
+      out.append(el("p", "banner", T("Stopped. Checked {d} derivations ({v} valid phrases).", {
+        d: result.derivations, v: result.valid,
+      })));
+    } else {
+      out.append(el("p", "banner", T("No match. Checked {d} derivations ({v} valid phrases).", {
+        d: result.derivations, v: result.valid,
+      })));
+    }
+    if (result.rows && result.rows.length) {
+      const table = el("table", "queue-table");
+      const head = el("tr");
+      ["Phrase", "Passphrase", "First address"].forEach((h) => head.append(el("th", "", T(h))));
+      table.append(head);
+      for (const row of result.rows) {
+        const tr = el("tr", row.hit ? "hit" : "");
+        tr.append(
+          el("td", "mono", row.phrase),
+          el("td", "mono", row.pass || "(empty)"),
+          el("td", "mono", row.address)
+        );
+        table.append(tr);
+      }
+      const scroll = el("div", "scroll");
+      scroll.append(table);
+      out.append(scroll);
+    }
+  }
+
+  $("stopBrowserBtn").addEventListener("click", () => {
+    browserRunCancel = true;
+  });
+
+  $("runBrowserBtn").addEventListener("click", async () => {
+    if (browserRunning) return;
+    const { problems } = C.validate(state, knownSet);
+    if (problems.length) {
+      return renderBrowserResult({ error: T(problems[0].key, problems[0].vars) });
+    }
+    const stats = C.price(state, wordlist.length, currentCpuRate());
+    const gate = C.canRunInBrowser(stats);
+    if (!gate.ok) {
+      return renderBrowserResult({ error: T(gate.key, gate.vars) });
+    }
+
+    const s = C.normalizeState(state);
+    const passes = Array.from(new Set([""].concat(s.passes)));
+    browserRunning = true;
+    browserRunCancel = false;
+    $("runBrowserBtn").disabled = true;
+    $("stopBrowserBtn").hidden = false;
+    $("browserCheckOut").replaceChildren();
+    $("browserCheckProgress").textContent = T("Filtering valid candidates...");
+
+    let validCount = 0;
+    let derivCount = 0;
+    let match = null;
+    const previewRows = [];
+
+    try {
+      const validPhrases = [];
+      let rawSeen = 0;
+      for (const phrase of C.enumerateRawPhrases(s, wordlist, C.BROWSER_MAX_RAW)) {
+        if (browserRunCancel) break;
+        rawSeen++;
+        if (rawSeen % 250 === 0) {
+          $("browserCheckProgress").textContent = T("Checking raw phrases: {n}...", { n: rawSeen });
+          await new Promise((r) => setTimeout(r, 0));
+        }
+        let ok = true;
+        if (s.scheme === "bip39") ok = (await BTC.bip39Checksum(phrase, wordlist)) === true;
+        else if (s.scheme === "electrum") ok = await BTC.electrumStandard(phrase);
+        if (ok) {
+          validPhrases.push(phrase);
+          if (validPhrases.length * passes.length > C.BROWSER_MAX_DERIVATIONS) {
+            return renderBrowserResult({
+              error: T("Save as config, too much compute for the browser (limit: {maxDeriv} derivations or {maxRaw} raw phrases).", {
+                maxDeriv: C.BROWSER_MAX_DERIVATIONS.toLocaleString("en-US"),
+                maxRaw: C.BROWSER_MAX_RAW.toLocaleString("en-US"),
+              }),
+            });
+          }
+        }
+      }
+
+      validCount = validPhrases.length;
+      const totalDeriv = validCount * passes.length;
+      for (const phrase of validPhrases) {
+        if (browserRunCancel || match) break;
+        for (const pass of passes) {
+          if (browserRunCancel || match) break;
+          const res = await BTC.check({ text: phrase, pass, scheme: s.scheme, paths: s.paths, wordlist });
+          derivCount++;
+          const hitRow = res.rows.find((r) => r.match);
+          if (previewRows.length < 50 || hitRow) {
+            previewRows.push({
+              phrase,
+              pass,
+              address: (hitRow || res.rows[0]).address,
+              hit: Boolean(hitRow),
+            });
+          }
+          if (hitRow) {
+            match = { phrase, pass, path: hitRow.path };
+            break;
+          }
+          if (derivCount % 5 === 0 || derivCount === totalDeriv) {
+            $("browserCheckProgress").textContent = T("Checked {done} / {total} derivations...", { done: derivCount, total: totalDeriv });
+            await new Promise((r) => setTimeout(r, 0));
+          }
+        }
+      }
+
+      renderBrowserResult({ match, stopped: browserRunCancel && !match, derivations: derivCount, valid: validCount, rows: previewRows });
+    } catch (e) {
+      if (e && e.message === "BROWSER_LIMIT") {
+        renderBrowserResult({
+          error: T("Save as config, too much compute for the browser (limit: {maxDeriv} derivations or {maxRaw} raw phrases).", {
+            maxDeriv: C.BROWSER_MAX_DERIVATIONS.toLocaleString("en-US"),
+            maxRaw: C.BROWSER_MAX_RAW.toLocaleString("en-US"),
+          }),
+        });
+      } else {
+        renderBrowserResult({ error: T("Check failed: {reason}", { reason: e ? e.message : "unknown" }) });
+      }
+    } finally {
+      browserRunning = false;
+      $("runBrowserBtn").disabled = false;
+      $("stopBrowserBtn").hidden = true;
+      $("browserCheckProgress").textContent = "";
+    }
   });
 
   I18N.onChange(renderAll);

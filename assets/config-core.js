@@ -8,6 +8,8 @@
   const ELECTRUM_PATHS = ["m/0/0", "m/0/1", "m/0/2", "m/1/0"];
   const PATH_RE = /^m(\/\d{1,9}'?){1,8}$/;
   const TEXT_KEYS = new Set(["FIX", "REQUIRE", "POOL", "PASS", "PASSFILE"]);
+  const BROWSER_MAX_RAW = 50000;
+  const BROWSER_MAX_DERIVATIONS = 2000;
 
   const CPU_PRESETS = [
     { id: "laptop4", rate: 2500, label: "Laptop CPU (4-6 cores, ~2,500/s)" },
@@ -456,6 +458,98 @@
     ].join("\n");
   }
 
+  function canRunInBrowser(stats) {
+    if (!stats) return { ok: false, key: "Save as config, too much compute for the browser." };
+    if (stats.raw > BigInt(BROWSER_MAX_RAW) || stats.derivations > BROWSER_MAX_DERIVATIONS) {
+      return {
+        ok: false,
+        key: "Save as config, too much compute for the browser (limit: {maxDeriv} derivations or {maxRaw} raw phrases).",
+        vars: { maxDeriv: BROWSER_MAX_DERIVATIONS.toLocaleString("en-US"), maxRaw: BROWSER_MAX_RAW.toLocaleString("en-US") },
+      };
+    }
+    return { ok: true };
+  }
+
+  function* enumerateRawPhrases(cfg, wordlist, limit) {
+    const s = normalizeState(cfg);
+    const n = s.words;
+    const pool = s.poolAll ? wordlist : s.pool;
+    const openSlots = [];
+    for (let i = 1; i <= n; i++) {
+      if (!s.fix[i] || !s.fix[i].length) openSlots.push(i);
+    }
+    const fixedSlots = [];
+    for (let i = 1; i <= n; i++) {
+      if (s.fix[i] && s.fix[i].length) fixedSlots.push(i);
+    }
+    const req = s.require.slice();
+    const arr = new Array(n);
+    let yielded = 0;
+
+    function* fillPool(openIdx, usedSet) {
+      if (openIdx === openSlots.length) {
+        if (s.distinct) {
+          const checkSet = new Set(arr);
+          if (checkSet.size !== n) return;
+        }
+        yielded++;
+        if (limit && yielded > limit) throw new Error("BROWSER_LIMIT");
+        yield arr.join(" ");
+        return;
+      }
+      const slotPos = openSlots[openIdx] - 1;
+      if (arr[slotPos] !== undefined) {
+        yield* fillPool(openIdx + 1, usedSet);
+        return;
+      }
+      for (const w of pool) {
+        if (s.distinct && usedSet.has(w)) continue;
+        arr[slotPos] = w;
+        if (s.distinct) usedSet.add(w);
+        yield* fillPool(openIdx + 1, usedSet);
+        if (s.distinct) usedSet.delete(w);
+        arr[slotPos] = undefined;
+      }
+    }
+
+    function* placeReq(reqIdx, usedSlotMask, usedSet) {
+      if (reqIdx === req.length) {
+        yield* fillPool(0, usedSet);
+        return;
+      }
+      const w = req[reqIdx];
+      if (s.distinct && usedSet.has(w)) return;
+      for (let i = 0; i < openSlots.length; i++) {
+        if (usedSlotMask & (1 << i)) continue;
+        const slotPos = openSlots[i] - 1;
+        arr[slotPos] = w;
+        if (s.distinct) usedSet.add(w);
+        yield* placeReq(reqIdx + 1, usedSlotMask | (1 << i), usedSet);
+        if (s.distinct) usedSet.delete(w);
+        arr[slotPos] = undefined;
+      }
+    }
+
+    function* placeFixed(fIdx, usedSet) {
+      if (fIdx === fixedSlots.length) {
+        yield* placeReq(0, 0, usedSet);
+        return;
+      }
+      const slot = fixedSlots[fIdx];
+      const slotPos = slot - 1;
+      for (const w of s.fix[slot]) {
+        if (s.distinct && usedSet.has(w)) continue;
+        arr[slotPos] = w;
+        if (s.distinct) usedSet.add(w);
+        yield* placeFixed(fIdx + 1, usedSet);
+        if (s.distinct) usedSet.delete(w);
+        arr[slotPos] = undefined;
+      }
+    }
+
+    yield* placeFixed(0, new Set());
+  }
+
   const api = {
     SCHEMES,
     BIP39_LENGTHS,
@@ -463,10 +557,14 @@
     ELECTRUM_PATHS,
     PATH_RE,
     CPU_PRESETS,
+    BROWSER_MAX_RAW,
+    BROWSER_MAX_DERIVATIONS,
     sanitizeName,
     normalizeState,
     validate,
     price,
+    canRunInBrowser,
+    enumerateRawPhrases,
     formatCount,
     formatHours,
     renderConf,

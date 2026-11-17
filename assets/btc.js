@@ -269,7 +269,7 @@
     };
   }
 
-  const api = { TARGET, DEFAULT_PATHS, PATH_RE, check, normalizePass, electrumText, bip39Text, ripemd160, addressOf };
+  const api = { TARGET, DEFAULT_PATHS, PATH_RE, check, normalizePass, electrumText, bip39Text, ripemd160, addressOf, bip39Checksum, electrumStandard };
   root.BTC = api;
   if (typeof module !== "undefined") module.exports = api;
 })(globalThis);
